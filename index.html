@@ -74,10 +74,21 @@
   .btn-outline{background:transparent;color:var(--ink);}
   .btn-outline:hover,.btn-outline:focus-visible{background:var(--ink);color:var(--paper);}
   :focus-visible{outline:2px solid var(--rust);outline-offset:2px;}
-  .menu-toggle{display:none;}
+  header.site.is-scrolled{box-shadow:0 4px 24px rgba(22,35,61,.08);}
+  .menu-toggle{
+    display:none;background:none;border:none;cursor:pointer;padding:6px;
+    flex-direction:column;gap:5px;
+  }
+  .menu-toggle span{width:24px;height:2px;background:var(--ink);display:block;}
+  .mobile-nav{display:none;}
 
   /* Hero */
-  .hero{padding:96px 0 88px;}
+  .hero{padding:96px 0 88px;position:relative;overflow:hidden;}
+  .hero-leaf{
+    position:absolute;top:-60px;right:-40px;width:420px;height:420px;
+    opacity:.06;pointer-events:none;z-index:0;
+  }
+  .hero .wrap{position:relative;z-index:1;}
   .hero .grid{
     display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:end;
   }
@@ -97,8 +108,15 @@
     font-size:.92rem;color:var(--ink-soft);max-width:34ch;
   }
   .hero-side{
-    border:1px solid var(--line);padding:32px;background:var(--paper-dim);
+    border:1px solid var(--line);background:var(--paper-dim);overflow:hidden;
   }
+  .hero-side .photo{
+    width:100%;height:150px;object-fit:cover;display:block;
+  }
+  .hero-side .photo-cap{
+    font-size:.72rem;color:var(--ink-soft);opacity:.7;padding:6px 32px 0;margin:0;
+  }
+  .hero-side .body{padding:24px 32px 32px;}
   .hero-side h2{font-size:1.15rem;font-weight:500;margin:0 0 16px;}
   .hero-side ul{list-style:none;margin:0 0 22px;padding:0;}
   .hero-side li{
@@ -126,9 +144,15 @@
   .service-row{
     display:grid;grid-template-columns:280px 1fr;gap:40px;
     padding:32px 0;border-top:1px solid var(--line);
+    transition:padding-left .25s ease;
   }
+  .service-row:hover{padding-left:8px;}
   .service-row:last-child{border-bottom:1px solid var(--line);}
-  .service-row h3{font-size:1.4rem;font-weight:500;margin:0;}
+  .service-row h3{
+    font-size:1.4rem;font-weight:500;margin:0;
+    display:flex;align-items:center;gap:14px;
+  }
+  .service-row h3 svg{flex:none;width:26px;height:26px;stroke:var(--rust);}
   .service-row p{margin:0 0 14px;color:var(--ink-soft);}
   .service-row a.more{
     color:var(--rust);text-decoration:none;font-size:.8rem;font-weight:700;
@@ -138,7 +162,20 @@
   .service-row a.more:hover{color:var(--rust-deep);}
 
   /* Why Canada band */
-  .why{background:var(--ink);color:var(--paper);}
+  .why{background:var(--ink);color:var(--paper);padding:0;}
+  .why-banner{
+    position:relative;height:340px;overflow:hidden;
+  }
+  .why-banner img{width:100%;height:100%;object-fit:cover;}
+  .why-banner::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(22,35,61,.35) 0%,var(--ink) 96%);
+  }
+  .why-banner .banner-text{
+    position:absolute;left:0;right:0;bottom:0;padding:40px 24px;
+    max-width:var(--max);margin:0 auto;z-index:1;
+  }
+  .why .section-inner{padding:70px 0 80px;}
   .why .section-head h2{color:var(--paper);}
   .why .section-head p{color:#C7CEDB;}
   .why .section-head .eyebrow{color:#8FAE93;}
@@ -150,13 +187,65 @@
   .why-card h3{font-size:1.1rem;font-weight:500;margin:0 0 12px;color:#F4EFE4;}
   .why-card p{margin:0;color:#B9C2D2;font-size:.95rem;}
 
+  /* Process */
+  .process{background:var(--paper);}
+  .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:step;}
+  .process-step{position:relative;padding-top:8px;}
+  .process-step::before{
+    counter-increment:step;content:counter(step,decimal-leading-zero);
+    font-family:'Lora',serif;font-size:2.2rem;color:var(--rust);
+    opacity:.35;display:block;margin-bottom:6px;
+  }
+  .process-step h3{font-size:1.1rem;font-weight:500;margin:0 0 10px;}
+  .process-step p{margin:0;color:var(--ink-soft);font-size:.92rem;}
+  .process-step:not(:last-child)::after{
+    content:"";position:absolute;top:22px;left:calc(100% + 2px);width:calc(28px - 4px);
+    height:1px;background:var(--line);
+  }
+
+  /* FAQ */
+  .faq{background:var(--paper-dim);border-top:1px solid var(--line);}
+  .faq-list{border-top:1px solid var(--line);}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-item summary{
+    padding:20px 0;cursor:pointer;font-weight:500;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:20px;
+    font-family:'Lora',serif;font-size:1.05rem;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+";font-size:1.3rem;color:var(--rust);flex:none;}
+  .faq-item[open] summary::after{content:"–";}
+  .faq-item p{margin:0 0 20px;color:var(--ink-soft);max-width:70ch;}
+
+  /* Scroll reveal */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+
+  /* Footer social icons */
+  .social-row{display:flex;gap:10px;}
+  .social-btn{
+    width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.25);
+    display:flex;align-items:center;justify-content:center;transition:background .2s ease,border-color .2s ease;
+  }
+  .social-btn:hover{background:var(--rust);border-color:var(--rust);}
+  .social-btn svg{width:16px;height:16px;stroke:#F4EFE4;fill:none;}
+
   /* Cabinet */
   .cabinet .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
   .quote-panel{
-    background:var(--ink);color:var(--paper);padding:44px 36px;position:relative;
+    color:var(--paper);padding:44px 36px;position:relative;overflow:hidden;
+    min-height:320px;display:flex;flex-direction:column;justify-content:flex-end;
   }
+  .quote-panel img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;
+  }
+  .quote-panel::before{
+    content:"";position:absolute;inset:0;z-index:0;
+    background:linear-gradient(180deg,rgba(22,35,61,.55) 0%,rgba(22,35,61,.92) 100%);
+  }
+  .quote-panel p, .quote-panel span{position:relative;z-index:1;}
   .quote-panel p{
-    font-family:'Fraunces',serif;font-size:1.4rem;line-height:1.4;margin:0 0 20px;
+    font-family:'Lora',serif;font-style:italic;font-size:1.4rem;line-height:1.4;margin:0 0 20px;
   }
   .quote-panel span{color:#9DB29F;font-size:.9rem;}
   .cabinet-copy p{color:var(--ink-soft);}
@@ -203,6 +292,15 @@
 
   @media (max-width:860px){
     nav.primary{display:none;}
+    .menu-toggle{display:flex;}
+    .mobile-nav.is-open{
+      display:flex;flex-direction:column;gap:2px;
+      padding:8px 24px 18px;border-top:1px solid var(--line);
+    }
+    .mobile-nav a{
+      padding:12px 0;text-decoration:none;color:var(--ink);font-size:1rem;
+      border-bottom:1px solid var(--line);
+    }
     .nav-row{flex-wrap:wrap;row-gap:10px;}
     .phone-link{display:none;}
     .hero .grid{grid-template-columns:1fr;}
@@ -212,9 +310,15 @@
     .service-row{grid-template-columns:1fr;gap:10px;}
     .footer-grid{grid-template-columns:1fr 1fr;}
     .field-row{grid-template-columns:1fr;}
+    .process-grid{grid-template-columns:1fr 1fr;row-gap:32px;}
+    .process-step::after{display:none;}
+  }
+  @media (max-width:520px){
+    .process-grid{grid-template-columns:1fr;}
   }
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto;}
+    .reveal{opacity:1;transform:none;transition:none;}
   }
 </style>
 </head>
@@ -235,13 +339,26 @@
     <div class="nav-actions">
       <a class="phone-link" href="tel:+15142956635">+1 514 295 6635</a>
       <a class="btn btn-solid" href="#contact">Prendre rendez-vous</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
+    <a href="#services">Nos services</a>
+    <a href="#pourquoi">Pourquoi le Canada</a>
+    <a href="#cabinet">Notre cabinet</a>
+    <a href="#faq">Questions fréquentes</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main id="top">
 
   <section class="hero">
+    <svg class="hero-leaf" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M50 4 L57 26 L77 16 L70 37 L92 36 L75 51 L92 66 L70 65 L77 85 L57 75 L50 97 L43 75 L23 85 L30 65 L8 66 L25 51 L8 36 L30 37 L23 16 L43 26 Z" fill="#B5342A"/>
+    </svg>
     <div class="wrap grid">
       <div>
         <p class="eyebrow">Consultant en immigration — membre CCIC nº R712906</p>
@@ -253,15 +370,19 @@
         </div>
       </div>
       <aside class="hero-side">
-        <h2>Nous prenons en charge</h2>
-        <ul>
-          <li>Étudiants étrangers</li>
-          <li>Travailleurs temporaires</li>
-          <li>Résidence permanente</li>
-          <li>Parrainage familial</li>
-          <li>Visiteurs</li>
-        </ul>
-        <p class="credential">Membre identifié sous le numéro R712906 au Collège des consultants en immigration et citoyenneté (CCIC).</p>
+        <img class="photo" src="https://images.pexels.com/photos/28930467/pexels-photo-28930467.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Vue aérienne de Montréal et du pont Jacques-Cartier" loading="lazy">
+        <p class="photo-cap">Montréal, où se trouve notre bureau principal</p>
+        <div class="body">
+          <h2>Nous prenons en charge</h2>
+          <ul>
+            <li>Étudiants étrangers</li>
+            <li>Travailleurs temporaires</li>
+            <li>Résidence permanente</li>
+            <li>Parrainage familial</li>
+            <li>Visiteurs</li>
+          </ul>
+          <p class="credential">Membre identifié sous le numéro R712906 au Collège des consultants en immigration et citoyenneté (CCIC).</p>
+        </div>
       </aside>
     </div>
   </section>
@@ -283,36 +404,36 @@
       </div>
 
       <div class="service-list">
-        <div class="service-row">
-          <h3>Étudiants étrangers</h3>
+        <div class="service-row reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/></svg> Étudiants étrangers</h3>
           <div>
             <p>Votre tremplin vers un avenir prometteur : nous vous accompagnons de la recherche du programme idéal à l'obtention de votre permis d'études, jusqu'à votre intégration à la vie canadienne. Certificat d'acceptation du Québec, permis d'étude, permis de travail post-diplôme — nous couvrons chaque démarche.</p>
             <a class="more" href="#contact">Discuter de mon projet d'études →</a>
           </div>
         </div>
-        <div class="service-row">
-          <h3>Travailleurs temporaires</h3>
+        <div class="service-row reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg> Travailleurs temporaires</h3>
           <div>
             <p>Permis de travail ouvert ou fermé, Expérience internationale Canada, conformité de l'employeur : nous accompagnons les travailleurs et les employeurs dans leurs démarches pour recruter ou venir travailler au Canada, dans le respect des lois qui protègent chaque travailleur.</p>
             <a class="more" href="#contact">Explorer les options de permis →</a>
           </div>
         </div>
-        <div class="service-row">
-          <h3>Résidence permanente</h3>
+        <div class="service-row reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg> Résidence permanente</h3>
           <div>
             <p>Entrée express, Programme de l'expérience québécoise, Programmes des candidats des provinces : la résidence permanente ouvre l'accès aux services sociaux, aux soins de santé et à la liberté de travailler et de vivre partout au pays. Nous évaluons votre admissibilité et bâtissons votre dossier.</p>
             <a class="more" href="#contact">Évaluer mon admissibilité →</a>
           </div>
         </div>
-        <div class="service-row">
-          <h3>Parrainage familial</h3>
+        <div class="service-row reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><path d="M2 21v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2"/><circle cx="18" cy="8" r="2.2"/><path d="M22 21v-1.6a3.6 3.6 0 0 0-3-3.55"/></svg> Parrainage familial</h3>
           <div>
             <p>Conjoint, conjoint de fait, parents, grands-parents ou autre proche : le système de parrainage canadien permet de réunir votre famille. Nous préparons et déposons votre dossier de parrainage avec vous.</p>
             <a class="more" href="#contact">Parler de mon dossier de parrainage →</a>
           </div>
         </div>
-        <div class="service-row">
-          <h3>Visiteurs</h3>
+        <div class="service-row reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg> Visiteurs</h3>
           <div>
             <p>Visa visiteur, super visa pour parents et grands-parents, autorisation de voyage électronique (AVE) : que ce soit pour des vacances, des affaires ou visiter votre famille, nous préparons votre demande de séjour au Canada.</p>
             <a class="more" href="#contact">Préparer mon séjour →</a>
@@ -322,35 +443,68 @@
     </div>
   </section>
 
-  <section class="why" id="pourquoi">
+  <section class="process">
     <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Notre démarche</p>
+        <h2>Comment se déroule votre accompagnement</h2>
+        <p>Un processus clair, en quatre étapes, du premier échange jusqu'à votre installation au Canada.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <h3>Consultation initiale</h3>
+          <p>Un premier échange pour comprendre votre situation, vos objectifs et vos contraintes.</p>
+        </div>
+        <div class="process-step reveal">
+          <h3>Évaluation du dossier</h3>
+          <p>Analyse de votre profil et identification des programmes d'immigration les mieux adaptés.</p>
+        </div>
+        <div class="process-step reveal">
+          <h3>Préparation et dépôt</h3>
+          <p>Constitution du dossier, vérification des pièces et dépôt de la demande auprès des autorités compétentes.</p>
+        </div>
+        <div class="process-step reveal">
+          <h3>Suivi jusqu'à l'installation</h3>
+          <p>Un accompagnement qui se poursuit après l'approbation, jusqu'à votre arrivée et votre installation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="pourquoi">
+    <div class="why-banner">
+      <img src="https://images.pexels.com/photos/16964092/pexels-photo-16964092.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Lac Moraine dans les Rocheuses canadiennes" loading="lazy">
+      <div class="banner-text">
+        <p class="eyebrow" style="color:#8FAE93;">Pourquoi le Canada</p>
+        <h2 style="margin:0;font-size:clamp(1.8rem,3.4vw,2.4rem);font-weight:500;">Un pays qui investit dans ceux qui viennent s'y installer</h2>
+      </div>
+    </div>
+    <div class="wrap section-inner">
       <div class="section-head">
-        <p class="eyebrow">Pourquoi le Canada</p>
-        <h2>Un pays qui investit dans ceux qui viennent s'y installer</h2>
         <p>Qualité de vie, diversité culturelle, éducation reconnue mondialement, marché de l'emploi dynamique : voici ce qui attend nos clients.</p>
       </div>
       <div class="why-grid">
-        <div class="why-card">
+        <div class="why-card reveal">
           <h3>Qualité de vie exceptionnelle</h3>
           <p>Soins de santé de premier ordre, éducation de renom et environnement sécuritaire comptent parmi les critères qui placent régulièrement le Canada, et le Québec en particulier, en tête des classements de qualité de vie.</p>
         </div>
-        <div class="why-card">
+        <div class="why-card reveal">
           <h3>Diversité et inclusion</h3>
           <p>Un creuset de cultures où chaque identité est respectée, avec une communauté accueillante qui encourage l'échange interculturel.</p>
         </div>
-        <div class="why-card">
+        <div class="why-card reveal">
           <h3>Éducation reconnue mondialement</h3>
           <p>Des établissements d'enseignement réputés pour leur excellence, avec des diplômes appréciés sur le marché du travail international.</p>
         </div>
-        <div class="why-card">
+        <div class="why-card reveal">
           <h3>Marché de l'emploi dynamique</h3>
           <p>Une économie stable et diversifiée qui recherche activement des travailleurs qualifiés dans de nombreux secteurs.</p>
         </div>
-        <div class="why-card">
+        <div class="why-card reveal">
           <h3>Nature et grands espaces</h3>
           <p>Du Pacifique à l'Atlantique, en passant par les Rocheuses et les Prairies, des paysages qui invitent à l'exploration.</p>
         </div>
-        <div class="why-card">
+        <div class="why-card reveal">
           <h3>Un coût de la vie abordable</h3>
           <p>Des familles qui bénéficient d'un équilibre entre vie professionnelle et vie personnelle, dans des villes régulièrement classées parmi les plus vivables au monde.</p>
         </div>
@@ -360,11 +514,12 @@
 
   <section class="cabinet" id="cabinet">
     <div class="wrap grid">
-      <div class="quote-panel">
+      <div class="quote-panel reveal">
+        <img src="https://images.pexels.com/photos/36733315/pexels-photo-36733315.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Consultation professionnelle en cabinet" loading="lazy">
         <p>« Nous sommes guidés par la conviction que l'immigration est une force positive pour le Canada et pour les individus qui choisissent d'y vivre. »</p>
         <span>Notre mission, ATL Canada</span>
       </div>
-      <div class="cabinet-copy">
+      <div class="cabinet-copy reveal">
         <p class="eyebrow">Notre cabinet</p>
         <h2 style="font-size:1.9rem;font-weight:500;margin:0 0 18px;">Des conseils personnalisés, à chaque étape</h2>
         <p>Notre mission est d'aider les personnes qui souhaitent immigrer à réaliser leurs projets, avec des services de conseil professionnels, éthiques et personnalisés. Notre équipe vous guide à travers chaque étape, en commençant par une entrevue d'évaluation préliminaire qui permet d'examiner votre profil et de déterminer votre éligibilité aux différents programmes d'immigration canadiens.</p>
@@ -387,6 +542,37 @@
             <p>Réunir vos proches et fonder une communauté unie au sein de la société canadienne.</p>
           </details>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Questions fréquentes</p>
+        <h2>Ce que nos clients nous demandent le plus</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal" open>
+          <summary>Ai-je besoin d'un consultant en immigration ?</summary>
+          <p>Non, ce n'est pas obligatoire : vous pouvez déposer vous-même une demande auprès d'IRCC. Un consultant réglementé (RCIC/CCIC) vous aide toutefois à éviter les erreurs coûteuses, à choisir le bon programme et à préparer un dossier plus solide — particulièrement utile pour les situations complexes.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Combien de temps prend une demande de résidence permanente ?</summary>
+          <p>Les délais varient selon le programme (Entrée express, PNP, parrainage, etc.) et changent régulièrement selon les priorités d'Immigration, Réfugiés et Citoyenneté Canada (IRCC). Nous vous donnons une estimation réaliste dès l'évaluation de votre dossier.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Quelle est la différence entre un permis d'études et un permis de travail ?</summary>
+          <p>Le permis d'études autorise à étudier dans un établissement désigné et, sous conditions, à travailler à temps partiel. Le permis de travail autorise à occuper un emploi, avec ou sans employeur désigné selon le type de permis. Les deux peuvent, dans certains cas, mener à la résidence permanente.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Qu'est-ce que le CCIC ?</summary>
+          <p>Le Collège des consultants en immigration et en citoyenneté (CCIC) est l'organisme fédéral qui réglemente les consultants en immigration au Canada. Seuls ses membres, identifiés par un numéro comme le nôtre (R712906), sont autorisés à fournir des conseils rémunérés en immigration.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Travaillez-vous avec des clients hors du Canada et du Maroc ?</summary>
+          <p>Oui. Nos consultations se font aussi à distance par téléphone et visioconférence, ce qui nous permet d'accompagner des clients partout dans le monde.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -481,10 +667,14 @@
       </div>
       <div>
         <h4>Suivez-nous</h4>
-        <ul>
-          <li><a href="https://www.facebook.com/atlcanada" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://www.instagram.com/atl_immigration_canada/" target="_blank" rel="noopener">Instagram</a></li>
-        </ul>
+        <div class="social-row">
+          <a class="social-btn" href="https://www.facebook.com/atlcanada" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3Z"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.instagram.com/atl_immigration_canada/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -493,6 +683,46 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Sticky header shadow on scroll
+  var header = document.querySelector('header.site');
+  window.addEventListener('scroll', function(){
+    header.classList.toggle('is-scrolled', window.scrollY > 8);
+  }, { passive: true });
+
+  // Mobile menu toggle
+  var menuToggle = document.getElementById('menuToggle');
+  var mobileNav = document.getElementById('mobileNav');
+  if (menuToggle && mobileNav) {
+    menuToggle.addEventListener('click', function(){
+      var isOpen = mobileNav.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    mobileNav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        mobileNav.classList.remove('is-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // Scroll-reveal animations
+  if ('IntersectionObserver' in window) {
+    var revealEls = document.querySelectorAll('.reveal');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('is-visible'); });
+  }
+</script>
 
 </body>
 </html>
