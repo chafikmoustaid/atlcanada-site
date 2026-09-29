@@ -7,15 +7,15 @@
 <meta name="description" content="ATL Canada accompagne étudiants, travailleurs, familles et visiteurs dans leurs démarches d'immigration au Canada. Consultant membre du CCIC, R712906.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#16233D;
     --ink-soft:#3C4A63;
     --paper:#FBF9F5;
     --paper-dim:#F1ECE2;
-    --rust:#B5501E;
-    --rust-deep:#8F3D16;
+    --rust:#B5342A;
+    --rust-deep:#8C2820;
     --moss:#48624B;
     --line:#DCD4C2;
     --max:1120px;
@@ -26,12 +26,12 @@
     margin:0;
     background:var(--paper);
     color:var(--ink);
-    font-family:'Inter',system-ui,sans-serif;
+    font-family:'Source Sans 3',system-ui,sans-serif;
     font-size:17px;
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
-  h1,h2,h3,.serif{font-family:'Fraunces',serif;}
+  h1,h2,h3,.serif{font-family:'Lora',serif;}
   a{color:inherit;}
   img{max-width:100%;display:block;}
   .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
@@ -48,8 +48,10 @@
     display:flex;align-items:center;justify-content:space-between;
     padding:16px 24px;max-width:var(--max);margin:0 auto;gap:16px;
   }
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none;}
   .wordmark{
-    font-family:'Fraunces',serif;font-weight:600;font-size:1.3rem;
+    font-family:'Lora',serif;font-weight:600;font-size:1.3rem;
     letter-spacing:.01em;text-decoration:none;color:var(--ink);
     white-space:nowrap;
   }
@@ -104,6 +106,13 @@
   }
   .hero-side li:last-child{border-bottom:none;}
 
+  /* Trust band */
+  .trust{background:var(--paper-dim);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;}
+  .trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:20px;}
+  .trust-item{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--ink-soft);}
+  .trust-item .dot{width:7px;height:7px;border-radius:50%;background:var(--rust);flex:none;}
+  .trust-item strong{color:var(--ink);font-weight:600;}
+
   /* Section shell */
   section{padding:80px 0;}
   .section-head{max-width:60ch;margin:0 0 48px;}
@@ -122,8 +131,9 @@
   .service-row h3{font-size:1.4rem;font-weight:500;margin:0;}
   .service-row p{margin:0 0 14px;color:var(--ink-soft);}
   .service-row a.more{
-    color:var(--rust);text-decoration:none;font-size:.92rem;font-weight:500;
-    border-bottom:1px solid currentColor;
+    color:var(--rust);text-decoration:none;font-size:.8rem;font-weight:700;
+    letter-spacing:.04em;text-transform:uppercase;
+    border-bottom:1px solid currentColor;padding-bottom:2px;
   }
   .service-row a.more:hover{color:var(--rust-deep);}
 
@@ -180,7 +190,7 @@
 
   /* Footer */
   footer{background:var(--ink);color:#B9C2D2;padding:56px 0 28px;}
-  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px;}
+  .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px;}
   footer h4{color:#F4EFE4;font-size:.9rem;font-weight:600;margin:0 0 14px;text-transform:none;}
   footer ul{list-style:none;margin:0;padding:0;}
   footer li{margin-bottom:8px;font-size:.9rem;}
@@ -212,7 +222,10 @@
 
 <header class="site">
   <div class="nav-row">
-    <a class="wordmark" href="#top">ATL <em>Canada</em></a>
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="Logo ATL Canada">
+      <span class="wordmark">ATL <em>Canada</em></span>
+    </a>
     <nav class="primary" aria-label="Navigation principale">
       <a href="#services">Nos services</a>
       <a href="#pourquoi">Pourquoi le Canada</a>
@@ -250,6 +263,14 @@
         </ul>
         <p class="credential">Membre identifié sous le numéro R712906 au Collège des consultants en immigration et citoyenneté (CCIC).</p>
       </aside>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="wrap">
+      <div class="trust-item"><span class="dot"></span> <strong>Membre CCIC</strong>&nbsp;— numéro R712906</div>
+      <div class="trust-item"><span class="dot"></span> Bureaux à <strong>Montréal</strong> et <strong>Casablanca</strong></div>
+      <div class="trust-item"><span class="dot"></span> Service en <strong>français</strong>, <strong>anglais</strong> et <strong>arabe</strong></div>
     </div>
   </section>
 
@@ -428,7 +449,10 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <p class="wordmark" style="color:#F4EFE4;">ATL <em style="color:var(--rust);">Canada</em></p>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <img src="assets/logo.png" alt="Logo ATL Canada" style="width:34px;height:34px;border-radius:50%;object-fit:cover;">
+          <p class="wordmark" style="color:#F4EFE4;margin:0;">ATL <em style="color:var(--rust);">Canada</em></p>
+        </div>
         <p style="font-size:.9rem;max-width:32ch;">Consultant en immigration membre du CCIC, numéro R712906.</p>
       </div>
       <div>
@@ -453,6 +477,13 @@
         <ul>
           <li><a href="tel:+15142956635">+1 514 295 6635</a></li>
           <li><a href="mailto:contact@atlcanada.com">contact@atlcanada.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Suivez-nous</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/atlcanada" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/atl_immigration_canada/" target="_blank" rel="noopener">Instagram</a></li>
         </ul>
       </div>
     </div>
