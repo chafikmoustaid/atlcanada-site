@@ -145,8 +145,10 @@
   .hero-side .charge-list a:hover::after{opacity:1;transform:translateX(3px);}
 
   .eyebrow{
-    color:var(--moss);font-size:.95rem;margin:0 0 18px;
+    display:flex;align-items:center;gap:12px;
+    color:#E1232B;font-size:.95rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 18px;
   }
+  .eyebrow::before{content:"";width:34px;height:3px;background:var(--bar,currentColor);flex:none;}
 
   /* Trust band */
   .trust{background:var(--paper-dim);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;}
@@ -169,8 +171,8 @@
   /* Section shell */
   section{padding:80px 0;}
   .section-head{max-width:60ch;margin:0 0 48px;}
-  .section-head .eyebrow{margin-bottom:14px;}
-  .section-head h2{font-size:clamp(1.8rem,3.4vw,2.4rem);font-weight:500;margin:0 0 16px;}
+  .section-head .eyebrow{margin-bottom:14px;color:#E1232B;}
+  .section-head h2{font-size:clamp(1.8rem,3.4vw,2.4rem);font-weight:600;margin:0 0 16px;}
   .section-head p{color:var(--ink-soft);margin:0;}
 
   /* Services */
@@ -215,7 +217,8 @@
   .why .section-inner{padding:70px 0 80px;}
   .why .section-head h2{color:var(--paper);}
   .why .section-head p{color:#C7CEDB;}
-  .why .section-head .eyebrow{color:#8FAE93;}
+  .why .section-head .eyebrow{color:#FF5A61;}
+  .why .section-head .eyebrow::before{background:#FF5A61;}
   .why-grid{
     display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
     background:rgba(255,255,255,.14);
@@ -527,7 +530,7 @@
     <div class="why-banner">
       <img src="https://images.pexels.com/photos/16964092/pexels-photo-16964092.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Lac Moraine dans les Rocheuses canadiennes" loading="lazy">
       <div class="banner-text">
-        <p class="eyebrow" style="color:#8FAE93;">Pourquoi le Canada</p>
+        <p class="eyebrow" style="color:#FF5A61;--bar:#FF5A61;">Pourquoi le Canada</p>
         <h2 style="margin:0;font-size:clamp(1.8rem,3.4vw,2.4rem);font-weight:500;">Un pays qui investit dans ceux qui viennent s'y installer</h2>
       </div>
     </div>
