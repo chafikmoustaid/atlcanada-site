@@ -131,7 +131,7 @@
     border-left:1px solid rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);
   }
   .hero-side h2{font-size:1.25rem;font-weight:600;margin:0 0 14px;color:#fff;}
-  .hero-side ul{list-style:none;margin:0 0 26px;padding:0;}
+  .hero-side ul{list-style:none;margin:0;padding:0;}
   .hero-side li{padding:0;border-bottom:1px solid rgba(255,255,255,.14);font-size:1rem;}
   .hero-side li:last-child{border-bottom:none;}
   .hero-side .charge-list a{
@@ -143,13 +143,6 @@
   }
   .hero-side .charge-list a:hover{color:#FF8A90;padding-left:4px;}
   .hero-side .charge-list a:hover::after{opacity:1;transform:translateX(3px);}
-  .credential{
-    background:#E1232B;color:#fff;margin:0;padding:16px 20px;
-    display:flex;flex-direction:column;gap:2px;
-  }
-  .credential .cred-label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;opacity:.92;}
-  .credential .cred-num{font-size:1.7rem;font-weight:700;letter-spacing:.04em;line-height:1.15;}
-  .credential .cred-sub{font-size:.82rem;line-height:1.4;opacity:.95;}
 
   .eyebrow{
     color:var(--moss);font-size:.95rem;margin:0 0 18px;
@@ -161,10 +154,12 @@
   .trust-item{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--ink-soft);}
   .trust-item .dot{width:7px;height:7px;border-radius:50%;background:var(--rust);flex:none;}
   .trust-item strong{color:var(--ink);font-weight:600;}
-  .trust-ccic{gap:14px;}
-  .trust-ccic img{width:48px;height:48px;flex:none;}
-  .trust-ccic .verify{display:block;font-size:.8rem;color:var(--ink-soft);opacity:.85;text-decoration:underline;text-underline-offset:2px;}
-  .trust-ccic .verify:hover{color:var(--rust);opacity:1;}
+  .trust-ccic{gap:18px;}
+  .trust-ccic img{width:60px;height:60px;flex:none;}
+  .trust-ccic .ccic-txt{display:flex;flex-direction:column;gap:3px;}
+  .trust-ccic .ccic-top{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:1.05rem;color:var(--ink);font-weight:600;}
+  .trust-ccic .ccic-num{background:#E1232B;color:#fff;font-weight:700;letter-spacing:.05em;padding:3px 11px;font-size:.98rem;}
+  .trust-ccic .ccic-sub{font-size:.85rem;color:var(--ink-soft);}
 
   /* Section shell */
   section{padding:80px 0;}
@@ -430,7 +425,6 @@
           <li><a href="#parrainage">Parrainage familial</a></li>
           <li><a href="#visiteurs">Visiteurs</a></li>
         </ul>
-        <p class="credential"><span class="cred-label">Consultant réglementé · CCIC</span><span class="cred-num">N° R712906</span><span class="cred-sub">Membre du Collège des consultants en immigration et en citoyenneté</span></p>
       </aside>
     </div>
   </section>
@@ -438,8 +432,8 @@
   <section class="trust">
     <div class="wrap">
       <div class="trust-item trust-ccic">
-        <img src="assets/ccic-logo.png" alt="Collège des consultants en immigration et en citoyenneté (CCIC)" width="48" height="48">
-        <span><strong>Membre CCIC</strong>&nbsp;— numéro R712906<a class="verify" href="https://registre.college-ic.ca/" target="_blank" rel="noopener">Vérifier le statut auprès du Collège</a></span>
+        <img src="assets/ccic-logo.png" alt="Collège des consultants en immigration et en citoyenneté (CCIC)" width="60" height="60">
+        <span class="ccic-txt"><span class="ccic-top">Consultant membre du CCIC <span class="ccic-num">N° R712906</span></span><span class="ccic-sub">Collège des consultants en immigration et en citoyenneté</span></span>
       </div>
       <div class="trust-item"><span class="dot"></span><span>Bureaux à <strong>Montréal</strong> et <strong>Casablanca</strong></span></div>
       <div class="trust-item"><span class="dot"></span><span>Service en <strong>français</strong>, <strong>anglais</strong> et <strong>arabe</strong></span></div>
