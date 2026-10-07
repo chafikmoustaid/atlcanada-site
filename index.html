@@ -634,7 +634,11 @@
         </div>
       </div>
 
-      <form class="contact-form" action="mailto:chafik.moustaid@hotmail.com" method="post" enctype="text/plain">
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/chafik.moustaid@hotmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nouveau message depuis atlcanada.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://www.atlcanada.com/?envoye=1#contact">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <div class="field-row">
           <div>
             <label for="fname">Prénom</label>
@@ -654,6 +658,7 @@
           <textarea id="message" name="message" required></textarea>
         </div>
         <button class="btn btn-solid" type="submit" style="align-self:flex-start;">Envoyer</button>
+        <p id="formStatus" role="status" aria-live="polite" style="margin:0;font-size:.95rem;min-height:1.4em;"></p>
       </form>
     </div>
   </section>
@@ -765,6 +770,29 @@
     a.addEventListener('click', function(){ setTimeout(highlightTarget, 350); });
   });
   window.addEventListener('hashchange', highlightTarget);
+
+  // Contact form: direct sending (FormSubmit), with inline confirmation
+  (function(){
+    var form=document.getElementById('contactForm');
+    if(!form) return;
+    var status=document.getElementById('formStatus');
+    var btn=form.querySelector('button[type="submit"]');
+    function say(msg,ok){ status.textContent=msg; status.style.color=ok?'#2F6B3A':'#B5342A'; }
+    if(/[?&]envoye=1/.test(window.location.search)){ say('Merci ! Votre message a bien été envoyé. Nous vous répondrons rapidement.',true); }
+    form.addEventListener('submit',function(e){
+      if(!window.fetch||!window.FormData) return; // normal POST fallback
+      e.preventDefault();
+      btn.disabled=true; say('Envoi en cours…',true);
+      fetch('https://formsubmit.co/ajax/chafik.moustaid@hotmail.com',{
+        method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)
+      }).then(function(r){return r.json();}).then(function(d){
+        if(d && (d.success===true||d.success==='true')){ form.reset(); say('Merci ! Votre message a bien été envoyé. Nous vous répondrons rapidement.',true); }
+        else { throw new Error('fail'); }
+      }).catch(function(){
+        say('Envoi impossible pour le moment. Écrivez-nous directement à chafik.moustaid@hotmail.com ou appelez le +1 514 295 6635.',false);
+      }).then(function(){ btn.disabled=false; });
+    });
+  })();
 </script>
 
 </body>
