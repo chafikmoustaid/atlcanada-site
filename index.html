@@ -37,16 +37,26 @@
   .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
   .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
 
+  /* Top bar */
+  .topbar{background:#0E1829;color:#C5CFE2;font-size:.85rem;}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:8px;padding-bottom:8px;max-width:var(--max);}
+  .topbar-left{display:flex;align-items:center;gap:8px;}
+  .topbar-left strong{color:#fff;font-weight:600;}
+  .topbar-right{display:flex;align-items:center;gap:22px;}
+  .topbar a{color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;}
+  .topbar a:hover{text-decoration:underline;}
+  .topbar svg{width:14px;height:14px;stroke:#FF5A5F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;}
+  .topbar .sep{opacity:.35;}
+
   /* Header */
   header.site{
     position:sticky;top:0;z-index:40;
-    background:rgba(251,249,245,.92);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
+    background:#16233D;
+    border-bottom:3px solid #E1232B;
   }
   .nav-row{
     display:flex;align-items:center;justify-content:space-between;
-    padding:12px 24px;max-width:1240px;margin:0 auto;gap:20px;
+    padding:12px 24px;max-width:var(--max);margin:0 auto;gap:24px;
   }
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
   .brand img{display:block;height:68px;width:auto;flex:none;}
@@ -56,12 +66,12 @@
     white-space:nowrap;
   }
   .wordmark em{font-style:normal;color:var(--rust);}
-  nav.primary{display:flex;gap:24px;}
+  nav.primary{display:flex;gap:30px;}
   nav.primary a{
-    white-space:nowrap;text-decoration:none;color:var(--ink-soft);font-size:.95rem;
-    padding:4px 2px;border-bottom:2px solid transparent;
+    white-space:nowrap;text-decoration:none;color:#E8EDF7;font-size:1rem;font-weight:500;
+    padding:6px 2px;border-bottom:2px solid transparent;transition:color .15s ease,border-color .15s ease;
   }
-  nav.primary a:hover,nav.primary a:focus-visible{border-bottom-color:var(--rust);color:var(--ink);}
+  nav.primary a:hover,nav.primary a:focus-visible{border-bottom-color:#E1232B;color:#fff;}
   .nav-actions{display:flex;align-items:center;gap:18px;}
   .phone-link{font-size:.92rem;color:var(--ink-soft);text-decoration:none;white-space:nowrap;}
   .btn{
@@ -71,15 +81,18 @@
   }
   .btn-solid{background:var(--rust);border-color:var(--rust);color:#fff;}
   .btn-solid:hover,.btn-solid:focus-visible{background:var(--rust-deep);border-color:var(--rust-deep);}
+  header.site .btn-solid{background:#E1232B;border-color:#E1232B;font-weight:600;padding:12px 26px;border-radius:3px;box-shadow:0 4px 14px rgba(225,35,43,.35);}
+  header.site .btn-solid:hover,header.site .btn-solid:focus-visible{background:#C41A22;border-color:#C41A22;}
   .btn-outline{background:transparent;color:var(--ink);}
   .btn-outline:hover,.btn-outline:focus-visible{background:var(--ink);color:var(--paper);}
   :focus-visible{outline:2px solid var(--rust);outline-offset:2px;}
-  header.site.is-scrolled{box-shadow:0 4px 24px rgba(22,35,61,.08);}
+  header.site :focus-visible{outline-color:#fff;}
+  header.site.is-scrolled{box-shadow:0 6px 24px rgba(8,14,28,.28);}
   .menu-toggle{
     display:none;background:none;border:none;cursor:pointer;padding:6px;
     flex-direction:column;gap:5px;
   }
-  .menu-toggle span{width:24px;height:2px;background:var(--ink);display:block;}
+  .menu-toggle span{width:26px;height:2px;background:#fff;display:block;}
   .mobile-nav{display:none;}
 
   /* Hero */
@@ -308,22 +321,20 @@
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem;
   }
 
-  @media (max-width:1280px){
-    .phone-link{display:none;}
-  }
-  @media (max-width:860px){
+  @media (max-width:1020px){
     nav.primary{display:none;}
     .menu-toggle{display:flex;}
     .mobile-nav.is-open{
       display:flex;flex-direction:column;gap:2px;
-      padding:8px 24px 18px;border-top:1px solid var(--line);
+      padding:8px 24px 18px;border-top:1px solid rgba(255,255,255,.14);
     }
     .mobile-nav a{
-      padding:12px 0;text-decoration:none;color:var(--ink);font-size:1rem;
-      border-bottom:1px solid var(--line);
+      padding:13px 0;text-decoration:none;color:#fff;font-size:1.02rem;font-weight:500;
+      border-bottom:1px solid rgba(255,255,255,.12);
     }
-    .nav-row{flex-wrap:wrap;row-gap:10px;}
-    .brand img{height:56px;}
+    .brand img{height:58px;}
+  }
+  @media (max-width:860px){
     .phone-link{display:none;}
     .hero .grid{grid-template-columns:1fr;}
     .why-grid{grid-template-columns:1fr;}
@@ -339,6 +350,8 @@
     .nav-row{flex-wrap:nowrap;}
     .brand img{height:50px;}
     .nav-actions .btn{display:none;}
+    .topbar-left,.topbar .topbar-mail{display:none;}
+    .topbar .wrap{justify-content:center;}
   }
   @media (max-width:520px){
     .process-grid{grid-template-columns:1fr;}
@@ -351,10 +364,19 @@
 </head>
 <body>
 
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-left"><strong>Montréal</strong> <span class="sep">·</span> <strong>Casablanca</strong> <span class="sep">|</span> Service en français, anglais et arabe</div>
+    <div class="topbar-right">
+      <a href="tel:+15142956635"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>+1 514 295 6635</a>
+      <a class="topbar-mail" href="mailto:chafik.moustaid@hotmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>chafik.moustaid@hotmail.com</a>
+    </div>
+  </div>
+</div>
 <header class="site">
   <div class="nav-row">
     <a class="brand" href="#top">
-      <img src="assets/logo-b.svg" alt="ATL Canada — Immigration Consulting" width="286" height="68">
+      <img src="assets/logo-b-dark.svg" alt="ATL Canada — Immigration Consulting" width="286" height="68">
     </a>
     <nav class="primary" aria-label="Navigation principale">
       <a href="#services">Nos services</a>
@@ -363,7 +385,6 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-actions">
-      <a class="phone-link" href="tel:+15142956635">+1 514 295 6635</a>
       <a class="btn btn-solid" href="#contact">Prendre rendez-vous</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
