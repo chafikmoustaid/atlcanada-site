@@ -159,7 +159,11 @@
   .trust-ccic .chk svg{width:13px;height:13px;}
   .trust-ccic .sep{width:1px;height:18px;background:var(--line);}
   .trust-ccic strong{font-weight:700;}
-  .trust-ccic .ccic-num{color:#E1232B;font-weight:700;letter-spacing:.04em;}
+  .trust-ccic .ccic-badge{background:#16233D;color:#fff;font-weight:600;padding:8px 8px 8px 16px;display:inline-flex;align-items:center;gap:10px;border-radius:2px;}
+  .trust-ccic .ccic-num{background:#E1232B;color:#fff;font-weight:700;letter-spacing:.05em;padding:4px 12px;font-size:1.02rem;}
+  .trust .loc{color:var(--ink);text-decoration:underline;text-decoration-color:#E1232B;text-decoration-thickness:2px;text-underline-offset:3px;}
+  .trust .loc:hover{color:#E1232B;}
+  #adresses{scroll-margin-top:110px;}
   @media(max-width:700px){.trust-ccic .sep{display:none;}.trust-ccic{justify-content:flex-start;}}
 
   /* Section shell */
@@ -436,9 +440,9 @@
         <img src="assets/ccic-logo.png" alt="Logo du CCIC" width="44" height="44" style="flex:none;">
         <span><strong>Consultant réglementé en immigration canadienne (CRIC)</strong></span>
         <span class="sep" aria-hidden="true"></span>
-        <span>Membre du CCIC · Permis <span class="ccic-num">R712906</span></span>
+        <span class="ccic-badge">Membre du CCIC · Permis <span class="ccic-num">R712906</span></span>
       </div>
-      <div class="trust-item"><span class="dot"></span><span>Bureaux à <strong>Montréal</strong> et <strong>Casablanca</strong></span></div>
+      <div class="trust-item"><span class="dot"></span><span>Bureaux à <a class="loc" href="#adresses"><strong>Montréal</strong></a> et <a class="loc" href="#adresses"><strong>Casablanca</strong></a></span></div>
       <div class="trust-item"><span class="dot"></span><span>Service en <strong>français</strong>, <strong>anglais</strong> et <strong>arabe</strong></span></div>
     </div>
   </section>
@@ -643,7 +647,7 @@
           <h3>Courriel</h3>
           <p><a href="mailto:chafik.moustaid@hotmail.com">chafik.moustaid@hotmail.com</a></p>
         </div>
-        <div class="info-block">
+        <div class="info-block" id="adresses">
           <h3>Emplacements</h3>
           <p>Montréal : 8405 Viau, H1R 2T6<br>Casablanca : 325 Emile Zola</p>
         </div>
