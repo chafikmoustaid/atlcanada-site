@@ -46,19 +46,19 @@
   }
   .nav-row{
     display:flex;align-items:center;justify-content:space-between;
-    padding:16px 24px;max-width:var(--max);margin:0 auto;gap:16px;
+    padding:12px 24px;max-width:1240px;margin:0 auto;gap:20px;
   }
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
-  .brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none;}
+  .brand img{display:block;height:68px;width:auto;flex:none;}
   .wordmark{
     font-family:'Lora',serif;font-weight:600;font-size:1.3rem;
     letter-spacing:.01em;text-decoration:none;color:var(--ink);
     white-space:nowrap;
   }
   .wordmark em{font-style:normal;color:var(--rust);}
-  nav.primary{display:flex;gap:28px;}
+  nav.primary{display:flex;gap:24px;}
   nav.primary a{
-    text-decoration:none;color:var(--ink-soft);font-size:.95rem;
+    white-space:nowrap;text-decoration:none;color:var(--ink-soft);font-size:.95rem;
     padding:4px 2px;border-bottom:2px solid transparent;
   }
   nav.primary a:hover,nav.primary a:focus-visible{border-bottom-color:var(--rust);color:var(--ink);}
@@ -308,6 +308,9 @@
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem;
   }
 
+  @media (max-width:1280px){
+    .phone-link{display:none;}
+  }
   @media (max-width:860px){
     nav.primary{display:none;}
     .menu-toggle{display:flex;}
@@ -320,6 +323,7 @@
       border-bottom:1px solid var(--line);
     }
     .nav-row{flex-wrap:wrap;row-gap:10px;}
+    .brand img{height:56px;}
     .phone-link{display:none;}
     .hero .grid{grid-template-columns:1fr;}
     .why-grid{grid-template-columns:1fr;}
@@ -330,6 +334,11 @@
     .field-row{grid-template-columns:1fr;}
     .process-grid{grid-template-columns:1fr 1fr;row-gap:32px;}
     .process-step::after{display:none;}
+  }
+  @media (max-width:640px){
+    .nav-row{flex-wrap:nowrap;}
+    .brand img{height:50px;}
+    .nav-actions .btn{display:none;}
   }
   @media (max-width:520px){
     .process-grid{grid-template-columns:1fr;}
@@ -345,8 +354,7 @@
 <header class="site">
   <div class="nav-row">
     <a class="brand" href="#top">
-      <img src="assets/logo.png" alt="Logo ATL Canada">
-      <span class="wordmark">ATL <em>Canada</em></span>
+      <img src="assets/logo-b.svg" alt="ATL Canada — Immigration Consulting" width="286" height="68">
     </a>
     <nav class="primary" aria-label="Navigation principale">
       <a href="#services">Nos services</a>
@@ -656,9 +664,8 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-          <img src="assets/logo.png" alt="Logo ATL Canada" style="width:34px;height:34px;border-radius:50%;object-fit:cover;">
-          <p class="wordmark" style="color:#F4EFE4;margin:0;">ATL <em style="color:var(--rust);">Canada</em></p>
+        <div style="margin-bottom:14px;">
+          <img src="assets/logo-b-dark.svg" alt="ATL Canada — Immigration Consulting" style="display:block;height:64px;width:auto;">
         </div>
         <p style="font-size:.9rem;max-width:32ch;">Consultant en immigration membre du CCIC, numéro R712906.</p>
       </div>
