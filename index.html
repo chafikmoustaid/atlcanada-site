@@ -123,29 +123,33 @@
   .hero .btn-outline{color:#fff;border-color:rgba(255,255,255,.75);background:transparent;}
   .hero .btn-outline:hover,.hero .btn-outline:focus-visible{background:#fff;color:#16233D;border-color:#fff;}
   .hero :focus-visible{outline-color:#fff;}
-  .credential{
-    border-left:3px solid #E1232B;padding:4px 0 4px 16px;margin:0;
-    font-size:.9rem;color:var(--ink-soft);line-height:1.5;
-  }
   .hero-side{
-    background:#fff;color:var(--ink);border-top:4px solid #E1232B;
-    padding:32px 36px 34px;box-shadow:0 28px 64px rgba(4,9,20,.45);
+    background:linear-gradient(160deg,rgba(14,26,50,.94),rgba(9,17,34,.96));
+    color:#fff;border-top:4px solid #E1232B;border-radius:2px;
+    padding:32px 36px 30px;box-shadow:0 28px 64px rgba(4,9,20,.55);
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+    border-left:1px solid rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);
   }
-  .hero-side h2{font-size:1.25rem;font-weight:600;margin:0 0 14px;color:var(--ink);}
-  .hero-side ul{list-style:none;margin:0 0 24px;padding:0;}
-  .hero-side li{
-    padding:0;border-bottom:1px solid var(--line);font-size:1rem;
-  }
+  .hero-side h2{font-size:1.25rem;font-weight:600;margin:0 0 14px;color:#fff;}
+  .hero-side ul{list-style:none;margin:0 0 26px;padding:0;}
+  .hero-side li{padding:0;border-bottom:1px solid rgba(255,255,255,.14);font-size:1rem;}
   .hero-side li:last-child{border-bottom:none;}
   .hero-side .charge-list a{
     display:flex;align-items:center;justify-content:space-between;gap:10px;
-    padding:12px 0;color:var(--ink);text-decoration:none;font-weight:500;transition:color .15s ease, padding-left .15s ease;
+    padding:12px 0;color:#fff;text-decoration:none;font-weight:500;transition:color .15s ease, padding-left .15s ease;
   }
   .hero-side .charge-list a::after{
-    content:"→";color:#E1232B;opacity:.55;transition:opacity .15s ease, transform .15s ease;
+    content:"→";color:#FF4D55;opacity:.8;transition:opacity .15s ease, transform .15s ease;
   }
-  .hero-side .charge-list a:hover{color:#C41A22;padding-left:4px;}
+  .hero-side .charge-list a:hover{color:#FF8A90;padding-left:4px;}
   .hero-side .charge-list a:hover::after{opacity:1;transform:translateX(3px);}
+  .credential{
+    background:#E1232B;color:#fff;margin:0;padding:16px 20px;
+    display:flex;flex-direction:column;gap:2px;
+  }
+  .credential .cred-label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;opacity:.92;}
+  .credential .cred-num{font-size:1.7rem;font-weight:700;letter-spacing:.04em;line-height:1.15;}
+  .credential .cred-sub{font-size:.82rem;line-height:1.4;opacity:.95;}
 
   .eyebrow{
     color:var(--moss);font-size:.95rem;margin:0 0 18px;
@@ -426,7 +430,7 @@
           <li><a href="#parrainage">Parrainage familial</a></li>
           <li><a href="#visiteurs">Visiteurs</a></li>
         </ul>
-        <p class="credential">Membre identifié sous le numéro R712906 au Collège des consultants en immigration et citoyenneté (CCIC).</p>
+        <p class="credential"><span class="cred-label">Consultant réglementé · CCIC</span><span class="cred-num">N° R712906</span><span class="cred-sub">Membre du Collège des consultants en immigration et en citoyenneté</span></p>
       </aside>
     </div>
   </section>
