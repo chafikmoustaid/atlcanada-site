@@ -96,51 +96,60 @@
   .mobile-nav{display:none;}
 
   /* Hero */
-  .hero{padding:96px 0 88px;position:relative;overflow:hidden;}
+  .hero{
+    position:relative;overflow:hidden;padding:112px 0 104px;color:#fff;
+    background-color:#16233D;
+    background-image:
+      linear-gradient(100deg,rgba(11,19,36,.96) 0%,rgba(22,35,61,.88) 48%,rgba(22,35,61,.62) 100%),
+      url("https://images.pexels.com/photos/28930467/pexels-photo-28930467.jpeg?auto=compress&cs=tinysrgb&w=1920");
+    background-size:cover;background-position:center;
+  }
   .hero .wrap{position:relative;z-index:1;}
   .hero .grid{
-    display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:end;
+    display:grid;grid-template-columns:1.3fr 1fr;gap:64px;align-items:center;
   }
-  .eyebrow{
-    color:var(--moss);font-size:.95rem;margin:0 0 18px;
-  }
+  .hero-bar{display:block;width:64px;height:4px;background:#E1232B;margin:0 0 26px;}
   .hero h1{
-    font-size:clamp(2.4rem,5vw,3.6rem);font-weight:500;line-height:1.08;
-    margin:0 0 28px;max-width:14ch;color:var(--ink);
+    font-size:clamp(2.3rem,4.2vw,3.4rem);font-weight:500;line-height:1.12;
+    margin:0 0 24px;max-width:17ch;color:#fff;letter-spacing:-.005em;
   }
   .hero p.lede{
-    font-size:1.15rem;color:var(--ink-soft);max-width:52ch;margin:0 0 32px;
+    font-size:1.18rem;color:#D3DBEA;max-width:50ch;margin:0 0 36px;line-height:1.6;
   }
   .hero .cta-row{display:flex;gap:16px;flex-wrap:wrap;}
+  .hero .btn{padding:14px 30px;font-size:1rem;font-weight:600;border-radius:3px;}
+  .hero .btn-solid{background:#E1232B;border-color:#E1232B;box-shadow:0 8px 22px rgba(225,35,43,.38);}
+  .hero .btn-solid:hover,.hero .btn-solid:focus-visible{background:#C41A22;border-color:#C41A22;}
+  .hero .btn-outline{color:#fff;border-color:rgba(255,255,255,.75);background:transparent;}
+  .hero .btn-outline:hover,.hero .btn-outline:focus-visible{background:#fff;color:#16233D;border-color:#fff;}
+  .hero :focus-visible{outline-color:#fff;}
   .credential{
-    border-left:3px solid var(--rust);padding:6px 0 6px 18px;
-    font-size:.92rem;color:var(--ink-soft);max-width:34ch;
+    border-left:3px solid #E1232B;padding:4px 0 4px 16px;margin:0;
+    font-size:.9rem;color:var(--ink-soft);line-height:1.5;
   }
   .hero-side{
-    border:1px solid var(--line);background:var(--paper-dim);overflow:hidden;
+    background:#fff;color:var(--ink);border-top:4px solid #E1232B;
+    padding:32px 36px 34px;box-shadow:0 28px 64px rgba(4,9,20,.45);
   }
-  .hero-side .photo{
-    width:100%;height:150px;object-fit:cover;display:block;
-  }
-  .hero-side .photo-cap{
-    font-size:.72rem;color:var(--ink-soft);opacity:.7;padding:6px 32px 0;margin:0;
-  }
-  .hero-side .body{padding:24px 32px 32px;}
-  .hero-side h2{font-size:1.15rem;font-weight:500;margin:0 0 16px;}
-  .hero-side ul{list-style:none;margin:0 0 22px;padding:0;}
+  .hero-side h2{font-size:1.25rem;font-weight:600;margin:0 0 14px;color:var(--ink);}
+  .hero-side ul{list-style:none;margin:0 0 24px;padding:0;}
   .hero-side li{
-    padding:0;border-bottom:1px solid var(--line);font-size:.95rem;
+    padding:0;border-bottom:1px solid var(--line);font-size:1rem;
   }
   .hero-side li:last-child{border-bottom:none;}
   .hero-side .charge-list a{
     display:flex;align-items:center;justify-content:space-between;gap:10px;
-    padding:10px 0;color:var(--ink);text-decoration:none;transition:color .15s ease, padding-left .15s ease;
+    padding:12px 0;color:var(--ink);text-decoration:none;font-weight:500;transition:color .15s ease, padding-left .15s ease;
   }
   .hero-side .charge-list a::after{
-    content:"→";color:var(--rust);opacity:0;transform:translateX(-4px);transition:opacity .15s ease, transform .15s ease;
+    content:"→";color:#E1232B;opacity:.55;transition:opacity .15s ease, transform .15s ease;
   }
-  .hero-side .charge-list a:hover{color:var(--rust);padding-left:4px;}
-  .hero-side .charge-list a:hover::after{opacity:1;transform:translateX(0);}
+  .hero-side .charge-list a:hover{color:#C41A22;padding-left:4px;}
+  .hero-side .charge-list a:hover::after{opacity:1;transform:translateX(3px);}
+
+  .eyebrow{
+    color:var(--moss);font-size:.95rem;margin:0 0 18px;
+  }
 
   /* Trust band */
   .trust{background:var(--paper-dim);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;}
@@ -329,7 +338,9 @@
   }
   @media (max-width:860px){
     .phone-link{display:none;}
-    .hero .grid{grid-template-columns:1fr;}
+    .hero{padding:72px 0 64px;}
+    .hero .grid{grid-template-columns:1fr;gap:40px;}
+    .hero-side{padding:26px 24px 28px;}
     .why-grid{grid-template-columns:1fr;}
     .cabinet .grid{grid-template-columns:1fr;}
     .contact .grid{grid-template-columns:1fr;}
@@ -397,8 +408,8 @@
 
   <section class="hero">
     <div class="wrap grid">
-      <div>
-        <p class="eyebrow">Consultant en immigration à Montréal</p>
+      <div class="hero-copy">
+        <span class="hero-bar" aria-hidden="true"></span>
         <h1>Votre vie au Canada commence par un dossier bien préparé.</h1>
         <p class="lede">ATL Canada accompagne les étudiants, travailleurs, familles et visiteurs à chaque étape de leur projet d'immigration — de l'évaluation initiale jusqu'à l'installation.</p>
         <div class="cta-row">
@@ -407,19 +418,15 @@
         </div>
       </div>
       <aside class="hero-side">
-        <img class="photo" src="https://images.pexels.com/photos/28930467/pexels-photo-28930467.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Vue aérienne de Montréal et du pont Jacques-Cartier" loading="lazy">
-        <p class="photo-cap">Montréal, où se trouve notre bureau principal</p>
-        <div class="body">
-          <h2>Nous prenons en charge</h2>
-          <ul class="charge-list">
-            <li><a href="#etudiants">Étudiants étrangers</a></li>
-            <li><a href="#travailleurs">Travailleurs temporaires</a></li>
-            <li><a href="#residence">Résidence permanente</a></li>
-            <li><a href="#parrainage">Parrainage familial</a></li>
-            <li><a href="#visiteurs">Visiteurs</a></li>
-          </ul>
-          <p class="credential">Membre identifié sous le numéro R712906 au Collège des consultants en immigration et citoyenneté (CCIC).</p>
-        </div>
+        <h2>Nous prenons en charge</h2>
+        <ul class="charge-list">
+          <li><a href="#etudiants">Étudiants étrangers</a></li>
+          <li><a href="#travailleurs">Travailleurs temporaires</a></li>
+          <li><a href="#residence">Résidence permanente</a></li>
+          <li><a href="#parrainage">Parrainage familial</a></li>
+          <li><a href="#visiteurs">Visiteurs</a></li>
+        </ul>
+        <p class="credential">Membre identifié sous le numéro R712906 au Collège des consultants en immigration et citoyenneté (CCIC).</p>
       </aside>
     </div>
   </section>
