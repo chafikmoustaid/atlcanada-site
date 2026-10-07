@@ -104,17 +104,6 @@
   .eyebrow{
     color:var(--moss);font-size:.95rem;margin:0 0 18px;
   }
-  .ccic-badge{
-    display:inline-flex;align-items:center;gap:14px;
-    background:#fff;border:1px solid var(--line);border-radius:20px;
-    padding:10px 24px 10px 10px;margin:0 0 26px;
-    box-shadow:0 2px 10px rgba(28,28,30,.05);
-  }
-  .ccic-badge img{display:block;border-radius:50%;flex-shrink:0;}
-  .ccic-badge span{font-size:.92rem;color:var(--ink-soft);line-height:1.6;}
-  .ccic-badge strong{color:var(--ink);font-weight:600;}
-  .ccic-badge a{color:var(--rust);font-size:.8rem;text-decoration:none;font-weight:600;}
-  .ccic-badge a:hover{text-decoration:underline;}
   .hero h1{
     font-size:clamp(2.4rem,5vw,3.6rem);font-weight:500;line-height:1.08;
     margin:0 0 28px;max-width:14ch;color:var(--ink);
@@ -159,6 +148,10 @@
   .trust-item{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--ink-soft);}
   .trust-item .dot{width:7px;height:7px;border-radius:50%;background:var(--rust);flex:none;}
   .trust-item strong{color:var(--ink);font-weight:600;}
+  .trust-ccic{gap:14px;}
+  .trust-ccic img{width:48px;height:48px;flex:none;}
+  .trust-ccic .verify{display:block;font-size:.8rem;color:var(--ink-soft);opacity:.85;text-decoration:underline;text-underline-offset:2px;}
+  .trust-ccic .verify:hover{color:var(--rust);opacity:1;}
 
   /* Section shell */
   section{padding:80px 0;}
@@ -405,13 +398,7 @@
   <section class="hero">
     <div class="wrap grid">
       <div>
-        <div class="ccic-badge">
-          <img src="assets/ccic-logo.png" alt="Collège des consultants en immigration et en citoyenneté (CCIC)" width="52" height="52">
-          <span>
-            Consultant en immigration — membre CCIC <strong>nº R712906</strong><br>
-            <a href="https://registre.college-ic.ca/" target="_blank" rel="noopener">Vérifier le statut auprès du Collège →</a>
-          </span>
-        </div>
+        <p class="eyebrow">Consultant en immigration à Montréal</p>
         <h1>Votre vie au Canada commence par un dossier bien préparé.</h1>
         <p class="lede">ATL Canada accompagne les étudiants, travailleurs, familles et visiteurs à chaque étape de leur projet d'immigration — de l'évaluation initiale jusqu'à l'installation.</p>
         <div class="cta-row">
@@ -439,9 +426,12 @@
 
   <section class="trust">
     <div class="wrap">
-      <div class="trust-item"><span class="dot"></span> <strong>Membre CCIC</strong>&nbsp;— numéro R712906</div>
-      <div class="trust-item"><span class="dot"></span> Bureaux à <strong>Montréal</strong> et <strong>Casablanca</strong></div>
-      <div class="trust-item"><span class="dot"></span> Service en <strong>français</strong>, <strong>anglais</strong> et <strong>arabe</strong></div>
+      <div class="trust-item trust-ccic">
+        <img src="assets/ccic-logo.png" alt="Collège des consultants en immigration et en citoyenneté (CCIC)" width="48" height="48">
+        <span><strong>Membre CCIC</strong>&nbsp;— numéro R712906<a class="verify" href="https://registre.college-ic.ca/" target="_blank" rel="noopener">Vérifier le statut auprès du Collège</a></span>
+      </div>
+      <div class="trust-item"><span class="dot"></span><span>Bureaux à <strong>Montréal</strong> et <strong>Casablanca</strong></span></div>
+      <div class="trust-item"><span class="dot"></span><span>Service en <strong>français</strong>, <strong>anglais</strong> et <strong>arabe</strong></span></div>
     </div>
   </section>
 
