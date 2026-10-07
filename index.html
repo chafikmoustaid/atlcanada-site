@@ -271,24 +271,25 @@
   .social-btn svg{width:16px;height:16px;stroke:#F4EFE4;fill:none;}
 
   /* Cabinet */
-  .cabinet .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  .cabinet .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:stretch;}
   .quote-panel{
-    color:var(--paper);padding:44px 36px;position:relative;overflow:hidden;
-    min-height:320px;display:flex;flex-direction:column;justify-content:flex-end;
-  }
-  .quote-panel img{
-    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;
+    background:linear-gradient(160deg,#16233D 0%,#0E1A33 100%);color:#fff;
+    border-top:4px solid #E1232B;padding:52px 44px 44px;position:relative;overflow:hidden;
+    min-height:340px;display:flex;flex-direction:column;justify-content:center;
   }
   .quote-panel::before{
-    content:"";position:absolute;inset:0;z-index:0;
-    background:linear-gradient(180deg,rgba(22,35,61,.55) 0%,rgba(22,35,61,.92) 100%);
+    content:"\201C";position:absolute;top:-10px;left:28px;font-family:'Lora',serif;
+    font-size:11rem;line-height:1;color:#E1232B;opacity:.9;
   }
   .quote-panel p, .quote-panel span{position:relative;z-index:1;}
   .quote-panel p{
-    font-family:'Lora',serif;font-style:italic;font-size:1.4rem;line-height:1.4;margin:0 0 20px;
+    font-family:'Lora',serif;font-style:italic;font-size:1.45rem;line-height:1.5;margin:48px 0 26px;color:#fff;
   }
-  .quote-panel span{color:#9DB29F;font-size:.9rem;}
+  .quote-panel span{color:#fff;font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;display:flex;align-items:center;gap:12px;}
+  .quote-panel span::before{content:"";width:28px;height:3px;background:#E1232B;}
   .cabinet-copy p{color:var(--ink-soft);}
+  .cabinet-copy p.eyebrow{color:#E1232B;}
+  .accordion-item summary{font-weight:600;color:var(--ink);}
   .accordion{margin-top:28px;border-top:1px solid var(--line);}
   .accordion-item{border-bottom:1px solid var(--line);}
   .accordion-item summary{
@@ -570,13 +571,12 @@
   <section class="cabinet" id="cabinet">
     <div class="wrap grid">
       <div class="quote-panel reveal">
-        <img src="https://images.pexels.com/photos/36733315/pexels-photo-36733315.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Consultation professionnelle en cabinet" loading="lazy">
         <p>« Nous sommes guidés par la conviction que l'immigration est une force positive pour le Canada et pour les individus qui choisissent d'y vivre. »</p>
         <span>Notre mission, ATL Canada</span>
       </div>
       <div class="cabinet-copy reveal">
         <p class="eyebrow">Notre cabinet</p>
-        <h2 style="font-size:1.9rem;font-weight:500;margin:0 0 18px;">Des conseils personnalisés, à chaque étape</h2>
+        <h2 style="font-size:1.9rem;font-weight:600;margin:0 0 18px;">Des conseils personnalisés, à chaque étape</h2>
         <p>Notre mission est d'aider les personnes qui souhaitent immigrer à réaliser leurs projets, avec des services de conseil professionnels, éthiques et personnalisés. Notre équipe vous guide à travers chaque étape, en commençant par une entrevue d'évaluation préliminaire qui permet d'examiner votre profil et de déterminer votre éligibilité aux différents programmes d'immigration canadiens.</p>
 
         <div class="accordion">
