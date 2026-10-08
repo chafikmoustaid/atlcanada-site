@@ -37,4 +37,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://atlcanada.com/sitemap.xml
+Sitemap: https://www.atlcanada.com/sitemap.xml

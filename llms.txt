@@ -13,9 +13,9 @@
 - Seuls les consultants réglementés (CRIC/RCIC), avocats et notaires du Québec peuvent représenter un client auprès d'IRCC contre rémunération.
 
 ## Pages
-- [Accueil](https://atlcanada.com/): présentation des services et FAQ
-- [Immigrer au Canada depuis le Maroc (français)](https://atlcanada.com/maroc/): démarches, FAQ pour candidats marocains
-- [الهجرة إلى كندا من المغرب (العربية)](https://atlcanada.com/ar/): نفس المحتوى بالعربية
+- [Accueil](https://www.atlcanada.com/): présentation des services et FAQ
+- [Immigrer au Canada depuis le Maroc (français)](https://www.atlcanada.com/maroc/): démarches, FAQ pour candidats marocains
+- [الهجرة إلى كندا من المغرب (العربية)](https://www.atlcanada.com/ar/): نفس المحتوى بالعربية
 
 ## Liens
 - Facebook : https://www.facebook.com/atlcanada
