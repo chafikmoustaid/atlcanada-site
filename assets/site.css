@@ -37,6 +37,16 @@
   .topbar a:hover{text-decoration:underline;}
   .topbar svg{width:14px;height:14px;stroke:#FF5A5F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;}
   .topbar .sep{opacity:.35;}
+  .topbar-left a{display:inline;}
+  .topbar-left a:hover strong{text-decoration:underline;}
+  .topbar-right{gap:26px;}
+  .tb-phone{display:inline-flex;align-items:center;gap:10px;}
+  .topbar a.tb-wa{display:inline-flex;}
+  .topbar .tb-wa svg{width:17px;height:17px;fill:#25D366;stroke:none;}
+  .topbar .tb-phone a:hover{text-decoration:underline;}
+  .brand{flex:none;}
+  .brand img{max-width:none;}
+  @media (max-width:640px){.topbar .wrap{flex-wrap:wrap;justify-content:center;gap:6px 18px;}.topbar-right{gap:14px;flex-wrap:wrap;justify-content:center;}.tb-phone{gap:7px;}}
 
   /* Header */
   header.site{
