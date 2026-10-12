@@ -22,3 +22,10 @@
 .news-sources a{color:#B5342A}
 .news-disclaimer{font-size:.9rem;color:var(--ink-soft);max-width:80ch;margin-top:30px}
 [dir=rtl] .news-card h3,[dir=rtl] .news-item h2{font-family:'Cairo',sans-serif;line-height:1.5}
+
+/* Lien Actualités mis en valeur dans le menu */
+nav.primary a.nav-news,.mobile-nav a.nav-news{display:inline-flex;align-items:center;gap:8px;background:#E1232B;color:#fff;font-weight:700;padding:7px 14px;border-radius:999px;border-bottom:0;box-shadow:0 2px 10px rgba(225,35,43,.35)}
+nav.primary a.nav-news:hover,nav.primary a.nav-news:focus-visible{background:#c91c24;color:#fff;border-bottom:0}
+.live-dot{width:9px;height:9px;border-radius:50%;background:#fff;display:inline-block;animation:livepulse 1.6s infinite}
+@keyframes livepulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.8)}70%{box-shadow:0 0 0 8px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+@media (prefers-reduced-motion:reduce){.live-dot{animation:none}}
