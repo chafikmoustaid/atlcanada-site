@@ -1,0 +1,59 @@
+[
+  {
+    "id": "express-entree-metiers-1er-octobre-2026",
+    "date": "2026-10-01",
+    "tag_fr": "Entrée express", "tag_ar": "الدخول السريع",
+    "title_fr": "Entrée express : 3 500 invitations pour les métiers spécialisés le 1er octobre",
+    "title_ar": "الدخول السريع: 3500 دعوة لفئة المهن الحرفية المتخصصة في 1 أكتوبر",
+    "summary_fr": "Le premier tirage d'octobre 2026 a invité 3 500 candidats de la catégorie « métiers spécialisés », avec un score CRS minimal de 476.",
+    "summary_ar": "وجّه أول سحب في أكتوبر 2026 دعوات إلى 3500 مرشح من فئة «المهن الحرفية المتخصصة»، بحد أدنى 476 نقطة في نظام ترتيب الشامل (CRS).",
+    "impact_fr": "Les tirages par catégorie visent des profils précis (métiers, santé, sciences et technologies, français, etc.). Vérifier à quelle catégorie on est admissible fait partie de l'évaluation d'un dossier.",
+    "impact_ar": "تستهدف السحوبات حسب الفئة ملفات محددة (المهن الحرفية، الصحة، العلوم والتكنولوجيا، الفرنسية…). ومعرفة الفئة التي يؤهلك لها ملفك جزء من تقييمه.",
+    "sources": [
+      {"name": "Immigration News Canada", "url": "https://immigrationnewscanada.ca/next-express-entry-draw-in-october-2026/"},
+      {"name": "ITCI Land (résumé des tirages d'octobre 2026)", "url": "https://www.itciland.com/fa/draws/monthly/2026/10"}
+    ]
+  },
+  {
+    "id": "residence-permanente-admissions-janvier-juillet-2026",
+    "date": "2026-10-08",
+    "tag_fr": "Statistiques", "tag_ar": "إحصائيات",
+    "title_fr": "Résidence permanente : moins d'admissions en 2026, y compris pour les Marocains",
+    "title_ar": "الإقامة الدائمة: عدد أقل من القبولات في 2026، ومنها المغاربة",
+    "summary_fr": "Selon les données d'IRCC rapportées par Immigration News Canada, le Canada a accordé 222 625 résidences permanentes de janvier à juillet 2026, contre 246 580 un an plus tôt (−9,7 %). Pour les citoyens marocains : 3 145, contre 4 285 (−26,6 %).",
+    "summary_ar": "وفق بيانات وزارة الهجرة الكندية (IRCC) التي نقلها موقع Immigration News Canada، منحت كندا 222,625 إقامة دائمة من يناير إلى يوليو 2026 مقابل 246,580 قبل سنة، أي بانخفاض قدره 9.7%. أما للمواطنين المغاربة فكان العدد 3,145 مقابل 4,285، أي بانخفاض قدره 26.6%.",
+    "impact_fr": "Ces chiffres décrivent la période passée et ne prédisent pas l'issue d'un dossier individuel. Ils montrent surtout l'importance de choisir la bonne voie et de déposer un dossier solide.",
+    "impact_ar": "تصف هذه الأرقام فترة ماضية ولا تتنبأ بنتيجة ملف بعينه. وهي تذكّر خاصة بأهمية اختيار المسار المناسب وتقديم ملف متين.",
+    "sources": [
+      {"name": "Immigration News Canada (données IRCC)", "url": "https://immigrationnewscanada.ca/canada-granting-more-prs-these-countries/"}
+    ]
+  },
+  {
+    "id": "cour-federale-fausse-declaration-solde-bancaire-octobre-2026",
+    "date": "2026-10-07",
+    "tag_fr": "Décisions de justice", "tag_ar": "أحكام قضائية",
+    "title_fr": "Cour fédérale : l'agent doit prévenir avant de douter de l'authenticité d'un document",
+    "title_ar": "المحكمة الفدرالية: على الموظف إخطار الطالب قبل التشكيك في صحة وثيقة",
+    "summary_fr": "Dans deux décisions rendues le 1er octobre 2026, la Cour fédérale a annulé une conclusion de fausse déclaration (interdiction de territoire de cinq ans) et un refus de permis fondé sur un solde bancaire jugé « gonflé », car les demandeurs n'avaient pas pu répondre aux doutes de l'agent.",
+    "summary_ar": "في حكمين صدرا في 1 أكتوبر 2026، ألغت المحكمة الفدرالية الكندية قرارًا بثبوت تقديم تصريح كاذب (منع من الدخول لخمس سنوات)، وقرار رفض تصريح بسبب رصيد بنكي اعتُبر «مضخّمًا»، لأن أصحاب الطلبات لم يُتح لهم الرد على شكوك الموظف.",
+    "impact_fr": "Gardez la trace de l'origine de tout dépôt important sur vos comptes et répondez point par point à toute lettre d'équité procédurale. Une décision annulée ne garantit pas l'approbation : l'agent peut rendre une nouvelle décision.",
+    "impact_ar": "احتفظ بما يثبت مصدر أي إيداع كبير في حساباتك، وأجب نقطة بنقطة عن أي رسالة تتعلق بالإنصاف الإجرائي. إلغاء القرار لا يضمن القبول، فقد يصدر الموظف قرارًا جديدًا.",
+    "sources": [
+      {"name": "Immigration News Canada", "url": "https://immigrationnewscanada.ca/canada-court-overturns-5-year-immigration-ban/"}
+    ]
+  },
+  {
+    "id": "entree-express-categories-2026-francais",
+    "date": "2026-02-19",
+    "tag_fr": "Rappel", "tag_ar": "تذكير",
+    "title_fr": "Entrée express 2026 : le français reste une catégorie prioritaire",
+    "title_ar": "الدخول السريع 2026: الفرنسية ما تزال فئة ذات أولوية",
+    "summary_fr": "Selon l'analyse du cabinet Fragomen (19 février 2026), les catégories 2026 comprennent notamment la maîtrise du français, la santé, l'éducation, les sciences et technologies et les métiers, ainsi que de nouvelles catégories (médecins, chercheurs, cadres supérieurs, transport, militaires). L'expérience de travail minimale des catégories renouvelées passe de six à douze mois.",
+    "summary_ar": "وفق تحليل مكتب Fragomen (19 فبراير 2026)، تشمل فئات 2026 إتقان اللغة الفرنسية والصحة والتعليم والعلوم والتكنولوجيا والمهن الحرفية، إضافة إلى فئات جديدة (الأطباء والباحثون والمديرون العامون والنقل والعسكريون). وقد ارتفع الحد الأدنى للخبرة المهنية في الفئات المجددة من ستة أشهر إلى اثني عشر شهرًا.",
+    "impact_fr": "Pour un candidat francophone, le français peut être un atout, mais chaque catégorie a ses propres conditions : elles sont à vérifier sur le site officiel d'IRCC avant toute décision.",
+    "impact_ar": "قد تكون الفرنسية ميزة للمرشح الناطق بها، لكن لكل فئة شروطها الخاصة، ويجب التحقق منها في الموقع الرسمي لـ IRCC قبل أي قرار.",
+    "sources": [
+      {"name": "Fragomen", "url": "https://www.fragomen.com/insights/canada-updates-to-express-entry-category-based-selection-for-2026.html"}
+    ]
+  }
+]
