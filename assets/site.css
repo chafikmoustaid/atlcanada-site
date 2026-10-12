@@ -49,14 +49,15 @@
     padding:12px 24px;max-width:var(--max);margin:0 auto;gap:24px;
   }
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
-  .brand img{display:block;height:68px;width:auto;flex:none;}
+  .brand img{display:block;height:68px;width:auto;flex:none;max-width:none;}
+  .brand{flex:none;}
   .wordmark{
     font-family:'Lora',serif;font-weight:600;font-size:1.3rem;
     letter-spacing:.01em;text-decoration:none;color:var(--ink);
     white-space:nowrap;
   }
   .wordmark em{font-style:normal;color:var(--rust);}
-  nav.primary{display:flex;gap:30px;}
+  nav.primary{display:flex;gap:22px;}
   nav.primary a{
     white-space:nowrap;text-decoration:none;color:#E8EDF7;font-size:1rem;font-weight:500;
     padding:6px 2px;border-bottom:2px solid transparent;transition:color .15s ease,border-color .15s ease;
@@ -324,7 +325,7 @@
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem;
   }
 
-  @media (max-width:1020px){
+  @media (max-width:1240px){
     nav.primary{display:none;}
     .menu-toggle{display:flex;}
     .mobile-nav.is-open{
@@ -335,7 +336,6 @@
       padding:13px 0;text-decoration:none;color:#fff;font-size:1.02rem;font-weight:500;
       border-bottom:1px solid rgba(255,255,255,.12);
     }
-    .brand img{height:58px;}
   }
   @media (max-width:860px){
     .phone-link{display:none;}

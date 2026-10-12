@@ -45,9 +45,6 @@ else:
     idx = idx.replace(marker, section + '\n' + marker, 1)
 if 'news.css' not in idx:
     idx = idx.replace('</head>', '<link rel="stylesheet" href="/assets/news.css">\n</head>', 1)
-if 'href="#actualites"' not in idx:
-    idx = idx.replace('<a href="#cabinet">Notre cabinet</a>', '<a href="#actualites">Actualités</a>\n      <a href="#cabinet">Notre cabinet</a>')
-    idx = idx.replace('<li><a href="#services">Visiteurs</a></li>', '<li><a href="#services">Visiteurs</a></li>', 1)
 if 'href="/actualites/"' not in idx.split('<footer>')[1]:
     idx = idx.replace('<li><a href="/maroc/">Immigrer depuis le Maroc</a></li>', '<li><a href="/maroc/">Immigrer depuis le Maroc</a></li>\n          <li><a href="/actualites/">Actualités</a></li>', 1)
 open(R + 'index.html', 'w', encoding='utf-8').write(idx)
