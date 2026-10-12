@@ -109,7 +109,7 @@ for lang, p in T.items():
 <link href="{fonts}" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 <link rel="stylesheet" href="/assets/news.css">
-<style>.pg-hero{{background:linear-gradient(160deg,#0E1A32,#16233D);color:#E7ECF5;padding:60px 0 52px}}.pg-hero h1{{font-family:'Lora',serif;font-weight:600;font-size:clamp(2rem,4.4vw,3rem);line-height:1.15;margin:0 0 14px;color:#fff}}.pg-hero .lede{{font-size:1.1rem;max-width:62ch;margin:0;color:#D5DCEA}}.pg-hero .eyebrow{{color:#FF6B70}}.crumb{{font-size:.9rem;margin:0 0 12px;color:#AEB9CE}}.crumb a{{color:#fff}}[dir=rtl] body,[dir=rtl] .pg-hero h1{{font-family:'Cairo',sans-serif}}[dir=rtl] .pg-hero h1{{line-height:1.4}}</style>
+<style>.pg-hero{{position:relative;overflow:hidden;background:radial-gradient(900px 340px at 85% -10%,rgba(225,35,43,.28),transparent 60%),linear-gradient(160deg,#0E1A32,#1B2D52);color:#E7ECF5;padding:64px 0 58px;border-bottom:4px solid #E1232B}}.pg-hero h1{{font-family:'Lora',serif;font-weight:600;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.12;margin:0 0 16px;color:#fff}}.pg-hero .lede{{font-size:1.2rem;max-width:none;margin:0;color:#F1F4FA}}.pg-hero .eyebrow{{display:inline-flex;align-items:center;gap:10px;color:#fff;background:#E1232B;border-radius:999px;padding:6px 14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;margin:0 0 18px}}.pg-hero .eyebrow::before{{display:none}}.crumb{{font-size:.9rem;margin:0 0 18px;color:#AEB9CE}}.crumb a{{color:#fff}}</style>
 </head>
 <body>
 <header class="site">
@@ -122,6 +122,7 @@ for lang, p in T.items():
 <main>
 <section class="pg-hero"><div class="wrap">
   <p class="crumb"><a href="{'/ar/' if lang == 'ar' else '/'}">{p['home']}</a> › {p['crumb']}</p>
+  <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Mis à jour régulièrement</p>
   <h1>{p['h1']}</h1>
   <p class="lede">{p['lede']}</p>
 </div></section>
