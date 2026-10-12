@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Génère la section Actualités (accueil + pages /actualites/ et /ar/actualites/)
+"""Génère la section Actualités (accueil + page /actualites/, en français seulement)
 à partir de data/actualites.json, puis met à jour sitemap.xml et llms.txt.
 Usage : python3 tools/build_news.py   (depuis la racine du dépôt)"""
 import json, re, html, os
@@ -35,7 +35,7 @@ section = ('<!-- NEWS:START (généré par tools/build_news.py) -->\n'
   "        <h2>L'actualité de l'immigration au Canada</h2>\n"
   '        <p>Les nouvelles qui comptent pour les candidats, avec leurs sources officielles ou reconnues.</p>\n      </div>\n'
   '      <div class="news-grid">\n        ' + '\n        '.join(card(i, 'fr') for i in items[:3]) + '\n      </div>\n'
-  '      <p class="news-all reveal"><a href="/actualites/">Toutes les actualités →</a> · <a href="/ar/actualites/" lang="ar" hreflang="ar">الأخبار بالعربية</a></p>\n'
+  '      <p class="news-all reveal"><a href="/actualites/">Toutes les actualités →</a></p>\n'
   '    </div>\n  </section>\n  <!-- NEWS:END -->\n')
 if '<!-- NEWS:START' in idx:
     idx = re.sub(r'<!-- NEWS:START.*?<!-- NEWS:END -->\n', lambda m: section, idx, flags=re.S)
@@ -54,22 +54,14 @@ open(R + 'index.html', 'w', encoding='utf-8').write(idx)
 
 # ---------------- pages d'archive ----------------
 T = {
- 'fr': dict(path='actualites/', lang='fr-CA', loc='fr_CA', dir='ltr', other='/ar/actualites/',
+ 'fr': dict(path='actualites/', lang='fr-CA', loc='fr_CA', dir='ltr',
    title="Actualités de l'immigration au Canada | ATL Canada",
    desc="Les dernières nouvelles de l'immigration au Canada expliquées simplement : Entrée express, résidence permanente, permis d'études et de travail, décisions importantes. Sources vérifiables.",
    h1="L'actualité de l'immigration au Canada", lede="Les nouvelles qui comptent pour les candidats, expliquées simplement, avec leurs sources.",
    impact="Ce que cela signifie pour vous", src="Sources", home='Accueil', crumb='Actualités', cta='Prendre rendez-vous',
    note="Ces informations sont générales et ne constituent pas un avis juridique. Elles reposent sur les sources citées et peuvent changer : vérifiez toujours les règles en vigueur sur canada.ca. Pour une évaluation de votre situation, prenez rendez-vous.",
-   nav=[('/', 'Accueil'), ('/maroc/', 'Depuis le Maroc')], alt='<a href="/ar/actualites/" lang="ar" hreflang="ar">العربية</a>',
+   nav=[('/', 'Accueil'), ('/maroc/', 'Depuis le Maroc')],alt='',
    foot='Consultant réglementé en immigration canadienne (CRIC), permis R712906 du CCIC.'),
- 'ar': dict(path='ar/actualites/', lang='ar-MA', loc='ar_MA', dir='rtl', other='/actualites/',
-   title="أخبار الهجرة إلى كندا | ATL Canada",
-   desc="آخر أخبار الهجرة إلى كندا بشكل مبسّط: الدخول السريع، الإقامة الدائمة، تصاريح الدراسة والعمل، وأحكام مهمة. مع مصادر يمكن التحقق منها.",
-   h1="أخبار الهجرة إلى كندا", lede="الأخبار المهمة للمرشحين، مبسّطة، مع مصادرها.",
-   impact="ماذا يعني ذلك بالنسبة لك", src="المصادر", home='الرئيسية', crumb='الأخبار', cta='احجز موعدًا',
-   note="هذه المعلومات عامة ولا تشكّل استشارة قانونية. تستند إلى المصادر المذكورة وقد تتغير، فتحقق دائمًا من القواعد السارية في canada.ca. لتقييم وضعك الشخصي، احجز موعدًا.",
-   nav=[('/ar/', 'الهجرة من المغرب')], alt='<a href="/actualites/" lang="fr" hreflang="fr">Français</a>',
-   foot='مستشار هجرة كندي مرخَّص (CRIC)، ترخيص CCIC رقم R712906.'),
 }
 
 def article(it, p, lang):
@@ -104,7 +96,6 @@ for lang, p in T.items():
 <meta name="description" content="{e(p['desc'])}">
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="fr-CA" href="{SITE}/actualites/">
-<link rel="alternate" hreflang="ar-MA" href="{SITE}/ar/actualites/">
 <link rel="alternate" hreflang="x-default" href="{SITE}/actualites/">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <meta name="theme-color" content="#16233D">
@@ -147,13 +138,13 @@ for lang, p in T.items():
 # ---------------- sitemap + llms.txt ----------------
 last = items[0]['date']
 urls = [('/', '1.0', last), ('/maroc/', '0.9', '2026-10-09'), ('/ar/', '0.9', '2026-10-09'),
-        ('/actualites/', '0.8', last), ('/ar/actualites/', '0.8', last)]
+        ('/actualites/', '0.8', last) ]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
 for u, pr, lm in urls:
     sm += f'  <url>\n    <loc>{SITE}{u}</loc>\n    <lastmod>{lm}</lastmod>\n    <priority>{pr}</priority>\n  </url>\n'
 open(R + 'sitemap.xml', 'w').write(sm + '</urlset>\n')
 ll = open(R + 'llms.txt', encoding='utf-8').read()
 if '/actualites/' not in ll:
-    ll = ll.replace('\n## Liens', f"- [Actualités de l'immigration (français)]({SITE}/actualites/): nouvelles expliquées, avec sources\n- [أخبار الهجرة إلى كندا (العربية)]({SITE}/ar/actualites/): الأخبار بالعربية\n\n## Liens", 1)
+    ll = ll.replace('\n## Liens', f"- [Actualités de l'immigration (français)]({SITE}/actualites/): nouvelles expliquées, avec sources\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 print('ok', len(items), 'actualités')
