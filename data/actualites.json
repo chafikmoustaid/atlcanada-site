@@ -76,5 +76,41 @@
         "url": "https://immigrationnewscanada.ca/new-canada-immigration-updates-oct-2026/"
       }
     ]
+  },
+  {
+    "id": "express-entree-candidats-des-provinces-13-octobre-2026",
+    "date": "2026-10-13",
+    "tag_fr": "Entrée express",
+    "title_fr": "Entrée express : 752 invitations pour les candidats des provinces le 13 octobre",
+    "summary_fr": "Selon immigration.ca, la ronde du 13 octobre 2026 (n° 448) a invité 752 candidats du Programme des candidats des provinces (PCP), avec un score CRS minimal de 772. C'est la première ronde Entrée express depuis celle des métiers spécialisés du 1er octobre. Il s'agit d'un résultat de ronde publié, non d'un changement de règle ; la page officielle de canada.ca doit être consultée pour confirmer les chiffres.",
+    "impact_fr": "Ce type de ronde ne concerne que les candidats ayant déjà reçu une nomination provinciale, qui ajoute des points au score CRS. Elle ne dit rien sur les autres catégories. Chaque profil est différent et aucun résultat n'est garanti.",
+    "sources": [
+      {
+        "name": "immigration.ca (ronde du 13 octobre 2026)",
+        "url": "https://immigration.ca/canada-invites-752-provincial-nominees-express-entry-october-13-2026/"
+      },
+      {
+        "name": "IRCC, rondes d'invitations Entrée express (page officielle)",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html"
+      }
+    ]
+  },
+  {
+    "id": "plan-des-niveaux-2027-2029-attendu-novembre-2026",
+    "date": "2026-10-13",
+    "tag_fr": "Politique fédérale",
+    "title_fr": "Plan des niveaux d'immigration 2027–2029 : attendu d'ici le 1er novembre",
+    "summary_fr": "Selon IRCC.com, la ministre doit déposer le rapport annuel contenant les admissions prévues en résidence permanente au plus tard le 1er novembre, ou dans les 30 jours de séance suivants si la Chambre ne siège pas. À ce jour, aucune date ni aucun chiffre du futur plan n'ont été annoncés : il s'agit d'une échéance légale, pas d'une décision. Les règles actuelles restent en vigueur.",
+    "impact_fr": "Le plan fixera le cadre des prochaines années pour la résidence permanente et la résidence temporaire. Tant qu'il n'est pas déposé, rien ne change pour les dossiers en cours. Mieux vaut éviter toute prévision de chiffres, et chaque dossier doit être évalué individuellement.",
+    "sources": [
+      {
+        "name": "IRCC.com (site indépendant, non gouvernemental)",
+        "url": "https://ircc.com/news/canada-immigration-levels-plan-2027-2029-november-timeline"
+      },
+      {
+        "name": "Immigration News Canada (changements d'octobre 2026)",
+        "url": "https://immigrationnewscanada.ca/new-canada-immigration-updates-oct-2026/"
+      }
+    ]
   }
 ]
