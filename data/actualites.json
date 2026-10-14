@@ -112,5 +112,19 @@
         "url": "https://immigrationnewscanada.ca/new-canada-immigration-updates-oct-2026/"
       }
     ]
+  },
+  {
+    "id": "consultants-reglementes-nouveau-reglement-registre-public",
+    "date": "2026-10-14",
+    "tag_fr": "Consultants",
+    "title_fr": "Consultants en immigration : un règlement fédéral renforce l'encadrement",
+    "summary_fr": "Annoncé par IRCC le 6 mai 2026, le règlement renforce le traitement des plaintes, les sanctions et la transparence du Collège des consultants (CCIC). Son entrée en vigueur était annoncée pour le 15 juillet 2026 ; les exigences accrues du registre public s'appliquent à partir d'avril 2027, et les modalités du fonds d'indemnisation restent à préciser.",
+    "impact_fr": "Avant de payer un représentant, vérifiez qu'il figure au registre public du Collège. Cette vérification ne garantit aucun résultat pour votre dossier, mais réduit le risque de fraude.",
+    "sources": [
+      {
+        "name": "IRCC (canada.ca)",
+        "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/05/le-canada-renforce-la-reglementation-sur-les-consultants-en-immigration-et-en-citoyennete.html"
+      }
+    ]
   }
 ]
