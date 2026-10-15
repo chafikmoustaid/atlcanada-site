@@ -144,5 +144,27 @@
         "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/acts-regulations/forward-regulatory-plan/list/modernize-federal-high-skilled.html"
       }
     ]
+  },
+  {
+    "id": "express-entree-experience-canadienne-15-octobre-2026",
+    "date": "2026-10-15",
+    "tag_fr": "Entrée express",
+    "title_fr": "Entrée express : 2 500 invitations pour l'Expérience canadienne le 15 octobre",
+    "summary_fr": "Selon les suivis de tirages de moving2canada.com et de vgis.ca, la ronde du 15 octobre 2026 (n° 449) a invité 2 500 candidats de la Catégorie de l'expérience canadienne (CEC), avec un score CRS minimal de 519. En cas d'égalité au score minimal, ce sont les candidats ayant soumis leur profil avant le 21 septembre 2026 à 19 h 00 (UTC) qui ont été invités. Il s'agit d'un résultat de ronde publié, non d'un changement de règle ; la page officielle de canada.ca doit être consultée pour confirmer les chiffres.",
+    "impact_fr": "Cette ronde ne concerne que les candidats admissibles à la CEC, c'est-à-dire ayant de l'expérience de travail qualifiée au Canada. Elle ne dit rien sur les autres catégories ni sur les tirages à venir. Chaque profil est différent et aucun résultat n'est garanti.",
+    "sources": [
+      {
+        "name": "moving2canada.com (dernier tirage Entrée express)",
+        "url": "https://moving2canada.com/express-entry-draw/"
+      },
+      {
+        "name": "vgis.ca (tirage CEC du 15 octobre 2026)",
+        "url": "https://vgis.ca/express-entry-cec-draw-october-15-2026/"
+      },
+      {
+        "name": "IRCC, rondes d'invitations Entrée express (page officielle)",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html"
+      }
+    ]
   }
 ]
