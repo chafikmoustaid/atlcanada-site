@@ -166,5 +166,23 @@
         "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html"
       }
     ]
+  },
+  {
+    "id": "delais-traitement-ircc-octobre-2026",
+    "date": "2026-10-16",
+    "tag_fr": "Délais de traitement",
+    "title_fr": "Délais IRCC d'octobre 2026 : résidence permanente et parrainage conjoint stables",
+    "summary_fr": "Selon la mise à jour d'IRCC du 9 octobre 2026, rapportée par la presse spécialisée, les délais de traitement affichés sont stables : Expérience canadienne 6 mois, Travailleurs qualifiés (fédéral) 7 mois, candidats des provinces via Entrée express 7 mois. Pour le parrainage d'un conjoint situé hors du Canada (hors Québec), le délai affiché est de 18 mois. Il s'agit d'estimations publiées par IRCC, pas de décisions ni de garanties.",
+    "impact_fr": "Ces délais sont des moyennes et varient selon chaque dossier : ils ne prédisent pas la durée du vôtre. Avant de planifier un projet (dates de départ, démarches de travail ou d'école), consultez l'outil officiel d'IRCC et faites vérifier votre situation par un professionnel.",
+    "sources": [
+      {
+        "name": "CIC News : délais de résidence permanente et de citoyenneté stables (15 oct. 2026)",
+        "url": "https://cicnews.com/2026/10/wait-times-plateau-for-permanent-residence-and-citizenship-applicants-1081434.html"
+      },
+      {
+        "name": "Immigration News Canada : délais de traitement IRCC d'octobre 2026",
+        "url": "https://immigrationnewscanada.ca/new-ircc-processing-times-october-2026/"
+      }
+    ]
   }
 ]
