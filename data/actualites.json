@@ -202,5 +202,27 @@
         "url": "https://www.cicnews.com/2026/10/2026-express-entry-reforms-1081487.html"
       }
     ]
+  },
+  {
+    "id": "express-entree-tirage-francais-16-octobre-2026",
+    "date": "2026-10-16",
+    "tag_fr": "Entrée express",
+    "title_fr": "Entrée express : 5 000 invitations pour les francophones, seuil CRS à 435",
+    "summary_fr": "Décision en vigueur (tirage effectué). Le 16 octobre 2026, un tirage de la catégorie « compétence en français » a invité 5 000 candidats, avec un score CRS minimal de 435, selon la presse spécialisée. C'est le seuil le plus élevé des tirages français de 2026, après un écart de près de deux mois depuis le précédent tirage (19 août, seuil de 382). La catégorie exige au moins NCLC 7 dans les quatre compétences en français.",
+    "impact_fr": "Le français reste un atout, mais les seuils changent d'un tirage à l'autre et une invitation n'est jamais garantie. Un bon niveau de français peut aussi ajouter des points dans les autres tirages. Faire évaluer son profil avant de déposer permet de mieux comprendre sa situation.",
+    "sources": [
+      {
+        "name": "Moving2Canada",
+        "url": "https://moving2canada.com/2026/10/5000-candidates-invited-in-french-express-entry-draw/"
+      },
+      {
+        "name": "Immigration.ca",
+        "url": "https://immigration.ca/canada-invites-5000-french-speaking-candidates-express-entry-crs-435-october-16-2026/"
+      },
+      {
+        "name": "IRCC (page officielle des rondes d'invitations Entrée express)",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html"
+      }
+    ]
   }
 ]
