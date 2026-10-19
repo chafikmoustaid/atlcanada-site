@@ -224,5 +224,23 @@
         "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html"
       }
     ]
+  },
+  {
+    "id": "travailleurs-etudes-six-mois-sans-permis-etudes",
+    "date": "2026-10-19",
+    "tag_fr": "Permis de travail",
+    "title_fr": "Travailleurs temporaires : études de 6 mois ou moins sans permis d'études",
+    "summary_fr": "Mesure en vigueur : selon IRCC, depuis le 4 septembre 2026, les titulaires d'un permis de travail valide peuvent suivre un programme d'au plus 6 mois sans permis d'études. L'autorisation dure jusqu'à 6 mois ou jusqu'à l'expiration du permis de travail, selon la première éventualité. Elle ne s'applique pas si le permis expire pendant les études.",
+    "impact_fr": "Cette mesure concerne les personnes qui ont déjà un permis de travail valide au Canada, pas les candidats qui déposent une demande depuis le Maroc. L'expérience acquise pendant des études à temps plein ne compte pas pour l'Expérience canadienne ni pour les points d'expérience d'Entrée express. Chaque situation est différente : une évaluation personnalisée est recommandée.",
+    "sources": [
+      {
+        "name": "IRCC : travailleurs et études sans permis d'études",
+        "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/services/travailler-canada/instructions-speciales/travailleurs-etudes-sans-permis-etudes.html"
+      },
+      {
+        "name": "Immigrant Québec : dispense pour études de courte durée",
+        "url": "https://immigrantquebec.com/fr/actualites/dispense-tet-etude-courte-duree/"
+      }
+    ]
   }
 ]
