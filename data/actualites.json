@@ -242,5 +242,31 @@
         "url": "https://immigrantquebec.com/fr/actualites/dispense-tet-etude-courte-duree/"
       }
     ]
+  },
+  {
+    "id": "alberta-referendum-immigration-19-octobre-2026",
+    "date": "2026-10-20",
+    "tag_fr": "Politique canadienne",
+    "title_fr": "Alberta : le référendum du 19 octobre favorise des restrictions pour les résidents non permanents",
+    "summary_fr": "Selon les résultats non officiels (environ 83 % des bureaux de vote dépouillés), les Albertains ont voté oui aux quatre questions sur l'immigration : plus de contrôle provincial (55,3 %), programmes provinciaux réservés aux citoyens, résidents permanents et statuts approuvés par l'Alberta (56,7 %), 12 mois de résidence pour les résidents non permanents avant l'accès au soutien social (58,3 %) et des frais de santé et d'éducation pour eux (57,3 %). À la question sur la séparation, l'option « rester dans le Canada » l'emporte avec environ 75,5 %. Ce référendum est non contraignant, et les résultats officiels sont attendus le 29 octobre.",
+    "impact_fr": "Décision non en vigueur : le référendum ne change aucune règle à lui seul, et l'immigration permanente (Entrée express, parrainage, permis d'études et de travail) reste de compétence fédérale. Si le gouvernement de l'Alberta donne suite, les étudiants et travailleurs temporaires installés en Alberta pourraient voir leur accès à certains services provinciaux et leurs coûts changer. Si l'Alberta fait partie de votre projet, il est utile d'en tenir compte et de vérifier l'évolution des annonces officielles.",
+    "sources": [
+      {
+        "name": "Moving2Canada : résultats du référendum de l'Alberta (20 oct. 2026, article d'opinion)",
+        "url": "https://moving2canada.com/2026/10/albertas-referendum-results-anti-immigrant-policies/"
+      },
+      {
+        "name": "Poliwave : résultats non officiels du référendum de l'Alberta",
+        "url": "https://www.poliwave.com/ca/ab/live/referendum-2026"
+      },
+      {
+        "name": "CBC : la première ministre Smith s'adresse à la province après la victoire projetée de l'option « rester »",
+        "url": "https://www.cbc.ca/news/canada/edmonton/livestory/alberta-referendum-results-live-updates-separatism-october-19-2026-9.7387777"
+      },
+      {
+        "name": "Wikipédia : référendums de 2026 en Alberta (liste des questions)",
+        "url": "https://en.wikipedia.org/wiki/2026_Alberta_referendums"
+      }
+    ]
   }
 ]
