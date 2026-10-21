@@ -190,8 +190,8 @@
     "date": "2026-10-16",
     "tag_fr": "Entrée express",
     "title_fr": "Entrée express : points pour les professions à salaire élevé et fin de l'EIMT pour les offres admissibles",
-    "summary_fr": "Annonce officielle d'IRCC du 16 octobre 2026, avec entrée en vigueur prévue le 3 novembre 2026 (ce n'est donc pas encore en vigueur). Des points CRS supplémentaires seront accordés aux candidats ayant une expérience de travail canadienne admissible ou une offre d'emploi admissible dans une profession à salaire élevé. Une EIMT ne sera plus exigée pour que l'offre donne droit à ces points ni pour le Programme fédéral des travailleurs qualifiés et le Programme fédéral des métiers spécialisés. Les profils seront recalculés automatiquement, ce qui peut suspendre les tirages jusqu'à deux semaines.",
-    "impact_fr": "Si vous avez un profil Entrée express ou une offre d'emploi, votre score pourrait changer, mais cela dépend de votre profession et de votre situation. Les offres d'emploi doivent être mises à jour dans le profil avant le 3 novembre. Aucun résultat n'est garanti : faites vérifier votre dossier avant toute décision.",
+    "summary_fr": "Annonce officielle d'IRCC du 16 octobre 2026, avec entrée en vigueur prévue le 3 novembre 2026 (ce n'est donc pas encore en vigueur). Selon la presse spécialisée, une offre d'emploi dans une profession à salaire élevé donnerait 50, 70 ou 100 points CRS (selon que le salaire médian de la profession atteint au moins 1,3, 1,5 ou 2 fois le salaire médian canadien). Une expérience de travail canadienne d'au moins 12 mois dans une telle profession donnerait 20, 40 ou 70 points ; les deux voies ne s'additionnent pas. Une EIMT ne serait plus exigée pour que l'offre donne droit à ces points ni pour le Programme fédéral des travailleurs qualifiés et le Programme fédéral des métiers spécialisés, mais l'agent vérifie toujours que l'offre est authentique. Les profils seront recalculés automatiquement, ce qui peut suspendre les tirages jusqu'à deux semaines.",
+    "impact_fr": "Si vous avez un profil Entrée express ou une offre d'emploi, votre score pourrait changer, mais cela dépend de votre profession (la liste officielle est publiée par IRCC) et de votre situation. Les offres d'emploi doivent être mises à jour dans le profil avant le 3 novembre. Un score plus élevé ne garantit pas une invitation. Méfiez-vous des fausses offres d'emploi vendues : une offre doit être réelle, et il ne faut jamais inventer de données d'EIMT dans un formulaire. Faites vérifier votre dossier avant toute décision.",
     "sources": [
       {
         "name": "IRCC (canada.ca) : Canada refocusing Express Entry on top talent that drives economic growth",
@@ -200,6 +200,14 @@
       {
         "name": "CIC News : Express Entry reforms (16 oct. 2026)",
         "url": "https://www.cicnews.com/2026/10/2026-express-entry-reforms-1081487.html"
+      },
+      {
+        "name": "HR Reporter : No LMIA, up to 100 points, Express Entry changes",
+        "url": "https://www.hrreporter.com/focus-areas/recruitment-and-staffing/no-lmia-up-to-100-points-express-entry-changes/395035"
+      },
+      {
+        "name": "Immigration News Canada : Express Entry changes, 3 novembre 2026",
+        "url": "https://immigrationnewscanada.ca/new-express-entry-changes-november-2026/"
       }
     ]
   },
