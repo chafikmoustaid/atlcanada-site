@@ -268,5 +268,27 @@
         "url": "https://en.wikipedia.org/wiki/2026_Alberta_referendums"
       }
     ]
+  },
+  {
+    "id": "quebec-peq-fermeture-31-octobre-2026-promesses-pq",
+    "date": "2026-10-21",
+    "tag_fr": "Québec",
+    "title_fr": "Québec : le premier volet du PEQ reçoit des demandes jusqu'au 31 octobre 2026",
+    "summary_fr": "Décision en vigueur : selon Québec, le PEQ est rouvert pour deux ans (du 2 juillet 2026 au 2 juillet 2028), mais les demandes de sélection permanente sont reçues du 2 juillet au 31 octobre 2026. Sont visés les diplômés du Québec et les travailleurs temporaires ayant au moins deux ans d'expérience au Québec (CNP 0 à 3), conditions remplies au 19 novembre 2025. Promesses seulement : le Parti québécois, élu le 5 octobre, propose d'abaisser l'immigration permanente à environ 35 000 par an et de réduire de moitié les résidents temporaires. Aucune règle détaillée n'est publiée et la suite du PEQ n'est pas tranchée.",
+    "impact_fr": "Si vous êtes déjà au Québec et que vous remplissez les conditions du PEQ, l'échéance du 31 octobre est à vérifier sans attendre avec une source officielle. Pour les candidats qui sont encore au Maroc, ces mesures ne s'appliquent pas directement; les options fédérales, comme l'Entrée express, restent à étudier. Chaque situation est différente.",
+    "sources": [
+      {
+        "name": "Gouvernement du Québec — Programme de l'expérience québécoise (PEQ)",
+        "url": "https://www.quebec.ca/immigration/permanente/travailleurs-qualifies/programme-experience-quebecoise"
+      },
+      {
+        "name": "Moving2Canada — Le PQ remporte les élections : ce que cela change pour l'immigration et le PEQ",
+        "url": "https://moving2canada.com/2026/10/pq-wins-quebec-election-immigration-peq/"
+      },
+      {
+        "name": "Immigrant Québec — Bulletin de l'immigration, octobre 2026",
+        "url": "https://immigrantquebec.com/fr/actualites/bulletin-de-limmigration-octobre-2026/"
+      }
+    ]
   }
 ]
