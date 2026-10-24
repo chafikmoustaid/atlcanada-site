@@ -63,9 +63,11 @@ T = {
 
 def article(it, p, lang):
     srcs = ' · '.join(f'<a href="{e(s["url"])}" rel="noopener" target="_blank">{e(s["name"])}</a>' for s in it['sources'])
+    figs = ''.join(f'<figure class="news-figure"><img src="{e(v["src"])}" alt="{e(v["alt_"+lang])}" width="{v["width"]}" height="{v["height"]}" loading="lazy">'
+                   f'<figcaption>{e(v["caption_"+lang])}</figcaption></figure>' for v in it.get('visuels', []))
     return (f'<article class="news-item" id="{it["id"]}"><p class="news-meta"><span class="news-tag">{e(it["tag_"+lang])}</span>'
             f'<time datetime="{it["date"]}">{fdate(it["date"], lang)}</time></p>'
-            f'<h2>{e(it["title_"+lang])}</h2><p>{e(it["summary_"+lang])}</p>'
+            f'<h2>{e(it["title_"+lang])}</h2><p>{e(it["summary_"+lang])}</p>{figs}'
             f'<div class="news-impact"><strong>{p["impact"]}</strong>{e(it["impact_"+lang])}</div>'
             f'<p class="news-sources">{p["src"]} : {srcs}</p></article>')
 
@@ -81,7 +83,7 @@ for lang, p in T.items():
             {"@type": "ListItem", "position": n + 1, "item": {"@type": "NewsArticle", "headline": it['title_'+lang], "datePublished": it['date'],
               "inLanguage": p['lang'], "url": f'{url}#{it["id"]}', "description": it['summary_'+lang],
               "author": {"@id": SITE + '/#organization'}, "publisher": {"@id": SITE + '/#organization'},
-              "citation": [s['url'] for s in it['sources']], "image": OG}} for n, it in enumerate(items)]}]}
+              "citation": [s['url'] for s in it['sources']], "image": (SITE + it["visuels"][0]["src"]) if it.get("visuels") else OG}} for n, it in enumerate(items)]}]}
     nav = ''.join(f'<a href="{h}">{t}</a>' for h, t in p['nav'])
     fonts = 'https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap'
     page = f'''<!doctype html>
