@@ -33,7 +33,7 @@ EXTRA_CSS = """<style>
 </style>
 """
 
-LAW = "Les informations de cette page sont générales et ne remplacent pas une évaluation personnalisée. Les règles d'immigration changent souvent : contactez-nous ou appelez-nous au +1 514 295 6635 pour une évaluation de votre situation. Aucun résultat n'est garanti."
+LAW = "Les informations de cette page sont générales et ne remplacent pas une évaluation personnalisée. Les règles d'immigration changent souvent : contactez-nous ou appelez-nous pour une évaluation de votre situation. Aucun résultat n'est garanti."
 
 def table(headers, rows):
     th = ''.join(f'<th scope="col">{e(h)}</th>' for h in headers)

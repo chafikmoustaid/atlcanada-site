@@ -16,9 +16,6 @@ def line(text=NUM, lang='fr'):
             f'<a class="wa" href="{WA}" target="_blank" rel="noopener" aria-label="{lab}" title="{lab}">{WAI}</a></span>')
 
 def fix(t):
-    # P5 : numéro dans la carte Casablanca
-    t = re.sub(r'(<h3>(?:Casablanca|الدار البيضاء)</h3><p dir="ltr" style="text-align:(left|right)">325 Emile Zola, Casablanca, Maroc</p>)(</div>)',
-               lambda m: m.group(1) + f'<p dir="ltr" style="text-align:{m.group(2)}">' + line() + '</p>' + m.group(3), t)
     # P1 : boutons « Appeler »
     # P1 : boutons « Appeler »
     t = re.sub(r'<a class="(btn [^"]*)" href="tel:\+15142956635">(?!<svg)(.*?)</a>(?!<a class="btn btn-wa")',
