@@ -1,0 +1,56 @@
+/* Icônes de contact : pastilles rondes aux couleurs des marques, bouton flottant */
+:root{--wa:#25D366;--wa-dark:#1EBE5A;--tel:#E1232B;--fb:#1877F2}
+/* Barre du haut */
+.topbar .tb-phone{gap:8px}
+.topbar .tb-phone a:first-child{display:inline-flex;align-items:center;gap:8px;font-weight:600}
+.topbar .tb-phone a:first-child svg{width:26px;height:26px;padding:6px;box-sizing:border-box;border-radius:50%;background:var(--tel);stroke:#fff;fill:none;stroke-width:2;flex:none}
+.topbar a.tb-wa{width:26px;height:26px;border-radius:50%;background:var(--wa);align-items:center;justify-content:center}
+.topbar .tb-wa svg{width:15px;height:15px;fill:#fff;stroke:none}
+.topbar a.tb-wa:hover{background:var(--wa-dark)}
+/* Numéros dans le texte */
+.tel-line{gap:10px}
+.tel-line a.tel{gap:9px;font-weight:600}
+.tel-line a.tel .tel-ico{width:30px;height:30px;padding:7px;box-sizing:border-box;border-radius:50%;background:var(--tel);stroke:#fff;fill:none;stroke-width:2}
+.tel-line a.wa{width:30px;height:30px;border-radius:50%;background:var(--wa);align-items:center;justify-content:center;transition:transform .15s ease,background .15s ease}
+.tel-line a.wa .wa-ico{width:18px;height:18px;fill:#fff}
+.tel-line a.wa:hover{background:var(--wa-dark);transform:translateY(-1px)}
+/* Boutons */
+.btn .tel-ico{width:1.1em;height:1.1em;padding:0;background:none;border-radius:0;stroke:currentColor}
+.btn.btn-wa,.btn-wa{background:var(--wa);border:2px solid var(--wa);color:#fff}
+.pg-hero .btn-wa,.hero .btn-wa,.cta-row .btn-wa,.maroc-foot .btn-wa{color:#fff}
+.btn-wa .wa-ico{fill:#fff}
+.btn-wa:hover,.btn-wa:focus-visible{background:var(--wa-dark);border-color:var(--wa-dark);color:#fff}
+/* Réseaux sociaux : pied de page */
+.social-row{gap:12px}
+.social-btn{width:42px;height:42px;border:0;color:#fff;transition:transform .15s ease,box-shadow .15s ease,filter .15s ease}
+.social-btn svg{width:21px;height:21px}
+.social-btn[aria-label="Facebook"]{background:var(--fb)}
+.social-btn[aria-label="Facebook"] svg{fill:#fff;stroke:none}
+.social-btn[aria-label="Instagram"]{background:linear-gradient(45deg,#F9A03F 0%,#E1306C 45%,#833AB4 100%)}
+.social-btn[aria-label="Instagram"] svg{fill:none;stroke:#fff;stroke-width:2}
+.social-btn:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(0,0,0,.35);filter:brightness(1.08)}
+.social-btn[aria-label="Facebook"]:hover{background:var(--fb)}
+.social-btn[aria-label="Instagram"]:hover{background:linear-gradient(45deg,#F9A03F 0%,#E1306C 45%,#833AB4 100%)}
+/* Réseaux sociaux : section contact */
+.social-pills{display:flex;flex-wrap:wrap;gap:10px;margin:0}
+.sp-btn{display:inline-flex;align-items:center;gap:8px;padding:9px 18px 9px 14px;border-radius:999px;color:#fff;font-weight:600;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.sp-btn svg{width:18px;height:18px;flex:none}
+.sp-fb{background:var(--fb)}.sp-fb svg{fill:#fff;stroke:none}
+.sp-ig{background:linear-gradient(45deg,#F9A03F 0%,#E1306C 45%,#833AB4 100%)}.sp-ig svg{fill:none;stroke:#fff;stroke-width:2}
+.sp-btn:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(22,35,61,.25);color:#fff}
+/* Boutons flottants (appel + WhatsApp) */
+.fab-contact{position:fixed;inset-inline-end:18px;bottom:18px;z-index:90;display:flex;flex-direction:column;gap:12px}
+.fab-contact a{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.28);transition:transform .15s ease}
+.fab-contact a:hover{transform:scale(1.08)}
+.fab-contact svg{width:28px;height:28px}
+.fab-tel{background:var(--tel)}.fab-tel svg{stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;width:25px;height:25px}
+.fab-wa{background:var(--wa);animation:fabpulse 2.6s ease-out infinite}.fab-wa svg{fill:#fff;stroke:none}
+@keyframes fabpulse{0%{box-shadow:0 6px 18px rgba(0,0,0,.28),0 0 0 0 rgba(37,211,102,.55)}70%,100%{box-shadow:0 6px 18px rgba(0,0,0,.28),0 0 0 16px rgba(37,211,102,0)}}
+@media (prefers-reduced-motion:reduce){.fab-wa{animation:none}}
+@media (max-width:640px){.fab-contact{inset-inline-end:12px;bottom:12px}.fab-contact a{width:50px;height:50px}}
+@media print{.fab-contact{display:none}}
+/* Correctifs : lisibilité des pastilles et numéro du pied de page sur une ligne */
+.info-block .social-pills a.sp-btn,.social-pills a.sp-btn{color:#fff}
+.info-block .social-pills a.sp-btn:hover{color:#fff}
+footer .tel-line{flex-wrap:nowrap;gap:8px}
+footer .tel-line a.tel{white-space:nowrap;gap:8px}
