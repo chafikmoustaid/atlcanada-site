@@ -33,7 +33,7 @@ EXTRA_CSS = """<style>
 </style>
 """
 
-LAW = "Les informations de cette page sont générales et ne remplacent pas une évaluation personnalisée. Les règles d'immigration changent souvent : consultez toujours les sources officielles (canada.ca). Aucun résultat n'est garanti."
+LAW = "Les informations de cette page sont générales et ne remplacent pas une évaluation personnalisée. Les règles d'immigration changent souvent : contactez-nous ou appelez-nous au +1 514 295 6635 pour une évaluation de votre situation. Aucun résultat n'est garanti."
 
 def table(headers, rows):
     th = ''.join(f'<th scope="col">{e(h)}</th>' for h in headers)
@@ -78,7 +78,7 @@ PAGES.append(dict(
 <section class="sp"><div class="wrap"><h2>Les points à préparer avec soin</h2>
 {table(['Élément', "Ce qu'il faut savoir", 'Source officielle'], [
  ['Lettre d\'attestation (LAP/LAT)', "Exigée pour la plupart des nouvelles demandes, avec des exceptions fixées par IRCC. Pour 2026, une exception vise notamment les étudiants à la maîtrise ou au doctorat dans un établissement public désigné.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', 'IRCC, mise à jour du 6 février 2026')],
- ['Preuves de fonds', "Vous devez prouver vos frais de scolarité de la première année, vos frais de subsistance et vos frais de transport. IRCC met à jour les montants chaque année : utilisez toujours son tableau en vigueur.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/residents-temporaires/permis-etudes/evaluation-demande.html', 'IRCC, évaluation de la demande')],
+ ['Preuves de fonds', "Vous devez prouver vos frais de scolarité de la première année, vos frais de subsistance et vos frais de transport. IRCC met à jour ces montants chaque année : nous vous confirmons les chiffres à jour lors de votre consultation.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/residents-temporaires/permis-etudes/evaluation-demande.html', 'IRCC, évaluation de la demande')],
  ['Biométrie', "Empreintes et photo se donnent sur rendez-vous au centre VFS Global du Maroc. Pour un résident temporaire, elles restent valides 10 ans.", a('https://visa.vfsglobal.com/mar/fr/can/faq', 'VFS Global Maroc, questions fréquentes')],
  ['Lettre d\'admission', "Elle doit provenir d'un établissement d'enseignement désigné et correspondre au programme indiqué dans votre demande.", 'Établissement choisi'],
 ])}
@@ -167,7 +167,7 @@ PAGES.append(dict(
  ['Citoyen marocain vivant à l\'étranger', "Adressez-vous à l'ambassade ou au consulat du Maroc le plus proche, ou passez par le commissariat local par procuration (pas par le service central de Rabat). La procuration exige une procuration notariée, des copies de l'acte de naissance et du passeport, et des frais."],
  ['Langue du document', "Le certificat est délivré en français et en arabe : aucune traduction n'est nécessaire."],
  ['À ne pas confondre', "Le « bulletin n° 3 » délivré par le tribunal de première instance aux Marocains n'est pas accepté pour l'immigration : il ne couvre que les infractions commises dans la ville de résidence."],
- ['Durée de validité', "La page officielle ne la précise pas : vérifiez auprès d'IRCC avant de faire votre demande, pour ne pas perdre de temps."],
+ ['Durée de validité', "Les pages officielles ne la précisent pas : appelez-nous, nous la vérifions avec vous avant le dépôt de votre demande, pour ne pas perdre de temps."],
 ])}
 <p class="note">Source : {a('https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/medical-police/certificats-police/comment/maroc.html', 'IRCC, Comment obtenir un certificat de police : Maroc')}.</p>
 </div></section>
@@ -241,7 +241,7 @@ for p in PAGES:
   <p class="eyebrow">{e(p['eyebrow'])}</p>
   <h1>{e(p['h1'])}</h1>
   <p class="lede">{e(p['lede'])}</p>
-  <div class="cta-row"><a class="btn btn-solid" href="/#contact">Prendre rendez-vous</a><a class="btn btn-outline" href="tel:+212633331715">Appeler Casablanca · <bdi dir="ltr">+212 633-331715</bdi></a></div>
+  <div class="cta-row"><a class="btn btn-solid" href="/#contact">Prendre rendez-vous</a><a class="btn btn-outline" href="tel:+15142956635">Appeler · <bdi dir="ltr">+1 514 295 6635</bdi></a></div>
 </div></section>
 {p['body']}
 <section class="sp alt" id="faq"><div class="wrap"><h2>Questions fréquentes</h2><div class="faq-list">{faq_html(p['faq'])}</div></div></section>
