@@ -362,6 +362,24 @@
   ]
  },
  {
+  "id": "express-entree-tirage-pnp-26-octobre-2026",
+  "date": "2026-10-26",
+  "tag_fr": "Entrée express",
+  "title_fr": "Entrée express : 792 invitations pour les candidats des provinces le 26 octobre",
+  "summary_fr": "Le tirage du 26 octobre 2026 a invité 792 candidats ayant une nomination provinciale (PNP), avec un score CRS minimal de 761, selon CIC News. IRCC a par ailleurs annoncé, pour le 3 novembre 2026 (pas encore en vigueur), des points supplémentaires pour une offre d'emploi ou une expérience dans une profession à salaire élevé, sans EIMT; les tirages seront suspendus jusqu'à deux semaines pendant le recalcul des scores.",
+  "impact_fr": "Ce tirage ne concernait que les candidats avec une nomination provinciale. Les autres catégories ont leurs propres tirages et leurs propres scores. Les chiffres proviennent de la presse spécialisée : à recouper avec la page officielle des tirages sur canada.ca.",
+  "sources": [
+   {
+    "name": "CIC News (tirage du 26 octobre 2026)",
+    "url": "https://www.cicnews.com/2026/10/canada-selects-792-provincial-nominees-to-pursue-permanent-residence-1081832.html"
+   },
+   {
+    "name": "IRCC : Entrée express, recentrage sur les talents (3 novembre 2026)",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/canada-refocusing-express-entry-on-top-talent-that-drives-economic-growth.html"
+   }
+  ]
+ },
+ {
   "id": "veille-resume-semaine-25-octobre-2026",
   "date": "2026-10-26",
   "tag_fr": "Résumé de la semaine",
@@ -404,24 +422,6 @@
     "height": 880,
     "alt_fr": "Graphique à barres des scores CRS minimaux des tirages d'octobre 2026 : métiers spécialisés 476, candidats des provinces 772, expérience canadienne 519, compétence en français 435.",
     "caption_fr": "Scores minimaux et invitations des tirages d'octobre 2026, selon la presse spécialisée; chiffres à confirmer sur canada.ca."
-   }
-  ]
- },
- {
-  "id": "express-entree-tirage-pnp-26-octobre-2026",
-  "date": "2026-10-26",
-  "tag_fr": "Entrée express",
-  "title_fr": "Entrée express : 792 invitations pour les candidats des provinces le 26 octobre",
-  "summary_fr": "Le tirage du 26 octobre 2026 a invité 792 candidats ayant une nomination provinciale (PNP), avec un score CRS minimal de 761, selon CIC News. IRCC a par ailleurs annoncé, pour le 3 novembre 2026 (pas encore en vigueur), des points supplémentaires pour une offre d'emploi ou une expérience dans une profession à salaire élevé, sans EIMT; les tirages seront suspendus jusqu'à deux semaines pendant le recalcul des scores.",
-  "impact_fr": "Ce tirage ne concernait que les candidats avec une nomination provinciale. Les autres catégories ont leurs propres tirages et leurs propres scores. Les chiffres proviennent de la presse spécialisée : à recouper avec la page officielle des tirages sur canada.ca.",
-  "sources": [
-   {
-    "name": "CIC News (tirage du 26 octobre 2026)",
-    "url": "https://www.cicnews.com/2026/10/canada-selects-792-provincial-nominees-to-pursue-permanent-residence-1081832.html"
-   },
-   {
-    "name": "IRCC : Entrée express, recentrage sur les talents (3 novembre 2026)",
-    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/canada-refocusing-express-entry-on-top-talent-that-drives-economic-growth.html"
    }
   ]
  }
