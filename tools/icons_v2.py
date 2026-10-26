@@ -27,6 +27,12 @@ for f in glob.glob(R + '**/*.html', recursive=True):
     # section contact : pastilles
     t = t.replace('<p><a href="https://www.facebook.com/atlcanada" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/atl_immigration_canada/" target="_blank" rel="noopener">Instagram</a></p>',
         f'<p class="social-pills"><a class="sp-btn sp-fb" href="https://www.facebook.com/atlcanada" target="_blank" rel="noopener">{FB}Facebook</a><a class="sp-btn sp-ig" href="https://www.instagram.com/atl_immigration_canada/" target="_blank" rel="noopener">{IG}Instagram</a></p>')
+    # barre du haut : petits logos Facebook / Instagram à droite
+    if 'class="tb-social"' not in t and 'class="topbar-right"' in t:
+        lf, li = ('فيسبوك', 'إنستغرام') if ar else ('Facebook', 'Instagram')
+        soc = (f'<span class="tb-social"><a class="tb-fb" href="https://www.facebook.com/atlcanada" target="_blank" rel="noopener" aria-label="{lf}" title="{lf}">{FB}</a>'
+               f'<a class="tb-ig" href="https://www.instagram.com/atl_immigration_canada/" target="_blank" rel="noopener" aria-label="{li}" title="{li}">{IG}</a></span>')
+        t = re.sub(r'(<div class="topbar-right"[^>]*>.*?)(\s*</div>)', lambda m: m.group(1) + soc + m.group(2), t, count=1, flags=re.S)
     if t != o:
         open(f, 'w', encoding='utf-8').write(t); n += 1
 print('modifié :', n, 'fichiers')

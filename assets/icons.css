@@ -65,3 +65,10 @@ footer .tel-line a.tel{white-space:nowrap;gap:8px}
 .maroc-foot a.more{display:inline-flex;align-items:center;min-height:52px;padding:0 6px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:2px solid transparent}
 .maroc-foot a.more:hover{border-bottom-color:#E1232B}
 @media (max-width:640px){.maroc-foot .btn,.cta-row .btn{flex:1 1 100%}.maroc-foot a.more{flex:1 1 auto}}
+/* Petits logos Facebook / Instagram dans la barre du haut */
+.tb-social{display:inline-flex;align-items:center;gap:8px;margin-inline-start:6px}
+.tb-social a{width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;transition:transform .15s ease,filter .15s ease}
+.tb-social svg{width:14px;height:14px}
+.tb-fb{background:var(--fb)}.tb-fb svg{fill:#fff;stroke:none}
+.tb-ig{background:linear-gradient(45deg,#F9A03F 0%,#E1306C 45%,#833AB4 100%)}.tb-ig svg{fill:none;stroke:#fff;stroke-width:2}
+.tb-social a:hover{transform:translateY(-1px);filter:brightness(1.1)}
