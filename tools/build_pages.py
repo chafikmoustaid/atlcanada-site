@@ -193,6 +193,9 @@ PAGES.append(dict(
 ))
 
 
+AR_OF = {'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
+
+
 def head_for(p):
     url = f"{SITE}/{p['path']}"
     h = head_ref
@@ -205,6 +208,9 @@ def head_for(p):
     h = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h)
     h = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h)
     h = re.sub(r'<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n?', '', h)
+    alt = (f'<link rel="alternate" hreflang="fr-MA" href="{url}">\n<link rel="alternate" hreflang="ar-MA" href="{SITE}/{AR_OF[p["path"]]}">\n'
+           f'<link rel="alternate" hreflang="x-default" href="{url}">\n')
+    h = re.sub(r'(<link rel="canonical" href="[^"]*">\n?)', lambda m: m.group(1) + alt, h, count=1)
     # JSON-LD
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', h, re.S)
     g = json.loads(m.group(1))
