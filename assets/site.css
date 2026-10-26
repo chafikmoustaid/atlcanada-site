@@ -44,6 +44,17 @@
   .topbar a.tb-wa{display:inline-flex;}
   .topbar .tb-wa svg{width:17px;height:17px;fill:#25D366;stroke:none;}
   .topbar .tb-phone a:hover{text-decoration:underline;}
+  .tel-line{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .tel-line a.tel{display:inline-flex;align-items:center;gap:7px;}
+  .tel-ico{width:1.05em;height:1.05em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .wa-ico{width:1.25em;height:1.25em;flex:none;fill:#25D366;stroke:none;}
+  .tel-line a.wa{display:inline-flex;}
+  .btn .tel-ico,.btn .wa-ico{margin-inline-end:8px;vertical-align:-.2em;}
+  .btn-wa{background:transparent;color:var(--ink);border:2px solid #25D366;}
+  .btn.btn-wa{border:2px solid #25D366;}
+  .pg-hero .btn-wa,.hero .btn-wa,.cta-row .btn-wa{color:inherit;}
+  .btn-wa:hover,.btn-wa:focus-visible{background:#25D366;color:#fff;}
+  .btn-wa:hover .wa-ico,.btn-wa:focus-visible .wa-ico{fill:#fff;}
   .brand{flex:none;}
   .brand img{max-width:none;}
   @media (max-width:640px){.topbar .wrap{flex-wrap:wrap;justify-content:center;gap:6px 18px;}.topbar-right{gap:14px;flex-wrap:wrap;justify-content:center;}.tb-phone{gap:7px;}}
