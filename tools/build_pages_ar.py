@@ -77,7 +77,7 @@ PAGES.append(dict(
 <section class="sp"><div class="wrap"><h2>النقاط التي تستحق عناية خاصة</h2>
 {table(['العنصر', 'ما ينبغي معرفته', 'المصدر الرسمي'], [
  ['رسالة التصديق (PAL/TAL)', "تُشترط في معظم الطلبات الجديدة، مع استثناءات تحددها IRCC. ومن بينها في 2026 طلبة الماستر والدكتوراه في مؤسسة عمومية معتمدة.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', 'IRCC، تحديث 6 فبراير 2026')],
- ['إثبات الموارد المالية', "عليك إثبات مصاريف الدراسة للسنة الأولى ومصاريف المعيشة وتكاليف السفر. وتحدّث IRCC المبالغ كل سنة، فاعتمد دائمًا جدولها الساري.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/residents-temporaires/permis-etudes/evaluation-demande.html', 'IRCC، تقييم الطلب')],
+ ['إثبات الموارد المالية', "عليك إثبات مصاريف الدراسة للسنة الأولى ومصاريف المعيشة وتكاليف السفر. وبالنسبة للطلبات المودعة ابتداءً من فاتح شتنبر 2026، تشترط IRCC ما لا يقل عن 23 448 دولارًا كنديًا لمصاريف المعيشة لشخص واحد، دون احتساب مصاريف الدراسة والسفر (باستثناء كيبيك التي تحدد شروطها الخاصة مع شهادة CAQ). وتراجع IRCC هذا المبلغ بانتظام، ونؤكده معك خلال الاستشارة.", a('https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html', 'IRCC، إثبات الدعم المالي (بالإنجليزية)')],
  ['البيانات البيومترية', "تُقدَّم البصمات والصورة بموعد مسبق في مركز VFS Global بالمغرب، وتبقى صالحة 10 سنوات بالنسبة للمقيم المؤقت.", a('https://visa.vfsglobal.com/mar/fr/can/faq', 'VFS Global المغرب، الأسئلة الشائعة')],
  ['رسالة القبول', "يجب أن تصدر عن مؤسسة تعليمية معتمدة، وأن تطابق البرنامج المذكور في طلبك.", 'المؤسسة المختارة'],
 ])}
@@ -96,6 +96,7 @@ PAGES.append(dict(
     sources=[
         ('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', "IRCC، تصريح الدراسة: رسائل التصديق من المقاطعات والأقاليم (تحديث 6 فبراير 2026، بالفرنسية)"),
         ('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/residents-temporaires/permis-etudes/evaluation-demande.html', "IRCC، تصريح الدراسة: تقييم الطلب (بالفرنسية)"),
+        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html', "IRCC، تصريح الدراسة: إثبات الدعم المالي (بالإنجليزية)"),
         ('https://visa.vfsglobal.com/mar/fr/can/faq', "VFS Global المغرب، الأسئلة الشائعة (بالفرنسية)"),
     ],
     related=[('/ar/express-entry-french/', 'الدخول السريع للناطقين بالفرنسية'), ('/ar/moroccan-documents/', 'الوثائق المغربية')],

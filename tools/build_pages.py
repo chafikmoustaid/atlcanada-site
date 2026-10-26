@@ -78,7 +78,7 @@ PAGES.append(dict(
 <section class="sp"><div class="wrap"><h2>Les points à préparer avec soin</h2>
 {table(['Élément', "Ce qu'il faut savoir", 'Source officielle'], [
  ['Lettre d\'attestation (LAP/LAT)', "Exigée pour la plupart des nouvelles demandes, avec des exceptions fixées par IRCC. Pour 2026, une exception vise notamment les étudiants à la maîtrise ou au doctorat dans un établissement public désigné.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', 'IRCC, mise à jour du 6 février 2026')],
- ['Preuves de fonds', "Vous devez prouver vos frais de scolarité de la première année, vos frais de subsistance et vos frais de transport. IRCC met à jour ces montants chaque année : nous vous confirmons les chiffres à jour lors de votre consultation.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/residents-temporaires/permis-etudes/evaluation-demande.html', 'IRCC, évaluation de la demande')],
+ ['Preuves de fonds', "Vous devez prouver vos frais de scolarité de la première année, vos frais de subsistance et vos frais de transport. Pour les demandes déposées à partir du 1er septembre 2026, IRCC exige au moins 23 448 $ CA de frais de subsistance pour une personne seule, hors frais de scolarité et de transport (hors Québec : le Québec fixe ses propres exigences avec le CAQ). IRCC révise ce montant régulièrement : nous le confirmons avec vous à la consultation.", a('https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html', 'IRCC, preuve de soutien financier (en anglais)')],
  ['Biométrie', "Empreintes et photo se donnent sur rendez-vous au centre VFS Global du Maroc. Pour un résident temporaire, elles restent valides 10 ans.", a('https://visa.vfsglobal.com/mar/fr/can/faq', 'VFS Global Maroc, questions fréquentes')],
  ['Lettre d\'admission', "Elle doit provenir d'un établissement d'enseignement désigné et correspondre au programme indiqué dans votre demande.", 'Établissement choisi'],
 ])}
@@ -97,6 +97,7 @@ PAGES.append(dict(
     sources=[
         ('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', "IRCC, Permis d'études : lettres d'attestation provinciales ou territoriales (mise à jour du 6 février 2026)"),
         ('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/residents-temporaires/permis-etudes/evaluation-demande.html', "IRCC, Permis d'études : évaluation de la demande"),
+        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html', "IRCC, preuve de soutien financier (en anglais)"),
         ('https://visa.vfsglobal.com/mar/fr/can/faq', "VFS Global Maroc, questions fréquentes"),
     ],
     related=[('/entree-express-francophone-maroc/', 'Entrée express pour les francophones'), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
