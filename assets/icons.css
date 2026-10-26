@@ -54,3 +54,14 @@
 .info-block .social-pills a.sp-btn:hover{color:#fff}
 footer .tel-line{flex-wrap:nowrap;gap:8px}
 footer .tel-line a.tel{white-space:nowrap;gap:8px}
+/* Rangées de boutons (accueil Maroc, pages Maroc) : même taille, même forme, vert plus lisible */
+.maroc-foot,.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px}
+.maroc-foot .btn,.cta-row .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:8px;font-size:1rem;font-weight:600;line-height:1;box-sizing:border-box;text-decoration:none}
+.maroc-foot .btn .tel-ico,.maroc-foot .btn .wa-ico,.cta-row .btn .tel-ico,.cta-row .btn .wa-ico{margin:0;width:20px;height:20px;flex:none;vertical-align:0}
+.btn.btn-wa,.btn-wa{background:#128C4A;border-color:#128C4A;color:#fff}
+.btn-wa:hover,.btn-wa:focus-visible{background:#0F7A40;border-color:#0F7A40;color:#fff}
+.maroc-foot .btn-solid{background:#E1232B;border-color:#E1232B;color:#fff}
+.maroc-foot .btn-solid:hover{background:#B81C23;border-color:#B81C23}
+.maroc-foot a.more{display:inline-flex;align-items:center;min-height:52px;padding:0 6px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:2px solid transparent}
+.maroc-foot a.more:hover{border-bottom-color:#E1232B}
+@media (max-width:640px){.maroc-foot .btn,.cta-row .btn{flex:1 1 100%}.maroc-foot a.more{flex:1 1 auto}}
