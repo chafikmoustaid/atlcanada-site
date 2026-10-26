@@ -26,7 +26,7 @@ EXTRA_CSS = """<style>
 .tbl th{background:var(--paper-dim);color:var(--ink);font-weight:600}
 .tbl td{color:var(--ink-soft)}
 .tbl a{color:var(--ink);text-decoration:underline}
-.prose{max-width:72ch}.prose p{margin:0 0 14px;color:var(--ink-soft)}
+.steps{max-width:none}.prose{max-width:72ch}.prose p{margin:0 0 14px;color:var(--ink-soft)}
 .sources{margin:0;padding-inline-start:20px;color:var(--ink-soft)}.sources li{margin:0 0 8px}
 .sources a{color:var(--ink);text-decoration:underline}
 .related{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0 0}
