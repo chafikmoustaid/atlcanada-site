@@ -53,7 +53,7 @@ open(R + 'index.html', 'w', encoding='utf-8').write(idx)
 T = {
  'fr': dict(path='actualites/', lang='fr-CA', loc='fr_CA', dir='ltr',
    title="Actualités de l'immigration au Canada | ATL Canada",
-   desc="Les dernières nouvelles de l'immigration au Canada expliquées simplement : Entrée express, résidence permanente, permis d'études et de travail, décisions importantes. Sources vérifiables.",
+   desc="Nouvelles de l'immigration au Canada expliquées simplement : Entrée express, résidence permanente, permis d'études et de travail. Sources vérifiables.",
    h1="L'actualité de l'immigration au Canada", lede="Les nouvelles qui comptent pour les candidats, expliquées simplement, avec leurs sources.",
    impact="Ce que cela signifie pour vous", src="Sources", home='Accueil', crumb='Actualités', cta='Prendre rendez-vous',
    note="Ces informations sont générales et ne constituent pas un avis juridique. Elles reposent sur les sources citées et peuvent changer : vérifiez toujours les règles en vigueur sur canada.ca. Pour une évaluation de votre situation, prenez rendez-vous.",
@@ -147,12 +147,17 @@ for lang, p in T.items():
 # ---------------- sitemap + llms.txt ----------------
 last = items[0]['date']
 urls = [('/', '1.0', last), ('/maroc/', '0.9', '2026-10-09'), ('/ar/', '0.9', '2026-10-09'),
-        ('/actualites/', '0.8', last) ]
+        ('/actualites/', '0.8', last),
+        ('/permis-etudes-canada-maroc/', '0.8', '2026-10-26'), ('/entree-express-francophone-maroc/', '0.8', '2026-10-26'),
+        ('/documents-maroc-immigration-canada/', '0.8', '2026-10-26') ]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
 for u, pr, lm in urls:
     sm += f'  <url>\n    <loc>{SITE}{u}</loc>\n    <lastmod>{lm}</lastmod>\n    <priority>{pr}</priority>\n  </url>\n'
 open(R + 'sitemap.xml', 'w').write(sm + '</urlset>\n')
 ll = open(R + 'llms.txt', encoding='utf-8').read()
+if '/permis-etudes-canada-maroc/' not in ll:
+    ll = ll.replace('\n## Liens', f"- [Permis d'études depuis le Maroc]({SITE}/permis-etudes-canada-maroc/): étapes, lettre d'attestation, preuves de fonds, biométrie\n- [Entrée express pour francophones]({SITE}/entree-express-francophone-maroc/): points pour le français, programmes, préparation\n- [Documents marocains]({SITE}/documents-maroc-immigration-canada/): certificat de police (fiche anthropométrique), biométrie VFS\n\n## Liens", 1)
+    open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/actualites/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Actualités de l'immigration (français)]({SITE}/actualites/): nouvelles expliquées, avec sources\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
