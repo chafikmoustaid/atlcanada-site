@@ -72,3 +72,16 @@ footer .tel-line a.tel{white-space:nowrap;gap:8px}
 .tb-fb{background:var(--fb)}.tb-fb svg{fill:#fff;stroke:none}
 .tb-ig{background:linear-gradient(45deg,#F9A03F 0%,#E1306C 45%,#833AB4 100%)}.tb-ig svg{fill:none;stroke:#fff;stroke-width:2}
 .tb-social a:hover{transform:translateY(-1px);filter:brightness(1.1)}
+/* Bandeau de contact (sections « bureaux ») */
+.contact-band{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;margin:26px 0 0;padding:32px 38px;background:#16233D;color:#fff;border-radius:14px;border-inline-start:6px solid #E1232B}
+.contact-band .cb-q{display:block;color:#C9D1E3;font-size:1rem;margin-bottom:8px}
+.contact-band a.cb-num{display:block;color:#fff;text-decoration:none;font-family:Lora,Georgia,serif;font-weight:600;font-size:clamp(1.9rem,4.2vw,2.75rem);line-height:1.05;letter-spacing:.01em}
+.contact-band a.cb-num:hover{text-decoration:underline;text-decoration-color:#E1232B;text-underline-offset:6px}
+.contact-band .cb-h{color:#C9D1E3;font-size:.95rem;margin-top:10px}
+.contact-band .cb-b{display:flex;gap:12px;flex-wrap:wrap}
+.contact-band .cb-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font-weight:600;font-size:1rem;color:#fff;text-decoration:none;transition:transform .15s ease,filter .15s ease}
+.contact-band .cb-btn:hover{transform:translateY(-2px);filter:brightness(1.08);color:#fff}
+.contact-band .cb-btn svg{width:22px;height:22px;flex:none}
+.contact-band .cb-tel{background:#E1232B}.contact-band .cb-tel svg{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.contact-band .cb-wa{background:#128C4A}.contact-band .cb-wa svg{fill:#fff;stroke:none}
+@media (max-width:640px){.contact-band{padding:26px 22px}.contact-band .cb-b{width:100%}.contact-band .cb-btn{flex:1 1 100%}}

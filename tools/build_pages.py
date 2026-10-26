@@ -14,7 +14,7 @@ ref = open(R + 'maroc/index.html', encoding='utf-8').read()
 head_ref = ref[:ref.index('</head>')]
 topbar = ref[ref.index('<body>'):ref.index('<main>')]
 topbar = topbar.replace('<a href="/#services">Services</a><a href="#faq">Questions</a><a href="#bureaux">Bureaux</a>',
-                        '<a href="/#services">Services</a><a href="/maroc/">Depuis le Maroc</a><a href="#faq">Questions</a><a href="#bureaux">Bureaux</a>')
+                        '<a href="/#services">Services</a><a href="/maroc/">Maroc</a><a href="#faq">Questions</a><a href="#bureaux">Bureaux</a>')
 topbar = topbar.replace('href="/ar/" lang="ar" hreflang="ar"', 'href="/ar/" lang="ar" hreflang="ar"')
 footer = ref[ref.index('</main>'):]
 offices = re.search(r'<section class="sp" id="bureaux">.*?</section>', ref, re.S).group(0)
