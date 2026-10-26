@@ -360,5 +360,51 @@
         "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/canada-refocusing-express-entry-on-top-talent-that-drives-economic-growth.html"
       }
     ]
+  },
+  {
+    "id": "veille-resume-semaine-25-octobre-2026",
+    "date": "2026-10-26",
+    "tag_fr": "Résumé de la semaine",
+    "title_fr": "Immigration au Canada : l'essentiel de la semaine, avant le 3 novembre",
+    "summary_fr": "Décision officielle (en vigueur le 3 novembre 2026, pas encore appliquée) : selon IRCC, Entrée express accordera des points supplémentaires pour une offre d'emploi ou une expérience canadienne dans une profession à salaire élevé, sans EIMT; les scores seront recalculés et les tirages suspendus jusqu'à deux semaines. À venir (aucune cible confirmée) : selon CTV et Newsweek, la ministre évoque une hausse possible des niveaux d'immigration et le plan est attendu en novembre. Tirages d'octobre, selon la presse spécialisée : scores de 435 (français) à 772 (candidats des provinces). Québec : les demandes du premier volet du PEQ sont reçues jusqu'au 31 octobre; la baisse des seuils promise par le Parti québécois reste une promesse, sans changement formel confirmé.",
+    "impact_fr": "Si vous avez un profil Entrée express, vérifiez-le et mettez-le à jour avant le 3 novembre. Les points supplémentaires ne garantissent pas une invitation, et une offre d'emploi doit être authentique. Les chiffres des tirages sont à confirmer sur canada.ca. Pour une évaluation de votre situation, prenez rendez-vous.",
+    "sources": [
+      {
+        "name": "IRCC (canada.ca) : Canada refocusing Express Entry on top talent that drives economic growth",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/canada-refocusing-express-entry-on-top-talent-that-drives-economic-growth.html"
+      },
+      {
+        "name": "CTV News : Immigration minister says immigration levels will be going up",
+        "url": "https://www.ctvnews.ca/politics/article/immigration-minister-says-immigration-levels-will-be-going-up-heres-what-that-means/"
+      },
+      {
+        "name": "Newsweek : Canada's immigration plan could be about to change again",
+        "url": "https://www.newsweek.com/canadas-immigration-plan-could-be-about-to-change-again-12577945"
+      },
+      {
+        "name": "ijob.ma : tirage francophone du 16 octobre 2026",
+        "url": "https://ijob.ma/immigration/tirage-francophone-express-entry-octobre-2026/"
+      },
+      {
+        "name": "CIC News : PEQ applications quickly surpass Quebec's forecast",
+        "url": "https://www.cicnews.com/2026/10/peq-applications-quickly-surpass-quebecs-forecast-1081675.html"
+      }
+    ],
+    "visuels": [
+      {
+        "src": "/assets/actu/veille-resume-25-octobre-2026.png",
+        "width": 1600,
+        "height": 1000,
+        "alt_fr": "Résumé en quatre blocs : réforme d'Entrée express le 3 novembre, plan des niveaux attendu en novembre, tirages d'octobre, PEQ et promesses du Parti québécois, avec les dates du 31 octobre, du 1er novembre et du 3 novembre.",
+        "caption_fr": "Résumé de la veille du 25 octobre 2026. Seule la réforme d'Entrée express est une décision officielle; le reste est à venir, déjà effectué ou promis."
+      },
+      {
+        "src": "/assets/actu/entree-express-tirages-octobre-2026.png",
+        "width": 1600,
+        "height": 880,
+        "alt_fr": "Graphique à barres des scores CRS minimaux des tirages d'octobre 2026 : métiers spécialisés 476, candidats des provinces 772, expérience canadienne 519, compétence en français 435.",
+        "caption_fr": "Scores minimaux et invitations des tirages d'octobre 2026, selon la presse spécialisée; chiffres à confirmer sur canada.ca."
+      }
+    ]
   }
 ]
