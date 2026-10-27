@@ -106,3 +106,7 @@ nav.primary a.nav-news:hover,nav.primary a.nav-news:focus-visible{background:#c9
 .live-dot{width:9px;height:9px;border-radius:50%;background:#fff;display:inline-block;animation:livepulse 1.6s infinite}
 @keyframes livepulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.8)}70%{box-shadow:0 0 0 8px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
 @media (prefers-reduced-motion:reduce){.live-dot{animation:none}}
+nav.primary .nav-social,.mobile-nav .nav-social{display:inline-flex;align-items:center;gap:10px;margin-inline-start:10px}
+nav.primary .nav-social a,.mobile-nav .nav-social a{width:34px;height:34px;padding:0;border:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
+nav.primary .nav-social svg,.mobile-nav .nav-social svg{width:19px;height:19px}
+.mobile-nav .nav-social{padding:14px 0 6px}
