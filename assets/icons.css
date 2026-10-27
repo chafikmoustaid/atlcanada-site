@@ -100,3 +100,4 @@ footer .tel-line a.tel{white-space:nowrap;gap:8px}
 .cta-wa{background:#128C4A}.cta-wa svg{fill:#fff;stroke:none}
 @media (max-width:640px){.cta-row .btn.btn-solid{flex:1 1 100%}}
 @media (min-width:641px){.hero .cta-row,.hero .hero-cta{flex-wrap:nowrap;gap:12px}.hero .btn{padding:0 18px;white-space:nowrap}.hero .cta-circle{width:48px;height:48px}}
+.lede + .cta-row{margin-top:30px;margin-bottom:8px}
