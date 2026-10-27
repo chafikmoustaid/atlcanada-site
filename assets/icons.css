@@ -85,3 +85,8 @@ footer .tel-line a.tel{white-space:nowrap;gap:8px}
 .contact-band .cb-tel{background:#E1232B}.contact-band .cb-tel svg{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .contact-band .cb-wa{background:#128C4A}.contact-band .cb-wa svg{fill:#fff;stroke:none}
 @media (max-width:640px){.contact-band{padding:26px 22px}.contact-band .cb-b{width:100%}.contact-band .cb-btn{flex:1 1 100%}}
+/* Barre du haut : logos Facebook / Instagram plus grands */
+.tb-social{gap:14px}
+.tb-social a{width:36px;height:36px}
+.tb-social svg{width:21px;height:21px}
+@media (max-width:640px){.tb-social a{width:34px;height:34px}.tb-social svg{width:20px;height:20px}}

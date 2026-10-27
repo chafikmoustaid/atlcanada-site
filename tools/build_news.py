@@ -113,7 +113,7 @@ for lang, p in T.items():
 <body>
 <div class="topbar">
   <div class="wrap">
-    <div class="topbar-left"><a href="/#adresses"><strong>Montréal</strong></a> <span class="sep">·</span> <a href="/maroc/#bureaux"><strong>Casablanca</strong></a> <span class="sep">|</span> Service en français, anglais et arabe</div>
+    <div class="topbar-left"><a href="/#adresses"><strong>Montréal</strong></a> <span class="sep">·</span> <a href="/maroc/#bureaux"><strong>Casablanca</strong></a></div>
     <div class="topbar-right">
     </div>
   </div>
