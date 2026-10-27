@@ -17,4 +17,25 @@ for f in glob.glob(R + '**/index.html', recursive=True):
            f'<a class="cta-circle cta-wa" href="https://wa.me/15142956635" target="_blank" rel="noopener" aria-label="{lw}" title="{lw}">{WA}</a>{m.group(3)}')
     t = t[:m.start()] + new + t[m.end():]
     open(f, 'w', encoding='utf-8').write(t); n += 1
+
+def circles(ar):
+    ou, lt, lw = ('أو', 'اتصل بنا', 'واتساب') if ar else ('ou', 'Appeler', 'WhatsApp')
+    return (f'<span class="cta-or">{ou}</span>'
+            f'<a class="cta-circle cta-tel" href="tel:+15142956635" aria-label="{lt}" title="{lt}">{PH}</a>'
+            f'<a class="cta-circle cta-wa" href="https://wa.me/15142956635" target="_blank" rel="noopener" aria-label="{lw}" title="{lw}">{WA}</a>')
+# Accueil : après « Voir nos services » dans le hero
+f = R + 'index.html'
+t = open(f, encoding='utf-8').read()
+a = '<a class="btn btn-outline" href="#services">Voir nos services</a>\n        </div>'
+if a in t and 'class="cta-circle cta-tel"' not in t.split('class="trust"')[0]:
+    t = t.replace(a, a.replace('</a>\n', '</a>' + circles(False) + '\n', 1), 1)
+    open(f, 'w', encoding='utf-8').write(t); n += 1
+# Actualités : rangée sous l'introduction
+f = R + 'actualites/index.html'
+t = open(f, encoding='utf-8').read()
+a = 'avec leurs sources.</p>\n</div></section>'
+if a in t and 'class="cta-row"' not in t:
+    row = '<div class="cta-row"><a class="btn btn-solid" href="/#contact">Prendre rendez-vous</a>' + circles(False) + '</div>'
+    t = t.replace(a, 'avec leurs sources.</p>\n' + row + '\n</div></section>', 1)
+    open(f, 'w', encoding='utf-8').write(t); n += 1
 print('modifié :', n, 'fichiers')
