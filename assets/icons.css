@@ -90,3 +90,12 @@ footer .tel-line a.tel{white-space:nowrap;gap:8px}
 .tb-social a{width:36px;height:36px}
 .tb-social svg{width:21px;height:21px}
 @media (max-width:640px){.tb-social a{width:34px;height:34px}.tb-social svg{width:20px;height:20px}}
+/* Rangée d'appel des pages Maroc : un bouton principal + deux pastilles rondes */
+.cta-or{color:#B9C3DA;font-size:.95rem;margin:0 2px}
+.cta-circle{width:52px;height:52px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;transition:transform .15s ease,filter .15s ease,background .15s ease;flex:none}
+.cta-circle svg{width:24px;height:24px}
+.cta-circle:hover{transform:translateY(-2px);filter:brightness(1.1);color:#fff}
+.cta-tel{background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.45)}
+.cta-tel svg{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cta-wa{background:#128C4A}.cta-wa svg{fill:#fff;stroke:none}
+@media (max-width:640px){.cta-row .btn.btn-solid{flex:1 1 100%}}
