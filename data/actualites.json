@@ -468,5 +468,39 @@
     "url": "https://immigrationnewscanada.ca/canada-new-arrivals-plunge-in-2026/"
    }
   ]
+ },
+ {
+  "id": "express-entree-tirage-transport-28-octobre-2026",
+  "date": "2026-10-28",
+  "tag_fr": "Entrée express",
+  "title_fr": "Entrée express : 150 invitations pour la catégorie Transport le 28 octobre",
+  "summary_fr": "Le tirage du 28 octobre 2026 a invité 150 candidats de la catégorie « Transport », avec un score CRS minimal de 477, selon CIC News et Moving2Canada. C'est le deuxième tirage Transport de 2026 : celui d'août avait invité 300 candidats avec un score minimal de 470. Les candidats devaient avoir créé leur profil avant le 4 juin 2026. Selon Moving2Canada, il faut avoir accumulé au moins 12 mois d'expérience à temps plein (ou l'équivalent à temps partiel) dans un métier admissible du transport au cours des trois dernières années, au Canada ou à l'étranger, et être admissible à l'un des programmes d'Entrée express (Expérience canadienne, Travailleurs qualifiés ou Métiers spécialisés); le site cite notamment les pilotes, les mécaniciens et techniciens d'aéronefs ainsi que les mécaniciens de camions et d'automobiles. Ce tirage suit celui des candidats des provinces (26 octobre, CRS 761) et celui de la compétence en français (27 octobre, CRS 407).",
+  "impact_fr": "Ce tirage ne concerne qu'une catégorie précise : si votre métier n'en fait pas partie, il ne vous est pas destiné, et un score minimal plus bas ailleurs ne le rend pas « plus facile » pour vous. Si vous travaillez dans le transport, vérifiez votre expérience des trois dernières années et l'admissibilité de votre profil. Une invitation ne garantit pas la résidence permanente : la demande complète doit être déposée dans les 60 jours. Les chiffres viennent de la presse spécialisée, à recouper avec la page officielle des tirages sur canada.ca. Pour savoir si votre profil correspond à une catégorie, appelez-nous ou écrivez-nous sur WhatsApp au +1 514 295 6635, ou prenez rendez-vous.",
+  "sources": [
+   {
+    "name": "CIC News (tirage Transport du 28 octobre 2026)",
+    "url": "https://www.cicnews.com/2026/10/canada-selects-150-workers-for-permanent-residence-under-revamped-transport-category-1081936.html"
+   },
+   {
+    "name": "Moving2Canada (150 invitations, tirage Transport)",
+    "url": "https://moving2canada.com/2026/10/150-ita-transport-occupation-express-entry-draw/"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/entree-express-tirage-transport-28-octobre-2026.png",
+    "width": 1600,
+    "height": 960,
+    "alt_fr": "Trois chiffres : 150 invitations, score CRS minimal de 477, profil créé avant le 4 juin 2026; et comparaison avec le tirage Transport d'août : CRS 470 et 300 invitations en août, CRS 477 et 150 invitations le 28 octobre.",
+    "caption_fr": "Tirage Transport du 28 octobre 2026 comparé à celui d'août, selon CIC News et Moving2Canada; chiffres à confirmer sur canada.ca."
+   },
+   {
+    "src": "/assets/actu/entree-express-tirages-26-28-octobre-2026.png",
+    "width": 1600,
+    "height": 717,
+    "alt_fr": "Graphique à barres des scores CRS minimaux des tirages du 26 au 28 octobre 2026 : candidats des provinces 761, compétence en français 407, Transport 477.",
+    "caption_fr": "Scores minimaux et invitations des trois tirages de la semaine, selon la presse spécialisée; chiffres à confirmer sur canada.ca."
+   }
+  ]
  }
 ]

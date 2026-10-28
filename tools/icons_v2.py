@@ -5,6 +5,12 @@ import re, glob, os
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '/'
 src = open(R + 'index.html', encoding='utf-8').read()
 tb = re.search(r'<span class="tb-phone"><a href="tel:[^"]*" aria-label="[^"]*">(<svg.*?</svg>).*?<a class="tb-wa"[^>]*>(<svg.*?</svg>)</a>', src, re.S)
+if tb is None:  # barre du haut supprimée : reprendre les icônes des boutons flottants
+    class _T:
+        def __init__(s, a, b): s.g = (None, a, b)
+        def group(s, n): return s.g[n]
+    _f = re.search(r'class="fab-tel"[^>]*>(<svg.*?</svg>)</a><a class="fab-wa"[^>]*>(<svg.*?</svg>)</a>', src, re.S)
+    tb = _T(_f.group(1), _f.group(2))
 PH = re.sub(r'<svg [^>]*>', '<svg viewBox="0 0 24 24" aria-hidden="true">', tb.group(1), 1)
 WA = re.sub(r'<svg [^>]*>', '<svg viewBox="0 0 24 24" aria-hidden="true">', tb.group(2), 1)
 FB = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.4 1.5-1.4h1.6V4.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg>'

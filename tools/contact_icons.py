@@ -7,6 +7,12 @@ TEL, WA = '+15142956635', 'https://wa.me/15142956635'
 NUM = '+1 514 295 6635'
 src = open(R + 'index.html', encoding='utf-8').read()
 tb = re.search(r'<span class="tb-phone"><a href="tel:[^"]*" aria-label="[^"]*">(<svg.*?</svg>).*?<a class="tb-wa"[^>]*>(<svg.*?</svg>)</a>', src, re.S)
+if tb is None:  # barre du haut supprimée : reprendre les icônes des boutons flottants
+    class _T:
+        def __init__(s, a, b): s.g = (None, a, b)
+        def group(s, n): return s.g[n]
+    _f = re.search(r'class="fab-tel"[^>]*>(<svg.*?</svg>)</a><a class="fab-wa"[^>]*>(<svg.*?</svg>)</a>', src, re.S)
+    tb = _T(_f.group(1), _f.group(2))
 PH = tb.group(1).replace('<svg ', '<svg class="tel-ico" ', 1)
 WAI = tb.group(2).replace('<svg ', '<svg class="wa-ico" ', 1)
 
