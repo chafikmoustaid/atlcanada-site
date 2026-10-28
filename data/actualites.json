@@ -424,5 +424,31 @@
     "caption_fr": "Scores minimaux et invitations des tirages d'octobre 2026, selon la presse spécialisée; chiffres à confirmer sur canada.ca."
    }
   ]
+ },
+ {
+  "id": "express-entree-tirage-francais-27-octobre-2026",
+  "date": "2026-10-27",
+  "tag_fr": "Entrée express",
+  "title_fr": "Entrée express : 5 000 invitations pour les candidats francophones le 27 octobre",
+  "summary_fr": "Le tirage du 27 octobre 2026 a invité 5 000 candidats de la catégorie « compétence en français », avec un score CRS minimal de 407, selon Moving2Canada. C'est plus bas que d'autres tirages récents, toujours selon la presse spécialisée : 518 pour l'Expérience canadienne (29 septembre), 476 pour les métiers spécialisés (1er octobre) et 761 pour les candidats des provinces (26 octobre). Selon canada.ca, cette catégorie exige des résultats de test de français d'au moins 7 (NCLC/CLB) dans les quatre compétences, en plus des conditions propres à chaque tirage. IRCC a par ailleurs annoncé, pour le 3 novembre 2026 (pas encore en vigueur), des points supplémentaires pour une offre d'emploi ou une expérience canadienne dans une profession à salaire élevé; selon la presse, les tirages seraient suspendus au moins deux semaines pendant le recalcul des scores.",
+  "impact_fr": "Si vous avez des résultats de test de français (TEF Canada ou TCF Canada) de niveau 7 ou plus, ou si vous envisagez de les passer, ce tirage montre que le français peut faire une vraie différence dans Entrée express. Un score minimal ne garantit pas une invitation : chaque tirage a ses propres conditions, et votre profil doit être complet et à jour. Les chiffres viennent de la presse spécialisée, à recouper avec la page officielle des tirages sur canada.ca. Pour savoir si votre profil peut en profiter, appelez-nous ou écrivez-nous sur WhatsApp au +1 514 295 6635, ou prenez rendez-vous.",
+  "sources": [
+   {
+    "name": "Moving2Canada (tirage francophone du 27 octobre 2026)",
+    "url": "https://moving2canada.com/2026/10/5000-french-speaking-candidates-invited-in-october-27-express-entry-draw/"
+   },
+   {
+    "name": "IRCC (canada.ca) : sélection par catégorie, compétence en français",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations/category-based-selection.html"
+   },
+   {
+    "name": "IRCC : Entrée express, points pour professions à salaire élevé (3 novembre 2026)",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/changes-to-express-entry-for-high-wage-occupations.html"
+   },
+   {
+    "name": "Immigration News Canada : tirages de septembre et octobre 2026",
+    "url": "https://immigrationnewscanada.ca/next-express-entry-draw-in-october-2026/"
+   }
+  ]
  }
 ]
