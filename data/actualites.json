@@ -452,24 +452,6 @@
   ]
  },
  {
-  "id": "ircc-statistiques-arrivees-temporaires-janvier-aout-2026",
-  "date": "2026-10-28",
-  "tag_fr": "Statistiques",
-  "title_fr": "IRCC : les nouvelles arrivées d'étudiants et de travailleurs ont chuté de 63 % de janvier à août 2026",
-  "summary_fr": "Décision en vigueur : aucune; il s'agit de statistiques officielles. Selon la page d'IRCC (données au 31 août 2026, mise à jour le 20 octobre), 195 335 nouveaux étudiants et travailleurs sont arrivés de janvier à août 2026, soit 63 % de moins qu'à la même période de 2024. Étudiants : 65 240 (−71 %), pour une cible 2026 de 155 000. Travailleurs : 130 095 (−57 %), pour une cible de 230 000. Les anciens résidents temporaires représentent 58 % des nouveaux résidents permanents de la période (153 005), contre 48 % en 2025 et 44 % en 2024.",
-  "impact_fr": "Ces chiffres décrivent le passé et ne prédisent pas l'issue d'un dossier individuel. Ils montrent que moins de personnes arrivent comme étudiants ou travailleurs qu'en 2024 et que la résidence permanente passe de plus en plus par une expérience canadienne préalable. Un projet d'études, de travail ou de résidence mérite d'être préparé avec soin; chaque situation est différente.",
-  "sources": [
-   {
-    "name": "IRCC : Understanding student and temporary worker numbers in Canada",
-    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/statistics-open-data/immigration-stats/students-workers.html"
-   },
-   {
-    "name": "Immigration News Canada : Canada's new arrivals plunge 63 %",
-    "url": "https://immigrationnewscanada.ca/canada-new-arrivals-plunge-in-2026/"
-   }
-  ]
- },
- {
   "id": "express-entree-tirage-transport-28-octobre-2026",
   "date": "2026-10-28",
   "tag_fr": "Entrée express",
@@ -500,6 +482,24 @@
     "height": 717,
     "alt_fr": "Graphique à barres des scores CRS minimaux des tirages du 26 au 28 octobre 2026 : candidats des provinces 761, compétence en français 407, Transport 477.",
     "caption_fr": "Scores minimaux et invitations des trois tirages de la semaine, selon la presse spécialisée; chiffres à confirmer sur canada.ca."
+   }
+  ]
+ },
+ {
+  "id": "ircc-statistiques-arrivees-temporaires-janvier-aout-2026",
+  "date": "2026-10-28",
+  "tag_fr": "Statistiques",
+  "title_fr": "IRCC : les nouvelles arrivées d'étudiants et de travailleurs ont chuté de 63 % de janvier à août 2026",
+  "summary_fr": "Décision en vigueur : aucune; il s'agit de statistiques officielles. Selon la page d'IRCC (données au 31 août 2026, mise à jour le 20 octobre), 195 335 nouveaux étudiants et travailleurs sont arrivés de janvier à août 2026, soit 63 % de moins qu'à la même période de 2024. Étudiants : 65 240 (−71 %), pour une cible 2026 de 155 000. Travailleurs : 130 095 (−57 %), pour une cible de 230 000. Les anciens résidents temporaires représentent 58 % des nouveaux résidents permanents de la période (153 005), contre 48 % en 2025 et 44 % en 2024.",
+  "impact_fr": "Ces chiffres décrivent le passé et ne prédisent pas l'issue d'un dossier individuel. Ils montrent que moins de personnes arrivent comme étudiants ou travailleurs qu'en 2024 et que la résidence permanente passe de plus en plus par une expérience canadienne préalable. Un projet d'études, de travail ou de résidence mérite d'être préparé avec soin; chaque situation est différente.",
+  "sources": [
+   {
+    "name": "IRCC : Understanding student and temporary worker numbers in Canada",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/statistics-open-data/immigration-stats/students-workers.html"
+   },
+   {
+    "name": "Immigration News Canada : Canada's new arrivals plunge 63 %",
+    "url": "https://immigrationnewscanada.ca/canada-new-arrivals-plunge-in-2026/"
    }
   ]
  }
