@@ -502,5 +502,19 @@
     "url": "https://immigrationnewscanada.ca/canada-new-arrivals-plunge-in-2026/"
    }
   ]
+ },
+ {
+  "id": "ircc-penalites-representants-non-autorises-28-octobre-2026",
+  "date": "2026-10-29",
+  "tag_fr": "Consultants",
+  "title_fr": "IRCC : de nouvelles pénalités visent les représentants frauduleux ou non autorisés",
+  "summary_fr": "Décision annoncée par IRCC le 28 octobre 2026 : des pénalités s'appliquent à partir de cette date, soit 5 000 $ pour des conseils ou une représentation payants sans autorisation et 15 000 $ pour avoir sciemment fourni de faux renseignements ou aidé à le faire, avec des montants plus élevés en cas de récidive (plafond de 1,5 million de dollars). Un registre en ligne des personnes sanctionnées est prévu en 2027. Selon le communiqué, les règlements définitifs doivent paraître dans la Gazette du Canada, Partie II, le 4 novembre 2026.",
+  "impact_fr": "Avant de payer pour de l'aide avec votre dossier, vérifiez que la personne est autorisée à vous représenter (consultant inscrit au registre du Collège, avocat ou notaire). Cette vérification ne garantit aucun résultat pour votre demande, mais réduit le risque de fraude. Chaque situation est différente.",
+  "sources": [
+   {
+    "name": "IRCC : New penalties for fraudulent and unauthorized immigration and citizenship representatives",
+    "url": "https://canada.ca/en/immigration-refugees-citizenship/news/2026/10/new-penalties-for-fraudulent-and-unauthorized-immigration-and-citizenship-representatives.html"
+   }
+  ]
  }
 ]
