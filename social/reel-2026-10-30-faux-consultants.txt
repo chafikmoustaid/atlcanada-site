@@ -39,4 +39,4 @@ Source : IRCC (canada.ca), 28 octobre 2026.
 (Couverture : reel-2026-10-30-faux-consultants-cover.png)
 
 === HEURE RECOMMANDÉE ===
-Vendredi 30 oct. 2026 : 19 h 30 (Africa/Casablanca) = 15 h 30 (America/Toronto) [vérifier le décalage horaire du jour].
+Vendredi 30 oct. 2026 : 19 h 30 (Africa/Casablanca, UTC+1) = 14 h 30 (America/Toronto, EDT).
