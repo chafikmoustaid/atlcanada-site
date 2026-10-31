@@ -516,5 +516,62 @@
     "url": "https://canada.ca/en/immigration-refugees-citizenship/news/2026/10/new-penalties-for-fraudulent-and-unauthorized-immigration-and-citizenship-representatives.html"
    }
   ]
+ },
+ {
+  "id": "quebec-peq-dernier-jour-31-octobre-2026-ce-qu-il-faut-savoir",
+  "date": "2026-10-31",
+  "tag_fr": "Québec",
+  "title_fr": "PEQ : dernier jour pour déposer une demande, et ce qui se passe ensuite",
+  "summary_fr": "Règle en vigueur selon Québec : la réception des demandes du Programme de l'expérience québécoise (PEQ) se termine le 31 octobre 2026 à 23 h 59, heure de Montréal. Le programme est réactivé pour deux ans (du 2 juillet 2026 au 2 juillet 2028) et il n'y a pas de plafond de demandes. Deux profils sont visés : les diplômés du Québec (baccalauréat, maîtrise, doctorat, DEC technique ou DEP, au moins 1 800 heures de formation) et les travailleurs temporaires ayant au moins 2 ans d'expérience au Québec dans un emploi de niveau FÉER 0 à 3, conditions remplies au 19 novembre 2025. Le français exigé est de niveau 7 à l'oral et 5 à l'écrit (échelle québécoise). Remplir les critères ne garantit pas la sélection. Les demandes reçues et conformes seront examinées par le ministère, et Québec prévient que les délais peuvent être plus longs que d'habitude en raison du volume. Selon CIC News, qui cite des données d'accès à l'information, Québec a reçu 12 364 demandes en juillet et août (7 938 diplômés et 4 426 travailleurs), au-delà de la fourchette de 8 000 à 12 000 annoncée en juin pour toute la période; ces chiffres sont à recouper avec Québec. Après le 31 octobre : selon le ministère, d'autres périodes de réception pourraient être annoncées d'ici le 2 juillet 2028, mais rien n'est annoncé et les critères ne sont pas précisés. Le Programme de sélection des travailleurs qualifiés (PSTQ) se poursuit en parallèle (déclaration d'intérêt, puis invitation), et CIC News rapporte que Québec ajusterait dès novembre le nombre d'invitations PSTQ selon le volume de demandes PEQ (non confirmé sur une page officielle). Promesse seulement : le Parti québécois propose environ 35 000 admissions permanentes par an, sans règle détaillée publiée.",
+  "impact_fr": "Le PEQ s'adresse à des personnes qui ont déjà étudié ou travaillé au Québec. Si vous êtes encore au Maroc, il ne remplace ni l'admission dans un établissement, ni le CAQ, ni le permis d'études; votre parcours commence par ces étapes, et d'autres voies, comme l'Entrée express, peuvent aussi se comparer. Si vous êtes déjà au Québec et pensez remplir les conditions, vérifiez vos dates et vos documents avec la page officielle de Québec : l'échéance du 31 octobre est ferme. Ce texte est une information générale, sans promesse de résultat. Pour faire le point sur votre situation, appelez-nous ou écrivez-nous sur WhatsApp au +1 514 295 6635, ou prenez rendez-vous.",
+  "sources": [
+   {
+    "name": "Gouvernement du Québec — Programme de l'expérience québécoise (PEQ), mis à jour le 29 octobre 2026",
+    "url": "https://www.quebec.ca/immigration/permanente/travailleurs-qualifies/programme-experience-quebecoise"
+   },
+   {
+    "name": "Gouvernement du Québec — Réouverture temporaire du PEQ (17 juin 2026)",
+    "url": "https://www.quebec.ca/nouvelles/actualites/details/reouverture-temporaire-programme-experience-quebecoise-peq-71235"
+   },
+   {
+    "name": "Gouvernement du Québec — Réactivation du PEQ (document d'information)",
+    "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/immigration/publications-adm/reouverture_peq.pdf"
+   },
+   {
+    "name": "Gouvernement du Québec — Programme de sélection des travailleurs qualifiés (PSTQ)",
+    "url": "https://www.quebec.ca/immigration/permanente/travailleurs-qualifies/programme-selection-travailleurs-qualifies"
+   },
+   {
+    "name": "CIC News (demandes PEQ, 20 octobre 2026)",
+    "url": "https://www.cicnews.com/2026/10/peq-applications-quickly-surpass-quebecs-forecast-1081675.html"
+   },
+   {
+    "name": "Langlois avocats (autres périodes de réception possibles)",
+    "url": "https://langlois.ca/ressources/reouverture-temporaire-du-programme-de-lexperience-quebecoise-peq-ce-que-vous-devez-savoir/"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/peq-essentiel-31-octobre-2026.png",
+    "width": 1600,
+    "height": 675,
+    "alt_fr": "Trois chiffres : fin de la réception des demandes PEQ le 31 octobre 2026 à 23 h 59, réouverture de deux ans du 2 juillet 2026 au 2 juillet 2028, français oral niveau 7 et écrit niveau 5; et les deux profils visés : diplômés du Québec et travailleurs temporaires.",
+    "caption_fr": "L'essentiel du PEQ avant la fermeture, selon quebec.ca (page mise à jour le 29 octobre 2026)."
+   },
+   {
+    "src": "/assets/actu/peq-demandes-juillet-aout-2026.png",
+    "width": 1600,
+    "height": 909,
+    "alt_fr": "Graphique à barres des demandes PEQ reçues en juillet et août 2026 : diplômés du Québec 7 938, travailleurs temporaires 4 426, total 12 364, comparé à la prévision de 8 000 à 12 000 demandes d'ici le 31 octobre.",
+    "caption_fr": "Demandes PEQ de juillet et août 2026 selon CIC News (données d'accès à l'information); chiffres à recouper avec Québec."
+   },
+   {
+    "src": "/assets/actu/peq-apres-31-octobre-2026.png",
+    "width": 1600,
+    "height": 858,
+    "alt_fr": "Trois colonnes : ce qui est en vigueur après le 31 octobre, ce que Québec a indiqué (PEQ jusqu'au 2 juillet 2028, autres périodes possibles, PSTQ en parallèle) et les promesses seulement (Parti québécois, environ 35 000 admissions par an).",
+    "caption_fr": "Après le 31 octobre : règle en vigueur, indications de Québec et promesses; à vérifier sur quebec.ca."
+   }
+  ]
  }
 ]
