@@ -573,5 +573,32 @@
     "caption_fr": "Après le 31 octobre : règle en vigueur, indications de Québec et promesses; à vérifier sur quebec.ca."
    }
   ]
+ },
+ {
+  "id": "entree-express-definition-profession-salaire-eleve-ircc",
+  "date": "2026-11-02",
+  "tag_fr": "Entrée express",
+  "title_fr": "Entrée express : comment IRCC définit une profession « à salaire élevé » (en vigueur le 3 novembre)",
+  "summary_fr": "Selon IRCC, une profession est « à salaire élevé » si le salaire médian de toutes les personnes qui l'exercent au Canada (code CNP) atteint au moins 1,3 fois le salaire médian moyen de l'ensemble des travailleurs. Le calcul porte sur la profession, pas sur le poste ou le salaire d'une personne. Trois niveaux existent (au moins 1,3, 1,5 et 2 fois) et la liste, fondée sur les données de 2023 à 2025, entre en vigueur le 3 novembre 2026. Si la liste change après l'envoi d'une invitation à présenter une demande, c'est le niveau en vigueur à la date de l'invitation qui s'applique. Pour les points d'expérience, il faut au moins 12 mois (1 560 heures) dans ces professions, et les heures de plusieurs emplois sont plafonnées à l'équivalent de 30 heures par semaine. Selon IRCC, l'EIMT n'est plus requise pour ces points, mais les agents évaluent si chaque offre est authentique. IRCC précise aussi que le profil en ligne n'était pas encore mis à jour : il faut encore y répondre « oui » à la question sur l'EIMT et saisir ses renseignements. Les scores seront recalculés (jusqu'à deux semaines) et les tirages suspendus pendant ce temps.",
+  "impact_fr": "Le niveau d'une profession se vérifie par son code CNP, pas par le salaire inscrit sur une offre. Avant de compter sur des points, vérifiez la profession visée et l'authenticité de l'offre; ne payez jamais pour obtenir une offre d'emploi. Des points supplémentaires ne garantissent pas une invitation. Une évaluation personnalisée de votre dossier est recommandée.",
+  "visuels": [
+   {
+    "src": "/assets/actu/entree-express-salaire-eleve-niveaux-3-novembre-2026.png",
+    "width": 1600,
+    "height": 900,
+    "alt_fr": "Tableau : profession à salaire élevé selon le salaire médian (au moins 1,3, 1,5 ou 2 fois la médiane moyenne) : offre d'emploi 50, 70 ou 100 points; expérience canadienne de 12 mois ou plus 20, 40 ou 70 points.",
+    "caption_fr": "Niveaux et points publiés par IRCC, en vigueur le 3 novembre 2026. Les points ne garantissent pas une invitation."
+   }
+  ],
+  "sources": [
+   {
+    "name": "IRCC (canada.ca) : Changes to points for Canadian work experience and job offers in the Express Entry system",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html"
+   },
+   {
+    "name": "IRCC (canada.ca) : High-wage occupations and how we assess them",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/high-wage.html"
+   }
+  ]
  }
 ]
