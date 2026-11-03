@@ -573,5 +573,50 @@
     "caption_fr": "Après le 31 octobre : règle en vigueur, indications de Québec et promesses; à vérifier sur quebec.ca."
    }
   ]
+ },
+ {
+  "id": "entree-express-nouveaux-points-en-vigueur-3-novembre-2026",
+  "date": "2026-11-03",
+  "tag_fr": "Entrée express",
+  "title_fr": "Entrée express : les nouveaux points sont en vigueur à partir d'aujourd'hui, 3 novembre 2026",
+  "summary_fr": "Selon la page officielle d'IRCC, les nouvelles règles de points s'appliquent à partir du 3 novembre 2026. Une offre d'emploi valide dans une profession à salaire élevé vaut 50, 70 ou 100 points, et au moins 12 mois (1 560 heures) d'expérience canadienne dans une telle profession valent 20, 40 ou 70 points, selon que le salaire médian de la profession atteint au moins 1,3, 1,5 ou 2 fois le salaire médian. Les deux voies ne s'additionnent pas : IRCC retient la plus avantageuse. Le facteur d'intégration au marché du travail est plafonné à 150 points (140 avec conjoint). Une EIMT n'est plus exigée pour que l'offre donne droit aux points ou à l'admissibilité, et elle ne donne ni points ni priorité en plus; l'offre doit rester valide et IRCC en vérifie l'authenticité. Tant que le système en ligne n'est pas mis à jour, IRCC demande encore de sélectionner une EIMT positive dans le profil. Les profils existants sont recalculés automatiquement, ce qui peut prendre jusqu'à deux semaines, et les tirages sont suspendus pendant le recalcul puis reprennent ensuite; aucune date de reprise n'est annoncée. La page consultée date du 16 octobre : nous n'avons pas pu vérifier aujourd'hui l'état du recalcul.",
+  "impact_fr": "Si vous avez un profil Entrée express, vérifiez que votre offre d'emploi et votre expérience canadienne y figurent correctement, et attendez la fin du recalcul avant de comparer votre nouveau score. Un score plus élevé ne garantit pas une invitation, et le résultat dépend de votre profession (code CNP) et de votre situation. Vous êtes au Maroc ? Une offre d'emploi doit être réelle : ne payez jamais pour obtenir une offre. Ce texte est une information générale, sans promesse de résultat. Pour faire le point sur votre profil, appelez-nous ou écrivez-nous sur WhatsApp au +1 514 295 6635, ou prenez rendez-vous.",
+  "sources": [
+   {
+    "name": "IRCC (canada.ca) : 2026 Changes to points for Canadian work experience and job offers in the Express Entry system",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html"
+   },
+   {
+    "name": "IRCC (canada.ca) : Changes to Express Entry for high-wage occupations",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/changes-to-express-entry-for-high-wage-occupations.html"
+   },
+   {
+    "name": "ObservAlgérie : Entrée express change ses règles (3 novembre 2026)",
+    "url": "https://observalgerie.com/2026/11/03/immigration/immigration-au-canada-entree-express-change-ses-regles-voici-les-nouveaux-criteres"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/entree-express-points-maximum-3-novembre-2026.png",
+    "width": 1600,
+    "height": 1000,
+    "alt_fr": "Graphique à barres des points maximum selon la voie : offre d'emploi 100 points; expérience canadienne avec conjoint 140 (70 + 70); sans conjoint 150 (80 + 70).",
+    "caption_fr": "Points maximum selon la voie, d'après IRCC (canada.ca)."
+   },
+   {
+    "src": "/assets/actu/entree-express-ce-qui-change-3-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Tableau en deux colonnes : ce qui change (points d'offre d'emploi, fin de l'exigence d'EIMT, points d'expérience, recalcul) et ce qui reste (authenticité de l'offre, pas de garantie d'invitation, admissibilité des programmes fédéraux, EIMT encore demandée dans le formulaire).",
+    "caption_fr": "Ce qui change et ce qui reste au 3 novembre 2026, d'après IRCC (canada.ca)."
+   },
+   {
+    "src": "/assets/actu/entree-express-calendrier-3-novembre-2026.png",
+    "width": 1600,
+    "height": 640,
+    "alt_fr": "Calendrier : annonce le 16 octobre, mise à jour du profil avant le 3 novembre, entrée en vigueur le 3 novembre, recalcul jusqu'à 2 semaines avec tirages suspendus.",
+    "caption_fr": "Le calendrier à retenir, d'après les communiqués d'IRCC du 16 octobre 2026."
+   }
+  ]
  }
 ]
