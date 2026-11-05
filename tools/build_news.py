@@ -22,7 +22,11 @@ def fdate(iso, lang):
 def card(it, lang):
     base = '/ar/actualites/' if lang == 'ar' else '/actualites/'
     more = 'اقرأ المزيد ←' if lang == 'ar' else 'Lire la suite →'
-    return (f'<article class="news-card reveal"><p class="news-meta"><span class="news-tag">{e(it["tag_"+lang])}</span>'
+    th = ''
+    if it.get('visuels'):
+        v0 = it['visuels'][0]
+        th = f'<a href="{base}#{it["id"]}" tabindex="-1" aria-hidden="true"><img class="news-thumb" src="{e(v0["src"])}" alt="" width="{v0["width"]}" height="{v0["height"]}" loading="lazy"></a>'
+    return (f'<article class="news-card reveal">{th}<p class="news-meta"><span class="news-tag">{e(it["tag_"+lang])}</span>'
             f'<time datetime="{it["date"]}">{fdate(it["date"], lang)}</time></p>'
             f'<h3>{e(it["title_"+lang])}</h3><p>{e(it["summary_"+lang])}</p>'
             f'<a class="more" href="{base}#{it["id"]}">{more}</a></article>')
@@ -165,3 +169,7 @@ if '/actualites/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Actualités de l'immigration (français)]({SITE}/actualites/): nouvelles expliquées, avec sources\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 print('ok', len(items), 'actualités')
+
+# post-traitement automatique (design, contacts, confidentialité) : évite qu'une régénération n'écrase les ajouts
+import subprocess
+subprocess.run(['sh', R + 'tools/postprocess.sh'], check=False)

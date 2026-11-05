@@ -110,3 +110,24 @@ nav.primary .nav-social,.mobile-nav .nav-social{display:inline-flex;align-items:
 nav.primary .nav-social a,.mobile-nav .nav-social a{width:34px;height:34px;padding:0;border:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
 nav.primary .nav-social svg,.mobile-nav .nav-social svg{width:19px;height:19px}
 .mobile-nav .nav-social{padding:14px 0 6px}
+/* page légale */
+.legal{max-width:780px}
+.legal h2{font-family:Lora,serif;font-size:1.4rem;margin:34px 0 10px;color:#16233D}
+.legal p,.legal li{line-height:1.7;color:#3C4A63}
+.legal ul{padding-left:20px;margin:8px 0}
+.legal li{margin:6px 0}
+.legal a{color:#B5342A}
+/* consentement formulaire */
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;line-height:1.5;color:#3C4A63}
+.consent input{margin-top:4px;flex:none;width:18px;height:18px;accent-color:#B5342A}
+.consent a{color:#B5342A}
+/* bandeau dernier tirage */
+.live-strip{background:#16233D;color:#fff;border-bottom:3px solid #E1232B}
+.live-strip .wrap{display:flex;align-items:center;gap:14px 20px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+.live-strip .ls-tag{display:inline-flex;align-items:center;gap:8px;background:#E1232B;border-radius:999px;padding:5px 14px;font-weight:700;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.live-strip .ls-text{flex:1 1 320px;font-weight:600;font-size:1.02rem;line-height:1.4}
+.live-strip .ls-date{opacity:.7;font-weight:400;margin-inline-start:8px;white-space:nowrap}
+.live-strip .ls-link{color:#fff;font-weight:600;text-decoration:none;border-bottom:1.5px solid #FF5A5F;white-space:nowrap}
+.live-strip .ls-link:hover{color:#FF5A5F}
+/* vignettes des actualités */
+.news-card .news-thumb{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;background:#F1ECE2;border-radius:6px;margin:0 0 14px;border:1px solid #E5E0D3}
