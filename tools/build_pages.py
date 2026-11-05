@@ -212,7 +212,6 @@ PAGES.append(dict(
  ['Invitation', "Une lettre d'invitation peut être utile, voire demandée selon le cas", "Lettre d'invitation signée par votre enfant ou petit-enfant, obligatoire"],
  ['Assurance médicale', "Non exigée par la liste de conditions d'IRCC", "Assurance privée valide au moins 1 an, obligatoire"],
 ])}
-<p class="note" style="margin-top:18px">Sources : {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html', "IRCC, comment demander un visa de visiteur")} et {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html', "IRCC, super visa : qui peut présenter une demande")} (pages en anglais).</p>
 </div></section>
 <section class="sp"><div class="wrap"><h2>Visa de visiteur : ce qu'IRCC vérifie</h2>
 <ol class="steps">
@@ -230,7 +229,6 @@ PAGES.append(dict(
  ['Dépôt', "En ligne, par le portail d'IRCC. La demande sur papier n'est permise que dans des cas précis."],
  ['Validité', "Un visa peut être délivré pour une durée maximale de 10 ans, ou jusqu'à l'expiration du passeport ou des données biométriques si elle survient avant. L'agent peut fixer une autre date."],
 ])}
-<p class="note" style="margin-top:18px">Source : {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html', "IRCC, comment demander un visa de visiteur")}, {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eligibility.html', "IRCC, admissibilité au visa de visiteur")}. Les frais peuvent changer : vérifiez le montant au moment du dépôt.</p>
 </div></section>
 <section class="sp alt"><div class="wrap"><h2>Super visa : les conditions</h2>
 {table(['Condition', "Ce qu'indique IRCC"], [
@@ -241,7 +239,6 @@ PAGES.append(dict(
  ['Examen médical', "Un examen médical d'immigration, passé auprès d'un médecin désigné, est exigé."],
  ['Vous (le demandeur)', "Vous devez être hors du Canada lorsque vous présentez la demande et être admissible. IRCC évalue aussi que vous êtes un véritable visiteur qui quittera le Canada à la fin de la visite (attaches, objet du séjour, famille, finances)."],
 ])}
-<p class="note" style="margin-top:18px">Sources : {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html', "IRCC, super visa : qui peut présenter une demande")}, {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents.html', "IRCC, documents à fournir")}, {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents/host-financial-support.html', "IRCC, preuve de soutien financier de l'hôte")}.</p>
 <div class="prose" style="margin-top:18px"><p>Depuis le 28 janvier 2025, une assurance émise par un assureur établi à l'étranger est acceptée s'il est autorisé par le BSIF. Si une demande de parrainage est en cours, vous pouvez demander un super visa en attendant la décision. Après l'approbation, le visa est imprimé par un bureau des visas hors du Canada : attendez ses instructions.</p></div>
 </div></section>
 <section class="sp"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
@@ -256,13 +253,7 @@ PAGES.append(dict(
         ("Garantissez-vous l'obtention du visa ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes."),
     ],
     sources=[
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html', "IRCC, comment demander un visa de visiteur (en anglais)"),
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eligibility.html', "IRCC, admissibilité à un visa de visiteur (en anglais)"),
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html', "IRCC, super visa : qui peut présenter une demande (en anglais)"),
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents.html', "IRCC, super visa : documents (en anglais)"),
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents/host-financial-support.html', "IRCC, super visa : preuve de soutien financier de l'hôte (en anglais)"),
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/change-health-insurance-requirement-makes-super-visa-more-accessible.html', "IRCC, changement à l'exigence d'assurance maladie du super visa (en anglais)"),
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/other-goals/super-visa-2026.html', "IRCC, instructions ministérielles sur le super visa (2026, en anglais)"),
+        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html', "IRCC, Visiter le Canada (site officiel)"),
     ],
     related=[("/permis-etudes-canada-maroc/", "Permis d'études depuis le Maroc"), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
 ))
