@@ -42,6 +42,7 @@ EXTRA_CSS = """<style>
 .info{background:#fff;border:1px solid var(--line);border-top:4px solid #E1232B;border-radius:10px;padding:20px 24px;box-shadow:0 6px 18px rgba(22,35,61,.05)}
 .info h3{margin:0 0 8px;font-family:'Lora',serif;font-size:1.12rem;font-weight:600;color:var(--ink)}
 .info p{margin:0;color:var(--ink-soft);line-height:1.65}
+.info-link{display:block;text-decoration:none;color:inherit;transition:transform .15s ease,box-shadow .15s ease}.info-link:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(22,35,61,.12)}.info-link .go{display:inline-block;margin-top:12px;color:#E1232B;font-weight:700;font-size:.9rem;letter-spacing:.02em}
 .info-grid .info:last-child:nth-child(odd){grid-column:1/-1}
 @media (max-width:760px){.cmp,.info-grid{grid-template-columns:1fr}}
 </style>
@@ -62,7 +63,11 @@ def rich(headers, rows):
             rws = ''.join(f'<div class="cmp-row"><b>{r[0]}</b><span>{r[k]}</span></div>' for r in rows)
             out += f'<div class="cmp-card{" b" if k == 2 else ""}"><h3>{e(headers[k])}</h3>{rws}</div>'
         return f'<div class="cmp">{out}</div>'
-    return '<div class="info-grid">' + ''.join(f'<div class="info"><h3>{r[0]}</h3><p>{r[1]}</p></div>' for r in rows) + '</div>'
+    def card(r):
+        if len(r) > 2:
+            return f'<a class="info info-link" href="{r[2]}"><h3>{r[0]}</h3><p>{r[1]}</p><span class="go">En savoir plus →</span></a>'
+        return f'<div class="info"><h3>{r[0]}</h3><p>{r[1]}</p></div>'
+    return '<div class="info-grid">' + ''.join(card(r) for r in rows) + '</div>'
 
 
 def a(url, label):
@@ -424,10 +429,10 @@ PAGES.append(dict(
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>Les principales voies</h2>
 {rich(['Voie', 'En bref'], [
- ['Entrée express', "Système en ligne de gestion des demandes de trois programmes fédéraux : travailleurs qualifiés (fédéral), travailleurs de métiers spécialisés (fédéral) et catégorie de l'expérience canadienne. Les candidats sont classés par points et les mieux classés sont invités à présenter une demande."],
- ['Candidats des provinces', "Chaque province ou territoire nomme des personnes dont il a besoin, selon ses propres volets. Le Québec et le Nunavut n'ont pas ce programme."],
- ['Québec', "Le Québec sélectionne lui-même une partie de ses immigrants économiques (CSQ), puis IRCC traite la résidence permanente."],
- ['Parrainage familial', "Un citoyen canadien ou un résident permanent peut parrainer certains membres de sa famille : conjoint, enfants à charge, parents et grands-parents."],
+ ['Entrée express', "Système en ligne de gestion des demandes de trois programmes fédéraux : travailleurs qualifiés (fédéral), travailleurs de métiers spécialisés (fédéral) et catégorie de l'expérience canadienne. Les candidats sont classés par points et les mieux classés sont invités à présenter une demande.", '/entree-express-canada/'],
+ ['Candidats des provinces', "Chaque province ou territoire nomme des personnes dont il a besoin, selon ses propres volets. Le Québec et le Nunavut n'ont pas ce programme.", '/candidats-provinces-canada/'],
+ ['Québec', "Le Québec sélectionne lui-même une partie de ses immigrants économiques (CSQ), puis IRCC traite la résidence permanente.", '/immigration-quebec-canada/'],
+ ['Parrainage familial', "Un citoyen canadien ou un résident permanent peut parrainer certains membres de sa famille : conjoint, enfants à charge, parents et grands-parents.", '/parrainage-familial-canada/'],
  ['Programme d\'immigration au Canada atlantique', "Pour les travailleurs qualifiés et les diplômés récents d'un établissement de l'Atlantique, avec une offre d'emploi d'un employeur désigné au Nouveau-Brunswick, en Nouvelle-Écosse, à l'Île-du-Prince-Édouard ou à Terre-Neuve-et-Labrador."],
 ])}
 </div></section>
@@ -590,9 +595,9 @@ PAGES.append(dict(
 </div></div></section>
 <section class="sp alt"><div class="wrap"><h2>Les autres voies à envisager</h2>
 {rich(['Voie', 'En bref'], [
- ['Permis de travail', "Selon votre situation, un permis de travail peut permettre de travailler au Canada. Voyez notre page sur le <a href=\"/permis-de-travail-canada/\" style=\"text-decoration:underline\">permis de travail</a>."],
- ["Entrée express", "Si votre profil de travailleur qualifié le permet, c'est souvent une voie plus réaliste. Voyez notre page sur l'<a href=\"/entree-express-canada/\" style=\"text-decoration:underline\">Entrée express</a>."],
- ['Candidats des provinces', "Chaque province fixe ses propres volets et critères. Voyez notre page sur les <a href=\"/candidats-provinces-canada/\" style=\"text-decoration:underline\">candidats des provinces</a>."],
+ ['Permis de travail', "Selon votre situation, un permis de travail peut permettre de travailler au Canada.", '/permis-de-travail-canada/'],
+ ["Entrée express", "Si votre profil de travailleur qualifié le permet, c'est souvent une voie plus réaliste.", '/entree-express-canada/'],
+ ['Candidats des provinces', "Chaque province fixe ses propres volets et critères.", '/candidats-provinces-canada/'],
 ])}
 </div></section>
 <section class="sp"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">

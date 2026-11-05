@@ -38,6 +38,7 @@ EXTRA_CSS = """<style>
 .info{background:#fff;border:1px solid var(--line);border-top:4px solid #E1232B;border-radius:10px;padding:20px 24px;box-shadow:0 6px 18px rgba(22,35,61,.05)}
 .info h3{margin:0 0 8px;font-family:'Lora',serif;font-size:1.12rem;font-weight:600;color:var(--ink)}
 .info p{margin:0;color:var(--ink-soft);line-height:1.65}
+.info-link{display:block;text-decoration:none;color:inherit;transition:transform .15s ease,box-shadow .15s ease}.info-link:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(22,35,61,.12)}.info-link .go{display:inline-block;margin-top:12px;color:#E1232B;font-weight:700;font-size:.9rem}
 .info-grid .info:last-child:nth-child(odd){grid-column:1/-1}
 @media (max-width:760px){.cmp,.info-grid{grid-template-columns:1fr}}
 </style>
@@ -59,7 +60,11 @@ def rich(headers, rows):
             rws = ''.join(f'<div class="cmp-row"><b>{r[0]}</b><span>{r[k]}</span></div>' for r in rows)
             out += f'<div class="cmp-card{" b" if k == 2 else ""}"><h3>{e(headers[k])}</h3>{rws}</div>'
         return f'<div class="cmp">{out}</div>'
-    return '<div class="info-grid">' + ''.join(f'<div class="info"><h3>{r[0]}</h3><p>{r[1]}</p></div>' for r in rows) + '</div>'
+    def card(r):
+        if len(r) > 2:
+            return f'<a class="info info-link" href="{r[2]}"><h3>{r[0]}</h3><p>{r[1]}</p><span class="go">اعرف المزيد ←</span></a>'
+        return f'<div class="info"><h3>{r[0]}</h3><p>{r[1]}</p></div>'
+    return '<div class="info-grid">' + ''.join(card(r) for r in rows) + '</div>'
 
 
 def a(url, label):
@@ -422,10 +427,10 @@ PAGES.append(dict(
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>المسارات الرئيسية</h2>
 {rich(['المسار', 'باختصار'], [
- ['الدخول السريع (Express Entry)', "نظام إلكتروني لإدارة طلبات ثلاثة برامج فدرالية: العمال المهرة (فدرالي)، وعمال المهن الماهرة (فدرالي)، وفئة الخبرة الكندية. يُرتَّب المرشحون بالنقاط، ويُدعى الأعلى ترتيبًا إلى تقديم طلب."],
- ['المرشحون الإقليميون', "تسمّي كل مقاطعة أو إقليم أشخاصًا تحتاج إليهم وفق مساراتها الخاصة. أما كيبيك ونونافوت فلا يطبّقان هذا البرنامج."],
- ['كيبيك', "تختار كيبيك بنفسها جزءًا من مهاجريها الاقتصاديين (CSQ)، ثم تعالج IRCC طلب الإقامة الدائمة."],
- ['الكفالة الأسرية', "يمكن لمواطن كندي أو مقيم دائم كفالة بعض أفراد أسرته: الزوج أو الزوجة، والأبناء المعالين، والوالدين والأجداد."],
+ ['الدخول السريع (Express Entry)', "نظام إلكتروني لإدارة طلبات ثلاثة برامج فدرالية: العمال المهرة (فدرالي)، وعمال المهن الماهرة (فدرالي)، وفئة الخبرة الكندية. يُرتَّب المرشحون بالنقاط، ويُدعى الأعلى ترتيبًا إلى تقديم طلب.", '/ar/express-entry/'],
+ ['المرشحون الإقليميون', "تسمّي كل مقاطعة أو إقليم أشخاصًا تحتاج إليهم وفق مساراتها الخاصة. أما كيبيك ونونافوت فلا يطبّقان هذا البرنامج.", '/ar/provincial-nominee/'],
+ ['كيبيك', "تختار كيبيك بنفسها جزءًا من مهاجريها الاقتصاديين (CSQ)، ثم تعالج IRCC طلب الإقامة الدائمة.", '/ar/immigrate-to-quebec/'],
+ ['الكفالة الأسرية', "يمكن لمواطن كندي أو مقيم دائم كفالة بعض أفراد أسرته: الزوج أو الزوجة، والأبناء المعالين، والوالدين والأجداد.", '/ar/family-sponsorship/'],
  ['برنامج الهجرة إلى كندا الأطلسية', "للعمال المهرة والخريجين الجدد من مؤسسة في إقليم الأطلسي، مع عرض عمل من صاحب عمل معيَّن في نيو برونزويك أو نوفا سكوشا أو جزيرة الأمير إدوارد أو نيوفاوندلاند ولابرادور."],
 ])}
 </div></section>
@@ -588,9 +593,9 @@ PAGES.append(dict(
 </div></div></section>
 <section class="sp alt"><div class="wrap"><h2>مسارات أخرى ينبغي النظر فيها</h2>
 {rich(['المسار', 'باختصار'], [
- ['تصريح العمل', "بحسب وضعك، قد يتيح لك تصريح العمل العمل في كندا. اطّلع على صفحتنا حول <a href=\"/ar/work-permit/\" style=\"text-decoration:underline\">تصريح العمل</a>."],
- ["الدخول السريع", "إذا كان ملفك كعامل ماهر يسمح بذلك، فهو غالبًا مسار أكثر واقعية. اطّلع على صفحتنا حول <a href=\"/ar/express-entry/\" style=\"text-decoration:underline\">الدخول السريع</a>."],
- ['المرشحون الإقليميون', "تحدد كل مقاطعة مساراتها ومعاييرها الخاصة. اطّلع على صفحتنا حول <a href=\"/ar/provincial-nominee/\" style=\"text-decoration:underline\">المرشحين الإقليميين</a>."],
+ ['تصريح العمل', "بحسب وضعك، قد يتيح لك تصريح العمل العمل في كندا.", '/ar/work-permit/'],
+ ["الدخول السريع", "إذا كان ملفك كعامل ماهر يسمح بذلك، فهو غالبًا مسار أكثر واقعية.", '/ar/express-entry/'],
+ ['المرشحون الإقليميون', "تحدد كل مقاطعة مساراتها ومعاييرها الخاصة.", '/ar/provincial-nominee/'],
 ])}
 </div></section>
 <section class="sp"><div class="wrap"><h2>كيف نرافقك</h2><div class="prose">
