@@ -569,7 +569,48 @@ PAGES.append(dict(
 ))
 
 
-AR_OF = {'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
+PAGES.append(dict(
+    path='gens-affaires-immigration-canada/', updated='5 novembre 2026', updated_iso='2026-11-05',
+    title="Immigration des gens d'affaires au Canada et au Québec : où en sont les programmes | ATL Canada",
+    desc="Visa pour démarrage d'entreprise, travailleurs autonomes, programmes d'affaires du Québec : l'état officiel des programmes et les autres voies possibles. Un consultant réglementé vous aide à choisir.",
+    crumb="Gens d'affaires",
+    eyebrow="Gens d'affaires · Casablanca · Montréal",
+    h1="Immigration des gens d'affaires : où en sont les programmes ?",
+    lede="Les programmes d'immigration pour entrepreneurs et investisseurs changent beaucoup. Voici l'état indiqué par les gouvernements du Canada et du Québec, et les autres voies à envisager.",
+    body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Au niveau fédéral</h2>
+{rich(['Programme', "Ce qu'indique IRCC"], [
+ ["Visa pour démarrage d'entreprise", "IRCC a cessé d'accepter les nouvelles demandes le 31 décembre 2025, sauf pour les personnes qui avaient reçu en 2025 un engagement valide d'un organisme désigné. La page du programme indique aussi une date limite au 30 juin 2026 pour ces personnes : vérifiez l'état à jour avant d'agir. L'entreprise doit être située hors Québec."],
+ ['Travailleurs autonomes', "La suspension de la réception des demandes est prolongée « jusqu'à nouvel ordre »."],
+ ['Et ensuite ?', "IRCC prévoit remplacer ces programmes par un nouveau programme pilote ciblé pour les entrepreneurs immigrants. Les détails doivent être publiés en 2026."],
+])}
+</div></section>
+<section class="sp"><div class="wrap"><h2>Au Québec</h2><div class="prose">
+<p>Le Québec choisit lui-même les gens d'affaires qui s'y établissent : il faut d'abord obtenir un Certificat de sélection du Québec (CSQ), puis IRCC traite la résidence permanente. Depuis le 1er janvier 2024, la réforme des programmes d'investisseurs, d'entrepreneurs et de travailleurs autonomes exige notamment une connaissance satisfaisante du français pour s'établir au Québec. Voyez aussi notre page sur <a href="/immigration-quebec-canada/" style="text-decoration:underline">immigrer au Québec</a>.</p>
+</div></div></section>
+<section class="sp alt"><div class="wrap"><h2>Les autres voies à envisager</h2>
+{rich(['Voie', 'En bref'], [
+ ['Permis de travail', "Selon votre situation, un permis de travail peut permettre de travailler au Canada. Voyez notre page sur le <a href=\"/permis-de-travail-canada/\" style=\"text-decoration:underline\">permis de travail</a>."],
+ ["Entrée express", "Si votre profil de travailleur qualifié le permet, c'est souvent une voie plus réaliste. Voyez notre page sur l'<a href=\"/entree-express-canada/\" style=\"text-decoration:underline\">Entrée express</a>."],
+ ['Candidats des provinces', "Chaque province fixe ses propres volets et critères. Voyez notre page sur les <a href=\"/candidats-provinces-canada/\" style=\"text-decoration:underline\">candidats des provinces</a>."],
+])}
+</div></section>
+<section class="sp"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
+<p>En consultation, nous faisons le point sur votre projet, nous vérifions l'état à jour des programmes avant toute dépense, et nous comparons les voies réalistes pour votre profil. Le recours à un professionnel de l'immigration ne donne aucune priorité de traitement.</p>
+<p class="note">La décision appartient uniquement à IRCC et aux autorités du Québec : nous ne pouvons ni garantir un résultat ni promettre un délai.</p></div></div></section>''',
+    faq=[
+        ("Le visa pour démarrage d'entreprise est-il encore ouvert ?", "Selon IRCC, les nouvelles demandes ne sont plus acceptées depuis le 31 décembre 2025, sauf pour les personnes qui avaient reçu un engagement valide en 2025. Vérifiez l'état à jour avec nous."),
+        ("Le programme des travailleurs autonomes est-il ouvert ?", "Selon IRCC, la réception des demandes est suspendue jusqu'à nouvel ordre."),
+        ("Que remplacera ces programmes ?", "IRCC prévoit un nouveau programme pilote ciblé pour les entrepreneurs immigrants, dont les détails doivent être publiés en 2026."),
+        ("Faut-il parler français pour immigrer au Québec comme gens d'affaires ?", "Oui : depuis la réforme du 1er janvier 2024, une connaissance satisfaisante du français est exigée pour s'établir au Québec comme investisseur, entrepreneur ou travailleur autonome."),
+        ("Garantissez-vous un résultat ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes et québécoises."),
+    ],
+    sources=[],
+    related=[('/residence-permanente-canada/', 'Résidence permanente'), ('/immigration-quebec-canada/', 'Immigrer au Québec')],
+))
+
+
+AR_OF = {'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
 
 
 def head_for(p):
