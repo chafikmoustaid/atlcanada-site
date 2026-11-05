@@ -143,3 +143,4 @@ nav.primary .nav-social svg,.mobile-nav .nav-social svg{width:19px;height:19px}
 
 .card-link{display:block;text-decoration:none;color:inherit;transition:transform .15s ease,box-shadow .15s ease}.card-link:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(22,35,61,.12)}.card-link .go{display:inline-block;margin-top:12px;color:#E1232B;font-weight:700;font-size:.9rem}
 .sp .note,.sp .prose{max-width:none}
+.pg-hero .lede{max-width:none}
