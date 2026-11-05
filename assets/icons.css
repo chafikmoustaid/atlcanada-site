@@ -140,3 +140,5 @@ nav.primary .nav-social svg,.mobile-nav .nav-social svg{width:19px;height:19px}
 .news-card .news-thumb{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;background:#F1ECE2;border-radius:6px;margin:0 0 14px;border:1px solid #E5E0D3}
 .live-strip{padding:0 !important;margin:0}.live-strip .ls-inner{padding:0}
 @media (max-width:1500px){nav.primary{gap:14px}nav.primary a{font-size:.95rem}nav.primary .nav-social{margin-inline-start:4px;gap:8px}nav.primary .nav-social a{width:30px;height:30px}.nav-actions{gap:10px}.nav-actions .btn{padding-left:16px;padding-right:16px}}
+
+.card-link{display:block;text-decoration:none;color:inherit;transition:transform .15s ease,box-shadow .15s ease}.card-link:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(22,35,61,.12)}.card-link .go{display:inline-block;margin-top:12px;color:#E1232B;font-weight:700;font-size:.9rem}

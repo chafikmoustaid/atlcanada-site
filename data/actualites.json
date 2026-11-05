@@ -641,6 +641,15 @@
     "name": "WelcomeBC : BC PNP, invitations to apply",
     "url": "https://www.welcomebc.ca/immigrate-to-b-c/about-the-bc-provincial-nominee-program/invitations-to-apply"
    }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/bc-pnp-invitations-octobre-2026.png",
+    "width": 1600,
+    "height": 896,
+    "alt_fr": "Graphique à barres : invitations de la Colombie-Britannique en octobre 2026 par volet : Innovate High Economic Impact 772, Build construction 115, Care petite enfance 86, Care santé 82, santé rurale temporaire 16, entrepreneurs volet de base 10.",
+    "caption_fr": "Invitations par volet selon la page officielle WelcomeBC. Ce sont des tirages passés ; les scores ne se comparent pas avec ceux d'Entrée express."
+   }
   ]
  }
 ]

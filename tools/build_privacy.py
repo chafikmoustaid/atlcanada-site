@@ -42,7 +42,7 @@ body = '''<main>
 <li><strong>Google Fonts</strong> et <strong>Pexels</strong> fournissent les polices et certaines photos du site : votre navigateur contacte leurs serveurs, qui peuvent voir votre adresse IP.</li>
 <li><strong>WhatsApp, Facebook et Instagram</strong> : si vous cliquez sur ces liens, vous quittez notre site et leurs propres politiques s'appliquent.</li>
 </ul>
-<p>Ce site n'utilise actuellement ni témoin (cookie) de publicité ni outil de suivi des visiteurs.</p>
+<p>Nous mesurons la fréquentation du site avec <strong>Vercel Web Analytics</strong>, un outil qui ne dépose aucun témoin (cookie) et ne crée aucun profil de visiteur : il compte les pages vues de façon anonyme et agrégée. Ce site n'utilise aucun témoin de publicité.</p>
 <h2>Conservation et sécurité</h2>
 <p>Nous conservons vos renseignements le temps nécessaire pour traiter votre demande et assurer le suivi de votre dossier, puis nous les supprimons ou les anonymisons. Le site est servi en HTTPS avec des en-têtes de sécurité, et l'accès à notre boîte courriel est limité à l'équipe d'ATL Canada.</p>
 <h2>Vos droits</h2>

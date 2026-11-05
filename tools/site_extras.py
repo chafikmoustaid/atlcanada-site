@@ -15,6 +15,9 @@ for f in files:
     t = o = open(f, encoding='utf-8').read()
     ar = 'lang="ar"' in t[:200]
     rel = f[len(R):]
+    # 0. statistiques Vercel Web Analytics (sans témoin, anonymes)
+    if '/_vercel/insights/script.js' not in t and '</body>' in t:
+        t = t.replace('</body>', '<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script>\n<script defer src="/_vercel/insights/script.js"></script>\n</body>', 1)
     # 1. lien Confidentialité
     if '/confidentialite/' not in t and rel != 'confidentialite/index.html':
         lab = 'سياسة الخصوصية' if ar else 'Confidentialité'

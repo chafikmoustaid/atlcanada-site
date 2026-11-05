@@ -486,7 +486,14 @@ PAGES.append(dict(
 <section class="sp alt"><div class="wrap"><h2>Ce qui change depuis le 3 novembre 2026</h2><div class="prose">
 <p>Selon IRCC (annonce du 16 octobre 2026), le système donne désormais des points supplémentaires pour une expérience de travail canadienne admissible ou une offre d'emploi admissible dans une profession à salaire élevé (une profession dont le salaire médian est au moins 1,3 fois celui de l'ensemble des travailleurs canadiens). Une EIMT n'est plus nécessaire pour qu'une offre d'emploi donne ces points ou réponde aux exigences d'offre d'emploi des programmes fédéral des travailleurs qualifiés et fédéral des métiers spécialisés.</p>
 <p>Les scores des candidats déjà dans le bassin sont recalculés automatiquement. IRCC précise que le recalcul peut prendre jusqu'à deux semaines et que les rondes d'invitations sont suspendues pendant ce temps. Pour recevoir les points d'offre d'emploi, il fallait mettre son profil à jour avant le 3 novembre.</p>
-<p class="note">Ces règles évoluent : l'état indiqué est celui du 5 novembre 2026. Vérifiez avec nous votre situation à jour.</p></div>
+</div>
+<div style="margin-top:22px"></div>
+{rich(['Barème IRCC', 'Points'], [
+ ["Offre d'emploi admissible", "100 points si la profession a un salaire médian d'au moins 2 fois le salaire médian moyen ; 70 points entre 1,5 et 2 fois ; 50 points entre 1,3 et 1,5 fois ; 0 point pour une profession qui n'est pas à salaire élevé."],
+ ["Expérience canadienne dans une profession à salaire élevé", "En plus des points de durée de travail, au moins 12 mois (1 560 heures) d'expérience admissible donnent 70 points (au moins 2 fois), 40 points (au moins 1,5 fois) ou 20 points (au moins 1,3 fois)."],
+ ["EIMT", "N'est plus nécessaire et ne donne plus de points supplémentaires ni de priorité."],
+])}
+<div class="prose" style="margin-top:18px"><p class="note">Ces règles évoluent : l'état indiqué est celui du 5 novembre 2026. Vérifiez avec nous votre situation à jour.</p></div>
 </div></section>
 <section class="sp"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
 <p>En consultation, nous vérifions à quels programmes vous êtes admissible, nous estimons votre classement, nous identifions les points faciles à améliorer (langues, évaluation des diplômes, offre d'emploi) et nous préparons votre profil et vos documents. Si vous parlez bien français, lisez aussi notre page sur l'<a href="/entree-express-francophone-maroc/" style="text-decoration:underline">Entrée express pour les francophones</a>.</p>
