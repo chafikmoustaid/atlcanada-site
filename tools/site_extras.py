@@ -9,7 +9,7 @@ WA_FR = 'Bonjour ATL Canada, j\'aimerais avoir des informations sur mon projet d
 WA_AR = 'مرحبا ATL Canada، أرغب في الحصول على معلومات حول مشروع الهجرة إلى كندا.'
 from urllib.parse import quote
 items = sorted(json.load(open(R + 'data/actualites.json', encoding='utf-8')), key=lambda x: x['date'], reverse=True)
-last = next((i for i in items if i['tag_fr'] == 'Entrée express' and 'tirage' in i['id']), None)
+draws = [i for i in items if i['tag_fr'] == 'Entrée express' and 'tirage' in i['id']][:3]
 n = 0
 for f in files:
     t = o = open(f, encoding='utf-8').read()
@@ -32,18 +32,20 @@ for f in files:
                'J\'ai lu la <a href="/confidentialite/" target="_blank">politique de confidentialité</a> et j\'accepte que mes renseignements servent à répondre à ma demande.')
         box = f'<label class="consent"><input type="checkbox" name="consentement" value="oui" required><span>{txt}</span></label>\n        '
         t = t.replace('<button class="btn btn-solid" type="submit"', box + '<button class="btn btn-solid" type="submit"', 1)
-    # 3. bandeau dernier tirage (accueil FR)
-    if rel == 'index.html' and last:
-        d = last['date'].split('-')
-        mois = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'][int(d[1]) - 1]
-        strip = ('<!-- LIVE:START -->\n  <section class="live-strip" aria-label="Dernier tirage Entrée express"><div class="wrap">'
+    # 3. bandeau « dernier tirage » défilant, sous l'en-tête de l'accueil
+    if rel == 'index.html' and draws:
+        def item(it):
+            d = it['date'].split('-')
+            mois = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'][int(d[1]) - 1]
+            return (f'<a class="ls-item" href="/actualites/#{it["id"]}">{e(it["title_fr"])}'
+                    f'<span class="ls-date">{int(d[2])} {mois} {d[0]}</span></a>')
+        once = ''.join(item(it) for it in draws)
+        strip = ('<!-- LIVE:START -->\n  <section class="live-strip" aria-label="Derniers tirages Entrée express"><div class="ls-inner">'
                  '<span class="ls-tag"><span class="live-dot" aria-hidden="true"></span>Dernier tirage</span>'
-                 f'<span class="ls-text">{e(last["title_fr"])}<span class="ls-date">{int(d[2])} {mois} {d[0]}</span></span>'
-                 f'<a class="ls-link" href="/actualites/#{last["id"]}">Voir le détail →</a></div></section>\n  <!-- LIVE:END -->\n')
-        if '<!-- LIVE:START' in t:
-            t = re.sub(r'<!-- LIVE:START.*?<!-- LIVE:END -->\n', lambda m: strip, t, flags=re.S)
-        else:
-            t = t.replace('  <section class="trust">', strip + '\n  <section class="trust">', 1)
+                 f'<div class="ls-track"><div class="ls-move">{once}<span class="ls-dup" aria-hidden="true">{once.replace("<a ", "<a tabindex=\"-1\" ")}</span></div></div>'
+                 '</div></section>\n  <!-- LIVE:END -->\n')
+        t = re.sub(r'\s*<!-- LIVE:START.*?<!-- LIVE:END -->\n', '\n', t, flags=re.S)
+        t = t.replace('  <section class="hero">', strip + '\n  <section class="hero">', 1)
     # 4. WhatsApp préremplis
     msg = quote(WA_AR if ar else WA_FR, safe='')
     t = t.replace('https://wa.me/15142956635"', f'https://wa.me/15142956635?text={msg}"')

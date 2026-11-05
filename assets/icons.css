@@ -121,13 +121,22 @@ nav.primary .nav-social svg,.mobile-nav .nav-social svg{width:19px;height:19px}
 .consent{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;line-height:1.5;color:#3C4A63}
 .consent input{margin-top:4px;flex:none;width:18px;height:18px;accent-color:#B5342A}
 .consent a{color:#B5342A}
-/* bandeau dernier tirage */
-.live-strip{background:#16233D;color:#fff;border-bottom:3px solid #E1232B}
-.live-strip .wrap{display:flex;align-items:center;gap:14px 20px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
-.live-strip .ls-tag{display:inline-flex;align-items:center;gap:8px;background:#E1232B;border-radius:999px;padding:5px 14px;font-weight:700;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
-.live-strip .ls-text{flex:1 1 320px;font-weight:600;font-size:1.02rem;line-height:1.4}
-.live-strip .ls-date{opacity:.7;font-weight:400;margin-inline-start:8px;white-space:nowrap}
-.live-strip .ls-link{color:#fff;font-weight:600;text-decoration:none;border-bottom:1.5px solid #FF5A5F;white-space:nowrap}
-.live-strip .ls-link:hover{color:#FF5A5F}
+/* bandeau dernier tirage (défilant) */
+.live-strip{background:#16233D;color:#fff;border-bottom:3px solid #E1232B;overflow:hidden}
+.live-strip .ls-inner{display:flex;align-items:center;gap:0;min-height:48px}
+.live-strip .ls-tag{flex:none;display:inline-flex;align-items:center;gap:8px;background:#E1232B;padding:0 18px;align-self:stretch;font-weight:700;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;position:relative;z-index:1;box-shadow:6px 0 12px rgba(0,0,0,.25)}
+.live-strip .ls-track{flex:1;overflow:hidden;min-width:0}
+.live-strip .ls-move{display:inline-flex;white-space:nowrap;animation:lsmove 45s linear infinite;will-change:transform}
+.live-strip .ls-track:hover .ls-move,.live-strip .ls-track:focus-within .ls-move{animation-play-state:paused}
+.live-strip .ls-dup{display:inline-flex}
+.live-strip .ls-item{color:#fff;text-decoration:none;font-weight:600;font-size:1rem;padding:0 28px;position:relative}
+.live-strip .ls-item::after{content:"";position:absolute;right:-3px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:#FF5A5F}
+.live-strip .ls-item:hover{color:#FF5A5F}
+.live-strip .ls-date{opacity:.65;font-weight:400;margin-inline-start:10px}
+@keyframes lsmove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.live-strip .ls-move{animation:none}.live-strip .ls-track{overflow-x:auto}.live-strip .ls-dup{display:none}}
+@media (max-width:640px){.live-strip .ls-tag{padding:0 12px;font-size:.72rem}.live-strip .ls-item{font-size:.92rem}}
 /* vignettes des actualités */
 .news-card .news-thumb{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;background:#F1ECE2;border-radius:6px;margin:0 0 14px;border:1px solid #E5E0D3}
+.live-strip{padding:0 !important;margin:0}.live-strip .ls-inner{padding:0}
+@media (max-width:1500px){nav.primary{gap:14px}nav.primary a{font-size:.95rem}nav.primary .nav-social{margin-inline-start:4px;gap:8px}nav.primary .nav-social a{width:30px;height:30px}.nav-actions{gap:10px}.nav-actions .btn{padding-left:16px;padding-right:16px}}

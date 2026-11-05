@@ -194,7 +194,81 @@ PAGES.append(dict(
 ))
 
 
-AR_OF = {'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
+# ------------------------------------------------------------------ 4. Visa de visiteur et super visa
+PAGES.append(dict(
+    path='visa-visiteur-super-visa-canada/',
+    updated='5 novembre 2026', updated_iso='2026-11-05',
+    title="Visa de visiteur et super visa pour le Canada depuis le Maroc | ATL Canada",
+    desc="Visa de visiteur ou super visa pour vos parents et grands-parents : conditions, revenu minimal de l'hôte, assurance, examen médical. Un consultant réglementé vous accompagne.",
+    crumb="Visa de visiteur et super visa",
+    eyebrow="Visiteurs · Casablanca · Montréal",
+    h1="Visa de visiteur et super visa pour le Canada depuis le Maroc",
+    lede="Rendre visite à un proche, voyager ou venir voir vos enfants et petits-enfants : le visa de visiteur couvre la plupart des séjours, et le super visa est conçu pour les parents et grands-parents. Voici les conditions officielles et les pièces à préparer.",
+    body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Visa de visiteur ou super visa : lequel choisir ?</h2>
+{table(['', 'Visa de visiteur', 'Super visa'], [
+ ['Pour qui', "Toute personne qui vient visiter le Canada (famille, tourisme, affaires)", "Les parents et grands-parents d'un citoyen canadien, d'un résident permanent ou d'une personne inscrite au registre des Indiens"],
+ ['Séjour', "Convient aux séjours de 6 mois ou moins, d'après IRCC", "Pour des séjours plus longs : l'agent peut autoriser un séjour de 5 ans, selon IRCC"],
+ ['Invitation', "Une lettre d'invitation peut être utile, voire demandée selon le cas", "Lettre d'invitation signée par votre enfant ou petit-enfant, obligatoire"],
+ ['Assurance médicale', "Non exigée par la liste de conditions d'IRCC", "Assurance privée valide au moins 1 an, obligatoire"],
+])}
+<p class="note" style="margin-top:18px">Sources : {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html', "IRCC, comment demander un visa de visiteur")} et {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html', "IRCC, super visa : qui peut présenter une demande")} (pages en anglais).</p>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Visa de visiteur : ce qu'IRCC vérifie</h2>
+<ol class="steps">
+<li><span>Vous avez un document de voyage valide, comme un passeport (IRCC recommande qu'il soit valide au moins 6 mois à partir de la date prévue du voyage).</span></li>
+<li><span>Vous êtes en bonne santé. Un examen médical peut être exigé.</span></li>
+<li><span>Vous n'avez pas de condamnation criminelle ni de condamnation liée à l'immigration.</span></li>
+<li><span>Vous avez des attaches dans votre pays (emploi, logement, avoirs financiers, famille) qui vous donnent une raison d'y retourner.</span></li>
+<li><span>Vous montrez que vous quitterez le Canada à la fin de votre séjour.</span></li>
+<li><span>Vous avez assez d'argent pour votre séjour : le montant dépend de la durée et du type d'hébergement (hôtel ou chez des proches).</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>Pour un séjour touristique, IRCC recommande notamment de joindre : une lettre d'invitation et la preuve de votre lien avec la personne qui vous invite, vos antécédents de voyage, un itinéraire, des relevés bancaires couvrant au moins 6 mois et une lettre de votre employeur datée d'au plus 3 mois.</p></div>
+{table(['Élément', "Ce qu'indique IRCC"], [
+ ['Frais de traitement', "100 $ CA par personne, ou 500 $ CA pour une famille de 5 personnes ou plus."],
+ ['Biométrie', "85 $ CA par personne, ou jusqu'à 170 $ CA pour une famille admissible. Attendez la lettre d'instructions, puis réservez rapidement votre rendez-vous."],
+ ['Dépôt', "En ligne, par le portail d'IRCC. La demande sur papier n'est permise que dans des cas précis."],
+ ['Validité', "Un visa peut être délivré pour une durée maximale de 10 ans, ou jusqu'à l'expiration du passeport ou des données biométriques si elle survient avant. L'agent peut fixer une autre date."],
+])}
+<p class="note" style="margin-top:18px">Source : {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html', "IRCC, comment demander un visa de visiteur")}, {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eligibility.html', "IRCC, admissibilité au visa de visiteur")}. Les frais peuvent changer : vérifiez le montant au moment du dépôt.</p>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Super visa : les conditions</h2>
+{table(['Condition', "Ce qu'indique IRCC"], [
+ ["Votre enfant ou petit-enfant (l'hôte)", "Citoyen canadien, résident permanent ou personne inscrite au registre des Indiens, âgé d'au moins 18 ans et vivant au Canada. Le lien (enfant ou petit-enfant biologique ou adopté) doit être prouvé, par exemple avec son acte de naissance."],
+ ['Lettre d\'invitation', "Signée par l'hôte, elle doit montrer qu'il atteint le revenu minimal nécessaire et lister toutes les personnes comptées dans sa famille, avec nom et date de naissance. Son conjoint ou conjoint de fait peut cosigner s'il est citoyen, résident permanent ou inscrit au registre des Indiens."],
+ ['Revenu minimal de l\'hôte', "Il est fixé à partir des seuils de faible revenu de Statistique Canada. L'hôte le prouve par ses avis de cotisation de l'Agence du revenu du Canada pour l'une des deux années d'imposition précédant la demande, ou par d'autres documents prévus par IRCC. Le montant dépend de la taille de la famille : consultez le tableau à jour sur la page d'IRCC, car il est mis à jour."],
+ ['Assurance médicale', "Assurance privée valide au moins 1 an à partir de la date d'entrée et pour chaque entrée au Canada, d'un assureur canadien ou d'un assureur étranger autorisé par le BSIF et inscrit sur sa liste. Elle couvre les soins de santé, l'hospitalisation et le rapatriement, avec une protection d'urgence d'au moins 100 000 $. Elle doit être payée, en totalité ou par versements avec un dépôt : une simple soumission n'est pas acceptée."],
+ ['Examen médical', "Un examen médical d'immigration, passé auprès d'un médecin désigné, est exigé."],
+ ['Vous (le demandeur)', "Vous devez être hors du Canada lorsque vous présentez la demande et être admissible. IRCC évalue aussi que vous êtes un véritable visiteur qui quittera le Canada à la fin de la visite (attaches, objet du séjour, famille, finances)."],
+])}
+<p class="note" style="margin-top:18px">Sources : {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html', "IRCC, super visa : qui peut présenter une demande")}, {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents.html', "IRCC, documents à fournir")}, {a('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents/host-financial-support.html', "IRCC, preuve de soutien financier de l'hôte")}.</p>
+<div class="prose" style="margin-top:18px"><p>Depuis le 28 janvier 2025, une assurance émise par un assureur établi à l'étranger est acceptée s'il est autorisé par le BSIF. Si une demande de parrainage est en cours, vous pouvez demander un super visa en attendant la décision. Après l'approbation, le visa est imprimé par un bureau des visas hors du Canada : attendez ses instructions.</p></div>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
+<p>Nous vérifions avec vous quel visa correspond à votre situation, nous passons en revue le revenu de votre enfant ou petit-enfant et son calcul de famille, la lettre d'invitation, l'assurance et les pièces justificatives, puis nous préparons un dossier complet avant le dépôt. Toute pièce qui n'est pas en français ou en anglais doit être traduite par un traducteur qualifié.</p>
+<p class="note">La décision appartient uniquement à IRCC : nous ne pouvons ni garantir un visa ni promettre un délai.</p></div></div></section>''',
+    faq=[
+        ("Ai-je besoin d'un visa pour venir au Canada ?", "Cela dépend de votre nationalité et de votre moyen de transport. IRCC propose un outil « Vérifier si vous avez besoin d'un visa ou d'une AVE » : nous le vérifions avec vous."),
+        ("Quelle est la différence entre le visa de visiteur et le super visa ?", "Le visa de visiteur convient à la plupart des séjours de 6 mois ou moins. Le super visa est réservé aux parents et grands-parents d'un citoyen canadien ou d'un résident permanent et permet des séjours plus longs."),
+        ("Mon enfant doit-il gagner un revenu minimum pour mon super visa ?", "Oui. L'hôte doit atteindre le revenu minimal nécessaire fixé par IRCC selon la taille de sa famille, et le prouver, par exemple avec ses avis de cotisation."),
+        ("L'assurance médicale est-elle obligatoire ?", "Pour le super visa, oui : au moins 1 an de couverture à partir de l'entrée, avec une protection d'urgence d'au moins 100 000 $. Pour le visa de visiteur, la liste de conditions d'IRCC n'en fait pas une exigence."),
+        ("Une lettre d'invitation garantit-elle le visa ?", "Non. Elle est obligatoire pour le super visa et peut être utile pour un visa de visiteur, mais la décision repose sur l'ensemble du dossier."),
+        ("Garantissez-vous l'obtention du visa ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes."),
+    ],
+    sources=[
+        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html', "IRCC, comment demander un visa de visiteur (en anglais)"),
+        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eligibility.html', "IRCC, admissibilité à un visa de visiteur (en anglais)"),
+        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html', "IRCC, super visa : qui peut présenter une demande (en anglais)"),
+        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents.html', "IRCC, super visa : documents (en anglais)"),
+        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents/host-financial-support.html', "IRCC, super visa : preuve de soutien financier de l'hôte (en anglais)"),
+        ('https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/change-health-insurance-requirement-makes-super-visa-more-accessible.html', "IRCC, changement à l'exigence d'assurance maladie du super visa (en anglais)"),
+        ('https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/other-goals/super-visa-2026.html', "IRCC, instructions ministérielles sur le super visa (2026, en anglais)"),
+    ],
+    related=[("/permis-etudes-canada-maroc/", "Permis d'études depuis le Maroc"), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
+))
+
+
+AR_OF = {'visa-visiteur-super-visa-canada/': None, 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
 
 
 def head_for(p):
@@ -209,8 +283,9 @@ def head_for(p):
     h = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h)
     h = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h)
     h = re.sub(r'<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n?', '', h)
-    alt = (f'<link rel="alternate" hreflang="fr-MA" href="{url}">\n<link rel="alternate" hreflang="ar-MA" href="{SITE}/{AR_OF[p["path"]]}">\n'
-           f'<link rel="alternate" hreflang="x-default" href="{url}">\n')
+    alt = f'<link rel="alternate" hreflang="fr-MA" href="{url}">\n'
+    if AR_OF.get(p['path']): alt += f'<link rel="alternate" hreflang="ar-MA" href="{SITE}/{AR_OF[p["path"]]}">\n'
+    alt += f'<link rel="alternate" hreflang="x-default" href="{url}">\n'
     h = re.sub(r'(<link rel="canonical" href="[^"]*">\n?)', lambda m: m.group(1) + alt, h, count=1)
     # JSON-LD
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', h, re.S)
@@ -218,7 +293,7 @@ def head_for(p):
     keep = [n for n in g['@graph'] if n['@type'] in ('ProfessionalService', 'WebSite')]
     keep += [
         {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": p['title'], "description": p['desc'],
-         "inLanguage": "fr-MA", "dateModified": UPDATED, "isPartOf": {"@id": SITE + "/#website"}, "about": {"@id": SITE + "/#organization"}},
+         "inLanguage": "fr-MA", "dateModified": p.get("updated_iso", UPDATED), "isPartOf": {"@id": SITE + "/#website"}, "about": {"@id": SITE + "/#organization"}},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Accueil", "item": SITE + "/"},
             {"@type": "ListItem", "position": 2, "name": "Immigrer depuis le Maroc", "item": SITE + "/maroc/"},
@@ -247,7 +322,7 @@ for p in PAGES:
 {p['body']}
 <section class="sp alt" id="faq"><div class="wrap"><h2>Questions fréquentes</h2><div class="faq-list">{faq_html(p['faq'])}</div></div></section>
 <section class="sp"><div class="wrap"><h2>Sources officielles</h2><ul class="sources">{src}</ul>
-<p class="note" style="margin-top:18px">Dernière mise à jour : 26 octobre 2026.</p>
+<p class="note" style="margin-top:18px">Dernière mise à jour : {p.get('updated', '26 octobre 2026')}.</p>
 <div class="related">{related}</div></div></section>
 {offices}
 {footer}'''

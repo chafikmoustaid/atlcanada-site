@@ -152,6 +152,8 @@ urls = [('/', '1.0', last), ('/maroc/', '0.9', '2026-10-09'), ('/ar/', '0.9', '2
         ('/actualites/', '0.8', last),
         ('/permis-etudes-canada-maroc/', '0.8', '2026-10-26'), ('/entree-express-francophone-maroc/', '0.8', '2026-10-26'),
         ('/documents-maroc-immigration-canada/', '0.8', '2026-10-26'),
+        ('/visa-visiteur-super-visa-canada/', '0.8', '2026-11-05'),
+        ('/confidentialite/', '0.3', '2026-11-05'),
         ('/ar/study-permit-morocco/', '0.8', '2026-10-26'), ('/ar/express-entry-french/', '0.8', '2026-10-26'),
         ('/ar/moroccan-documents/', '0.8', '2026-10-26') ]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -164,6 +166,9 @@ if '/ar/study-permit-morocco/' not in ll:
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/permis-etudes-canada-maroc/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Permis d'études depuis le Maroc]({SITE}/permis-etudes-canada-maroc/): étapes, lettre d'attestation, preuves de fonds, biométrie\n- [Entrée express pour francophones]({SITE}/entree-express-francophone-maroc/): points pour le français, programmes, préparation\n- [Documents marocains]({SITE}/documents-maroc-immigration-canada/): certificat de police (fiche anthropométrique), biométrie VFS\n\n## Liens", 1)
+    open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
+if '/visa-visiteur-super-visa-canada/' not in ll:
+    ll = ll.replace('\n## Liens', f"- [Visa de visiteur et super visa depuis le Maroc]({SITE}/visa-visiteur-super-visa-canada/): conditions officielles, revenu de l'hôte, assurance, examen médical\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/actualites/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Actualités de l'immigration (français)]({SITE}/actualites/): nouvelles expliquées, avec sources\n\n## Liens", 1)
