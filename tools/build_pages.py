@@ -334,12 +334,12 @@ PAGES.append(dict(
 PAGES.append(dict(
     path='permis-de-travail-canada/',
     updated='5 novembre 2026', updated_iso='2026-11-05',
-    title="Permis de travail pour le Canada depuis le Maroc : permis lié à un employeur, permis ouvert | ATL Canada",
-    desc="Permis de travail pour le Canada : offre d'emploi, EIMT, permis lié à un employeur ou permis ouvert. Un consultant réglementé vous aide à choisir la bonne voie.",
-    crumb="Permis de travail",
+    title="Permis de travail au Canada : demande, prolongation, changement d'employeur | ATL Canada",
+    desc="Permis de travail au Canada, de l'étranger ou depuis le Canada : permis lié à un employeur ou ouvert, EIMT, prolongation, statut maintenu, permis postdiplôme. Un consultant réglementé vous accompagne.",
+    crumb="Permis de travail", neutral=True,
     eyebrow="Travail · Casablanca · Montréal",
-    h1="Permis de travail pour le Canada depuis le Maroc",
-    lede="Travailler au Canada demande presque toujours un permis. Voici les deux grands types de permis, le rôle de l'employeur et les points à vérifier avant de déposer.",
+    h1="Permis de travail au Canada : demande, prolongation, changement",
+    lede="Que vous soyez à l'étranger ou déjà au Canada, de toute nationalité : travailler au Canada demande presque toujours un permis. Voici les deux grands types de permis, le rôle de l'employeur, et ce qu'il faut savoir pour prolonger ou modifier votre permis.",
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>Deux grands types de permis</h2>
 {rich(['', 'Permis lié à un employeur', 'Permis ouvert'], [
@@ -349,7 +349,18 @@ PAGES.append(dict(
 ])}
 <p class="note" style="margin-top:18px">Certaines personnes n'ont pas besoin de permis de travail : IRCC propose un questionnaire en ligne pour le vérifier.</p>
 </div></section>
-<section class="sp"><div class="wrap"><h2>Le permis lié à un employeur, étape par étape</h2>
+<section class="sp"><div class="wrap"><h2>Vous êtes déjà au Canada ?</h2>
+{rich(['Situation', 'Ce qu\'indique IRCC'], [
+ ["Prolonger son permis", "Il faut déposer la demande avant l'expiration du permis : une demande en ligne doit être envoyée avant minuit (temps universel) à la date d'expiration. Vous ne pouvez pas prolonger au-delà de la date d'expiration de votre passeport."],
+ ["Statut maintenu", "Si vous avez demandé à temps, vous pouvez rester au Canada pendant le traitement. Avec un permis lié à un employeur, vous continuez de travailler seulement pour le même employeur, dans le même poste et au même lieu. Avec un permis ouvert, vous pouvez changer d'employeur."],
+ ["Pendant le traitement", "Vous ne pouvez pas renouveler certains documents provinciaux, comme le permis de conduire ou la carte d'assurance maladie : renouvelez-les avant l'expiration du permis. Une demande en ligne donne généralement une lettre (WP-EXT) qui prouve à votre employeur que vous pouvez continuer à travailler."],
+ ["Changer les conditions du permis", "Un changement d'employeur, de poste ou de lieu pour un permis lié à un employeur passe par une demande de modification des conditions. Parlez-nous-en avant de changer quoi que ce soit."],
+ ["Permis de travail postdiplôme", "À déposer dans les 180 jours suivant la confirmation de la fin des études. Il faut avoir terminé un programme d'au moins 8 mois (900 heures au Québec) dans un établissement admissible, avoir étudié à temps plein, et, pour les demandes déposées depuis le 1er novembre 2024, répondre aux exigences de langue (NCLC 7 pour l'université, NCLC 5 pour le collège) et, pour certains programmes, de domaine d'études."],
+ ["Permis déjà expiré", "Si votre permis expire pendant le traitement ou est déjà expiré, vérifiez avec nous si vous pouvez continuer à travailler : les règles dépendent de votre situation."],
+])}
+<p class="note" style="margin-top:18px">Les frais et les règles changent : IRCC en tient la liste à jour, et nous la vérifions avec vous avant de déposer.</p>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Le permis lié à un employeur, étape par étape</h2>
 <ol class="steps">
 <li><span>Obtenir une offre d'emploi d'un employeur qui n'est pas sur la liste des employeurs non conformes.</span></li>
 <li><span>Votre employeur confirme si le poste exige une évaluation de l'impact sur le marché du travail (EIMT) ou s'il en est exempté. « La plupart des emplois exigent une EIMT », indique IRCC.</span></li>
@@ -361,13 +372,15 @@ PAGES.append(dict(
 <p>Un permis de travail peut aussi être une étape vers la résidence permanente : voyez notre page sur l'<a href="/entree-express-francophone-maroc/" style="text-decoration:underline">Entrée express pour les francophones</a>.</p></div>
 </div></section>
 <section class="sp alt"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
-<p>En consultation, nous déterminons avec vous quel type de permis correspond à votre profil et à votre projet, nous vérifions les documents que votre employeur doit vous fournir et nous préparons votre demande avant le dépôt. Si vous n'avez pas encore d'offre, nous voyons ensemble les pistes réalistes.</p>
+<p>En consultation, que vous soyez à l'étranger ou déjà au Canada, nous déterminons avec vous quel type de permis correspond à votre situation (nouvelle demande, prolongation, changement de conditions, permis postdiplôme), nous vérifions les documents que votre employeur doit vous fournir et nous préparons votre demande avant le dépôt. Si vous n'avez pas encore d'offre, nous voyons ensemble les pistes réalistes.</p>
 <p class="note">La décision appartient uniquement à IRCC : nous ne pouvons ni garantir un permis ni promettre un délai.</p></div></div></section>''',
     faq=[
         ("Ai-je besoin d'un permis de travail ?", "Dans la plupart des cas, oui. Certaines personnes en sont exemptées : IRCC propose un questionnaire en ligne pour le vérifier, et nous le faisons avec vous."),
         ("Qu'est-ce qu'une EIMT ?", "L'évaluation de l'impact sur le marché du travail montre qu'il y a un besoin d'embaucher un travailleur étranger. Votre employeur doit confirmer si votre poste en exige une ou en est exempté."),
         ("Puis-je changer d'employeur avec un permis lié à un employeur ?", "Ce permis est lié à l'employeur, au lieu et à la profession indiqués. Avant tout changement, parlez-nous-en pour connaître les démarches à suivre."),
         ("Que se passe-t-il si je travaille sans permis ?", "Vous ne pouvez pas travailler légalement au Canada sans le permis requis. Il ne faut pas non plus indiquer dans une candidature que vous y êtes autorisé si ce n'est pas le cas."),
+        ("Que se passe-t-il si mon permis expire pendant le traitement de ma prolongation ?", "Si vous avez déposé votre demande avant l'expiration, vous avez le statut maintenu et pouvez rester au Canada. Avec un permis lié à un employeur, vous continuez de travailler seulement pour le même employeur, dans le même poste et au même lieu."),
+        ("Quand demander le permis postdiplôme ?", "Dans les 180 jours suivant la confirmation de la fin de votre programme, selon IRCC. Votre permis d'études doit avoir été valide à un moment pendant ces 180 jours."),
         ("Garantissez-vous l'obtention du permis de travail ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes."),
     ],
     sources=[],
@@ -650,8 +663,9 @@ def head_for(p):
          "inLanguage": "fr-MA", "dateModified": p.get("updated_iso", UPDATED), "isPartOf": {"@id": SITE + "/#website"}, "about": {"@id": SITE + "/#organization"}},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Accueil", "item": SITE + "/"},
-            {"@type": "ListItem", "position": 2, "name": "Immigrer depuis le Maroc", "item": SITE + "/maroc/"},
-            {"@type": "ListItem", "position": 3, "name": p['crumb'], "item": url}]},
+            *([] if p.get("neutral") else [
+            {"@type": "ListItem", "position": 2, "name": "Immigrer depuis le Maroc", "item": SITE + "/maroc/"}]),
+            {"@type": "ListItem", "position": 2 if p.get("neutral") else 3, "name": p['crumb'], "item": url}]},
         {"@type": "FAQPage", "@id": url + "#faq", "inLanguage": "fr-MA", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": strip(a_)}} for q, a_ in p['faq']]},
     ]
@@ -667,7 +681,7 @@ for p in PAGES:
     page = f'''{head_for(p)}</head>
 {topbar}<main>
 <section class="pg-hero"><div class="wrap">
-  <p class="crumb"><a href="/">Accueil</a> › <a href="/maroc/">Immigrer depuis le Maroc</a> › {e(p['crumb'])}</p>
+  <p class="crumb"><a href="/">Accueil</a> › {'' if p.get('neutral') else '<a href="/maroc/">Immigrer depuis le Maroc</a> › '}{e(p['crumb'])}</p>
   <p class="eyebrow">{e(p['eyebrow'])}</p>
   <h1>{e(p['h1'])}</h1>
   <p class="lede">{e(p['lede'])}</p>
