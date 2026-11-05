@@ -661,7 +661,8 @@ for p in PAGES:
   <p class="lede">{e(p['lede'])}</p>
   <div class="cta-row"><a class="btn btn-solid" href="/#contact">Prendre rendez-vous</a><a class="btn btn-outline" href="tel:+15142956635">Appeler · <bdi dir="ltr">+1 514 295 6635</bdi></a></div>
 </div></section>
-{p['body']}
+{p['body'].replace(TRUST, '', 1)}
+{TRUST}
 <section class="sp alt" id="faq"><div class="wrap"><h2>Questions fréquentes</h2><div class="faq-list">{faq_html(p['faq'])}</div></div></section>
 <section class="sp"><div class="wrap">{('<h2>Sources officielles</h2><ul class="sources">' + src + '</ul>') if src else ''}
 <p class="note" style="margin-top:18px">Dernière mise à jour : {p.get('updated', '26 octobre 2026')}.</p>
