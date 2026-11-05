@@ -104,12 +104,11 @@ PAGES.append(dict(
 <li><span>الرد على طلبات IRCC إلى حين صدور القرار، ثم التحضير للوصول إلى كندا.</span></li>
 </ol></div></section>
 <section class="sp"><div class="wrap"><h2>النقاط التي تستحق عناية خاصة</h2>
-{table(['العنصر', 'ما ينبغي معرفته', 'المصدر الرسمي'], [
- ['رسالة التصديق (PAL/TAL)', "تُشترط في معظم الطلبات الجديدة، مع استثناءات تحددها IRCC. ومن بينها في 2026 طلبة الماستر والدكتوراه في مؤسسة عمومية معتمدة.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', 'IRCC، تحديث 6 فبراير 2026')],
+{rich(['العنصر', 'ما ينبغي معرفته'], [r[:2] for r in [ ['رسالة التصديق (PAL/TAL)', "تُشترط في معظم الطلبات الجديدة، مع استثناءات تحددها IRCC. ومن بينها في 2026 طلبة الماستر والدكتوراه في مؤسسة عمومية معتمدة.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', 'IRCC، تحديث 6 فبراير 2026')],
  ['إثبات الموارد المالية', "عليك إثبات مصاريف الدراسة للسنة الأولى ومصاريف المعيشة وتكاليف السفر. وبالنسبة للطلبات المودعة ابتداءً من فاتح شتنبر 2026، تشترط IRCC ما لا يقل عن 23 448 دولارًا كنديًا لمصاريف المعيشة لشخص واحد، دون احتساب مصاريف الدراسة والسفر (باستثناء كيبيك التي تحدد شروطها الخاصة مع شهادة CAQ). وتراجع IRCC هذا المبلغ بانتظام، ونؤكده معك خلال الاستشارة.", a('https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html', 'IRCC، إثبات الدعم المالي (بالإنجليزية)')],
  ['البيانات البيومترية', "تُقدَّم البصمات والصورة بموعد مسبق في مركز VFS Global بالمغرب، وتبقى صالحة 10 سنوات بالنسبة للمقيم المؤقت.", a('https://visa.vfsglobal.com/mar/fr/can/faq', 'VFS Global المغرب، الأسئلة الشائعة')],
  ['رسالة القبول', "يجب أن تصدر عن مؤسسة تعليمية معتمدة، وأن تطابق البرنامج المذكور في طلبك.", 'المؤسسة المختارة'],
-])}
+]])}
 <p class="note" style="margin-top:18px">للدراسة في كيبيك تُضاف خطوة إقليمية (شهادة قبول كيبيك، CAQ)، نشرحها معك خلال الاستشارة إذا كان مشروعك يمر عبرها.</p>
 </div></section>
 <section class="sp"><div class="wrap"><h2>هل أنت داخل كندا أصلًا؟</h2>
@@ -132,12 +131,7 @@ PAGES.append(dict(
         ("هل يجب المرور عبر مستشار؟", "لا، يمكنك إيداع طلبك بنفسك. ويساعدك المستشار المرخَّص على اختيار الاستراتيجية المناسبة، وإعداد ملف كامل، وتفادي الإغفالات."),
         ("هل تضمنون الحصول على التصريح؟", "لا. لا يمكن لأي مستشار جاد أن يضمن قرارًا، فالقرار يعود حصريًا للسلطات الكندية."),
     ],
-    sources=[
-        ('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', "IRCC، تصريح الدراسة: رسائل التصديق من المقاطعات والأقاليم (تحديث 6 فبراير 2026، بالفرنسية)"),
-        ('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/residents-temporaires/permis-etudes/evaluation-demande.html', "IRCC، تصريح الدراسة: تقييم الطلب (بالفرنسية)"),
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html', "IRCC، تصريح الدراسة: إثبات الدعم المالي (بالإنجليزية)"),
-        ('https://visa.vfsglobal.com/mar/fr/can/faq', "VFS Global المغرب، الأسئلة الشائعة (بالفرنسية)"),
-    ],
+    sources=[],
     related=[('/ar/express-entry-french/', 'الدخول السريع للناطقين بالفرنسية'), ('/ar/moroccan-documents/', 'الوثائق المغربية')],
 ))
 
@@ -157,7 +151,7 @@ PAGES.append(dict(
  ['NCLC 7 فأكثر في المهارات الأربع', 'CLB 4 أو أقل، أو دون اختبار في الإنجليزية', '+ 25 نقطة'],
  ['NCLC 7 فأكثر في المهارات الأربع', 'CLB 5 فأكثر في المهارات الأربع', '+ 50 نقطة'],
 ])}
-<p class="note">المصدر: {a('https://www.canada.ca/fr/immigration-refugies-citoyennete/campagnes/immigration-francophone-hors-quebec/immigration-francophone-entree-express.html', 'IRCC، الدخول السريع للعمال المهرة الناطقين بالفرنسية (بالفرنسية)')}. تُضاف هذه النقاط إلى نتيجتك، لكنها لا تضمن أبدًا الحصول على دعوة.</p>
+<p class="note">تُضاف هذه النقاط إلى نتيجتك، لكنها لا تضمن أبدًا الحصول على دعوة.</p>
 </div></section>
 <section class="sp"><div class="wrap"><h2>البرامج الثلاثة للدخول السريع</h2><div class="cards">
 <div class="card"><h3>العمال المهرة (فدرالي)</h3><p>للمرشحين الذين لديهم تجربة عمل مؤهلة في الخارج أو في كندا.</p></div>
@@ -182,10 +176,7 @@ PAGES.append(dict(
         ("هل تكفي الفرنسية للحصول على دعوة؟", "لا. يجب أيضًا استيفاء شروط أحد البرامج الثلاثة، والبقاء ضمن أعلى النتائج في المجموعة. والدعوة غير مضمونة أبدًا."),
         ("هل تضمنون دعوة أو إقامة دائمة؟", "لا. القرارات تعود حصريًا إلى IRCC. ودورنا اختيار الاستراتيجية المناسبة وإعداد ملف دقيق."),
     ],
-    sources=[
-        ('https://www.canada.ca/fr/immigration-refugies-citoyennete/campagnes/immigration-francophone-hors-quebec/immigration-francophone-entree-express.html', "IRCC، الدخول السريع للعمال المهرة الناطقين بالفرنسية (تحديث 20 غشت 2025، بالفرنسية)"),
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html', "IRCC، جولات الدعوات في الدخول السريع (بالإنجليزية)"),
-    ],
+    sources=[],
     related=[('/ar/study-permit-morocco/', 'تصريح الدراسة'), ('/ar/moroccan-documents/', 'الوثائق المغربية')],
 ))
 
@@ -201,19 +192,18 @@ PAGES.append(dict(
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>شهادة الشرطة المغربية</h2>
 <div class="prose"><p>تشترط طلبات الإقامة الدائمة شهادة شرطة. وبالنسبة للمواطنين المغاربة تسمى هذه الوثيقة <strong>«البطاقة الأنتروبومترية»</strong> (fiche anthropométrique). والبصمات المأخوذة لهذه الشهادة منفصلة عن البيانات البيومترية التي تقدمها مع طلبك.</p></div>
-{table(['وضعيتك', 'ما تذكره IRCC'], [
+{rich(['وضعيتك', 'ما تذكره IRCC'], [
  ['مواطن مغربي مقيم بالمغرب', "توجه إلى مقر الشرطة التابع لمحل إقامتك ومعك بطاقتك الوطنية للتعريف. ويمكنك تعيين من ينوب عنك، على أن يدلي ببطاقته الوطنية الخاصة."],
  ['مواطن مغربي مقيم بالخارج', "توجه إلى أقرب سفارة أو قنصلية للمغرب، أو قدّم الطلب عبر مقر الشرطة المحلي بالوكالة (وليس عبر المصلحة المركزية بالرباط). وتتطلب الوكالة وكالة موثَّقة، ونسخًا من عقد الازدياد وجواز السفر، إضافة إلى الرسوم."],
  ['لغة الوثيقة', "تصدر الشهادة بالفرنسية والعربية، ولا حاجة إلى ترجمتها."],
  ['ما لا ينبغي الخلط به', "«بطاقة السجل العدلي رقم 3» (Bulletin n° 3) التي تسلمها المحكمة الابتدائية للمغاربة غير مقبولة في ملفات الهجرة، لأنها لا تشمل إلا المخالفات المرتكبة في مدينة الإقامة."],
  ['مدة الصلاحية', "لا تحددها الصفحات الرسمية: تواصل معنا ونتحقق منها معك قبل تقديم طلبك حتى لا تضيع وقتك."],
 ])}
-<p class="note">المصدر: {a('https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/medical-police/certificats-police/comment/maroc.html', 'IRCC، كيف تحصل على شهادة شرطة: المغرب (بالفرنسية)')}.</p>
 </div></section>
 <section class="sp"><div class="wrap"><h2>البيانات البيومترية ومركز VFS Global</h2><div class="prose">
 <p>رخّصت IRCC لشركة VFS Global باستقبال طلبات التأشيرة وتصاريح الدراسة والعمل بالمغرب، وبتسجيل بصماتك وصورتك. ولا يتم التسجيل إلا بموعد مسبق يُحجز عبر الإنترنت.</p>
 <p>ولا يقدم المقيم المؤقت بياناته البيومترية إلا مرة كل 10 سنوات، بينما يلزم طالب الإقامة الدائمة بتقديمها عند كل طلب. تواصل معنا لمعرفة وضعك.</p>
-<p class="note">المصدر: {a('https://visa.vfsglobal.com/mar/fr/can/faq', 'VFS Global المغرب، الأسئلة الشائعة (بالفرنسية)')}.</p></div></div></section>
+</div></div></section>
 <section class="sp alt"><div class="wrap"><h2>الوثائق الأخرى المعتادة</h2><div class="prose">
 <p>تختلف اللائحة الدقيقة حسب طلبك، وتحددها IRCC لوضعك. وتشمل عادةً جواز السفر وعقد الازدياد والشهادات وكشوف النقط ونتائج اختبارات اللغة وإثباتات الموارد المالية أو التجربة المهنية.</p>
 <p>وكل وثيقة غير محررة بالفرنسية أو الإنجليزية يجب أن تُرفق بترجمة. نراجع معك كل وثيقة قبل الإيداع حتى لا تؤخر ملفك.</p></div></div></section>''',
@@ -224,10 +214,7 @@ PAGES.append(dict(
         ("هل تجب ترجمة البطاقة؟", "لا، فهي تصدر بالفرنسية والعربية، ولا تشترط IRCC ترجمتها."),
         ("متى تلزم شهادة الشرطة؟", "تُشترط في طلب الإقامة الدائمة. أما الطلبات الأخرى فيرجع الأمر إلى كل حالة، ونتحقق منه خلال الاستشارة."),
     ],
-    sources=[
-        ('https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/medical-police/certificats-police/comment/maroc.html', "IRCC، كيف تحصل على شهادة شرطة: المغرب (بالفرنسية)"),
-        ('https://visa.vfsglobal.com/mar/fr/can/faq', "VFS Global المغرب، الأسئلة الشائعة (بالفرنسية)"),
-    ],
+    sources=[],
     related=[('/ar/study-permit-morocco/', 'تصريح الدراسة'), ('/ar/express-entry-french/', 'الدخول السريع للناطقين بالفرنسية')],
 ))
 

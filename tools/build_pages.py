@@ -106,12 +106,11 @@ PAGES.append(dict(
 <li><span>Répondre aux demandes d'IRCC jusqu'à la décision, puis préparer votre arrivée.</span></li>
 </ol></div></section>
 <section class="sp"><div class="wrap"><h2>Les points à préparer avec soin</h2>
-{table(['Élément', "Ce qu'il faut savoir", 'Source officielle'], [
- ['Lettre d\'attestation (LAP/LAT)', "Exigée pour la plupart des nouvelles demandes, avec des exceptions fixées par IRCC. Pour 2026, une exception vise notamment les étudiants à la maîtrise ou au doctorat dans un établissement public désigné.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', 'IRCC, mise à jour du 6 février 2026')],
+{rich(['Élément', "Ce qu'il faut savoir"], [r[:2] for r in [ ['Lettre d\'attestation (LAP/LAT)', "Exigée pour la plupart des nouvelles demandes, avec des exceptions fixées par IRCC. Pour 2026, une exception vise notamment les étudiants à la maîtrise ou au doctorat dans un établissement public désigné.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', 'IRCC, mise à jour du 6 février 2026')],
  ['Preuves de fonds', "Vous devez prouver vos frais de scolarité de la première année, vos frais de subsistance et vos frais de transport. Pour les demandes déposées à partir du 1er septembre 2026, IRCC exige au moins 23 448 $ CA de frais de subsistance pour une personne seule, hors frais de scolarité et de transport (hors Québec : le Québec fixe ses propres exigences avec le CAQ). IRCC révise ce montant régulièrement : nous le confirmons avec vous à la consultation.", a('https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html', 'IRCC, preuve de soutien financier (en anglais)')],
  ['Biométrie', "Empreintes et photo se donnent sur rendez-vous ; depuis le Maroc, au centre VFS Global. Pour un résident temporaire, elles restent valides 10 ans.", a('https://visa.vfsglobal.com/mar/fr/can/faq', 'VFS Global Maroc, questions fréquentes')],
  ['Lettre d\'admission', "Elle doit provenir d'un établissement d'enseignement désigné et correspondre au programme indiqué dans votre demande.", 'Établissement choisi'],
-])}
+]])}
 <p class="note" style="margin-top:18px">Pour étudier au Québec, une étape provinciale s'ajoute (le CAQ) : nous la voyons avec vous en consultation si votre projet passe par là.</p>
 </div></section>
 <section class="sp"><div class="wrap"><h2>Vous êtes déjà au Canada ?</h2>
@@ -135,12 +134,7 @@ PAGES.append(dict(
         ("Faut-il obligatoirement passer par un consultant ?", "Non, vous pouvez déposer votre demande vous-même. Un consultant réglementé vous aide à choisir la bonne stratégie, à préparer un dossier complet et à éviter les oublis."),
         ("Garantissez-vous l'obtention du permis ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes."),
     ],
-    sources=[
-        ('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', "IRCC, Permis d'études : lettres d'attestation provinciales ou territoriales (mise à jour du 6 février 2026)"),
-        ('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/residents-temporaires/permis-etudes/evaluation-demande.html', "IRCC, Permis d'études : évaluation de la demande"),
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html', "IRCC, preuve de soutien financier (en anglais)"),
-        ('https://visa.vfsglobal.com/mar/fr/can/faq', "VFS Global Maroc, questions fréquentes"),
-    ],
+    sources=[],
     related=[('/entree-express-francophone-maroc/', 'Entrée express pour les francophones'), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
 ))
 
@@ -160,7 +154,7 @@ PAGES.append(dict(
  ['NCLC 7 ou plus dans les 4 compétences', 'CLB 4 ou moins, ou aucun test d\'anglais', '+ 25 points'],
  ['NCLC 7 ou plus dans les 4 compétences', 'CLB 5 ou plus dans les 4 compétences', '+ 50 points'],
 ])}
-<p class="note">Source : {a('https://www.canada.ca/fr/immigration-refugies-citoyennete/campagnes/immigration-francophone-hors-quebec/immigration-francophone-entree-express.html', 'IRCC, Entrée express pour les travailleurs qualifiés francophones')}. Ces points s'ajoutent à votre score, mais ne garantissent jamais une invitation.</p>
+<p class="note">Ces points s'ajoutent à votre score, mais ne garantissent jamais une invitation.</p>
 </div></section>
 <section class="sp"><div class="wrap"><h2>Les trois programmes d'Entrée express</h2><div class="cards">
 <div class="card"><h3>Travailleurs qualifiés (fédéral)</h3><p>Pour les candidats avec de l'expérience de travail qualifiée à l'étranger ou au Canada.</p></div>
@@ -185,10 +179,7 @@ PAGES.append(dict(
         ("Le français suffit-il pour être invité ?", "Non. Il faut aussi remplir les conditions d'un des trois programmes et figurer parmi les meilleurs scores du bassin. Une invitation n'est jamais garantie."),
         ("Garantissez-vous une invitation ou la résidence permanente ?", "Non. Les décisions appartiennent uniquement à IRCC. Notre rôle est de choisir la bonne stratégie et de préparer un dossier rigoureux."),
     ],
-    sources=[
-        ('https://www.canada.ca/fr/immigration-refugies-citoyennete/campagnes/immigration-francophone-hors-quebec/immigration-francophone-entree-express.html', "IRCC, Entrée express pour les travailleurs qualifiés francophones (mise à jour du 20 août 2025)"),
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html', "IRCC, rondes d'invitations Entrée express"),
-    ],
+    sources=[],
     related=[("/permis-etudes-canada-maroc/", "Permis d'études"), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
 ))
 
@@ -204,19 +195,18 @@ PAGES.append(dict(
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>Le certificat de police du Maroc</h2>
 <div class="prose"><p>Une demande de résidence permanente exige un certificat de police. Pour les citoyens marocains, le document s'appelle la <strong>fiche anthropométrique</strong>. Les empreintes prises pour ce certificat sont distinctes de la biométrie que vous donnez avec votre demande.</p></div>
-{table(['Votre situation', "Ce qu'IRCC indique"], [
+{rich(['Votre situation', "Ce qu'IRCC indique"], [
  ['Citoyen marocain vivant au Maroc', "Présentez-vous au commissariat de votre lieu de résidence avec votre carte nationale d'identité. Vous pouvez désigner un représentant, qui doit présenter sa propre carte nationale."],
  ['Citoyen marocain vivant à l\'étranger', "Adressez-vous à l'ambassade ou au consulat du Maroc le plus proche, ou passez par le commissariat local par procuration (pas par le service central de Rabat). La procuration exige une procuration notariée, des copies de l'acte de naissance et du passeport, et des frais."],
  ['Langue du document', "Le certificat est délivré en français et en arabe : aucune traduction n'est nécessaire."],
  ['À ne pas confondre', "Le « bulletin n° 3 » délivré par le tribunal de première instance aux Marocains n'est pas accepté pour l'immigration : il ne couvre que les infractions commises dans la ville de résidence."],
  ['Durée de validité', "Les pages officielles ne la précisent pas : appelez-nous, nous la vérifions avec vous avant le dépôt de votre demande, pour ne pas perdre de temps."],
 ])}
-<p class="note">Source : {a('https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/medical-police/certificats-police/comment/maroc.html', 'IRCC, Comment obtenir un certificat de police : Maroc')}.</p>
 </div></section>
 <section class="sp"><div class="wrap"><h2>La biométrie et le centre VFS Global</h2><div class="prose">
 <p>IRCC a autorisé VFS Global à recevoir les demandes de visa, de permis d'études et de permis de travail au Maroc et à enregistrer vos empreintes et votre photo. L'enregistrement se fait uniquement sur rendez-vous, réservé en ligne.</p>
 <p>Un résident temporaire ne donne ses données biométriques qu'une fois tous les 10 ans. Un demandeur de résidence permanente doit les fournir à chaque demande. Vérifiez votre cas sur le site d'IRCC.</p>
-<p class="note">Source : {a('https://visa.vfsglobal.com/mar/fr/can/faq', 'VFS Global Maroc, questions fréquentes')}.</p></div></div></section>
+</div></div></section>
 <section class="sp alt"><div class="wrap"><h2>Les autres pièces habituelles</h2><div class="prose">
 <p>La liste exacte dépend de votre demande et est établie par IRCC pour votre situation. On retrouve généralement le passeport, l'acte de naissance, les diplômes et relevés de notes, les résultats de tests de langue et les preuves de fonds ou d'expérience de travail.</p>
 <p>Tout document qui n'est pas en français ou en anglais doit être accompagné d'une traduction. Nous vérifions avec vous chaque pièce avant le dépôt, pour qu'aucune ne retarde votre dossier.</p></div></div></section>''',
@@ -227,10 +217,7 @@ PAGES.append(dict(
         ("Faut-il faire traduire la fiche anthropométrique ?", "Non, elle est délivrée en français et en arabe, donc IRCC n'exige pas de traduction."),
         ("Pour quelles demandes faut-il un certificat de police ?", "Pour une demande de résidence permanente, il est exigé. Pour les autres demandes, cela dépend du cas : nous le vérifions pendant la consultation."),
     ],
-    sources=[
-        ('https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/medical-police/certificats-police/comment/maroc.html', "IRCC, Comment obtenir un certificat de police : Maroc"),
-        ('https://visa.vfsglobal.com/mar/fr/can/faq', "VFS Global Maroc, questions fréquentes"),
-    ],
+    sources=[],
     related=[("/permis-etudes-canada-maroc/", "Permis d'études"), ('/entree-express-francophone-maroc/', 'Entrée express pour les francophones')],
 ))
 

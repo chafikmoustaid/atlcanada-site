@@ -144,3 +144,11 @@ nav.primary .nav-social svg,.mobile-nav .nav-social svg{width:19px;height:19px}
 .card-link{display:block;text-decoration:none;color:inherit;transition:transform .15s ease,box-shadow .15s ease}.card-link:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(22,35,61,.12)}.card-link .go{display:inline-block;margin-top:12px;color:#E1232B;font-weight:700;font-size:.9rem}
 .sp .note,.sp .prose{max-width:none}
 .pg-hero .lede{max-width:none}
+.tbl-wrap{border-radius:10px;overflow:hidden;box-shadow:0 8px 24px rgba(22,35,61,.08);border:1px solid #e3dccb;background:#fff}
+.tbl{border:0;border-collapse:separate;border-spacing:0}
+.tbl th{background:#16233D;color:#fff;font-weight:600;letter-spacing:.02em;border-bottom:3px solid #E1232B}
+.tbl td{border-bottom:1px solid #eee7d8}
+.tbl td:first-child{font-weight:700;color:#16233D}
+.tbl tbody tr:nth-child(even) td{background:#faf6ec}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl tbody tr:hover td{background:#f4ecdb}
