@@ -158,6 +158,14 @@ urls = [('/', '1.0', last), ('/maroc/', '0.9', '2026-10-09'), ('/ar/', '0.9', '2
         ('/immigration-quebec-canada/', '0.8', '2026-11-05'),
         ('/ar/visitor-visa-super-visa/', '0.8', '2026-11-05'), ('/ar/family-sponsorship/', '0.8', '2026-11-05'),
         ('/ar/work-permit/', '0.8', '2026-11-05'), ('/ar/immigrate-to-quebec/', '0.8', '2026-11-05'),
+        ('/residence-permanente-canada/', '0.8', '2026-11-05'),
+        ('/entree-express-canada/', '0.8', '2026-11-05'),
+        ('/candidats-provinces-canada/', '0.8', '2026-11-05'),
+        ('/citoyennete-canadienne/', '0.8', '2026-11-05'),
+        ('/ar/permanent-residence/', '0.8', '2026-11-05'),
+        ('/ar/express-entry/', '0.8', '2026-11-05'),
+        ('/ar/provincial-nominee/', '0.8', '2026-11-05'),
+        ('/ar/canadian-citizenship/', '0.8', '2026-11-05'),
         ('/confidentialite/', '0.3', '2026-11-05'),
         ('/ar/study-permit-morocco/', '0.8', '2026-10-26'), ('/ar/express-entry-french/', '0.8', '2026-10-26'),
         ('/ar/moroccan-documents/', '0.8', '2026-10-26') ]
@@ -180,6 +188,9 @@ if '/parrainage-familial-canada/' not in ll:
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/immigration-quebec-canada/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Immigrer au Québec]({SITE}/immigration-quebec-canada/): sélection par le Québec, CSQ, PSTQ, état du PEQ\n\n## Liens", 1)
+    open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
+if '/residence-permanente-canada/' not in ll:
+    ll = ll.replace('\n## Liens', f"- [Résidence permanente : les voies possibles]({SITE}/residence-permanente-canada/): Entrée express, provinces, Québec, famille, Atlantique\n- [Entrée express : programmes, points, changements 2026]({SITE}/entree-express-canada/): conditions, SCG, changements du 3 novembre 2026\n- [Candidats des provinces]({SITE}/candidats-provinces-canada/): deux processus, étapes\n- [Citoyenneté canadienne]({SITE}/citoyennete-canadienne/): conditions pour les adultes\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/actualites/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Actualités de l'immigration (français)]({SITE}/actualites/): nouvelles expliquées, avec sources\n\n## Liens", 1)

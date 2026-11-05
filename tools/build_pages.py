@@ -410,7 +410,166 @@ PAGES.append(dict(
 ))
 
 
-AR_OF = {'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
+D = dict(updated='5 novembre 2026', updated_iso='2026-11-05')
+NOTE_FR = '<p class="note">La décision appartient uniquement à IRCC{x} : nous ne pouvons ni garantir un résultat ni promettre un délai.</p>'
+
+PAGES.append(dict(
+    path='residence-permanente-canada/', **D,
+    title="Résidence permanente au Canada depuis le Maroc : les voies possibles | ATL Canada",
+    desc="Quelles voies mènent à la résidence permanente : Entrée express, candidats des provinces, Québec, parrainage familial, Atlantique. Un consultant réglementé vous aide à choisir.",
+    crumb="Résidence permanente",
+    eyebrow="Résidence permanente · Casablanca · Montréal",
+    h1="Résidence permanente au Canada : quelle voie choisir ?",
+    lede="Il n'existe pas une seule porte d'entrée vers la résidence permanente, mais plusieurs voies, avec chacune ses règles. Voici les principales et comment choisir la plus réaliste pour votre profil.",
+    body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Les principales voies</h2>
+{rich(['Voie', 'En bref'], [
+ ['Entrée express', "Système en ligne de gestion des demandes de trois programmes fédéraux : travailleurs qualifiés (fédéral), travailleurs de métiers spécialisés (fédéral) et catégorie de l'expérience canadienne. Les candidats sont classés par points et les mieux classés sont invités à présenter une demande."],
+ ['Candidats des provinces', "Chaque province ou territoire nomme des personnes dont il a besoin, selon ses propres volets. Le Québec et le Nunavut n'ont pas ce programme."],
+ ['Québec', "Le Québec sélectionne lui-même une partie de ses immigrants économiques (CSQ), puis IRCC traite la résidence permanente."],
+ ['Parrainage familial', "Un citoyen canadien ou un résident permanent peut parrainer certains membres de sa famille : conjoint, enfants à charge, parents et grands-parents."],
+ ['Programme d\'immigration au Canada atlantique', "Pour les travailleurs qualifiés et les diplômés récents d'un établissement de l'Atlantique, avec une offre d'emploi d'un employeur désigné au Nouveau-Brunswick, en Nouvelle-Écosse, à l'Île-du-Prince-Édouard ou à Terre-Neuve-et-Labrador."],
+])}
+</div></section>
+<section class="sp"><div class="wrap"><h2>Comment choisir ?</h2>
+<ol class="steps">
+<li><span>Faire le point sur votre profil : âge, études, expérience de travail, niveau de français et d'anglais, famille au Canada.</span></li>
+<li><span>Vérifier si vous êtes admissible à un programme fédéral d'Entrée express, et à quel rang vous pourriez être classé.</span></li>
+<li><span>Regarder les volets des provinces et du Québec qui correspondent à votre métier ou à votre projet.</span></li>
+<li><span>Préparer les documents à l'avance (évaluation des diplômes, tests de langue, preuves d'expérience) : les délais d'une invitation sont courts.</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>Pour le détail de chaque voie, consultez nos pages sur l'<a href="/entree-express-canada/" style="text-decoration:underline">Entrée express</a>, les <a href="/candidats-provinces-canada/" style="text-decoration:underline">candidats des provinces</a>, <a href="/immigration-quebec-canada/" style="text-decoration:underline">immigrer au Québec</a> et le <a href="/parrainage-familial-canada/" style="text-decoration:underline">parrainage familial</a>. Une fois résident permanent, voyez aussi la <a href="/citoyennete-canadienne/" style="text-decoration:underline">citoyenneté canadienne</a>.</p></div>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
+<p>En consultation, nous comparons avec vous les voies possibles, nous identifions celle qui correspond le mieux à votre profil, puis nous préparons un dossier complet et cohérent avant le dépôt. Le recours à un professionnel de l'immigration ne donne aucune priorité de traitement.</p>
+{NOTE_FR.format(x=', aux provinces ou au Québec selon la voie')}</div></div></section>''',
+    faq=[
+        ("Quelle est la meilleure voie vers la résidence permanente ?", "Cela dépend de votre profil : âge, études, expérience, langues, famille au Canada, projet de vie. C'est précisément ce que nous analysons avec vous en consultation."),
+        ("Peut-on déposer dans plusieurs voies à la fois ?", "Dans certains cas oui, par exemple être dans le bassin Entrée express et obtenir une nomination provinciale. Nous regardons avec vous ce qui est possible pour votre situation."),
+        ("Faut-il déjà être au Canada ?", "Pas toujours. Certaines voies s'adressent à des candidats qui vivent à l'étranger, d'autres exigent une expérience de travail au Canada, comme la catégorie de l'expérience canadienne."),
+        ("La résidence permanente est-elle garantie par un consultant ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes et québécoises."),
+    ],
+    sources=[],
+    related=[('/entree-express-canada/', 'Entrée express'), ('/candidats-provinces-canada/', 'Candidats des provinces')],
+))
+
+PAGES.append(dict(
+    path='entree-express-canada/', **D,
+    title="Entrée express Canada depuis le Maroc : programmes, points et changements 2026 | ATL Canada",
+    desc="Entrée express : les trois programmes, les conditions, le classement par points (SRG) et les changements officiels du 3 novembre 2026. Un consultant réglementé vous accompagne.",
+    crumb="Entrée express",
+    eyebrow="Entrée express · Casablanca · Montréal",
+    h1="Entrée express : programmes, points et changements 2026",
+    lede="Entrée express gère les demandes de résidence permanente de trois programmes fédéraux. Voici les conditions de base, comment fonctionne le classement et ce qui change depuis le 3 novembre 2026.",
+    body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Comment ça fonctionne</h2>
+<ol class="steps">
+<li><span>Vous créez un profil en ligne et entrez dans le bassin de candidats.</span></li>
+<li><span>Vous recevez un score selon le Système de classement global (SCG), calculé à partir de points.</span></li>
+<li><span>IRCC invite les candidats les mieux classés à présenter une demande de résidence permanente, par rondes d'invitations.</span></li>
+<li><span>Si vous êtes invité, vous remplissez la demande, téléversez vos documents et payez les frais, puis IRCC rend sa décision.</span></li>
+</ol>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Les trois programmes</h2>
+{rich(['Programme', 'Ce qu\'indique IRCC'], [
+ ['Travailleurs qualifiés (fédéral)', "Au moins 1 an (ou 1 560 heures) de travail qualifié (TEER 0, 1, 2 ou 3) dans la même profession au cours des 10 dernières années ; résultats de test de langue approuvé (NCLC 7 minimum pour la première langue officielle) ; études canadiennes terminées ou diplôme étranger avec évaluation (ECA) ; 67 points sur 100 sur les facteurs de sélection ; fonds suffisants, sauf exception."],
+ ['Métiers spécialisés (fédéral)', "Au moins 2 ans de travail à temps plein (ou 3 120 heures) dans un métier spécialisé au cours des 5 dernières années ; une offre d'emploi à temps plein d'au moins 1 an ou un certificat de qualification canadien dans le métier ; test de langue approuvé."],
+ ["Catégorie de l'expérience canadienne", "Au moins 1 an (ou 1 560 heures) de travail qualifié (TEER 0, 1, 2 ou 3) au Canada au cours des 3 dernières années, avec un statut temporaire qui permettait de travailler ; test de langue approuvé. Aucune exigence de scolarité."],
+])}
+<p class="note" style="margin-top:18px">Dans tous les cas, vous devez être admissible au Canada et prévoir vivre hors du Québec (le Québec a sa propre sélection).</p>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Ce qui change depuis le 3 novembre 2026</h2><div class="prose">
+<p>Selon IRCC (annonce du 16 octobre 2026), le système donne désormais des points supplémentaires pour une expérience de travail canadienne admissible ou une offre d'emploi admissible dans une profession à salaire élevé (une profession dont le salaire médian est au moins 1,3 fois celui de l'ensemble des travailleurs canadiens). Une EIMT n'est plus nécessaire pour qu'une offre d'emploi donne ces points ou réponde aux exigences d'offre d'emploi des programmes fédéral des travailleurs qualifiés et fédéral des métiers spécialisés.</p>
+<p>Les scores des candidats déjà dans le bassin sont recalculés automatiquement. IRCC précise que le recalcul peut prendre jusqu'à deux semaines et que les rondes d'invitations sont suspendues pendant ce temps. Pour recevoir les points d'offre d'emploi, il fallait mettre son profil à jour avant le 3 novembre.</p>
+<p class="note">Ces règles évoluent : l'état indiqué est celui du 5 novembre 2026. Vérifiez avec nous votre situation à jour.</p></div>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
+<p>En consultation, nous vérifions à quels programmes vous êtes admissible, nous estimons votre classement, nous identifions les points faciles à améliorer (langues, évaluation des diplômes, offre d'emploi) et nous préparons votre profil et vos documents. Si vous parlez bien français, lisez aussi notre page sur l'<a href="/entree-express-francophone-maroc/" style="text-decoration:underline">Entrée express pour les francophones</a>.</p>
+{NOTE_FR.format(x='')}</div></div></section>''',
+    faq=[
+        ("Quels programmes sont gérés par Entrée express ?", "Le programme des travailleurs qualifiés (fédéral), le programme des travailleurs de métiers spécialisés (fédéral) et la catégorie de l'expérience canadienne. Une partie du Programme des candidats des provinces y est aussi liée."),
+        ("Faut-il avoir travaillé au Canada ?", "Pas pour les travailleurs qualifiés (fédéral), qui peuvent compter l'expérience acquise à l'étranger. C'est en revanche obligatoire pour la catégorie de l'expérience canadienne."),
+        ("Une EIMT est-elle toujours nécessaire pour une offre d'emploi ?", "Selon IRCC, depuis le 3 novembre 2026, une EIMT n'est plus nécessaire pour qu'une offre d'emploi donne les nouveaux points ou satisfasse aux exigences d'offre d'emploi des programmes fédéral des travailleurs qualifiés et fédéral des métiers spécialisés."),
+        ("Que signifie « profession à salaire élevé » ?", "Selon IRCC, c'est une profession dont le salaire médian est au moins 1,3 fois celui de l'ensemble des travailleurs canadiens. IRCC publie et tient à jour la liste."),
+        ("Garantissez-vous une invitation ?", "Non. IRCC invite les candidats les mieux classés lors des rondes : personne ne peut garantir une invitation ni un résultat."),
+    ],
+    sources=[],
+    related=[('/entree-express-francophone-maroc/', 'Entrée express pour les francophones'), ('/residence-permanente-canada/', 'Résidence permanente')],
+))
+
+PAGES.append(dict(
+    path='candidats-provinces-canada/', **D,
+    title="Candidats des provinces au Canada depuis le Maroc : comment ça marche | ATL Canada",
+    desc="Le Programme des candidats des provinces : deux processus (Entrée express ou non), rôle de chaque province, étapes. Un consultant réglementé vous explique.",
+    crumb="Candidats des provinces",
+    eyebrow="Provinces · Casablanca · Montréal",
+    h1="Programme des candidats des provinces",
+    lede="Chaque province ou territoire peut nommer des personnes qui ont les compétences dont elle a besoin et qui veulent s'y établir. Voici comment fonctionne cette voie vers la résidence permanente.",
+    body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Ce qu'il faut savoir</h2>
+{rich(['Point', 'Ce qu\'indique IRCC'], [
+ ['Qui décide ?', "Chaque province ou territoire fixe ses propres critères et ses propres volets, ainsi que le nombre de personnes qu'il peut nommer chaque année."],
+ ['Où ?', "Vous devez prévoir vous établir dans la province ou le territoire qui vous nomme. Le Québec et le Nunavut n'ont pas de programme : voyez notre page sur l'<a href=\"/immigration-quebec-canada/\" style=\"text-decoration:underline\">immigration au Québec</a>."],
+ ['Deux processus', "Le processus lié à Entrée express : vous répondez à la fois aux critères d'un volet provincial et d'un programme fédéral d'Entrée express. Le processus hors Entrée express : vous répondez à un volet provincial, mais pas à un programme fédéral d'Entrée express."],
+ ['Après la nomination', "Dans le processus lié à Entrée express, une fois nommé, vous créez un profil Entrée express et recevez 600 points supplémentaires, ce qui vous aide à être invité à présenter une demande de résidence permanente."],
+])}
+</div></section>
+<section class="sp"><div class="wrap"><h2>Les étapes</h2>
+<ol class="steps">
+<li><span>Choisir une province ou un territoire et consulter ses volets.</span></li>
+<li><span>Identifier votre voie : selon que vous êtes aussi admissible à un programme fédéral d'Entrée express ou non.</span></li>
+<li><span>Déposer votre demande selon la procédure de la province, qui vous indique si elle passe par Entrée express ou non.</span></li>
+<li><span>Une fois nommé, déposer votre demande de résidence permanente auprès d'IRCC, qui vérifie notamment l'admissibilité (médicale, sécurité, criminalité).</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>Les délais varient selon le type de demande, la complétude du dossier et la rapidité de vos réponses. Voyez aussi la page de la <a href="/residence-permanente-canada/" style="text-decoration:underline">résidence permanente</a> pour comparer les voies.</p></div>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
+<p>En consultation, nous regardons avec vous quelles provinces correspondent à votre métier et à votre projet, quelle voie est la plus réaliste, et quels documents préparer d'avance. Le recours à un professionnel de l'immigration ne donne aucune priorité de traitement.</p>
+{NOTE_FR.format(x=' et à la province concernée')}</div></div></section>''',
+    faq=[
+        ("Peut-on choisir n'importe quelle province ?", "Chaque province a ses propres volets et critères. Vous devez prévoir vous établir dans la province qui vous nomme. Le Québec et le Nunavut n'ont pas de programme."),
+        ("Que sont les 600 points supplémentaires ?", "Dans le processus lié à Entrée express, une personne nommée par une province reçoit 600 points supplémentaires une fois son profil créé. Cela l'aide à être invitée à présenter une demande."),
+        ("Une nomination garantit-elle la résidence permanente ?", "Non. La nomination est une étape. C'est ensuite IRCC qui décide de la résidence permanente."),
+        ("Et le Programme d'immigration au Canada atlantique ?", "C'est un programme distinct pour les travailleurs qualifiés et les diplômés récents des quatre provinces de l'Atlantique, avec une offre d'emploi d'un employeur désigné."),
+    ],
+    sources=[],
+    related=[('/entree-express-canada/', 'Entrée express'), ('/residence-permanente-canada/', 'Résidence permanente')],
+))
+
+PAGES.append(dict(
+    path='citoyennete-canadienne/', **D,
+    title="Citoyenneté canadienne : conditions pour les résidents permanents | ATL Canada",
+    desc="Devenir citoyen canadien : 1 095 jours de présence, impôts, langue. Les conditions officielles pour les adultes résidents permanents.",
+    crumb="Citoyenneté canadienne",
+    eyebrow="Citoyenneté · Casablanca · Montréal",
+    h1="Citoyenneté canadienne : les conditions pour les adultes",
+    lede="Après la résidence permanente, la citoyenneté est l'étape suivante pour beaucoup de familles. Voici les conditions officielles à vérifier avant de présenter une demande.",
+    body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Les conditions pour un adulte (18 ans et plus)</h2>
+{rich(['Condition', 'Ce qu\'indique IRCC'], [
+ ['Statut de résident permanent', "Vous devez être résident permanent, sans condition non remplie, et votre statut ne doit pas faire l'objet d'un examen en matière d'immigration ou de fraude ni d'une mesure de renvoi."],
+ ['Présence physique', "1 095 jours au Canada comme résident permanent au cours des 5 ans précédant la demande. Le temps passé comme résident temporaire ou personne protégée avant la résidence permanente compte pour une demi-journée, jusqu'à un maximum de 365 jours. Le temps passé en prison, en probation ou en libération conditionnelle au Canada ne compte généralement pas."],
+ ['Impôts', "Avoir produit ses déclarations de revenus pour 3 années d'imposition situées en tout ou en partie dans les 5 ans précédant la demande."],
+ ['Langue', "Les 18 à 54 ans doivent prouver une capacité en français ou en anglais au niveau NCLC 4 ou plus. Les 55 ans et plus et les 17 ans et moins en sont exemptés, de même que les personnes sourdes qui ne peuvent fournir de preuve. Une dispense pour motifs d'ordre humanitaire est possible."],
+])}
+<p class="note" style="margin-top:18px">D'autres motifs peuvent empêcher une demande, par exemple des accusations criminelles en cours, certaines condamnations, ou un refus ou une révocation antérieurs de la citoyenneté.</p>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
+<p>Avant de déposer, nous vérifions avec vous le calcul de vos jours de présence, vos déclarations de revenus et votre preuve de langue, et nous préparons une demande complète. Les règles de citoyenneté ont changé en 2025 : nous vérifions avec vous ce qui s'applique à votre cas, notamment si vous êtes parent ou enfant d'un citoyen.</p>
+<p>Si vous n'êtes pas encore résident permanent, voyez notre page sur la <a href="/residence-permanente-canada/" style="text-decoration:underline">résidence permanente</a>.</p>
+{NOTE_FR.format(x='')}</div></div></section>''',
+    faq=[
+        ("Combien de jours faut-il avoir passé au Canada ?", "1 095 jours comme résident permanent au cours des 5 ans précédant la demande, avec une possibilité de crédit partiel pour le temps passé comme résident temporaire ou personne protégée avant la résidence permanente."),
+        ("Faut-il avoir payé des impôts ?", "Oui. Vous devez avoir produit vos déclarations de revenus pour 3 années d'imposition situées en tout ou en partie dans les 5 ans précédant la demande."),
+        ("Quel niveau de langue faut-il ?", "Les 18 à 54 ans doivent prouver le niveau NCLC 4 ou plus en français ou en anglais. Les 55 ans et plus en sont exemptés."),
+        ("Garantissez-vous l'obtention de la citoyenneté ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement à IRCC."),
+    ],
+    sources=[],
+    related=[('/residence-permanente-canada/', 'Résidence permanente'), ('/parrainage-familial-canada/', 'Parrainage familial')],
+))
+
+
+AR_OF = {'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
 
 
 def head_for(p):
