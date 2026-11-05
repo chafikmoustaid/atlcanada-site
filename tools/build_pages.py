@@ -252,9 +252,7 @@ PAGES.append(dict(
         ("Une lettre d'invitation garantit-elle le visa ?", "Non. Elle est obligatoire pour le super visa et peut être utile pour un visa de visiteur, mais la décision repose sur l'ensemble du dossier."),
         ("Garantissez-vous l'obtention du visa ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes."),
     ],
-    sources=[
-        ('https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html', "IRCC, Visiter le Canada (site officiel)"),
-    ],
+    sources=[],
     related=[("/permis-etudes-canada-maroc/", "Permis d'études depuis le Maroc"), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
 ))
 
@@ -312,7 +310,7 @@ for p in PAGES:
 </div></section>
 {p['body']}
 <section class="sp alt" id="faq"><div class="wrap"><h2>Questions fréquentes</h2><div class="faq-list">{faq_html(p['faq'])}</div></div></section>
-<section class="sp"><div class="wrap"><h2>Sources officielles</h2><ul class="sources">{src}</ul>
+<section class="sp"><div class="wrap">{('<h2>Sources officielles</h2><ul class="sources">' + src + '</ul>') if src else ''}
 <p class="note" style="margin-top:18px">Dernière mise à jour : {p.get('updated', '26 octobre 2026')}.</p>
 <div class="related">{related}</div></div></section>
 {offices}
