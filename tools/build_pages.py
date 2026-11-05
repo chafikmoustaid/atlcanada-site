@@ -90,37 +90,48 @@ PAGES = []
 # ------------------------------------------------------------------ 1. Permis d'études
 PAGES.append(dict(
     path='permis-etudes-canada-maroc/',
-    title="Permis d'études Canada depuis le Maroc | ATL Canada",
-    desc="Étudier au Canada depuis le Maroc : lettre d'attestation, preuves de fonds, biométrie et dépôt. Un consultant réglementé vous accompagne. Prenez rendez-vous.",
-    crumb="Permis d'études depuis le Maroc",
+    title="Permis d'études au Canada : demande, prolongation, changement d'école | ATL Canada",
+    desc="Permis d'études au Canada, de l'étranger (dont le Maroc) ou depuis le Canada : lettre d'attestation, preuves de fonds, prolongation, changement d'établissement. Un consultant réglementé vous accompagne.",
+    crumb="Permis d'études", neutral=True, updated='5 novembre 2026', updated_iso='2026-11-05',
     eyebrow="Études · Casablanca · Montréal",
-    h1="Permis d'études pour le Canada depuis le Maroc",
-    lede="Les citoyens marocains doivent obtenir un permis d'études avant de partir. Voici les étapes, les pièces à préparer et les points où un dossier se joue, avec un consultant réglementé à Casablanca.",
+    h1="Permis d'études au Canada : demande, prolongation, changement",
+    lede="Que vous partiez de l'étranger (notamment du Maroc) ou que vous étudiiez déjà au Canada : voici les étapes, les pièces à préparer, ce qu'il faut savoir pour prolonger ou changer d'école, et les points où un dossier se joue.",
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>Les étapes, de l'admission au départ</h2>
 <ol class="steps">
 <li><span>Choisir un programme dans un établissement d'enseignement désigné : le permis d'études ne s'obtient que pour étudier dans un tel établissement.</span></li>
 <li><span>Obtenir la lettre d'admission et, lorsqu'elle est exigée, la lettre d'attestation provinciale ou territoriale (LAP/LAT).</span></li>
 <li><span>Réunir les preuves de fonds : frais de scolarité de la première année, frais de subsistance et frais de transport.</span></li>
-<li><span>Déposer la demande en ligne auprès d'IRCC, puis donner vos données biométriques au centre VFS Global du Maroc.</span></li>
+<li><span>Déposer la demande en ligne auprès d'IRCC, puis donner vos données biométriques (depuis le Maroc : au centre VFS Global).</span></li>
 <li><span>Répondre aux demandes d'IRCC jusqu'à la décision, puis préparer votre arrivée.</span></li>
 </ol></div></section>
 <section class="sp"><div class="wrap"><h2>Les points à préparer avec soin</h2>
 {table(['Élément', "Ce qu'il faut savoir", 'Source officielle'], [
  ['Lettre d\'attestation (LAP/LAT)', "Exigée pour la plupart des nouvelles demandes, avec des exceptions fixées par IRCC. Pour 2026, une exception vise notamment les étudiants à la maîtrise ou au doctorat dans un établissement public désigné.", a('https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/bulletins-guides-operationnels/mises-a-jour/2026-etudiants-lap-lat.html', 'IRCC, mise à jour du 6 février 2026')],
  ['Preuves de fonds', "Vous devez prouver vos frais de scolarité de la première année, vos frais de subsistance et vos frais de transport. Pour les demandes déposées à partir du 1er septembre 2026, IRCC exige au moins 23 448 $ CA de frais de subsistance pour une personne seule, hors frais de scolarité et de transport (hors Québec : le Québec fixe ses propres exigences avec le CAQ). IRCC révise ce montant régulièrement : nous le confirmons avec vous à la consultation.", a('https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html', 'IRCC, preuve de soutien financier (en anglais)')],
- ['Biométrie', "Empreintes et photo se donnent sur rendez-vous au centre VFS Global du Maroc. Pour un résident temporaire, elles restent valides 10 ans.", a('https://visa.vfsglobal.com/mar/fr/can/faq', 'VFS Global Maroc, questions fréquentes')],
+ ['Biométrie', "Empreintes et photo se donnent sur rendez-vous ; depuis le Maroc, au centre VFS Global. Pour un résident temporaire, elles restent valides 10 ans.", a('https://visa.vfsglobal.com/mar/fr/can/faq', 'VFS Global Maroc, questions fréquentes')],
  ['Lettre d\'admission', "Elle doit provenir d'un établissement d'enseignement désigné et correspondre au programme indiqué dans votre demande.", 'Établissement choisi'],
 ])}
 <p class="note" style="margin-top:18px">Pour étudier au Québec, une étape provinciale s'ajoute (le CAQ) : nous la voyons avec vous en consultation si votre projet passe par là.</p>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Vous êtes déjà au Canada ?</h2>
+{rich(['Situation', "Ce qu'indique IRCC"], [
+ ["Prolonger son permis d'études", "Pour rester dans le même établissement, déposez la demande au moins 30 jours avant l'expiration du permis. Si vous restez au Canada, vous pouvez continuer d'étudier selon les mêmes conditions jusqu'à la décision. Le permis ne peut pas être prolongé au-delà de la date d'expiration de votre passeport."],
+ ["Changer d'établissement", "Demandez la prolongation avant de terminer votre programme actuel. En général, vous ne pouvez pas commencer dans la nouvelle école avant l'approbation du permis prolongé, sauf exception."],
+ ["Études plus longues que prévu", "Déposez la demande au moins 30 jours avant la date d'expiration initiale du permis."],
+ ["Études terminées plus tôt", "Le permis expire à la première des deux dates : celle inscrite sur le permis ou 90 jours après la fin des études (à partir du premier avis de l'école ou de la remise du diplôme)."],
+ ["L'école perd son statut d'établissement désigné", "Vous pouvez continuer d'étudier jusqu'à l'expiration du permis ou changer d'établissement désigné. Pour prolonger, vous devez être inscrit dans un établissement désigné."],
+])}
+<p class="note" style="margin-top:18px">Votre permis d'études est expiré ou vous avez un doute ? Parlez-nous-en avant d'agir : les règles dépendent de votre situation.</p>
 </div></section>
 <section class="sp alt"><div class="wrap"><h2>Après les études</h2><div class="prose">
 <p>Selon le programme et l'établissement, un permis de travail postdiplôme peut être possible. Cette expérience de travail canadienne peut ensuite compter dans une demande de résidence permanente, par exemple par Entrée express.</p>
 <p>Si vous parlez bien français, lisez aussi notre page sur <a href="/entree-express-francophone-maroc/" style="text-decoration:underline">Entrée express pour les francophones</a>.</p></div></div></section>''',
     faq=[
-        ("Un citoyen marocain a-t-il besoin d'un permis d'études ?", "En général oui, dès que le programme dure plus de six mois. Pour une formation plus courte, les règles diffèrent : nous vérifions votre cas avec vous."),
+        ("Ai-je besoin d'un permis d'études ?", "En général oui (c'est le cas des citoyens marocains), dès que le programme dure plus de six mois. Pour une formation plus courte, les règles diffèrent : nous vérifions votre cas avec vous."),
         ("Quels documents faut-il fournir ?", "La liste exacte est établie par IRCC selon votre situation. Elle comprend généralement le passeport, la lettre d'admission, la preuve de fonds et, lorsqu'elle est exigée, la LAP/LAT. Nous la validons avec vous avant le dépôt."),
         ("Combien de temps prend le traitement ?", "Les délais changent régulièrement : IRCC les publie sur son site et nous ne promettons aucun délai. Nous vous indiquons la situation à jour au moment de votre rendez-vous."),
+        ("Quand demander la prolongation de mon permis d'études ?", "Au moins 30 jours avant son expiration, selon IRCC. Si vous restez au Canada, vous pouvez continuer d'étudier selon les mêmes conditions jusqu'à la décision."),
         ("Faut-il obligatoirement passer par un consultant ?", "Non, vous pouvez déposer votre demande vous-même. Un consultant réglementé vous aide à choisir la bonne stratégie, à préparer un dossier complet et à éviter les oublis."),
         ("Garantissez-vous l'obtention du permis ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes."),
     ],
@@ -136,11 +147,11 @@ PAGES.append(dict(
 # ------------------------------------------------------------------ 2. Entrée express francophone
 PAGES.append(dict(
     path='entree-express-francophone-maroc/',
-    title="Entrée express francophone depuis le Maroc | ATL Canada",
+    title="Entrée express francophone : le français, un atout | ATL Canada",
     desc="Le français peut rapporter jusqu'à 50 points dans Entrée express. Niveau exigé, tests, tirages : un consultant réglementé vous explique. Prenez rendez-vous.",
-    crumb="Entrée express francophone",
+    crumb="Entrée express francophone", neutral=True,
     eyebrow="Résidence permanente · Casablanca · Montréal",
-    h1="Entrée express : le français, un atout pour les candidats du Maroc",
+    h1="Entrée express : le français, un atout pour les candidats",
     lede="Un bon niveau de français peut rapporter jusqu'à 50 points supplémentaires dans Entrée express et donne accès à des tirages réservés aux francophones. Voici comment cela fonctionne et ce qu'il faut préparer.",
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>Comment le français compte dans votre score</h2>
@@ -178,7 +189,7 @@ PAGES.append(dict(
         ('https://www.canada.ca/fr/immigration-refugies-citoyennete/campagnes/immigration-francophone-hors-quebec/immigration-francophone-entree-express.html', "IRCC, Entrée express pour les travailleurs qualifiés francophones (mise à jour du 20 août 2025)"),
         ('https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html', "IRCC, rondes d'invitations Entrée express"),
     ],
-    related=[("/permis-etudes-canada-maroc/", "Permis d'études depuis le Maroc"), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
+    related=[("/permis-etudes-canada-maroc/", "Permis d'études"), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
 ))
 
 # ------------------------------------------------------------------ 3. Documents marocains
@@ -220,7 +231,7 @@ PAGES.append(dict(
         ('https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/medical-police/certificats-police/comment/maroc.html', "IRCC, Comment obtenir un certificat de police : Maroc"),
         ('https://visa.vfsglobal.com/mar/fr/can/faq', "VFS Global Maroc, questions fréquentes"),
     ],
-    related=[("/permis-etudes-canada-maroc/", "Permis d'études depuis le Maroc"), ('/entree-express-francophone-maroc/', 'Entrée express pour les francophones')],
+    related=[("/permis-etudes-canada-maroc/", "Permis d'études"), ('/entree-express-francophone-maroc/', 'Entrée express pour les francophones')],
 ))
 
 
@@ -228,11 +239,11 @@ PAGES.append(dict(
 PAGES.append(dict(
     path='visa-visiteur-super-visa-canada/',
     updated='5 novembre 2026', updated_iso='2026-11-05',
-    title="Visa de visiteur et super visa pour le Canada depuis le Maroc | ATL Canada",
+    title="Visa de visiteur, super visa et prolongation de séjour au Canada | ATL Canada",
     desc="Visa de visiteur ou super visa pour vos parents et grands-parents : conditions, revenu minimal de l'hôte, assurance, examen médical. Un consultant réglementé vous accompagne.",
-    crumb="Visa de visiteur et super visa",
+    crumb="Visa de visiteur et super visa", neutral=True,
     eyebrow="Visiteurs · Casablanca · Montréal",
-    h1="Visa de visiteur et super visa pour le Canada depuis le Maroc",
+    h1="Visa de visiteur, super visa et prolongation de séjour",
     lede="Rendre visite à un proche, voyager ou venir voir vos enfants et petits-enfants : le visa de visiteur couvre la plupart des séjours, et le super visa est conçu pour les parents et grands-parents. Voici les conditions officielles et les pièces à préparer.",
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>Visa de visiteur ou super visa : lequel choisir ?</h2>
@@ -243,7 +254,15 @@ PAGES.append(dict(
  ['Assurance médicale', "Non exigée par la liste de conditions d'IRCC", "Assurance privée valide au moins 1 an, obligatoire"],
 ])}
 </div></section>
-<section class="sp"><div class="wrap"><h2>Visa de visiteur : ce qu'IRCC vérifie</h2>
+<section class="sp"><div class="wrap"><h2>Vous êtes déjà au Canada ?</h2>
+{rich(['Situation', "Ce qu'indique IRCC"], [
+ ['Prolonger son séjour', "Les visiteurs, mais aussi les travailleurs et étudiants autorisés à travailler ou étudier sans permis, peuvent demander une prolongation. Déposez la demande au moins 30 jours avant l'expiration de votre statut."],
+ ['Quelle date compte ?', "Vérifiez le tampon dans votre passeport (et non la date du visa de visiteur) ; sans tampon, la limite est de 6 mois après votre date d'entrée. Pour un permis d'études ou de travail, c'est la date du permis ; pour une prolongation déjà obtenue, la fiche de visiteur."],
+ ['Passer au statut de visiteur', "Une personne titulaire d'un permis d'études ou de travail peut aussi demander à devenir visiteur. Votre document d'entrée initial (visa, AVE) n'a pas d'importance."],
+])}
+<p class="note" style="margin-top:18px">Votre statut est déjà expiré ou proche de l'être ? Parlez-nous-en rapidement : les règles dépendent de votre situation.</p>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Visa de visiteur : ce qu'IRCC vérifie</h2>
 <ol class="steps">
 <li><span>Vous avez un document de voyage valide, comme un passeport (IRCC recommande qu'il soit valide au moins 6 mois à partir de la date prévue du voyage).</span></li>
 <li><span>Vous êtes en bonne santé. Un examen médical peut être exigé.</span></li>
@@ -283,16 +302,16 @@ PAGES.append(dict(
         ("Garantissez-vous l'obtention du visa ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes."),
     ],
     sources=[],
-    related=[("/permis-etudes-canada-maroc/", "Permis d'études depuis le Maroc"), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
+    related=[("/permis-etudes-canada-maroc/", "Permis d'études"), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
 ))
 
 
 PAGES.append(dict(
     path='parrainage-familial-canada/',
     updated='5 novembre 2026', updated_iso='2026-11-05',
-    title="Parrainage familial au Canada depuis le Maroc : conjoint, enfants, parents | ATL Canada",
+    title="Parrainage familial au Canada : conjoint, enfants, parents | ATL Canada",
     desc="Réunir votre famille au Canada : qui peut être parrainé, preuves de la relation, déclaration des membres de la famille. Un consultant réglementé prépare votre dossier.",
-    crumb="Parrainage familial",
+    crumb="Parrainage familial", neutral=True,
     eyebrow="Famille · Casablanca · Montréal",
     h1="Parrainage familial : réunir votre famille au Canada",
     lede="Conjoint, enfants à charge, parents ou grands-parents : le parrainage permet à votre famille de venir vivre au Canada. Voici qui peut être parrainé et les points où un dossier se joue.",
@@ -424,7 +443,7 @@ PAGES.append(dict(
         ("Garantissez-vous l'obtention du CSQ ou de la résidence permanente ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités du Québec et du Canada."),
     ],
     sources=[],
-    related=[("/permis-etudes-canada-maroc/", "Permis d'études depuis le Maroc"), ('/entree-express-francophone-maroc/', 'Entrée express pour les francophones')],
+    related=[("/permis-etudes-canada-maroc/", "Permis d'études"), ('/entree-express-francophone-maroc/', 'Entrée express pour les francophones')],
 ))
 
 
