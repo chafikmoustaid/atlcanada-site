@@ -153,6 +153,9 @@ urls = [('/', '1.0', last), ('/maroc/', '0.9', '2026-10-09'), ('/ar/', '0.9', '2
         ('/permis-etudes-canada-maroc/', '0.8', '2026-10-26'), ('/entree-express-francophone-maroc/', '0.8', '2026-10-26'),
         ('/documents-maroc-immigration-canada/', '0.8', '2026-10-26'),
         ('/visa-visiteur-super-visa-canada/', '0.8', '2026-11-05'),
+        ('/parrainage-familial-canada/', '0.8', '2026-11-05'),
+        ('/permis-de-travail-canada/', '0.8', '2026-11-05'),
+        ('/immigration-quebec-canada/', '0.8', '2026-11-05'),
         ('/confidentialite/', '0.3', '2026-11-05'),
         ('/ar/study-permit-morocco/', '0.8', '2026-10-26'), ('/ar/express-entry-french/', '0.8', '2026-10-26'),
         ('/ar/moroccan-documents/', '0.8', '2026-10-26') ]
@@ -169,6 +172,12 @@ if '/permis-etudes-canada-maroc/' not in ll:
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/visa-visiteur-super-visa-canada/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Visa de visiteur et super visa depuis le Maroc]({SITE}/visa-visiteur-super-visa-canada/): conditions officielles, revenu de l'hôte, assurance, examen médical\n\n## Liens", 1)
+    open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
+if '/parrainage-familial-canada/' not in ll:
+    ll = ll.replace('\n## Liens', f"- [Parrainage familial au Canada]({SITE}/parrainage-familial-canada/): qui peut être parrainé, relation authentique, déclaration de la famille\n- [Permis de travail pour le Canada]({SITE}/permis-de-travail-canada/): permis lié à un employeur, EIMT, permis ouvert\n- [Immigrer au Québec]({SITE}/immigration-quebec-canada/): sélection par le Québec, CSQ, PSTQ, état du PEQ\n\n## Liens", 1)
+    open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
+if '/immigration-quebec-canada/' not in ll:
+    ll = ll.replace('\n## Liens', f"- [Immigrer au Québec]({SITE}/immigration-quebec-canada/): sélection par le Québec, CSQ, PSTQ, état du PEQ\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/actualites/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Actualités de l'immigration (français)]({SITE}/actualites/): nouvelles expliquées, avec sources\n\n## Liens", 1)

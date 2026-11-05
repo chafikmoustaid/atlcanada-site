@@ -257,6 +257,134 @@ PAGES.append(dict(
 ))
 
 
+PAGES.append(dict(
+    path='parrainage-familial-canada/',
+    updated='5 novembre 2026', updated_iso='2026-11-05',
+    title="Parrainage familial au Canada depuis le Maroc : conjoint, enfants, parents | ATL Canada",
+    desc="Réunir votre famille au Canada : qui peut être parrainé, preuves de la relation, déclaration des membres de la famille. Un consultant réglementé prépare votre dossier.",
+    crumb="Parrainage familial",
+    eyebrow="Famille · Casablanca · Montréal",
+    h1="Parrainage familial : réunir votre famille au Canada",
+    lede="Conjoint, enfants à charge, parents ou grands-parents : le parrainage permet à votre famille de venir vivre au Canada. Voici qui peut être parrainé et les points où un dossier se joue.",
+    body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Qui peut être parrainé ?</h2>
+{table(['Lien avec vous', "Ce qu'indique IRCC"], [
+ ['Époux ou épouse', "Légalement marié, âgé d'au moins 18 ans, dans une relation authentique (et non conclue uniquement pour obtenir un statut de résident permanent)."],
+ ['Conjoint de fait', "Âgé d'au moins 18 ans, dans une relation authentique, et ayant vécu avec vous au moins 12 mois consécutifs dans une relation conjugale."],
+ ['Partenaire conjugal', "Âgé d'au moins 18 ans, dans une relation exclusive d'au moins 1 an, vivant hors du Canada et dans l'impossibilité de vivre avec vous ou de vous épouser pour des raisons précises."],
+ ['Enfant à charge', "Votre enfant, ou celui de votre conjoint ou partenaire, de moins de 22 ans et sans conjoint, ou d'au moins 22 ans mais dépendant financièrement en raison d'une condition physique ou mentale (ou dépendant depuis avant 22 ans)."],
+ ['Parents et grands-parents', "Vos parents et grands-parents, par le sang ou par adoption, avec leurs enfants à charge. Les parents de votre conjoint ne peuvent pas être parrainés par vous."],
+])}
+<p class="note" style="margin-top:18px">Dans tous les cas, la personne parrainée ne doit pas être interdite de territoire au Canada.</p>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Les points à préparer avec soin</h2>
+<ol class="steps">
+<li><span>Vérifier que le répondant et la personne parrainée remplissent les conditions d'IRCC, notamment le statut du répondant au Canada.</span></li>
+<li><span>Montrer une relation authentique : IRCC examine si le lien est réel et pas seulement un moyen d'obtenir la résidence permanente.</span></li>
+<li><span>Déclarer tous les membres de la famille, y compris les enfants qui ne viennent pas ou dont l'autre parent a la garde exclusive. Une omission peut compromettre le dossier.</span></li>
+<li><span>Réunir les formulaires et pièces demandés, puis répondre aux demandes en cours de traitement (examen médical, certificat de police, biométrie).</span></li>
+<li><span>Suivre le dossier jusqu'à la décision, sans changer les informations déclarées sans en parler avec nous.</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>Une politique d'IRCC qui permettait de parrainer certains membres de la famille non déclarés ne s'applique pas aux demandes déposées après le 10 septembre 2026 : la déclaration complète de la famille est donc essentielle. Pour les pièces marocaines (acte de naissance, certificat de police), voyez aussi notre page sur les <a href="/documents-maroc-immigration-canada/" style="text-decoration:underline">documents marocains</a>.</p></div>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
+<p>En consultation, nous vérifions avec vous quelle catégorie de parrainage correspond à votre famille, si les conditions sont réunies et quelles preuves de la relation sont les plus solides. Nous préparons ensuite un dossier complet et cohérent avant le dépôt. Le programme pour les parents et les grands-parents a ses propres règles d'accès, qu'IRCC fait évoluer : nous vérifions avec vous où il en est au moment de votre demande.</p>
+<p class="note">La décision appartient uniquement à IRCC : nous ne pouvons ni garantir un résultat ni promettre un délai.</p></div></div></section>''',
+    faq=[
+        ("Qui peut parrainer un membre de sa famille ?", "Le répondant doit remplir les conditions fixées par IRCC, notamment concernant son statut au Canada. Nous les vérifions avec vous en consultation."),
+        ("Quelle est la différence entre conjoint et conjoint de fait ?", "Le conjoint est légalement marié avec vous. Le conjoint de fait ne l'est pas, mais a vécu avec vous au moins 12 mois consécutifs dans une relation conjugale."),
+        ("Jusqu'à quel âge un enfant est-il à charge ?", "Un enfant de moins de 22 ans sans conjoint est considéré à charge. Au-delà, il faut qu'il dépende financièrement de ses parents en raison d'une condition physique ou mentale, ou depuis avant 22 ans."),
+        ("Dois-je déclarer un enfant qui ne vient pas au Canada ?", "Oui. IRCC exige que tous les enfants soient déclarés, même ceux qui ne viennent pas ou dont l'autre parent a la garde exclusive."),
+        ("Pouvez-vous garantir l'approbation du parrainage ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes."),
+    ],
+    sources=[],
+    related=[("/visa-visiteur-super-visa-canada/", "Visa de visiteur et super visa"), ('/documents-maroc-immigration-canada/', 'Documents marocains')],
+))
+
+PAGES.append(dict(
+    path='permis-de-travail-canada/',
+    updated='5 novembre 2026', updated_iso='2026-11-05',
+    title="Permis de travail pour le Canada depuis le Maroc : permis lié à un employeur, permis ouvert | ATL Canada",
+    desc="Permis de travail pour le Canada : offre d'emploi, EIMT, permis lié à un employeur ou permis ouvert. Un consultant réglementé vous aide à choisir la bonne voie.",
+    crumb="Permis de travail",
+    eyebrow="Travail · Casablanca · Montréal",
+    h1="Permis de travail pour le Canada depuis le Maroc",
+    lede="Travailler au Canada demande presque toujours un permis. Voici les deux grands types de permis, le rôle de l'employeur et les points à vérifier avant de déposer.",
+    body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Deux grands types de permis</h2>
+{table(['', 'Permis lié à un employeur', 'Permis ouvert'], [
+ ["Principe", "Il vous permet de travailler seulement selon ses conditions : l'employeur, le lieu et la profession sont inscrits sur le permis, jusqu'à sa date d'expiration.", "Il vous permet de travailler pour la plupart des employeurs conformes au Canada, sans être lié à un seul."],
+ ["Offre d'emploi", "Une offre d'un employeur qui ne figure pas sur la liste des employeurs non conformes est nécessaire.", "Aucune offre d'emploi n'est nécessaire."],
+ ["Pour qui", "C'est le type le plus courant.", "Seulement dans des situations particulières prévues par IRCC."],
+])}
+<p class="note" style="margin-top:18px">Certaines personnes n'ont pas besoin de permis de travail : IRCC propose un questionnaire en ligne pour le vérifier.</p>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Le permis lié à un employeur, étape par étape</h2>
+<ol class="steps">
+<li><span>Obtenir une offre d'emploi d'un employeur qui n'est pas sur la liste des employeurs non conformes.</span></li>
+<li><span>Votre employeur confirme si le poste exige une évaluation de l'impact sur le marché du travail (EIMT) ou s'il en est exempté. « La plupart des emplois exigent une EIMT », indique IRCC.</span></li>
+<li><span>Si une EIMT est exigée, l'employeur la demande et vous remet la lettre d'EIMT et l'annexe A avant votre demande.</span></li>
+<li><span>Vous déposez votre demande de permis : de l'extérieur du Canada, de l'intérieur, à un point d'entrée ou pour une prolongation, selon votre situation.</span></li>
+<li><span>Une fois le permis délivré, vous respectez ses conditions (employeur, lieu, profession, date d'expiration).</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>Sans permis, vous ne pouvez pas travailler légalement au Canada, ni indiquer dans une candidature que vous y êtes autorisé. IRCC propose aussi des voies particulières, comme Expérience internationale Canada (Jeunes professionnels), la Stratégie en matière de compétences mondiales et le travail agricole.</p>
+<p>Un permis de travail peut aussi être une étape vers la résidence permanente : voyez notre page sur l'<a href="/entree-express-francophone-maroc/" style="text-decoration:underline">Entrée express pour les francophones</a>.</p></div>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
+<p>En consultation, nous déterminons avec vous quel type de permis correspond à votre profil et à votre projet, nous vérifions les documents que votre employeur doit vous fournir et nous préparons votre demande avant le dépôt. Si vous n'avez pas encore d'offre, nous voyons ensemble les pistes réalistes.</p>
+<p class="note">La décision appartient uniquement à IRCC : nous ne pouvons ni garantir un permis ni promettre un délai.</p></div></div></section>''',
+    faq=[
+        ("Ai-je besoin d'un permis de travail ?", "Dans la plupart des cas, oui. Certaines personnes en sont exemptées : IRCC propose un questionnaire en ligne pour le vérifier, et nous le faisons avec vous."),
+        ("Qu'est-ce qu'une EIMT ?", "L'évaluation de l'impact sur le marché du travail montre qu'il y a un besoin d'embaucher un travailleur étranger. Votre employeur doit confirmer si votre poste en exige une ou en est exempté."),
+        ("Puis-je changer d'employeur avec un permis lié à un employeur ?", "Ce permis est lié à l'employeur, au lieu et à la profession indiqués. Avant tout changement, parlez-nous-en pour connaître les démarches à suivre."),
+        ("Que se passe-t-il si je travaille sans permis ?", "Vous ne pouvez pas travailler légalement au Canada sans le permis requis. Il ne faut pas non plus indiquer dans une candidature que vous y êtes autorisé si ce n'est pas le cas."),
+        ("Garantissez-vous l'obtention du permis de travail ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités canadiennes."),
+    ],
+    sources=[],
+    related=[("/entree-express-francophone-maroc/", "Entrée express pour les francophones"), ('/visa-visiteur-super-visa-canada/', 'Visa de visiteur et super visa')],
+))
+
+
+PAGES.append(dict(
+    path='immigration-quebec-canada/',
+    updated='5 novembre 2026', updated_iso='2026-11-05',
+    title="Immigrer au Québec depuis le Maroc : sélection du Québec, PSTQ, CSQ | ATL Canada",
+    desc="Immigrer au Québec : la sélection par le Québec (CSQ), le Programme de sélection des travailleurs qualifiés, l'état du PEQ. Un consultant réglementé vous explique la marche à suivre.",
+    crumb="Immigrer au Québec",
+    eyebrow="Québec · Casablanca · Montréal",
+    h1="Immigrer au Québec depuis le Maroc",
+    lede="Le Québec choisit lui-même une partie de ses immigrants économiques. Voici comment fonctionne ce parcours en deux temps et où en sont les programmes principaux.",
+    body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Un parcours en deux temps</h2>
+<ol class="steps">
+<li><span>La sélection par le Québec : le ministère de l'Immigration du Québec examine votre dossier et, s'il est favorable, délivre un Certificat de sélection du Québec (CSQ).</span></li>
+<li><span>La demande de résidence permanente : une fois le CSQ obtenu, vous déposez ensuite votre demande auprès d'IRCC, qui vérifie notamment l'admissibilité (médicale, sécurité, criminalité).</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>Pour étudier au Québec, une étape provinciale s'ajoute aussi avant le permis d'études : le CAQ. Voyez notre page sur le <a href="/permis-etudes-canada-maroc/" style="text-decoration:underline">permis d'études depuis le Maroc</a>.</p></div>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Où en sont les programmes ?</h2>
+{table(['Programme', "Ce qu'indique le gouvernement du Québec"], [
+ ['Programme de sélection des travailleurs qualifiés (PSTQ)', "On déclare d'abord son intérêt. Si vous êtes invité, vous devez accepter l'invitation dans les 30 jours, sinon votre déclaration devient nulle. Vous déposez ensuite votre demande de sélection permanente avec les documents requis, dans un délai de 60 jours après l'acceptation pour la plupart des volets (un délai différent s'applique à un volet précis). Le Québec examine ensuite le dossier, puis délivre le CSQ s'il est favorable."],
+ ["Programme de l'expérience québécoise (PEQ)", "Pour les travailleurs étrangers temporaires et les diplômés étrangers d'un établissement du Québec. Les demandes étaient acceptées à partir du 2 juillet 2026 et la période de réception est fermée depuis le 31 octobre 2026. Aucune décision n'a été annoncée sur une future période de réception."],
+])}
+<p class="note" style="margin-top:18px">Ces programmes changent souvent : l'état indiqué est celui du 5 novembre 2026. Avant toute décision, vérifiez avec nous leur situation à jour.</p>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
+<p>En consultation, nous regardons avec vous si votre profil correspond à un parcours de sélection par le Québec ou à une voie fédérale comme Entrée express, quels documents préparer et dans quel ordre agir. Les délais d'une invitation sont courts : préparer son dossier à l'avance fait souvent la différence. Le recours à un professionnel de l'immigration ne donne aucune priorité de traitement.</p>
+<p>Si vous parlez bien français, lisez aussi notre page sur l'<a href="/entree-express-francophone-maroc/" style="text-decoration:underline">Entrée express pour les francophones</a>.</p>
+<p class="note">La décision appartient uniquement aux autorités du Québec et à IRCC : nous ne pouvons ni garantir un résultat ni promettre un délai.</p></div></div></section>''',
+    faq=[
+        ("Quelle est la différence entre le CSQ et la résidence permanente ?", "Le CSQ est la sélection faite par le Québec. La résidence permanente est accordée ensuite par IRCC, à partir de la demande que vous déposez après avoir obtenu le CSQ."),
+        ("Le PEQ est-il encore ouvert ?", "Au 5 novembre 2026, le gouvernement du Québec indique que la période de réception des demandes est fermée depuis le 31 octobre 2026 et qu'aucune décision n'a été prise sur une prochaine période."),
+        ("Comment fonctionne une invitation du PSTQ ?", "Vous déclarez d'abord votre intérêt. Si vous êtes invité, vous devez accepter dans les 30 jours, puis déposer votre demande de sélection permanente dans les délais indiqués dans l'invitation."),
+        ("Faut-il parler français pour immigrer au Québec ?", "Le français pèse beaucoup dans la sélection québécoise. Nous regardons avec vous ce qui s'applique à votre profil lors de la consultation."),
+        ("Garantissez-vous l'obtention du CSQ ou de la résidence permanente ?", "Non. Aucun consultant sérieux ne peut garantir une décision : elle appartient uniquement aux autorités du Québec et du Canada."),
+    ],
+    sources=[],
+    related=[("/permis-etudes-canada-maroc/", "Permis d'études depuis le Maroc"), ('/entree-express-francophone-maroc/', 'Entrée express pour les francophones')],
+))
+
+
 AR_OF = {'visa-visiteur-super-visa-canada/': None, 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
 
 
