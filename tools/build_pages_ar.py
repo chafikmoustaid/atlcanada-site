@@ -656,7 +656,6 @@ for p in PAGES:
   <p class="eyebrow">{e(p['eyebrow'])}</p>
   <h1>{e(p['h1'])}</h1>
   <p class="lede">{e(p['lede'])}</p>
-  <div class="cta-row"><a class="btn btn-solid" href="/#contact">احجز موعدًا</a><a class="btn btn-outline" href="tel:+15142956635">اتصل بنا · <bdi dir="ltr">+1 514 295 6635</bdi></a></div>
 </div></section>
 {p['body'].replace(TRUST, '', 1)}
 {TRUST}
