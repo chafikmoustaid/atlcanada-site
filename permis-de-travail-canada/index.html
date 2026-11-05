@@ -70,6 +70,20 @@
 .sources{margin:0;padding-inline-start:20px;color:var(--ink-soft)}.sources li{margin:0 0 8px}
 .sources a{color:var(--ink);text-decoration:underline}
 .related{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0 0}
+.cmp{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin:0 0 8px}
+.cmp-card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(22,35,61,.07)}
+.cmp-card h3{margin:0;padding:18px 24px;background:var(--ink);color:#fff;font-family:'Lora',serif;font-size:1.3rem;font-weight:600}
+.cmp-card.b h3{background:var(--rust)}
+.cmp-row{padding:16px 24px;border-top:1px solid var(--line)}
+.cmp-row:first-of-type{border-top:0}
+.cmp-row b{display:block;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;color:var(--rust);margin-bottom:5px}
+.cmp-row span{color:var(--ink-soft);line-height:1.6}
+.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:0 0 8px}
+.info{background:#fff;border:1px solid var(--line);border-top:4px solid #E1232B;border-radius:10px;padding:20px 24px;box-shadow:0 6px 18px rgba(22,35,61,.05)}
+.info h3{margin:0 0 8px;font-family:'Lora',serif;font-size:1.12rem;font-weight:600;color:var(--ink)}
+.info p{margin:0;color:var(--ink-soft);line-height:1.65}
+.info-grid .info:last-child:nth-child(odd){grid-column:1/-1}
+@media (max-width:760px){.cmp,.info-grid{grid-template-columns:1fr}}
 </style>
 
 <link rel="stylesheet" href="/assets/icons.css">
@@ -92,7 +106,7 @@
 </div></section>
 <section class="sp"><div class="wrap"><div class="trustbox"><h2>Un consultant réglementé, pas un intermédiaire</h2><p>ATL Canada est dirigé par un consultant réglementé en immigration canadienne (CRIC), membre du Collège des consultants en immigration et en citoyenneté (CCIC), permis R712906. Le permis se vérifie dans le registre public du CCIC.</p></div></div></section>
 <section class="sp alt"><div class="wrap"><h2>Deux grands types de permis</h2>
-<div class="tbl-wrap"><table class="tbl"><thead><tr><th scope="col"></th><th scope="col">Permis lié à un employeur</th><th scope="col">Permis ouvert</th></tr></thead><tbody><tr><td>Principe</td><td>Il vous permet de travailler seulement selon ses conditions : l'employeur, le lieu et la profession sont inscrits sur le permis, jusqu'à sa date d'expiration.</td><td>Il vous permet de travailler pour la plupart des employeurs conformes au Canada, sans être lié à un seul.</td></tr><tr><td>Offre d'emploi</td><td>Une offre d'un employeur qui ne figure pas sur la liste des employeurs non conformes est nécessaire.</td><td>Aucune offre d'emploi n'est nécessaire.</td></tr><tr><td>Pour qui</td><td>C'est le type le plus courant.</td><td>Seulement dans des situations particulières prévues par IRCC.</td></tr></tbody></table></div>
+<div class="cmp"><div class="cmp-card"><h3>Permis lié à un employeur</h3><div class="cmp-row"><b>Principe</b><span>Il vous permet de travailler seulement selon ses conditions : l'employeur, le lieu et la profession sont inscrits sur le permis, jusqu'à sa date d'expiration.</span></div><div class="cmp-row"><b>Offre d'emploi</b><span>Une offre d'un employeur qui ne figure pas sur la liste des employeurs non conformes est nécessaire.</span></div><div class="cmp-row"><b>Pour qui</b><span>C'est le type le plus courant.</span></div></div><div class="cmp-card b"><h3>Permis ouvert</h3><div class="cmp-row"><b>Principe</b><span>Il vous permet de travailler pour la plupart des employeurs conformes au Canada, sans être lié à un seul.</span></div><div class="cmp-row"><b>Offre d'emploi</b><span>Aucune offre d'emploi n'est nécessaire.</span></div><div class="cmp-row"><b>Pour qui</b><span>Seulement dans des situations particulières prévues par IRCC.</span></div></div></div>
 <p class="note" style="margin-top:18px">Certaines personnes n'ont pas besoin de permis de travail : IRCC propose un questionnaire en ligne pour le vérifier.</p>
 </div></section>
 <section class="sp"><div class="wrap"><h2>Le permis lié à un employeur, étape par étape</h2>

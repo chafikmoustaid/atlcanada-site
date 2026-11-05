@@ -70,6 +70,20 @@
 .sources{margin:0;padding-inline-start:20px;color:var(--ink-soft)}.sources li{margin:0 0 8px}
 .sources a{color:var(--ink);text-decoration:underline}
 .related{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0 0}
+.cmp{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin:0 0 8px}
+.cmp-card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(22,35,61,.07)}
+.cmp-card h3{margin:0;padding:18px 24px;background:var(--ink);color:#fff;font-family:'Lora',serif;font-size:1.3rem;font-weight:600}
+.cmp-card.b h3{background:var(--rust)}
+.cmp-row{padding:16px 24px;border-top:1px solid var(--line)}
+.cmp-row:first-of-type{border-top:0}
+.cmp-row b{display:block;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;color:var(--rust);margin-bottom:5px}
+.cmp-row span{color:var(--ink-soft);line-height:1.6}
+.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:0 0 8px}
+.info{background:#fff;border:1px solid var(--line);border-top:4px solid #E1232B;border-radius:10px;padding:20px 24px;box-shadow:0 6px 18px rgba(22,35,61,.05)}
+.info h3{margin:0 0 8px;font-family:'Lora',serif;font-size:1.12rem;font-weight:600;color:var(--ink)}
+.info p{margin:0;color:var(--ink-soft);line-height:1.65}
+.info-grid .info:last-child:nth-child(odd){grid-column:1/-1}
+@media (max-width:760px){.cmp,.info-grid{grid-template-columns:1fr}}
 </style>
 
 <link rel="stylesheet" href="/assets/icons.css">
@@ -92,7 +106,7 @@
 </div></section>
 <section class="sp"><div class="wrap"><div class="trustbox"><h2>Un consultant réglementé, pas un intermédiaire</h2><p>ATL Canada est dirigé par un consultant réglementé en immigration canadienne (CRIC), membre du Collège des consultants en immigration et en citoyenneté (CCIC), permis R712906. Le permis se vérifie dans le registre public du CCIC.</p></div></div></section>
 <section class="sp alt"><div class="wrap"><h2>Qui peut être parrainé ?</h2>
-<div class="tbl-wrap"><table class="tbl"><thead><tr><th scope="col">Lien avec vous</th><th scope="col">Ce qu&#x27;indique IRCC</th></tr></thead><tbody><tr><td>Époux ou épouse</td><td>Légalement marié, âgé d'au moins 18 ans, dans une relation authentique (et non conclue uniquement pour obtenir un statut de résident permanent).</td></tr><tr><td>Conjoint de fait</td><td>Âgé d'au moins 18 ans, dans une relation authentique, et ayant vécu avec vous au moins 12 mois consécutifs dans une relation conjugale.</td></tr><tr><td>Partenaire conjugal</td><td>Âgé d'au moins 18 ans, dans une relation exclusive d'au moins 1 an, vivant hors du Canada et dans l'impossibilité de vivre avec vous ou de vous épouser pour des raisons précises.</td></tr><tr><td>Enfant à charge</td><td>Votre enfant, ou celui de votre conjoint ou partenaire, de moins de 22 ans et sans conjoint, ou d'au moins 22 ans mais dépendant financièrement en raison d'une condition physique ou mentale (ou dépendant depuis avant 22 ans).</td></tr><tr><td>Parents et grands-parents</td><td>Vos parents et grands-parents, par le sang ou par adoption, avec leurs enfants à charge. Les parents de votre conjoint ne peuvent pas être parrainés par vous.</td></tr></tbody></table></div>
+<div class="info-grid"><div class="info"><h3>Époux ou épouse</h3><p>Légalement marié, âgé d'au moins 18 ans, dans une relation authentique (et non conclue uniquement pour obtenir un statut de résident permanent).</p></div><div class="info"><h3>Conjoint de fait</h3><p>Âgé d'au moins 18 ans, dans une relation authentique, et ayant vécu avec vous au moins 12 mois consécutifs dans une relation conjugale.</p></div><div class="info"><h3>Partenaire conjugal</h3><p>Âgé d'au moins 18 ans, dans une relation exclusive d'au moins 1 an, vivant hors du Canada et dans l'impossibilité de vivre avec vous ou de vous épouser pour des raisons précises.</p></div><div class="info"><h3>Enfant à charge</h3><p>Votre enfant, ou celui de votre conjoint ou partenaire, de moins de 22 ans et sans conjoint, ou d'au moins 22 ans mais dépendant financièrement en raison d'une condition physique ou mentale (ou dépendant depuis avant 22 ans).</p></div><div class="info"><h3>Parents et grands-parents</h3><p>Vos parents et grands-parents, par le sang ou par adoption, avec leurs enfants à charge. Les parents de votre conjoint ne peuvent pas être parrainés par vous.</p></div></div>
 <p class="note" style="margin-top:18px">Dans tous les cas, la personne parrainée ne doit pas être interdite de territoire au Canada.</p>
 </div></section>
 <section class="sp"><div class="wrap"><h2>Les points à préparer avec soin</h2>

@@ -30,6 +30,20 @@ EXTRA_CSS = """<style>
 .sources{margin:0;padding-inline-start:20px;color:var(--ink-soft)}.sources li{margin:0 0 8px}
 .sources a{color:var(--ink);text-decoration:underline}
 .related{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0 0}
+.cmp{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin:0 0 8px}
+.cmp-card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(22,35,61,.07)}
+.cmp-card h3{margin:0;padding:18px 24px;background:var(--ink);color:#fff;font-family:'Lora',serif;font-size:1.3rem;font-weight:600}
+.cmp-card.b h3{background:var(--rust)}
+.cmp-row{padding:16px 24px;border-top:1px solid var(--line)}
+.cmp-row:first-of-type{border-top:0}
+.cmp-row b{display:block;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;color:var(--rust);margin-bottom:5px}
+.cmp-row span{color:var(--ink-soft);line-height:1.6}
+.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:0 0 8px}
+.info{background:#fff;border:1px solid var(--line);border-top:4px solid #E1232B;border-radius:10px;padding:20px 24px;box-shadow:0 6px 18px rgba(22,35,61,.05)}
+.info h3{margin:0 0 8px;font-family:'Lora',serif;font-size:1.12rem;font-weight:600;color:var(--ink)}
+.info p{margin:0;color:var(--ink-soft);line-height:1.65}
+.info-grid .info:last-child:nth-child(odd){grid-column:1/-1}
+@media (max-width:760px){.cmp,.info-grid{grid-template-columns:1fr}}
 </style>
 """
 
@@ -39,6 +53,17 @@ def table(headers, rows):
     th = ''.join(f'<th scope="col">{e(h)}</th>' for h in headers)
     tr = ''.join('<tr>' + ''.join(f'<td>{c}</td>' for c in r) + '</tr>' for r in rows)
     return f'<div class="tbl-wrap"><table class="tbl"><thead><tr>{th}</tr></thead><tbody>{tr}</tbody></table></div>'
+
+def rich(headers, rows):
+    """Présentation en cartes : 3 colonnes = comparaison côte à côte, 2 colonnes = cartes d'information."""
+    if len(headers) == 3:
+        out = ''
+        for k in (1, 2):
+            rws = ''.join(f'<div class="cmp-row"><b>{r[0]}</b><span>{r[k]}</span></div>' for r in rows)
+            out += f'<div class="cmp-card{" b" if k == 2 else ""}"><h3>{e(headers[k])}</h3>{rws}</div>'
+        return f'<div class="cmp">{out}</div>'
+    return '<div class="info-grid">' + ''.join(f'<div class="info"><h3>{r[0]}</h3><p>{r[1]}</p></div>' for r in rows) + '</div>'
+
 
 def a(url, label):
     return f'<a href="{e(url, quote=True)}" rel="noopener" target="_blank">{e(label)}</a>'
@@ -206,7 +231,7 @@ PAGES.append(dict(
     lede="Rendre visite à un proche, voyager ou venir voir vos enfants et petits-enfants : le visa de visiteur couvre la plupart des séjours, et le super visa est conçu pour les parents et grands-parents. Voici les conditions officielles et les pièces à préparer.",
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>Visa de visiteur ou super visa : lequel choisir ?</h2>
-{table(['', 'Visa de visiteur', 'Super visa'], [
+{rich(['', 'Visa de visiteur', 'Super visa'], [
  ['Pour qui', "Toute personne qui vient visiter le Canada (famille, tourisme, affaires)", "Les parents et grands-parents d'un citoyen canadien, d'un résident permanent ou d'une personne inscrite au registre des Indiens"],
  ['Séjour', "Convient aux séjours de 6 mois ou moins, d'après IRCC", "Pour des séjours plus longs : l'agent peut autoriser un séjour de 5 ans, selon IRCC"],
  ['Invitation', "Une lettre d'invitation peut être utile, voire demandée selon le cas", "Lettre d'invitation signée par votre enfant ou petit-enfant, obligatoire"],
@@ -223,7 +248,7 @@ PAGES.append(dict(
 <li><span>Vous avez assez d'argent pour votre séjour : le montant dépend de la durée et du type d'hébergement (hôtel ou chez des proches).</span></li>
 </ol>
 <div class="prose" style="margin-top:22px"><p>Pour un séjour touristique, IRCC recommande notamment de joindre : une lettre d'invitation et la preuve de votre lien avec la personne qui vous invite, vos antécédents de voyage, un itinéraire, des relevés bancaires couvrant au moins 6 mois et une lettre de votre employeur datée d'au plus 3 mois.</p></div>
-{table(['Élément', "Ce qu'indique IRCC"], [
+{rich(['Élément', "Ce qu'indique IRCC"], [
  ['Frais de traitement', "100 $ CA par personne, ou 500 $ CA pour une famille de 5 personnes ou plus."],
  ['Biométrie', "85 $ CA par personne, ou jusqu'à 170 $ CA pour une famille admissible. Attendez la lettre d'instructions, puis réservez rapidement votre rendez-vous."],
  ['Dépôt', "En ligne, par le portail d'IRCC. La demande sur papier n'est permise que dans des cas précis."],
@@ -231,7 +256,7 @@ PAGES.append(dict(
 ])}
 </div></section>
 <section class="sp alt"><div class="wrap"><h2>Super visa : les conditions</h2>
-{table(['Condition', "Ce qu'indique IRCC"], [
+{rich(['Condition', "Ce qu'indique IRCC"], [
  ["Votre enfant ou petit-enfant (l'hôte)", "Citoyen canadien, résident permanent ou personne inscrite au registre des Indiens, âgé d'au moins 18 ans et vivant au Canada. Le lien (enfant ou petit-enfant biologique ou adopté) doit être prouvé, par exemple avec son acte de naissance."],
  ['Lettre d\'invitation', "Signée par l'hôte, elle doit montrer qu'il atteint le revenu minimal nécessaire et lister toutes les personnes comptées dans sa famille, avec nom et date de naissance. Son conjoint ou conjoint de fait peut cosigner s'il est citoyen, résident permanent ou inscrit au registre des Indiens."],
  ['Revenu minimal de l\'hôte', "Il est fixé à partir des seuils de faible revenu de Statistique Canada. L'hôte le prouve par ses avis de cotisation de l'Agence du revenu du Canada pour l'une des deux années d'imposition précédant la demande, ou par d'autres documents prévus par IRCC. Le montant dépend de la taille de la famille : consultez le tableau à jour sur la page d'IRCC, car il est mis à jour."],
@@ -268,7 +293,7 @@ PAGES.append(dict(
     lede="Conjoint, enfants à charge, parents ou grands-parents : le parrainage permet à votre famille de venir vivre au Canada. Voici qui peut être parrainé et les points où un dossier se joue.",
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>Qui peut être parrainé ?</h2>
-{table(['Lien avec vous', "Ce qu'indique IRCC"], [
+{rich(['Lien avec vous', "Ce qu'indique IRCC"], [
  ['Époux ou épouse', "Légalement marié, âgé d'au moins 18 ans, dans une relation authentique (et non conclue uniquement pour obtenir un statut de résident permanent)."],
  ['Conjoint de fait', "Âgé d'au moins 18 ans, dans une relation authentique, et ayant vécu avec vous au moins 12 mois consécutifs dans une relation conjugale."],
  ['Partenaire conjugal', "Âgé d'au moins 18 ans, dans une relation exclusive d'au moins 1 an, vivant hors du Canada et dans l'impossibilité de vivre avec vous ou de vous épouser pour des raisons précises."],
@@ -312,7 +337,7 @@ PAGES.append(dict(
     lede="Travailler au Canada demande presque toujours un permis. Voici les deux grands types de permis, le rôle de l'employeur et les points à vérifier avant de déposer.",
     body=f'''{TRUST}
 <section class="sp alt"><div class="wrap"><h2>Deux grands types de permis</h2>
-{table(['', 'Permis lié à un employeur', 'Permis ouvert'], [
+{rich(['', 'Permis lié à un employeur', 'Permis ouvert'], [
  ["Principe", "Il vous permet de travailler seulement selon ses conditions : l'employeur, le lieu et la profession sont inscrits sur le permis, jusqu'à sa date d'expiration.", "Il vous permet de travailler pour la plupart des employeurs conformes au Canada, sans être lié à un seul."],
  ["Offre d'emploi", "Une offre d'un employeur qui ne figure pas sur la liste des employeurs non conformes est nécessaire.", "Aucune offre d'emploi n'est nécessaire."],
  ["Pour qui", "C'est le type le plus courant.", "Seulement dans des situations particulières prévues par IRCC."],
@@ -363,7 +388,7 @@ PAGES.append(dict(
 <div class="prose" style="margin-top:22px"><p>Pour étudier au Québec, une étape provinciale s'ajoute aussi avant le permis d'études : le CAQ. Voyez notre page sur le <a href="/permis-etudes-canada-maroc/" style="text-decoration:underline">permis d'études depuis le Maroc</a>.</p></div>
 </div></section>
 <section class="sp"><div class="wrap"><h2>Où en sont les programmes ?</h2>
-{table(['Programme', "Ce qu'indique le gouvernement du Québec"], [
+{rich(['Programme', "Ce qu'indique le gouvernement du Québec"], [
  ['Programme de sélection des travailleurs qualifiés (PSTQ)', "On déclare d'abord son intérêt. Si vous êtes invité, vous devez accepter l'invitation dans les 30 jours, sinon votre déclaration devient nulle. Vous déposez ensuite votre demande de sélection permanente avec les documents requis, dans un délai de 60 jours après l'acceptation pour la plupart des volets (un délai différent s'applique à un volet précis). Le Québec examine ensuite le dossier, puis délivre le CSQ s'il est favorable."],
  ["Programme de l'expérience québécoise (PEQ)", "Pour les travailleurs étrangers temporaires et les diplômés étrangers d'un établissement du Québec. Les demandes étaient acceptées à partir du 2 juillet 2026 et la période de réception est fermée depuis le 31 octobre 2026. Aucune décision n'a été annoncée sur une future période de réception."],
 ])}
