@@ -410,7 +410,7 @@ PAGES.append(dict(
 ))
 
 
-AR_OF = {'visa-visiteur-super-visa-canada/': None, 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
+AR_OF = {'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
 
 
 def head_for(p):

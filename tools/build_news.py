@@ -156,6 +156,8 @@ urls = [('/', '1.0', last), ('/maroc/', '0.9', '2026-10-09'), ('/ar/', '0.9', '2
         ('/parrainage-familial-canada/', '0.8', '2026-11-05'),
         ('/permis-de-travail-canada/', '0.8', '2026-11-05'),
         ('/immigration-quebec-canada/', '0.8', '2026-11-05'),
+        ('/ar/visitor-visa-super-visa/', '0.8', '2026-11-05'), ('/ar/family-sponsorship/', '0.8', '2026-11-05'),
+        ('/ar/work-permit/', '0.8', '2026-11-05'), ('/ar/immigrate-to-quebec/', '0.8', '2026-11-05'),
         ('/confidentialite/', '0.3', '2026-11-05'),
         ('/ar/study-permit-morocco/', '0.8', '2026-10-26'), ('/ar/express-entry-french/', '0.8', '2026-10-26'),
         ('/ar/moroccan-documents/', '0.8', '2026-10-26') ]
