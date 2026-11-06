@@ -159,3 +159,20 @@ nav.primary .nav-social svg,.mobile-nav .nav-social svg{width:19px;height:19px}
 .section-head h2{text-wrap:balance}
 .section-head p{max-width:68ch}
 .section-head h2{line-height:1.25}
+
+/* Calculateur Entrée express : lien du menu et bandeau */
+nav.primary a.nav-calc,.mobile-nav a.nav-calc{display:inline-flex;align-items:center;border:0;box-shadow:inset 0 0 0 1.5px #FF5A61;color:#fff;border-radius:999px;padding:7px 14px;font-weight:600;white-space:nowrap;line-height:1.2}
+nav.primary a.nav-calc:hover,nav.primary a.nav-calc:focus-visible{background:#FF5A61;color:#fff;border:0}
+@media (max-width:1700px){nav.primary a.nav-calc{padding:6px 11px}nav.primary a.nav-news{padding:6px 11px}nav.primary{gap:8px}nav.primary a{font-size:.92rem}.nav-actions{gap:10px}.nav-actions .btn{padding-inline:18px}}
+.mobile-nav .nav-calc{display:inline-block;margin:4px 0}
+.calc-promo{background:linear-gradient(135deg,#16233D 0%,#1F3157 100%);color:#fff;position:relative;overflow:hidden}
+.calc-promo::after{content:"";position:absolute;inset:auto -80px -120px auto;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(255,90,97,.28),transparent 68%);pointer-events:none}
+.calc-promo .cp-in{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:36px;align-items:center;padding-top:34px;padding-bottom:34px;position:relative;z-index:1}
+.calc-promo .cp-eyebrow{margin:0 0 10px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#FF5A61;font-weight:700}
+.calc-promo h2{margin:0 0 10px;color:#fff;font-size:clamp(1.55rem,3vw,2.1rem);line-height:1.2;text-wrap:balance}
+.calc-promo .cp-copy p:not(.cp-eyebrow){margin:0 0 22px;color:#D5DBE8;max-width:60ch}
+.calc-promo .cp-btn{display:inline-flex;gap:10px;align-items:center;background:#E1232B;color:#fff;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:999px;box-shadow:0 8px 22px rgba(225,35,43,.35);transition:transform .15s,background .15s}
+.calc-promo .cp-btn:hover{background:#B5342A;transform:translateY(-2px)}
+.calc-promo .cp-gauge{width:170px;height:170px;display:block;margin-inline:auto}
+@media (max-width:720px){.calc-promo .cp-in{grid-template-columns:1fr;padding-top:34px;padding-bottom:34px}.calc-promo .cp-art{display:none}}
+@media (max-width:1340px){.nav-actions .btn{display:none}}

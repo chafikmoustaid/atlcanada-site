@@ -18,7 +18,7 @@
     secSp: 'الزوج/الزوجة', spEdu: 'تعليم الزوج/الزوجة', spLang: 'لغة الزوج/الزوجة (CLB)', spCan: 'خبرة الزوج/الزوجة في كندا (سنوات)',
     total: 'درجتك التقديرية', of: 'من 1 200', core: 'العوامل الأساسية', spouseL: 'الزوج/الزوجة', trans: 'قابلية نقل المهارات', add: 'نقاط إضافية',
     note: 'هذا تقدير إرشادي وفق جدول IRCC المعمول به منذ 3 نوفمبر 2026، ولا يضمن أي دعوة. تتغير الجولات والقواعد؛ تحقق من وضعك مع مستشار.',
-    cta: 'تحقق من تقديري في استشارة', ctaHref: '/#contact',
+    cta: 'تحقق من درجتي مع مستشار', ctaHref: '/#contact',
     tiers: ['بلا', 'أجر ≥ 1.3× المتوسط', 'أجر ≥ 1.5× المتوسط', 'أجر ≥ 2× المتوسط'],
     cert0: 'بلا', y: function (n) { return n === 5 ? '5 فأكثر' : String(n); },
     eduOpts: ['أقل من الثانوية', 'شهادة ثانوية', 'برنامج لسنة واحدة', 'برنامج لسنتين', 'بكالوريوس أو برنامج 3 سنوات فأكثر', 'شهادتان أو أكثر (إحداها 3 سنوات فأكثر)', 'ماجستير أو شهادة مهنية', 'دكتوراه'],
@@ -38,7 +38,7 @@
     secSp: 'Conjoint(e) ou partenaire', spEdu: 'Études du conjoint', spLang: 'Langue du conjoint (CLB)', spCan: 'Expérience canadienne du conjoint (années)',
     total: 'Votre score estimé', of: 'sur 1 200', core: 'Facteurs de base', spouseL: 'Conjoint(e)', trans: 'Transférabilité des compétences', add: 'Points additionnels',
     note: "Estimation indicative selon la grille d'IRCC en vigueur depuis le 3 novembre 2026. Elle ne garantit aucune invitation. Les rondes et les règles évoluent : faites valider votre situation par un consultant.",
-    cta: 'Faire valider mon estimation en consultation', ctaHref: '/#contact',
+    cta: 'Faire valider mon score', ctaHref: '/#contact',
     tiers: ['Aucune', 'Salaire ≥ 1,3 × la médiane', 'Salaire ≥ 1,5 × la médiane', 'Salaire ≥ 2 × la médiane'],
     cert0: 'Non', y: function (n) { return n === 5 ? '5 ou plus' : String(n); },
     eduOpts: ['Moins que le secondaire', 'Diplôme du secondaire', "Programme d'un an", 'Programme de deux ans', "Baccalauréat ou programme de 3 ans ou plus", 'Deux diplômes ou plus (dont un de 3 ans ou plus)', 'Maîtrise ou diplôme professionnel', 'Doctorat'],
@@ -95,12 +95,16 @@
       field('edu', T.edu, sel('edu', opts(T.eduOpts))) +
       field('study', T.canStudy, sel('study', opts(T.studyOpts))) +
     '</div></fieldset>' +
-    '<fieldset><legend>' + T.secLang + '</legend>' +
-      field('l1', T.first, sel('l1', '<option value="fr">' + T.fr + '</option><option value="en">' + T.en + '</option>')) +
-      '<div style="margin-top:12px">' + langBlock('c1', false) + '</div>' +
-      '<div class="f" style="margin-top:16px"><span class="lbl" id="l2lbl"></span></div>' +
-      '<div style="margin-top:6px">' + langBlock('c2', true) + '</div>' +
-      '<p class="help" style="margin-top:10px">' + (AR ? 'يحتسب الدخول السريع نقاطًا إضافية للفرنسية (NCLC 7 فأكثر في الكفاءات الأربع).' : "Le français rapporte des points additionnels à partir du NCLC 7 dans les 4 compétences.") + '</p>' +
+    '<fieldset><legend>' + T.secLang + '</legend><div class="row langs">' +
+      '<div class="lblock">' +
+        field('l1', T.first, sel('l1', '<option value="fr">' + T.fr + '</option><option value="en">' + T.en + '</option>')) +
+        '<div class="gap">' + langBlock('c1', false) + '</div>' +
+      '</div>' +
+      '<div class="lblock">' +
+        '<div class="f"><span class="lbl" id="l2lbl"></span></div>' +
+        '<div class="gap">' + langBlock('c2', true) + '</div>' +
+      '</div></div>' +
+      '<p class="help" style="margin-top:12px">' + (AR ? 'يحتسب الدخول السريع نقاطًا إضافية للفرنسية (NCLC 7 فأكثر في الكفاءات الأربع).' : "Le français rapporte des points additionnels à partir du NCLC 7 dans les 4 compétences.") + '</p>' +
     '</fieldset>' +
     '<fieldset><legend>' + T.secWork + '</legend><div class="row">' +
       field('can', T.canWork, sel('can', [0, 1, 2, 3, 4, 5].map(function (n) { return '<option value="' + n + '">' + T.y(n) + '</option>'; }).join(''))) +
@@ -124,10 +128,10 @@
     '<h3>' + T.total + '</h3><div class="crs-total"><span id="o-total">0</span> <small>' + T.of + '</small></div>' +
     '<div class="crs-bar"><i id="o-bar"></i></div>' +
     '<ul class="crs-lines">' +
-      '<li><span>' + T.core + '</span><b id="o-core">0</b></li>' +
-      '<li><span>' + T.spouseL + '</span><b id="o-sp">0</b></li>' +
-      '<li><span>' + T.trans + '</span><b id="o-tr">0</b></li>' +
-      '<li><span>' + T.add + '</span><b id="o-ad">0</b></li>' +
+      '<li><span>' + T.core + '</span><b><em id="o-core">0</em><small id="m-core"> / 570</small></b></li>' +
+      '<li><span>' + T.spouseL + '</span><b><em id="o-sp">0</em><small> / 40</small></b></li>' +
+      '<li><span>' + T.trans + '</span><b><em id="o-tr">0</em><small> / 100</small></b></li>' +
+      '<li><span>' + T.add + '</span><b><em id="o-ad">0</em><small> / 600</small></b></li>' +
     '</ul>' +
     '<p class="crs-note">' + T.note + '</p>' +
     '<a class="crs-cta" href="' + T.ctaHref + '">' + T.cta + '</a>';
@@ -206,6 +210,7 @@
     $('o-sp').textContent = spShown;
     $('o-tr').textContent = trShown;
     $('o-ad').textContent = add;
+    $('m-core').textContent = ' / ' + (sp ? 530 : 570);
     $('o-bar').style.width = (total / 1200 * 100).toFixed(1) + '%';
   }
 

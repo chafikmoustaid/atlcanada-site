@@ -8,3 +8,4 @@ python3 tools/contact_band.py
 python3 tools/cta_circles.py
 python3 tools/header_social.py
 python3 tools/site_extras.py
+python3 tools/calc_promo.py

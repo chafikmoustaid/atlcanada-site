@@ -33,3 +33,23 @@
   #crs-app .crs-mini{display:flex}
   #crs-app .row{grid-template-columns:1fr}
 }
+
+/* ---- ajustements de mise en forme ---- */
+#crs-app{counter-reset:step;gap:24px}
+#crs-app label,#crs-app .lbl{margin:0;line-height:1.3;font-size:.9rem}
+#crs-app .f{gap:7px}
+#crs-app fieldset{padding:20px 22px 22px;box-shadow:0 1px 0 rgba(22,35,61,.04)}
+#crs-app legend{display:flex;align-items:center;gap:10px;padding:0 10px;font-size:1.1rem}
+#crs-app legend::before{counter-increment:step;content:counter(step);display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--rust);color:#fff;font:700 .85rem/1 'Source Sans 3',system-ui,sans-serif}
+#crs-app .row.langs{gap:22px}
+#crs-app .lblock{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:12px;align-content:start;min-width:0}
+#crs-app .lblock .gap{display:grid;gap:12px}
+#crs-app .lblock select{background:#fff}
+#crs-app .lblock details{margin-top:0}
+#crs-app .crs-lines li b{display:flex;align-items:baseline;gap:2px}
+#crs-app .crs-lines li b em{font-style:normal}
+#crs-app .crs-lines li b small{font-weight:400;color:#B9C1D2;font-size:.8rem}
+#crs-app .crs-cta{white-space:normal}
+#crs-app .crs-side{box-shadow:0 14px 34px rgba(22,35,61,.22)}
+@media (max-width:900px){#crs-app .row.langs{grid-template-columns:1fr}}
+#crs-app .row:not(.langs){align-items:end}
