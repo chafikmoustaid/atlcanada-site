@@ -651,5 +651,39 @@
     "caption_fr": "Invitations par volet selon la page officielle WelcomeBC. Ce sont des tirages passés ; les scores ne se comparent pas avec ceux d'Entrée express."
    }
   ]
+ },
+ {
+  "id": "plan-niveaux-immigration-2027-2029",
+  "date": "2026-11-05",
+  "tag_fr": "Niveaux d'immigration",
+  "title_fr": "Plan des niveaux d'immigration 2027-2029 : le Canada maintient 380 000 résidents permanents par an",
+  "summary_fr": "Plan officiel publié par IRCC le 5 novembre 2026 (cibles du gouvernement, non des garanties). Pour 2027, il prévoit 380 000 nouveaux résidents permanents, 220 000 travailleurs temporaires et 150 000 étudiants internationaux, soit les mêmes cibles que l'an dernier. Hors Québec, la cible d'admissions de résidents permanents francophones est de 9,5 % en 2027, 10,5 % en 2028 et 12 % en 2029. IRCC prévoit aussi d'augmenter les admissions par le Programme des candidats des provinces et le Programme d'immigration au Canada atlantique. Des mesures de transition destinées aux personnes déjà au Canada ont été évoquées par la presse, mais leurs détails ne sont pas encore confirmés.",
+  "impact_fr": "Ce que cela signifie pour vous : le plan indique une stabilité des cibles, ce qui donne une orientation générale. Il ne fixe pas de quota par pays et ne garantit pas l'issue d'un dossier. Le français reste un atout. Une évaluation personnalisée de votre profil demeure la meilleure façon de savoir quelle voie vous convient.",
+  "visuels": [
+   {
+    "src": "/assets/actu/plan-niveaux-2027-cibles.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Graphique à barres des cibles 2027 d'IRCC : 380 000 résidents permanents, 220 000 travailleurs temporaires et 150 000 étudiants internationaux.",
+    "caption_fr": "Cibles de nouvelles arrivées pour 2027 selon le plan des niveaux publié par IRCC le 5 novembre 2026. Ce sont des objectifs, pas des garanties."
+   },
+   {
+    "src": "/assets/actu/plan-niveaux-francophones-2027-2029.png",
+    "width": 1600,
+    "height": 900,
+    "alt_fr": "Graphique en colonnes de la cible d'admissions francophones hors Québec : 9,5 % en 2027, 10,5 % en 2028 et 12 % en 2029.",
+    "caption_fr": "Part visée des admissions de résidents permanents francophones hors Québec, selon IRCC. Une cible ne garantit pas l'issue d'un dossier."
+   }
+  ],
+  "sources": [
+   {
+    "name": "IRCC – Niveaux d'immigration du Canada",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/immigration-system/levels.html"
+   },
+   {
+    "name": "CP24 – Presse canadienne (5 novembre 2026)",
+    "url": "https://www.cp24.com/news/canada/2026/11/05/ottawa-to-shift-more-temporary-residents-to-permanent-status-as-broad-levels-flatten/"
+   }
+  ]
  }
 ]
