@@ -65,14 +65,37 @@ T = {
    foot='Consultant réglementé en immigration canadienne (CRIC), permis R712906 du CCIC.'),
 }
 
+# liens vers la page de service concernée (ajoutés sous chaque actualité)
+LIENS = [
+ (('visiteur', 'visa', 'super-visa'), [('/visa-visiteur-super-visa-canada/', 'Visa de visiteur')]),
+ (('plan-niveaux', 'niveaux d', 'admissions'), [('/residence-permanente-canada/', 'Résidence permanente')]),
+ (('peq', 'quebec', 'québec', 'csq', 'pstq'), [('/immigration-quebec-canada/', 'Immigrer au Québec')]),
+ (('bc-pnp', 'pnp', 'candidats des provinces', 'colombie', 'provinc', 'ontario', 'alberta'), [('/candidats-provinces-canada/', 'Candidats des provinces')]),
+ (('entree-express', 'entrée express', 'express'), [('/entree-express-canada/', 'Entrée express'), ('/calculateur-entree-express/', 'Calculateur de points')]),
+ (('permis-de-travail', 'permis de travail', 'travail'), [('/permis-de-travail-canada/', 'Permis de travail')]),
+ (('parrainage',), [('/parrainage-familial-canada/', 'Parrainage familial')]),
+ (('etudes', 'études', 'etudiant', 'étudiant'), [('/permis-etudes-canada-maroc/', "Permis d'études")]),
+ (('citoyennet',), [('/citoyennete-canadienne/', 'Citoyenneté canadienne')]),
+ (('residence-permanente', 'résidence permanente'), [('/residence-permanente-canada/', 'Résidence permanente')]),
+]
+def liens_for(it):
+    hay = (it['id'] + ' ' + it['tag_fr'] + ' ' + it['title_fr']).lower()
+    for keys, links in LIENS:
+        if any(k in hay for k in keys): return links
+    return []
+
 def article(it, p, lang):
     srcs = ' · '.join(f'<a href="{e(s["url"])}" rel="noopener" target="_blank">{e(s["name"])}</a>' for s in it['sources'])
+    go = ''
+    if lang == 'fr' and liens_for(it):
+        go = '<p class="news-go">Pour aller plus loin : ' + ' · '.join(f'<a href="{u}">{e(l)}</a>' for u, l in liens_for(it)) + '</p>'
     figs = ''.join(f'<figure class="news-figure"><img src="{e(v["src"])}" alt="{e(v["alt_"+lang])}" width="{v["width"]}" height="{v["height"]}" loading="lazy">'
                    f'<figcaption>{e(v["caption_"+lang])}</figcaption></figure>' for v in it.get('visuels', []))
     return (f'<article class="news-item" id="{it["id"]}"><p class="news-meta"><span class="news-tag">{e(it["tag_"+lang])}</span>'
             f'<time datetime="{it["date"]}">{fdate(it["date"], lang)}</time></p>'
             f'<h2>{e(it["title_"+lang])}</h2><p>{e(it["summary_"+lang])}</p>{figs}'
             f'<div class="news-impact"><strong>{p["impact"]}</strong>{e(it["impact_"+lang])}</div>'
+            f'{go}'
             f'<p class="news-sources">{p["src"]} : {srcs}</p></article>')
 
 for lang, p in T.items():
@@ -124,7 +147,7 @@ for lang, p in T.items():
 </div>
 <header class="site">
   <div class="nav-row">
-    <a class="brand" href="{'/ar/' if lang == 'ar' else '/'}"><img src="/assets/logo-b-dark.svg" alt="ATL Canada — Immigration Consulting" width="286" height="68"></a>
+    <a class="brand" href="{'/ar/' if lang == 'ar' else '/'}"><img src="/assets/logo-b-dark.svg" alt="ATL Canada, Immigration Consulting" width="286" height="68"></a>
     <nav class="primary" aria-label="Navigation">{nav}</nav>
     <div class="nav-actions"><span class="lang">{p['alt'].replace('<a ', '<a style="color:#fff;margin:0 14px" ')}</span><a class="btn btn-solid" href="/#contact">{p['cta']}</a></div>
   </div>

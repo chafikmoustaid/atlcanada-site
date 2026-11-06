@@ -152,3 +152,5 @@ nav.primary .nav-social svg,.mobile-nav .nav-social svg{width:19px;height:19px}
 .tbl tbody tr:nth-child(even) td{background:#faf6ec}
 .tbl tbody tr:last-child td{border-bottom:0}
 .tbl tbody tr:hover td{background:#f4ecdb}
+.news-go{margin:0 0 12px;font-size:.95rem;color:var(--ink-soft)}
+.news-go a{color:var(--rust-deep);font-weight:600;text-decoration:underline;text-underline-offset:3px}
