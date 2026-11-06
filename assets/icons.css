@@ -154,3 +154,8 @@ nav.primary .nav-social svg,.mobile-nav .nav-social svg{width:19px;height:19px}
 .tbl tbody tr:hover td{background:#f4ecdb}
 .news-go{margin:0 0 12px;font-size:.95rem;color:var(--ink-soft)}
 .news-go a{color:var(--rust-deep);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+/* Titres de section : bloc plus large, retours à la ligne équilibrés */
+.section-head{max-width:920px}
+.section-head h2{text-wrap:balance}
+.section-head p{max-width:68ch}
+.section-head h2{line-height:1.25}
