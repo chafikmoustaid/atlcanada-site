@@ -657,8 +657,8 @@
   "date": "2026-11-06",
   "tag_fr": "Niveaux d'immigration",
   "title_fr": "Plan des niveaux d'immigration 2027-2029 : le Canada maintient 380 000 résidents permanents par an",
-  "summary_fr": "Plan officiel publié par IRCC le 5 novembre 2026 (cibles du gouvernement, non des garanties). Pour 2027, il prévoit 380 000 nouveaux résidents permanents, 220 000 travailleurs temporaires et 150 000 étudiants internationaux, soit les mêmes cibles que l'an dernier. Hors Québec, la cible d'admissions de résidents permanents francophones est de 9,5 % en 2027, 10,5 % en 2028 et 12 % en 2029. IRCC prévoit aussi d'augmenter les admissions par le Programme des candidats des provinces et le Programme d'immigration au Canada atlantique. Des mesures de transition destinées aux personnes déjà au Canada ont été évoquées par la presse, mais leurs détails ne sont pas encore confirmés.",
-  "impact_fr": "Ce que cela signifie pour vous : le plan indique une stabilité des cibles, ce qui donne une orientation générale. Il ne fixe pas de quota par pays et ne garantit pas l'issue d'un dossier. Le français reste un atout. Une évaluation personnalisée de votre profil demeure la meilleure façon de savoir quelle voie vous convient.",
+  "summary_fr": "Plan officiel publié par IRCC le 5 novembre 2026 (cibles du gouvernement, non des garanties). Chaque année de 2027 à 2029, le Canada vise 380 000 nouveaux résidents permanents, dont plus de 64 % en immigration économique, et 370 000 nouvelles arrivées temporaires en 2027, soit 220 000 travailleurs et 150 000 étudiants internationaux. Ce sont les mêmes cibles que l'an dernier. Hors Québec, la cible d'admissions de résidents permanents francophones est de 9,5 % en 2027, 10,5 % en 2028 et 12 % en 2029. Nouveauté : une mesure à durée limitée en 2027 permettrait à jusqu'à 200 000 personnes déjà au Canada de passer à la résidence permanente, en deux volets d'au plus 100 000 chacun. Le volet travailleurs passe par les candidatures des provinces et territoires. Le volet humanitaire vise notamment des dossiers en attente depuis longtemps, les voies Hong Kong et Ukraine, ainsi que des conjoints et enfants de Canadiens et de résidents permanents. IRCC n'a pas encore précisé les critères détaillés ni les dates.",
+  "impact_fr": "Ce que cela signifie pour vous : les cibles restent stables, ce qui donne une orientation générale. Si vous êtes déjà au Canada (travailleur, famille, dossier humanitaire), cette mesure pourrait ouvrir une voie, mais rien n'est confirmé tant que les critères ne sont pas publiés. Le plan ne fixe pas de quota par pays et ne garantit l'issue d'aucun dossier. Une évaluation personnalisée de votre profil demeure la meilleure façon de savoir quelle voie vous convient.",
   "visuels": [
    {
     "src": "/assets/actu/plan-niveaux-2027-cibles.png",
@@ -673,6 +673,13 @@
     "height": 900,
     "alt_fr": "Graphique en colonnes de la cible d'admissions francophones hors Québec : 9,5 % en 2027, 10,5 % en 2028 et 12 % en 2029.",
     "caption_fr": "Part visée des admissions de résidents permanents francophones hors Québec, selon IRCC. Une cible ne garantit pas l'issue d'un dossier."
+   },
+   {
+    "src": "/assets/actu/plan-niveaux-mesure-2027.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Deux volets de la mesure à durée limitée de 2027 : travailleurs, jusqu'à 100 000 et leur famille, et humanitaire, jusqu'à 100 000, pour jusqu'à 200 000 personnes déjà au Canada.",
+    "caption_fr": "Mesure à durée limitée annoncée par IRCC : critères et dates non encore précisés. Ne présumez pas de votre admissibilité."
    }
   ],
   "sources": [
@@ -681,8 +688,12 @@
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/immigration-system/levels.html"
    },
    {
-    "name": "CP24 – Presse canadienne (5 novembre 2026)",
-    "url": "https://www.cp24.com/news/canada/2026/11/05/ottawa-to-shift-more-temporary-residents-to-permanent-status-as-broad-levels-flatten/"
+    "name": "IRCC – Renseignements supplémentaires sur le Plan des niveaux 2027-2029",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/immigration-system/levels/supplementary-immigration-levels-2027-2029.html"
+   },
+   {
+    "name": "IRCC – Document d'information, 5 novembre 2026",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/building-a-stronger-canada-through-a-well-managed-predictable-immigration-system.html"
    }
   ]
  }
