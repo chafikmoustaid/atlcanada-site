@@ -1,0 +1,35 @@
+/* Calculateur Entrée express (ATL Canada) */
+#crs-app{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start}
+#crs-app .crs-form{display:grid;gap:18px}
+#crs-app fieldset{border:1px solid var(--line);background:#fff;border-radius:14px;padding:18px 20px 20px;margin:0;min-width:0}
+#crs-app legend{font-family:'Lora',Georgia,serif;font-size:1.15rem;color:var(--ink);padding:0 8px;font-weight:600}
+#crs-app .row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+#crs-app .f{display:flex;flex-direction:column;gap:6px;min-width:0}
+#crs-app label,#crs-app .lbl{font-size:.92rem;color:var(--ink-soft);font-weight:600}
+#crs-app select,#crs-app input[type=number]{font:inherit;font-size:1rem;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);width:100%;min-height:44px}
+#crs-app select:focus,#crs-app input:focus{outline:2px solid var(--rust);outline-offset:1px}
+#crs-app details{margin-top:6px;border-top:1px dashed var(--line);padding-top:10px}
+#crs-app summary{cursor:pointer;font-size:.9rem;color:var(--rust-deep);font-weight:600}
+#crs-app .help{font-size:.85rem;color:var(--ink-soft);margin:0}
+#crs-app .hide{display:none}
+#crs-app .crs-side{position:sticky;top:90px;background:var(--ink);color:#fff;border-radius:16px;padding:22px 22px 20px}
+#crs-app .crs-side h3{margin:0 0 4px;font-size:.95rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#E8DFC9}
+#crs-app .crs-total{font-family:'Lora',Georgia,serif;font-size:3.6rem;line-height:1;margin:6px 0 2px;color:#fff}
+#crs-app .crs-total small{font-size:1rem;color:#C9C2AE;font-family:inherit}
+#crs-app .crs-lines{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+#crs-app .crs-lines li{display:flex;justify-content:space-between;gap:10px;font-size:.93rem;border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:7px}
+#crs-app .crs-lines li b{font-variant-numeric:tabular-nums}
+#crs-app .crs-bar{height:8px;border-radius:6px;background:rgba(255,255,255,.18);margin:10px 0 2px;overflow:hidden}
+#crs-app .crs-bar i{display:block;height:100%;background:var(--bar);width:0;transition:width .25s}
+#crs-app .crs-note{font-size:.82rem;color:#D9D2BE;margin:14px 0 0;line-height:1.5}
+#crs-app .crs-cta{display:block;text-align:center;margin-top:16px;background:var(--rust);border:1px solid var(--rust);color:#fff;border-radius:999px;padding:12px 16px;font-weight:600;text-decoration:none}
+#crs-app .crs-cta:hover{background:var(--rust-deep)}
+#crs-app .crs-mini{display:none;position:fixed;left:12px;bottom:12px;z-index:40;background:var(--ink);color:#fff;border-radius:999px;padding:10px 18px;gap:10px;align-items:baseline;box-shadow:0 6px 18px rgba(0,0,0,.28);font-size:.9rem}
+#crs-app .crs-mini b{font-family:'Lora',Georgia,serif;font-size:1.5rem;line-height:1}
+[dir=rtl] #crs-app .crs-mini{left:auto;right:12px}
+@media (max-width:900px){
+  #crs-app{grid-template-columns:1fr}
+  #crs-app .crs-side{position:static}
+  #crs-app .crs-mini{display:flex}
+  #crs-app .row{grid-template-columns:1fr}
+}

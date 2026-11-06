@@ -513,6 +513,7 @@ PAGES.append(dict(
  ["EIMT", "N'est plus nécessaire et ne donne plus de points supplémentaires ni de priorité."],
 ])}
 <div class="prose" style="margin-top:18px"><p class="note">Ces règles évoluent : l'état indiqué est celui du 5 novembre 2026. Vérifiez avec nous votre situation à jour.</p></div>
+<div class="prose" style="margin-top:14px"><p><a class="btn btn-solid" href="/calculateur-entree-express/">Estimer mon score avec le calculateur</a></p></div>
 </div></section>
 <section class="sp"><div class="wrap"><h2>Comment nous vous accompagnons</h2><div class="prose">
 <p>En consultation, nous vérifions à quels programmes vous êtes admissible, nous estimons votre classement, nous identifions les points faciles à améliorer (langues, évaluation des diplômes, offre d'emploi) et nous préparons votre profil et vos documents. Si vous parlez bien français, lisez aussi notre page sur l'<a href="/entree-express-francophone-maroc/" style="text-decoration:underline">Entrée express pour les francophones</a>.</p>
@@ -641,7 +642,40 @@ PAGES.append(dict(
 ))
 
 
-AR_OF = {'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
+PAGES.append(dict(
+    path='calculateur-entree-express/', **D,
+    neutral=True,
+    title="Calculateur de points Entrée express (SCG) : estimez votre score | ATL Canada",
+    desc="Estimez votre score Entrée express avec la grille d'IRCC en vigueur depuis le 3 novembre 2026 : âge, études, langues, expérience, offre d'emploi. Faites valider le résultat par un consultant réglementé.",
+    crumb="Calculateur Entrée express",
+    eyebrow="Outil gratuit · Entrée express",
+    h1="Calculateur de points Entrée express",
+    lede="Estimez votre score au Système de classement global (SCG) avec la grille d'IRCC en vigueur depuis le 3 novembre 2026. Le calcul se fait dans votre navigateur : vos réponses ne sont ni envoyées ni enregistrées.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap">
+<link rel="stylesheet" href="/assets/crs.css">
+<div id="crs-app" data-lang="fr"></div>
+<noscript><p class="note">Le calculateur demande JavaScript. Vous pouvez aussi utiliser l'outil officiel d'IRCC ou nous écrire.</p></noscript>
+<script src="/assets/crs.js" defer></script>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Comment lire votre score</h2><div class="prose">
+<p>Le score sert à vous classer parmi les candidats du bassin Entrée express. IRCC invite lors des rondes les candidats les mieux classés, et le score minimal change d'une ronde à l'autre : un bon score n'est donc jamais une garantie d'invitation.</p>
+<p>Depuis le 3 novembre 2026, les points d'expérience canadienne et d'offre d'emploi suivent de nouvelles règles : l'offre d'emploi doit viser une profession à salaire élevé, et l'EIMT ne donne plus de points. Vous pouvez en savoir plus sur notre page <a href="/entree-express-canada/" style="text-decoration:underline">Entrée express</a>.</p>
+<p>En consultation, nous vérifions chaque réponse (niveaux de langue, équivalence des diplômes, expérience admissible), nous repérons les points faciles à gagner et nous choisissons avec vous la meilleure voie, qui n'est pas toujours Entrée express.</p>
+{NOTE_FR.format(x='')}</div></div></section>''',
+    faq=[
+        ("Ce calculateur est-il officiel ?", "Non. Il applique la grille publiée par IRCC pour fournir une estimation indicative. Seule la grille officielle et votre profil réel font foi."),
+        ("Mes réponses sont-elles enregistrées ?", "Non. Le calcul se fait dans votre navigateur et aucune information n'est envoyée à ATL Canada."),
+        ("Quel niveau de langue dois-je indiquer ?", "Le niveau CLB (anglais) ou NCLC (français) obtenu à un test approuvé par IRCC, dans chacune des quatre compétences. Si vous n'avez pas encore de test, indiquez le niveau que vous visez, en sachant que le résultat réel peut différer."),
+        ("Un score élevé garantit-il une invitation ?", "Non. IRCC invite les candidats les mieux classés lors des rondes, et le score minimal varie. Personne ne peut garantir une invitation."),
+        ("Et si mon score est trop bas ?", "D'autres voies existent : programmes des candidats des provinces, immigration au Québec, permis de travail, études. Une consultation permet de choisir la plus réaliste pour votre profil."),
+    ],
+    sources=[],
+    related=[('/entree-express-canada/', 'Entrée express'), ('/entree-express-francophone-maroc/', 'Entrée express pour les francophones')],
+))
+
+
+AR_OF = {'calculateur-entree-express/': 'ar/express-entry-calculator/', 'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
 
 
 def head_for(p):
