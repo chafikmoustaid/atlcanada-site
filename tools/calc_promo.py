@@ -6,12 +6,7 @@ import glob, re, os
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..') + '/'
 FR_URL, AR_URL = '/calculateur-entree-express/', '/ar/express-entry-calculator/'
 
-GAUGE = ('<svg class="cp-gauge" viewBox="0 0 160 160" aria-hidden="true" focusable="false" style="direction:ltr">'
-         '<circle cx="80" cy="80" r="66" fill="none" stroke="rgba(255,255,255,.16)" stroke-width="14"/>'
-         '<circle cx="80" cy="80" r="66" fill="none" stroke="#FF5A61" stroke-width="14" stroke-linecap="round" '
-         'stroke-dasharray="270 415" transform="rotate(135 80 80)"/>'
-         '<text x="80" y="88" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="44" fill="#fff">?</text>'
-         '<text x="80" y="112" text-anchor="middle" font-size="12" fill="#C9C2AE" font-family="Source Sans 3,system-ui,sans-serif">sur 1 200</text></svg>')
+GAUGE = ('<svg class="cp-gauge" viewBox="0 0 160 160" aria-hidden="true" focusable="false" style="direction:ltr"><rect x="34" y="14" width="92" height="132" rx="14" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.28)" stroke-width="3"/><rect x="46" y="28" width="68" height="34" rx="7" fill="rgba(255,255,255,.14)"/><text x="80" y="52" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="22" fill="#fff">CRS</text><circle cx="56" cy="82" r="8" fill="rgba(255,255,255,.4)"/><circle cx="80" cy="82" r="8" fill="rgba(255,255,255,.4)"/><circle cx="104" cy="82" r="8" fill="rgba(255,255,255,.4)"/><circle cx="56" cy="104" r="8" fill="rgba(255,255,255,.4)"/><circle cx="80" cy="104" r="8" fill="rgba(255,255,255,.4)"/><circle cx="104" cy="104" r="8" fill="rgba(255,255,255,.4)"/><circle cx="56" cy="126" r="8" fill="rgba(255,255,255,.4)"/><circle cx="80" cy="126" r="8" fill="rgba(255,255,255,.4)"/><circle cx="104" cy="126" r="8" fill="#FF5A61"/></svg>')
 
 BAND_FR = ('<section class="calc-promo" aria-label="Calculateur de points Entrée express"><div class="wrap cp-in">'
            '<div class="cp-copy"><p class="cp-eyebrow">Outil gratuit · 2 minutes</p>'
@@ -24,7 +19,7 @@ BAND_AR = ('<section class="calc-promo" aria-label="حاسبة نقاط الدخ
            '<h2>كم درجتك في الدخول السريع؟</h2>'
            '<p>قدّرها وفق جدول IRCC المعمول به منذ 3 نوفمبر 2026. تبقى إجاباتك داخل متصفحك.</p>'
            f'<a class="cp-btn" href="{AR_URL}">احسب درجتي <span aria-hidden="true">←</span></a></div>'
-           f'<div class="cp-art">{GAUGE.replace("sur 1 200", "1200")}</div></div></section>')
+           f'<div class="cp-art">{GAUGE}</div></div></section>')
 
 changed = 0
 for f in glob.glob(R + '**/*.html', recursive=True):
