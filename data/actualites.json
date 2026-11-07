@@ -696,5 +696,46 @@
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/building-a-stronger-canada-through-a-well-managed-predictable-immigration-system.html"
    }
   ]
+ },
+ {
+  "id": "ptet-eimt-bas-salaire-deux-ans-6-novembre-2026",
+  "date": "2026-11-06",
+  "tag_fr": "Permis de travail",
+  "title_fr": "EIMT à bas salaire : les demandes peuvent maintenant couvrir jusqu'à deux ans d'emploi",
+  "summary_fr": "Selon un communiqué d'Emploi et Développement social Canada (EDSC) du 6 novembre 2026, les demandes d'EIMT du volet à bas salaire déposées à partir de cette date peuvent couvrir jusqu'à deux ans d'emploi, contre un an auparavant (mesure en vigueur). Les éducateurs de la petite enfance s'ajoutent aux exceptions à la règle de non-traitement des demandes dans les régions où le taux de chômage est de 6 % ou plus, comme la santé, la construction et la transformation alimentaire. Une refonte régionale du volet, avec un plafond de travailleurs à bas salaire pouvant passer de 10 % à 15 % de l'effectif dans certaines communautés, est seulement proposée pour le 1er mars 2027 et dépend de l'adhésion des provinces et des territoires : ce n'est pas une décision en vigueur. Le communiqué ne mentionne pas le volet à salaire élevé.",
+  "impact_fr": "Ce que cela signifie pour vous : ces mesures s'adressent d'abord aux employeurs. Une durée de deux ans est un maximum qu'un employeur peut demander, et EDSC examine chaque demande. Elles ne garantissent ni une offre d'emploi, ni une EIMT, ni un permis de travail. Si on vous propose un emploi au Canada, vérifiez qu'il est réel et ne payez jamais pour obtenir une offre ou une EIMT. Une évaluation personnalisée de votre situation reste la meilleure façon de savoir quelle voie vous convient.",
+  "sources": [
+   {
+    "name": "EDSC (canada.ca) : Le gouvernement du Canada annonce des réformes ciblées au Programme des travailleurs étrangers temporaires, 6 novembre 2026",
+    "url": "https://www.canada.ca/en/employment-social-development/news/2026/11/government-of-canada-announces-targeted-reforms-to-the-temporary-foreign-worker-program-to-respond-to-labour-market-needs.html"
+   },
+   {
+    "name": "VG Immigration Services – résumé du 6 novembre 2026",
+    "url": "https://vgis.ca/low-wage-lmia-changes-two-year-duration-early-childhood-educators/"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/ptet-eimt-bas-salaire-duree-6-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Graphique à barres de la durée d'emploi maximale pouvant être demandée dans une EIMT à bas salaire : 1 an avant le 6 novembre 2026, jusqu'à 2 ans depuis.",
+    "caption_fr": "Durée maximale demandable, d'après le communiqué d'EDSC du 6 novembre 2026. Ce n'est pas une durée accordée d'office."
+   },
+   {
+    "src": "/assets/actu/ptet-eimt-en-vigueur-ou-propose-6-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Tableau en deux colonnes : en vigueur depuis le 6 novembre 2026 (deux ans, éducateurs de la petite enfance ajoutés aux exceptions) et seulement proposé pour le 1er mars 2027 (accès régional ciblé, sous réserve de l'adhésion des provinces et territoires).",
+    "caption_fr": "Ce qui s'applique déjà et ce qui reste un projet, d'après EDSC (canada.ca)."
+   },
+   {
+    "src": "/assets/actu/ptet-eimt-plafonds-bas-salaire-6-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Graphique à barres des plafonds de travailleurs à bas salaire : 10 % règle actuelle, 20 % secteurs prioritaires, 15 % proposé pour le 1er mars 2027 (barre en pointillé).",
+    "caption_fr": "Plafonds selon EDSC. Le plafond de 15 % est seulement proposé et dépend de l'adhésion des provinces et territoires."
+   }
+  ]
  }
 ]
