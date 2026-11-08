@@ -737,5 +737,23 @@
     "caption_fr": "Plafonds selon EDSC. Le plafond de 15 % est seulement proposé et dépend de l'adhésion des provinces et territoires."
    }
   ]
+ },
+ {
+  "id": "mesure-transition-200000-residence-permanente-2027",
+  "date": "2026-11-08",
+  "tag_fr": "Résidence permanente",
+  "title_fr": "Mesure de transition 2027 : jusqu'à 200 000 personnes déjà au Canada pourront obtenir la résidence permanente",
+  "summary_fr": "Dans son communiqué du 5 novembre 2026, IRCC annonce une mesure temporaire pour jusqu'à 200 000 personnes déjà au Canada, avec des admissions à traiter en 2027. Elle comprend deux cohortes : jusqu'à 100 000 travailleurs, avec leur famille, mise en œuvre avec les provinces et territoires, et jusqu'à 100 000 personnes pour des motifs humanitaires (dont des conjoints et enfants de citoyens ou de résidents permanents déjà au Canada). Il s'agit d'une mesure annoncée : les critères, les dates d'ouverture et les modalités ne sont pas encore publiés, et ce n'est pas un nouveau portail ouvert à tous.",
+  "impact_fr": "Ce que cela signifie pour vous : cette mesure vise des personnes qui vivent déjà au Canada ; elle n'ouvre pas de nouvelle voie directe depuis le Maroc. Les critères n'étant pas publiés, personne ne peut dire aujourd'hui qui y sera admissible, et elle ne garantit aucun résultat. Pour savoir quelle voie convient à votre situation, une évaluation personnalisée reste la meilleure démarche.",
+  "sources": [
+   {
+    "name": "IRCC – Communiqué du 5 novembre 2026 : un Canada plus fort grâce à un système d'immigration bien géré et prévisible",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/building-a-stronger-canada-through-a-well-managed-predictable-immigration-system.html"
+   },
+   {
+    "name": "IRCC – Renseignements supplémentaires, niveaux d'immigration 2027-2029",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/immigration-system/levels/supplementary-immigration-levels-2027-2029.html"
+   }
+  ]
  }
 ]
