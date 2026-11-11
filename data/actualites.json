@@ -755,5 +755,50 @@
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/immigration-system/levels/supplementary-immigration-levels-2027-2029.html"
    }
   ]
+ },
+ {
+  "id": "programme-communautes-rurales-permanent-9-novembre-2026",
+  "date": "2026-11-11",
+  "tag_fr": "Résidence permanente",
+  "title_fr": "Immigration rurale : le projet pilote devient un programme permanent",
+  "summary_fr": "Le 9 novembre 2026, IRCC a annoncé que le Programme pilote d'immigration des communautés rurales devient un programme permanent d'immigration économique (annonce officielle). Il reprend le modèle du pilote : un partenariat avec des organisations locales de développement économique, des employeurs désignés dans des secteurs prioritaires et 14 communautés participantes dans six provinces. Selon IRCC, plus de 1 950 employeurs ont été désignés de janvier 2025 à août 2026. Le projet pilote ferme le 1er janvier 2027 : les recommandations communautaires datées du 31 décembre 2026 ou avant doivent mener à une demande avant son expiration. Les critères d'autres communautés et les règles détaillées du programme permanent seront communiqués plus tard.",
+  "impact_fr": "Ce que cela signifie pour vous : cette voie vise des travailleurs qualifiés et des diplômés internationaux qui obtiennent une offre d'un employeur désigné dans une communauté participante et une recommandation de celle-ci. Les conditions publiées concernent le projet pilote actuel (par exemple 1 an d'expérience connexe, un test de langue, un diplôme et des fonds suffisants) et peuvent changer pour le programme permanent. Rien n'est garanti. Ne payez jamais pour obtenir une offre d'emploi ou une recommandation. Une évaluation personnalisée permet de voir si cette voie convient à votre profil.",
+  "sources": [
+   {
+    "name": "IRCC (canada.ca) : Canada creates a permanent immigration pathway to help rural communities attract and retain talent, 9 novembre 2026",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/canada-creates-a-permanent-immigration-pathway-to-help-rural-communities-attract-and-retain-talent0.html"
+   },
+   {
+    "name": "IRCC (canada.ca) : Overview of the Rural Community Immigration Program",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/overview-of-the-rural-community-immigration-program.html"
+   },
+   {
+    "name": "IRCC (canada.ca) : Rural Community Immigration Pilot, conditions d'admissibilité",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration/eligibility.html"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/programme-rural-14-communautes-9-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Graphique à barres des 14 communautés du programme rural par province : Ontario 5, Manitoba 3, Colombie-Britannique 3, Nouvelle-Écosse 1, Saskatchewan 1, Alberta 1.",
+    "caption_fr": "Communautés participantes par province, d'après IRCC (canada.ca)."
+   },
+   {
+    "src": "/assets/actu/programme-rural-conditions-modele-9-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Tableau en deux colonnes : offre d'un employeur désigné et recommandation de la communauté; puis profil du candidat (1 an d'expérience, test de langue, diplôme, fonds).",
+    "caption_fr": "Conditions du projet pilote, dont le programme permanent reprend le modèle. Les règles du programme permanent restent à confirmer."
+   },
+   {
+    "src": "/assets/actu/programme-rural-dates-a-retenir-9-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Trois dates : annonce le 9 novembre 2026, date limite du pilote le 31 décembre 2026, fermeture du pilote le 1er janvier 2027.",
+    "caption_fr": "Dates à retenir, d'après les pages officielles d'IRCC."
+   }
+  ]
  }
 ]
