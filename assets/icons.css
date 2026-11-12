@@ -176,3 +176,8 @@ nav.primary a.nav-calc:hover,nav.primary a.nav-calc:focus-visible{background:#FF
 .calc-promo .cp-gauge{width:170px;height:170px;display:block;margin-inline:auto}
 @media (max-width:720px){.calc-promo .cp-in{grid-template-columns:1fr;padding-top:34px;padding-bottom:34px}.calc-promo .cp-art{display:none}}
 @media (max-width:1340px){.nav-actions .btn{display:none}}
+.ccic-link{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.ccic-link:hover{color:var(--rust-deep)}
+footer .ccic-link:hover{color:#fff;text-decoration-thickness:2px}
+.trust-ccic a.ccic-badge{text-decoration:none;color:#fff;transition:filter .15s}
+.trust-ccic a.ccic-badge:hover{filter:brightness(1.15)}
