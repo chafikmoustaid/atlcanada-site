@@ -814,5 +814,46 @@
     "url": "https://www.cicnews.com/2026/11/canada-unveils-breakdown-of-100000-additional-permanent-residence-spaces-1182433.html"
    }
   ]
+ },
+ {
+  "id": "residence-permanente-2027-380000-ou-662000-calcul-13-novembre-2026",
+  "date": "2026-11-13",
+  "tag_fr": "Niveaux d'immigration",
+  "title_fr": "380 000 ou 662 000 résidents permanents en 2027 : officiel ou calcul ?",
+  "summary_fr": "La cible officielle du plan 2027-2029 est de 380 000 résidents permanents par an (décision déposée le 5 novembre 2026). Le chiffre de 662 000 pour 2027 n'est pas une cible officielle : c'est un total potentiel calculé par Radio-Canada (selon Immigrer.com) et par la banque RBC (selon HCAmag), qui additionne 380 000, jusqu'à 200 000 personnes déjà au Canada visées par une mesure ponctuelle et environ 82 000 admissions liées à des engagements annoncés en 2025. C'est un scénario maximal : la mesure de 200 000 est annoncée « jusqu'à », et IRCC n'a pas confirmé ce total dans les sources consultées.",
+  "impact_fr": "Ce que cela signifie pour vous : la mesure ponctuelle vise des personnes déjà au Canada et ne change pas les règles d'une demande déposée depuis le Maroc. Le chiffre de 662 000 ne doit pas être lu comme un objectif d'admissions. Rien n'est garanti ; une évaluation personnalisée permet de voir quelle voie convient à votre profil.",
+  "sources": [
+   {
+    "name": "Immigrer.com : Ottawa affiche 380 000 résidents permanents, mais le total pourrait atteindre 662 000 en 2027 (12 novembre 2026)",
+    "url": "https://www.immigrer.com/ottawa-affiche-380-000-residents-permanents-mais-le-total-pourrait-atteindre-662-000-en-2027/"
+   },
+   {
+    "name": "HCAmag : Ottawa could lift 2027 admissions past 600,000 (12 novembre 2026)",
+    "url": "https://www.hcamag.com/ca/specialization/recruitment/immigration-ottawa-could-lift-2027-admissions-past-600000/597173"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/residence-permanente-2027-total-potentiel-13-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Barre empilée : 380 000 (cible officielle), jusqu'à 200 000 (mesure ponctuelle, personnes déjà au Canada) et environ 82 000 (engagements de 2025), pour un total potentiel de 662 000.",
+    "caption_fr": "Total potentiel de 2027 : un calcul de Radio-Canada et de RBC, pas une cible officielle."
+   },
+   {
+    "src": "/assets/actu/residence-permanente-2027-officiel-ou-calcul-13-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Tableau en deux colonnes : ce qui est annoncé par IRCC (380 000 par an, mesure ponctuelle) et ce qui est un calcul d'analystes (662 000).",
+    "caption_fr": "Ce qu'IRCC a annoncé, et ce que des analystes additionnent."
+   },
+   {
+    "src": "/assets/actu/residence-permanente-2027-concerne-depuis-maroc-13-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Trois profils : personnes déjà au Canada, demande déposée depuis le Maroc, tout candidat.",
+    "caption_fr": "Ce que la mesure de 2027 change, et ce qu'elle ne change pas."
+   }
+  ]
  }
 ]
