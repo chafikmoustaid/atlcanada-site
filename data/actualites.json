@@ -861,16 +861,12 @@
   "date": "2026-11-14",
   "tag_fr": "Entrée express",
   "title_fr": "Entrée express : les nouveaux points pour les professions à salaire élevé sont en vigueur",
-  "summary_fr": "Depuis le 3 novembre 2026, Entrée express accorde des points supplémentaires pour une offre d'emploi qualifiante dans une profession à salaire élevé (50, 70 ou 100 points) ou pour 12 mois ou plus d'expérience canadienne dans une telle profession (20, 40 ou 70 points), selon le niveau de salaire. Les deux voies ne s'additionnent pas : la plus avantageuse est retenue. Une étude d'impact sur le marché du travail (EIMT) n'est plus exigée pour obtenir les points liés à l'offre d'emploi. Selon CIC News, le tirage réservé aux candidats francophones du 27 octobre 2026 a émis 5 000 invitations avec un score minimal de 407 (chiffres de presse, à recouper avec la page officielle des rondes d'invitations d'IRCC).",
+  "summary_fr": "Depuis le 3 novembre 2026, Entrée express accorde des points supplémentaires pour une offre d'emploi qualifiante dans une profession à salaire élevé (50, 70 ou 100 points) ou pour 12 mois ou plus d'expérience canadienne dans une telle profession (20, 40 ou 70 points), selon le niveau de salaire. Les deux voies ne s'additionnent pas : la plus avantageuse est retenue. Une étude d'impact sur le marché du travail (EIMT) n'est plus exigée pour obtenir les points liés à l'offre d'emploi.",
   "impact_fr": "Ce que cela signifie pour vous : ces points exigent une expérience de travail canadienne ou une offre d'emploi qualifiante ; ils ne changent pas directement la situation d'un candidat au Maroc sans l'un ou l'autre. Les points ne garantissent pas une invitation, qui dépend du score minimal de chaque tirage. Rien n'est garanti ; une évaluation personnalisée permet de vérifier votre profil et la voie qui lui convient.",
   "sources": [
    {
     "name": "IRCC : Changements à Entrée express pour les professions à salaire élevé (16 octobre 2026)",
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/changes-to-express-entry-for-high-wage-occupations.html"
-   },
-   {
-    "name": "CIC News : Canada invites 5,000 francophones to apply for permanent residence (27 octobre 2026)",
-    "url": "https://www.cicnews.com/2026/10/canada-invites-5000-francophones-to-apply-for-permanent-residence-1081975.html"
    }
   ],
   "visuels": [
@@ -885,8 +881,8 @@
     "src": "/assets/actu/express-entree-vu-du-maroc-14-novembre-2026.png",
     "width": 1600,
     "height": 800,
-    "alt_fr": "Deux colonnes : qui est concerné par les nouveaux points, et le français comme levier avec le tirage francophone du 27 octobre.",
-    "caption_fr": "Vu du Maroc : ce que les nouveaux points changent, et le rôle du français."
+    "alt_fr": "Deux colonnes : qui est concerné par les nouveaux points (expérience canadienne ou offre d'emploi qualifiante) et le candidat au Maroc sans l'un ni l'autre.",
+    "caption_fr": "Vu du Maroc : ce que les nouveaux points changent, et ce qu'ils ne changent pas."
    }
   ]
  }
