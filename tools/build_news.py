@@ -67,6 +67,7 @@ T = {
 
 # liens vers la page de service concernée (ajoutés sous chaque actualité)
 LIENS = [
+ (('dossiers-non-finalises',), [('/dossiers-en-attente-ircc/', 'Graphique interactif des dossiers en attente'), ('/residence-permanente-canada/', 'Résidence permanente')]),
  (('visiteur', 'visa', 'super-visa'), [('/visa-visiteur-super-visa-canada/', 'Visa de visiteur')]),
  (('plan-niveaux', 'niveaux d', 'admissions'), [('/residence-permanente-canada/', 'Résidence permanente')]),
  (('peq', 'quebec', 'québec', 'csq', 'pstq'), [('/immigration-quebec-canada/', 'Immigrer au Québec')]),

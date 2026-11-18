@@ -932,7 +932,7 @@
   "tag_fr": "Statistiques",
   "title_fr": "IRCC : environ 1,5 million de dossiers non finalisés au 30 septembre 2026",
   "summary_fr": "Selon la page « Key numbers on Canadian immigration » d'IRCC, mise à jour le 17 novembre 2026, les demandes non finalisées au 30 septembre 2026 se répartissent ainsi (chiffres arrondis à 5 près) : visas de visiteur 298 060, permis de travail 24 970, permis d'études 24 910, résidence permanente 707 405 (économique 250 010, famille 168 855, protection 288 540) et citoyenneté 453 335. Le total des catégories de la page est de 1 508 675 (somme faite par nos soins, recoupée avec Business Standard du 18 novembre 2026, qui rapporte une baisse de 35 180 par rapport à août).",
-  "impact_fr": "Ce que cela signifie pour vous : « en attente » ne veut pas dire « en retard ». Ces totaux ne donnent pas le délai de traitement de votre dossier, qui varie selon le programme, la complétude du dossier et la situation de chacun. Les délais de traitement se consultent sur canada.ca. Un dossier complet et cohérent dès le dépôt reste la meilleure préparation, et aucun résultat n'est garanti.",
+  "impact_fr": "« en attente » ne veut pas dire « en retard ». Ces totaux ne donnent pas le délai de traitement de votre dossier, qui varie selon le programme, la complétude du dossier et la situation de chacun. Les délais de traitement se consultent sur canada.ca. Un dossier complet et cohérent dès le dépôt reste la meilleure préparation, et aucun résultat n'est garanti.",
   "sources": [
    {
     "name": "ATL Canada : graphique interactif des dossiers en attente",
@@ -945,6 +945,15 @@
    {
     "name": "Business Standard : Canada's immigration backlog drops to 1.5 mn applications in Sept (recoupement)",
     "url": "https://www.business-standard.com/immigration/canada-s-immigration-backlog-drops-to-1-5-mn-applications-in-sept-126111800313_1.html"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/ircc-dossiers-non-finalises-30-septembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Graphique à barres des demandes non finalisées chez IRCC au 30 septembre 2026 : citoyenneté (attributions) 322 650, visas de visiteur 298 060, RP protection 288 540, RP économique 250 010, RP famille 168 855, citoyenneté (preuve) 130 685, permis de travail 24 970, permis d'études 24 910.",
+    "caption_fr": "Demandes non finalisées au 30 septembre 2026 (IRCC, arrondi à 5 près, total 1 508 675). Un instantané, pas une tendance : « non finalisé » ne veut pas dire « en retard »."
    }
   ]
  }
