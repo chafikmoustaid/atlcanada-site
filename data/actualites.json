@@ -935,6 +935,10 @@
   "impact_fr": "Ce que cela signifie pour vous : « en attente » ne veut pas dire « en retard ». Ces totaux ne donnent pas le délai de traitement de votre dossier, qui varie selon le programme, la complétude du dossier et la situation de chacun. Les délais de traitement se consultent sur canada.ca. Un dossier complet et cohérent dès le dépôt reste la meilleure préparation, et aucun résultat n'est garanti.",
   "sources": [
    {
+    "name": "ATL Canada : graphique interactif des dossiers en attente",
+    "url": "https://www.atlcanada.com/dossiers-en-attente-ircc/"
+   },
+   {
     "name": "IRCC (canada.ca) : Key numbers on Canadian immigration, applications not yet finalized",
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/stronger-immigration-system.html"
    },

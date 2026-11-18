@@ -184,6 +184,7 @@ urls = [('/', '1.0', last), ('/maroc/', '0.9', '2026-10-09'), ('/ar/', '0.9', '2
         ('/residence-permanente-canada/', '0.8', '2026-11-05'),
         ('/entree-express-canada/', '0.8', '2026-11-05'),
         ('/calculateur-entree-express/', '0.8', '2026-11-06'),
+        ('/dossiers-en-attente-ircc/', '0.7', '2026-11-18'),
         ('/candidats-provinces-canada/', '0.8', '2026-11-05'),
         ('/citoyennete-canadienne/', '0.8', '2026-11-05'),
         ('/ar/permanent-residence/', '0.8', '2026-11-05'),
