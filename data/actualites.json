@@ -956,5 +956,28 @@
     "caption_fr": "Demandes non finalisées au 30 septembre 2026 (IRCC, arrondi à 5 près, total 1 508 675). Un instantané, pas une tendance : « non finalisé » ne veut pas dire « en retard »."
    }
   ]
+ },
+ {
+  "id": "entree-express-chercheurs-professeurs-avis-18-novembre-2026",
+  "date": "2026-11-18",
+  "tag_fr": "Entrée express",
+  "title_fr": "Entrée express : IRCC met à jour les règles pour les professeurs et chercheurs d'université",
+  "summary_fr": "Dans un avis publié le 18 novembre 2026, IRCC indique qu'il reconnaîtra l'expérience de travail canadienne et les offres d'emploi des professeurs et chargés de cours d'université (CNP 41200) payés par des entités canadiennes au moyen de bourses, de subventions ou de stipendes. Cette expérience pourra compter pour la catégorie de l'expérience canadienne et le Programme des travailleurs qualifiés (fédéral) et donner des points au Système de classement global. L'expérience en CNP 41201 (assistants d'enseignement et de recherche) n'est plus admissible à la catégorie des chercheurs. Il s'agit d'un avis officiel d'IRCC, pas d'une promesse ; l'avis ne précise pas de date d'entrée en vigueur distincte.",
+  "impact_fr": "La mesure concerne des profils précis, surtout des chercheurs et professeurs ayant déjà une expérience canadienne financée par bourse ou subvention. Elle ne garantit aucune invitation. Si c'est votre cas, mettre à jour votre profil Entrée express et faire vérifier votre admissibilité fait partie de l'évaluation du dossier.",
+  "sources": [
+   {
+    "name": "IRCC : mises à jour d'Entrée express pour les chercheurs (avis du 18 novembre 2026)",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/express-entry-updates-top-researchers-continue-contributing-canada-innovation-ecosystem.html"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/entree-express-chercheurs-professeurs-18-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Schéma : l'expérience des professeurs et chargés de cours d'université (CNP 41200) payés par bourses ou subventions pourra compter pour la catégorie de l'expérience canadienne, le Programme fédéral des travailleurs qualifiés et les points du système de classement global ; le CNP 41201 n'est plus admissible à la catégorie des chercheurs.",
+    "caption_fr": "Ce que change l'avis d'IRCC du 18 novembre 2026. Aucune invitation n'est garantie ; l'avis ne précise pas de date d'entrée en vigueur distincte."
+   }
+  ]
  }
 ]
