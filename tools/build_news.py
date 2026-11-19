@@ -8,7 +8,9 @@ from datetime import date
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '/'
 SITE = 'https://www.atlcanada.com'
 OG = SITE + '/assets/og-image.png'
-items = sorted(json.load(open(R + 'data/actualites.json', encoding='utf-8')), key=lambda x: x['date'], reverse=True)
+# Règle : la dernière publication ajoutée est toujours la première en haut (à date égale, l'ordre d'ajout dans le JSON décide).
+_raw = json.load(open(R + 'data/actualites.json', encoding='utf-8'))
+items = [it for _, it in sorted(enumerate(_raw), key=lambda t: (t[1]['date'], t[0]), reverse=True)]
 MOIS_FR = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.']
 MOIS_AR = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر']
 e = html.escape
