@@ -1000,6 +1000,15 @@
     "name": "Immigration News Canada : New Canada Median Wage Increase Effective November 18",
     "url": "https://immigrationnewscanada.ca/new-canada-median-wage-increase-2026/"
    }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/job-bank-salaires-mediane-18-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Schéma : le salaire prévalent d'une offre liée à une EIMT est le plus élevé entre la médiane Job Bank du poste et de la région et le salaire déjà versé aux employés du même poste ; les employeurs doivent revoir les salaires des travailleurs étrangers d'ici le 1er janvier 2027, selon CIC News.",
+    "caption_fr": "Comment se calcule le salaire prévalent après la mise à jour du 18 novembre 2026. Aucune garantie de résultat ; la date du 1er janvier 2027 vient de CIC News."
+   }
   ]
  }
 ]
