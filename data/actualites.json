@@ -979,5 +979,27 @@
     "caption_fr": "Ce que change l'avis d'IRCC du 18 novembre 2026. Aucune invitation n'est garantie ; l'avis ne précise pas de date d'entrée en vigueur distincte."
    }
   ]
+ },
+ {
+  "id": "job-bank-salaires-mediane-mise-a-jour-18-novembre-2026",
+  "date": "2026-11-20",
+  "tag_fr": "Travail",
+  "title_fr": "Job Bank : mise à jour annuelle des salaires, échéance du 1er janvier 2027 pour les employeurs",
+  "summary_fr": "La page officielle d'Emploi et Développement social Canada indique que la mise à jour annuelle des salaires de Job Bank de l'automne 2026 a eu lieu le 18 novembre 2026. Ces salaires médians servent de référence pour le salaire prévalent dans les demandes d'EIMT ; l'employeur doit offrir le plus élevé entre la médiane et le salaire versé à ses employés dans le même poste, et revoir ce salaire chaque année. Selon CIC News, les employeurs ont jusqu'au 1er janvier 2027 pour examiner le salaire de leurs travailleurs étrangers temporaires. Les médias comptent différemment les professions en hausse (414 sur 497 pour CIC News, 416 sur 515 pour Immigration News Canada). Le Québec utilise ses propres tableaux (MIFI). Il s'agit d'une mise à jour en vigueur, pas d'une promesse.",
+  "impact_fr": "Ce que cela signifie pour vous : si vous visez un permis de travail avec une offre d'emploi qui exige une EIMT, le salaire proposé doit respecter le salaire prévalent du poste et de la région, et il peut être ajusté par l'employeur. Cette mise à jour ne crée aucune nouvelle voie et ne garantit aucun résultat ; faites vérifier votre offre dans le cadre de l'évaluation de votre dossier.",
+  "sources": [
+   {
+    "name": "EDSC : exigences pour les postes à bas salaire (page officielle)",
+    "url": "https://www.canada.ca/en/employment-social-development/services/foreign-workers/median-wage/low/requirements.html"
+   },
+   {
+    "name": "CIC News : Job Bank update raises wage floor for temporary foreign workers (19 novembre 2026)",
+    "url": "https://www.cicnews.com/2026/11/job-bank-update-raises-wage-floor-for-temporary-foreign-workers-in-most-occupations-1182674.html"
+   },
+   {
+    "name": "Immigration News Canada : New Canada Median Wage Increase Effective November 18",
+    "url": "https://immigrationnewscanada.ca/new-canada-median-wage-increase-2026/"
+   }
+  ]
  }
 ]
