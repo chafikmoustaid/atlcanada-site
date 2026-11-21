@@ -92,7 +92,7 @@ def article(it, p, lang):
     go = ''
     if lang == 'fr' and liens_for(it):
         go = '<p class="news-go">Pour aller plus loin : ' + ' · '.join(f'<a href="{u}">{e(l)}</a>' for u, l in liens_for(it)) + '</p>'
-    figs = ''.join(f'<figure class="news-figure"><img src="{e(v["src"])}" alt="{e(v["alt_"+lang])}" width="{v["width"]}" height="{v["height"]}" loading="lazy">'
+    figs = ''.join((f'<h3>{e(v["heading_"+lang])}</h3><p>{e(v["text_"+lang])}</p>' if v.get('heading_'+lang) else '') + f'<figure class="news-figure"><img src="{e(v["src"])}" alt="{e(v["alt_"+lang])}" width="{v["width"]}" height="{v["height"]}" loading="lazy">'
                    f'<figcaption>{e(v["caption_"+lang])}</figcaption></figure>' for v in it.get('visuels', []))
     return (f'<article class="news-item" id="{it["id"]}"><p class="news-meta"><span class="news-tag">{e(it["tag_"+lang])}</span>'
             f'<time datetime="{it["date"]}">{fdate(it["date"], lang)}</time></p>'

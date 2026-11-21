@@ -1016,7 +1016,7 @@
   "date": "2026-11-21",
   "tag_fr": "Résidence permanente",
   "title_fr": "Programme rural permanent : communautés, employeurs désignés et professions, ce qu'il faut savoir",
-  "summary_fr": "IRCC a annoncé le 9 novembre 2026 que le programme d'immigration des communautés rurales devient permanent; la page officielle indique une ouverture le 1er janvier 2027 (décision annoncée, règles détaillées à confirmer sur canada.ca). Les 14 communautés du pilote devraient participer : Pictou County (Nouvelle-Écosse); North Bay, Sudbury, Timmins, Sault Ste. Marie et Thunder Bay (Ontario); Steinbach, Altona/Rhineland et Brandon (Manitoba); Moose Jaw (Saskatchewan); Claresholm (Alberta); West Kootenay, North Okanagan Shuswap et Peace Liard (Colombie-Britannique). Il n'existe pas de liste nationale de professions : chaque communauté fixe ses secteurs et ses professions prioritaires, selon ses besoins. Les employeurs sont désignés par la communauté, et seuls les employeurs désignés dans un secteur prioritaire peuvent faire une offre. Ils suivent une formation obligatoire. Chaque communauté publie ses employeurs et ses postes sur son propre site; il n'y a pas de liste d'employeurs sur canada.ca. Le candidat ne s'adresse pas à la communauté : c'est l'employeur désigné qui demande la recommandation. Les conditions publiées par IRCC comprennent une recommandation communautaire valide, une offre valide d'un employeur désigné, 1 an (1 560 heures) d'expérience rémunérée et liée à l'offre au cours des 3 dernières années, un test de langue approuvé, un diplôme et des fonds suffisants. Certains diplômés d'un établissement public de la communauté sont dispensés de l'expérience.",
+  "summary_fr": "IRCC a annoncé le 9 novembre 2026 que le programme d'immigration des communautés rurales devient permanent; la page officielle indique une ouverture le 1er janvier 2027 (décision annoncée, règles détaillées à confirmer sur canada.ca). Voici, en schémas, comment il fonctionne : le parcours, les 14 communautés, le rôle de chacun, l'expérience exigée et les vérifications à faire avant de viser un poste.",
   "impact_fr": "Ce que cela signifie pour vous : cette voie dépend d'abord d'une offre d'emploi d'un employeur désigné dans une profession prioritaire de la communauté, puis de la recommandation de celle-ci. Les listes de professions, les places et les périodes de dépôt changent d'une communauté à l'autre : il faut les vérifier sur le site de chaque communauté avant d'agir. Rien n'est garanti, la décision finale revient à IRCC, et ne payez jamais pour obtenir une offre ou une recommandation. Une évaluation personnalisée permet de voir si ce programme convient à votre profil.",
   "sources": [
    {
@@ -1034,6 +1034,53 @@
    {
     "name": "IRCC (canada.ca) : Job offer and community recommendation",
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration-program/job-offer.html"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/programme-rural-parcours-etape-par-etape-21-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "heading_fr": "Le parcours, étape par étape",
+    "text_fr": "La communauté désigne d'abord l'employeur, qui suit une formation obligatoire. L'employeur fait l'offre d'emploi et demande lui-même la recommandation à la communauté, qui vérifie le poste, l'offre et le candidat. Avec le certificat de recommandation, le candidat présente sa demande de résidence permanente à IRCC, qui décide.",
+    "alt_fr": "Six étapes : désignation de l'employeur, formation, offre d'emploi, demande de recommandation, vérification par la communauté, demande de résidence permanente à IRCC.",
+    "caption_fr": "Parcours du programme rural, d'après les pages officielles d'IRCC (canada.ca). Aucun résultat n'est garanti."
+   },
+   {
+    "src": "/assets/actu/programme-rural-14-communautes-par-province-21-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "heading_fr": "Les 14 communautés, province par province",
+    "text_fr": "Ontario (5) : North Bay, Sudbury, Timmins, Sault Ste. Marie, Thunder Bay. Colombie-Britannique (3) : West Kootenay, North Okanagan Shuswap, Peace Liard. Manitoba (3) : Steinbach, Altona/Rhineland, Brandon. Alberta : Claresholm. Saskatchewan : Moose Jaw. Nouvelle-Écosse : Pictou County. Pour une nouvelle communauté, IRCC retient une population de moins de 200 000 habitants et un score d'éloignement d'au moins 0,20.",
+    "alt_fr": "Les 14 communautés regroupées par province : Colombie-Britannique 3, Alberta 1, Saskatchewan 1, Manitoba 3, Ontario 5, Nouvelle-Écosse 1.",
+    "caption_fr": "Communautés participantes, d'après IRCC (canada.ca)."
+   },
+   {
+    "src": "/assets/actu/programme-rural-qui-fait-quoi-21-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "heading_fr": "Qui fait quoi, et les recruteurs désignés",
+    "text_fr": "IRCC reçoit la demande de résidence permanente. La communauté désigne les employeurs, fixe les secteurs prioritaires et recommande le candidat. L'employeur désigné suit la formation, publie ses postes et demande la recommandation. Les pages d'IRCC ne mentionnent aucun recruteur désigné : seuls les employeurs désignés par une communauté peuvent faire une offre, et chaque communauté publie sa liste sur son propre site. Ne payez jamais pour une offre d'emploi ou une recommandation.",
+    "alt_fr": "Quatre colonnes : IRCC, la communauté, l'employeur désigné et le candidat, avec le rôle de chacun, et un rappel de ne jamais payer pour une offre ou une recommandation.",
+    "caption_fr": "Rôles dans le programme rural, d'après IRCC (canada.ca)."
+   },
+   {
+    "src": "/assets/actu/programme-rural-experience-de-travail-21-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "heading_fr": "L'expérience de travail exigée",
+    "text_fr": "IRCC demande 1 an (1 560 heures) d'expérience rémunérée et liée à l'offre, acquise dans les 3 dernières années : 30 heures par semaine pendant 12 mois, 15 heures par semaine pendant 24 mois, ou plusieurs emplois additionnés. Le bénévolat, les stages non rémunérés et le travail autonome ne comptent pas. Le niveau du poste offert (TEER) détermine les niveaux d'expérience acceptés.",
+    "alt_fr": "À gauche, trois façons d'atteindre 1 560 heures. À droite, correspondance entre le niveau TEER du poste offert et les niveaux d'expérience acceptés.",
+    "caption_fr": "Expérience de travail, d'après la page d'IRCC (canada.ca)."
+   },
+   {
+    "src": "/assets/actu/programme-rural-professions-et-dispense-21-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "heading_fr": "Les professions et la dispense pour certains diplômés",
+    "text_fr": "Il n'existe pas de liste nationale de professions : chaque communauté fixe ses secteurs prioritaires et peut les revoir en cours d'année. Avant de viser un poste, vérifiez le code CNP de l'offre, la liste d'employeurs publiée par la communauté, les places encore ouvertes et la date de la liste. Un diplômé d'un établissement postsecondaire public de la communauté peut être dispensé de l'expérience s'il a obtenu son diplôme (2 ans ou plus) dans les 18 derniers mois et vécu dans la communauté 16 des 24 derniers mois.",
+    "alt_fr": "À gauche, quatre vérifications avant de viser un poste. À droite, les conditions de la dispense d'expérience pour certains diplômés.",
+    "caption_fr": "Professions et dispense, d'après IRCC (canada.ca) : vérifiez toujours la liste de la communauté."
    }
   ]
  }
