@@ -12,13 +12,15 @@ BAND_FR = ('<section class="calc-promo" aria-label="Calculateur de points Entré
            '<div class="cp-copy"><p class="cp-eyebrow">Outil gratuit · 2 minutes</p>'
            '<h2>Quel est votre score Entrée express ?</h2>'
            '<p>Estimez-le avec la grille d\'IRCC en vigueur depuis le 3 novembre 2026. Vos réponses restent dans votre navigateur.</p>'
-           f'<a class="cp-btn" href="{FR_URL}">Calculer mon score <span aria-hidden="true">→</span></a></div>'
+           f'<a class="cp-btn" href="{FR_URL}">Calculer mon score <span aria-hidden="true">→</span></a> '
+           '<a class="cp-btn2" href="/evaluer-mon-dossier/">Évaluer mon dossier en 5 questions</a></div>'
            f'<div class="cp-art">{GAUGE}</div></div></section>')
 BAND_AR = ('<section class="calc-promo" aria-label="حاسبة نقاط الدخول السريع"><div class="wrap cp-in">'
            '<div class="cp-copy"><p class="cp-eyebrow">أداة مجانية · دقيقتان</p>'
            '<h2>كم درجتك في الدخول السريع؟</h2>'
            '<p>قدّرها وفق جدول IRCC المعمول به منذ 3 نوفمبر 2026. تبقى إجاباتك داخل متصفحك.</p>'
-           f'<a class="cp-btn" href="{AR_URL}">احسب درجتي <span aria-hidden="true">←</span></a></div>'
+           f'<a class="cp-btn" href="{AR_URL}">احسب درجتي <span aria-hidden="true">←</span></a> '
+           '<a class="cp-btn2" href="/ar/evaluate-my-case/">قيّم ملفك في 5 أسئلة</a></div>'
            f'<div class="cp-art">{GAUGE}</div></div></section>')
 
 changed = 0
