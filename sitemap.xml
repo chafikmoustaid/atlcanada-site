@@ -96,6 +96,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.atlcanada.com/rendez-vous/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.atlcanada.com/ar/book-consultation/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.atlcanada.com/deroulement-dossier-immigration/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.atlcanada.com/ar/case-process/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.atlcanada.com/evaluer-mon-dossier/</loc>
     <lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>

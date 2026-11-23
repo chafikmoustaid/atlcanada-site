@@ -16,7 +16,7 @@
     foreign: 'خبرة عمل أجنبية (سنوات)', offer: 'عرض عمل صالح في مهنة ذات أجر مرتفع', cert: 'شهادة تأهيل مهني كندية (المهن)',
     secExtra: 'نقاط إضافية', pnp: 'ترشيح من مقاطعة أو إقليم', sibling: 'أخ أو أخت في كندا (مواطن أو مقيم دائم، 18 سنة فأكثر)',
     secSp: 'الزوج/الزوجة', spEdu: 'تعليم الزوج/الزوجة', spLang: 'لغة الزوج/الزوجة (CLB)', spCan: 'خبرة الزوج/الزوجة في كندا (سنوات)',
-    total: 'درجتك التقديرية', of: 'من 1 200', core: 'العوامل الأساسية', spouseL: 'الزوج/الزوجة', trans: 'قابلية نقل المهارات', add: 'نقاط إضافية',
+    total: 'درجتك التقديرية', of: 'من 1270', core: 'العوامل الأساسية', spouseL: 'الزوج/الزوجة', trans: 'قابلية نقل المهارات', add: 'نقاط إضافية',
     note: 'هذا تقدير إرشادي وفق جدول IRCC المعمول به منذ 3 نوفمبر 2026، ولا يضمن أي دعوة. تتغير الجولات والقواعد؛ تحقق من وضعك مع مستشار.',
     cta: 'تحقق من درجتي مع مستشار', ctaHref: '/#contact',
     tiers: ['بلا', 'أجر ≥ 1.3× المتوسط', 'أجر ≥ 1.5× المتوسط', 'أجر ≥ 2× المتوسط'],
@@ -24,7 +24,7 @@
     eduOpts: ['أقل من الثانوية', 'شهادة ثانوية', 'برنامج لسنة واحدة', 'برنامج لسنتين', 'بكالوريوس أو برنامج 3 سنوات فأكثر', 'شهادتان أو أكثر (إحداها 3 سنوات فأكثر)', 'ماجستير أو شهادة مهنية', 'دكتوراه'],
     studyOpts: ['لا', 'برنامج 1 إلى 2 سنة', 'برنامج 3 سنوات فأكثر'],
     foreignOpts: ['لا شيء', '1 إلى 2 سنة', '3 سنوات فأكثر'],
-    capNote: 'حدّ أقصى 600 نقطة للعوامل الأساسية (بما فيها الزوج وقابلية النقل).'
+    capNote: 'الحد الأقصى الرسمي: 570 نقطة للعوامل الأساسية (530 مع الزوج/الزوجة) و40 للزوج/الزوجة و100 لقابلية النقل و600 للنقاط الإضافية.'
   } : {
     sec1: 'Informations personnelles', age: 'Votre âge (années)',
     spouse: 'Votre conjoint(e) ou partenaire immigrera-t-il/elle avec vous ?', yes: 'Oui', no: 'Non',
@@ -36,7 +36,7 @@
     foreign: "Expérience de travail à l'étranger (années)", offer: "Offre d'emploi valide dans une profession à salaire élevé", cert: 'Certificat de qualification canadien (métiers)',
     secExtra: 'Points additionnels', pnp: "Désignation d'une province ou d'un territoire", sibling: 'Frère ou sœur au Canada (citoyen ou résident permanent, 18 ans ou plus)',
     secSp: 'Conjoint(e) ou partenaire', spEdu: 'Études du conjoint', spLang: 'Langue du conjoint (CLB)', spCan: 'Expérience canadienne du conjoint (années)',
-    total: 'Votre score estimé', of: 'sur 1 200', core: 'Facteurs de base', spouseL: 'Conjoint(e)', trans: 'Transférabilité des compétences', add: 'Points additionnels',
+    total: 'Votre score estimé', of: 'sur 1 270', core: 'Facteurs de base', spouseL: 'Conjoint(e)', trans: 'Transférabilité des compétences', add: 'Points additionnels',
     note: "Estimation indicative selon la grille d'IRCC en vigueur depuis le 3 novembre 2026. Elle ne garantit aucune invitation. Les rondes et les règles évoluent : faites valider votre situation par un consultant.",
     cta: 'Faire valider mon score', ctaHref: '/#contact',
     tiers: ['Aucune', 'Salaire ≥ 1,3 × la médiane', 'Salaire ≥ 1,5 × la médiane', 'Salaire ≥ 2 × la médiane'],
@@ -44,7 +44,7 @@
     eduOpts: ['Moins que le secondaire', 'Diplôme du secondaire', "Programme d'un an", 'Programme de deux ans', "Baccalauréat ou programme de 3 ans ou plus", 'Deux diplômes ou plus (dont un de 3 ans ou plus)', 'Maîtrise ou diplôme professionnel', 'Doctorat'],
     studyOpts: ['Non', 'Programme de 1 à 2 ans', 'Programme de 3 ans ou plus'],
     foreignOpts: ['Aucune', '1 à 2 ans', '3 ans ou plus'],
-    capNote: 'Plafond de 600 points pour la partie de base (conjoint et transférabilité inclus).'
+    capNote: 'Maximums officiels : 570 points pour les facteurs de base (530 avec conjoint), 40 pour le conjoint, 100 pour la transférabilité et 600 pour les points additionnels.'
   };
 
   /* ---------- Barèmes IRCC (indices : 0 = sans conjoint, 1 = avec conjoint) ---------- */
@@ -192,7 +192,7 @@
     var certTr = num('cert') === 1 ? (clb >= 7 ? 50 : clb >= 5 ? 25 : 0) : 0;
     var trans = Math.min(100, eduTr + forTr + certTr);
 
-    var core = Math.min(600, coreBase + spouse + trans);
+    var core = coreBase + spouse + trans; /* IRCC ne fixe pas de plafond global pour A+B+C : maximums par section (570 ou 530, 40, 100) */
     var coreShown = Math.min(coreBase, core);
     var spShown = Math.min(spouse, Math.max(0, core - coreShown));
     var trShown = Math.max(0, core - coreShown - spShown);
@@ -203,7 +203,7 @@
     var frBonus = frMin >= 7 ? (enMin >= 5 ? 50 : 25) : 0;
     var add = Math.min(600, (num('pnp') === 1 ? 600 : 0) + [0, 15, 30][num('study')] + frBonus + (num('sib') === 1 ? 15 : 0));
 
-    var total = Math.min(1200, core + add);
+    var total = core + add;
     $('o-total').textContent = total;
     $('o-mini').textContent = total;
     $('o-core').textContent = coreShown;
@@ -211,7 +211,7 @@
     $('o-tr').textContent = trShown;
     $('o-ad').textContent = add;
     $('m-core').textContent = ' / ' + (sp ? 530 : 570);
-    $('o-bar').style.width = (total / 1200 * 100).toFixed(1) + '%';
+    $('o-bar').style.width = (total / 1270 * 100).toFixed(1) + '%';
   }
 
   root.addEventListener('input', calc);

@@ -705,7 +705,71 @@ PAGES.append(dict(
 ))
 
 
-AR_OF = {'evaluer-mon-dossier/': 'ar/evaluate-my-case/', 'calculateur-entree-express/': 'ar/express-entry-calculator/', 'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
+PAGES.append(dict(
+    path='rendez-vous/', updated='23 novembre 2026', updated_iso='2026-11-23',
+    neutral=True,
+    title="Prendre rendez-vous avec un consultant en immigration | ATL Canada",
+    desc="Demandez une consultation avec un consultant réglementé en immigration canadienne : appel, WhatsApp, Teams ou en bureau à Montréal et à Casablanca. Nous confirmons l'heure avec vous.",
+    crumb="Prendre rendez-vous",
+    eyebrow="Consultation · Montréal · Casablanca",
+    h1="Prendre rendez-vous",
+    lede="Choisissez le jour, la plage horaire et le mode de consultation qui vous conviennent. Nous vous contactons pour confirmer l'heure exacte.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap">
+<link rel="stylesheet" href="/assets/rdv.css">
+<div id="rdv-app" data-lang="fr"></div>
+<noscript><p class="note">Ce formulaire demande JavaScript. Écrivez-nous à contact@atlcanada.com ou appelez le +1 514 295 6635.</p></noscript>
+<script src="/assets/rdv.js" defer></script>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Comment se déroule la consultation ?</h2><div class="prose">
+<p>Nous faisons le point sur votre projet et votre situation, nous vérifions l'état à jour des programmes avant toute dépense, et nous comparons les voies réalistes pour votre profil.</p>
+<p>Horaires du bureau : du lundi au vendredi de 10 h à 18 h, et le samedi de 10 h à 12 h 30 (heure de Montréal).</p>
+<p class="note">La décision appartient uniquement à IRCC et aux autorités du Québec : nous ne pouvons ni garantir un résultat ni promettre un délai.</p></div></div></section>''',
+    faq=[
+        ("La demande confirme-t-elle le rendez-vous ?", "Non. Elle nous indique vos préférences ; nous vous contactons pour confirmer l'heure exacte."),
+        ("Puis-je consulter depuis le Maroc ou un autre pays ?", "Oui. Les consultations se font par téléphone, WhatsApp ou visioconférence, et aussi en bureau à Montréal ou à Casablanca."),
+        ("Mes renseignements sont-ils protégés ?", "Ils servent uniquement à répondre à votre demande. Consultez notre politique de confidentialité."),
+    ],
+    sources=[],
+    related=[('/evaluer-mon-dossier/', 'Évaluer mon dossier'), ('/residence-permanente-canada/', 'Résidence permanente')],
+))
+
+
+PAGES.append(dict(
+    path='deroulement-dossier-immigration/', updated='23 novembre 2026', updated_iso='2026-11-23',
+    neutral=True,
+    title="Comment se déroule un dossier d'immigration avec ATL Canada | ATL Canada",
+    desc="Les étapes d'un accompagnement : consultation, choix de la voie, entente écrite, préparation des documents, dépôt et suivi. Ce que fait un consultant réglementé, et ce qu'il ne peut pas promettre.",
+    crumb="Déroulement d'un dossier",
+    eyebrow="Accompagnement · Montréal · Casablanca",
+    h1="Comment se déroule un dossier avec ATL Canada",
+    lede="De la première consultation au suivi de la demande : les étapes, ce que nous faisons pour vous, et ce qu'aucun consultant sérieux ne peut promettre.",
+    body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Les étapes de l'accompagnement</h2>
+<ol class="steps">
+<li><span><b>Consultation.</b> Nous faisons le point sur votre projet, votre situation actuelle et votre historique de demandes.</span></li>
+<li><span><b>Choix de la voie.</b> Nous vérifions l'état à jour des programmes et nous comparons les voies réalistes pour votre profil, avant toute dépense.</span></li>
+<li><span><b>Entente de services écrite.</b> Elle précise les services prévus et les honoraires avant que vous ne payiez quoi que ce soit.</span></li>
+<li><span><b>Préparation des documents.</b> Nous vous indiquons les pièces à réunir, nous vérifions leur cohérence et nous préparons la demande avec vous.</span></li>
+<li><span><b>Dépôt de la demande.</b> La demande est déposée auprès d'IRCC ou des autorités du Québec, selon la voie choisie.</span></li>
+<li><span><b>Suivi.</b> Nous suivons le dossier et vous aidons à répondre aux demandes des autorités jusqu'à la décision.</span></li>
+</ol></div></section>
+<section class="sp"><div class="wrap"><h2>Ce que nous ne pouvons pas promettre</h2><div class="prose">
+<p>La décision appartient uniquement à IRCC et aux autorités du Québec. Nous ne pouvons ni garantir un résultat, ni promettre un délai, ni obtenir un traitement prioritaire : le recours à un consultant ne donne aucune priorité. Méfiez-vous de toute personne qui vous promet le contraire.</p>
+<p>Vous restez responsable de l'exactitude des informations et des documents fournis. Notre rôle est de vous guider, de vérifier et d'éviter les erreurs qui coûtent du temps et de l'argent.</p>
+<p><a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/evaluer-mon-dossier/">Évaluer mon dossier</a></p></div></div></section>''',
+    faq=[
+        ("Combien coûte un accompagnement ?", "Les honoraires dépendent du type de dossier et sont indiqués dans l'entente de services écrite, avant tout paiement. Demandez-nous une consultation pour obtenir une réponse adaptée à votre situation."),
+        ("Pouvez-vous accélérer mon dossier ?", "Non. Les délais dépendent des autorités. Un dossier complet et cohérent dès le dépôt est la meilleure préparation."),
+        ("Que se passe-t-il si ma demande est refusée ?", "Nous analysons la lettre de décision avec vous et regardons les options possibles. Un refus ne se règle pas automatiquement par un nouveau dépôt."),
+        ("Puis-je être accompagné depuis le Maroc ?", "Oui. Nous avons un bureau à Casablanca et nous travaillons aussi à distance, par téléphone, WhatsApp ou visioconférence."),
+    ],
+    sources=[],
+    related=[('/rendez-vous/', 'Prendre rendez-vous'), ('/evaluer-mon-dossier/', 'Évaluer mon dossier')],
+))
+
+
+AR_OF = {'deroulement-dossier-immigration/': 'ar/case-process/', 'rendez-vous/': 'ar/book-consultation/', 'evaluer-mon-dossier/': 'ar/evaluate-my-case/', 'calculateur-entree-express/': 'ar/express-entry-calculator/', 'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
 
 
 def head_for(p):

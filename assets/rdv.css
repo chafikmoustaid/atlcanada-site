@@ -1,0 +1,12 @@
+/* Prise de rendez-vous */
+#rdv-app{max-width:760px;margin:0 auto}
+.rdv-form{display:grid;gap:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 28px}
+.rdv-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.rdv-form label{display:block;font-size:.9rem;font-weight:600;color:var(--ink-soft);margin:0 0 6px}
+.rdv-form input:not([type=checkbox]),.rdv-form select,.rdv-form textarea{font:inherit;font-size:1rem;width:100%;box-sizing:border-box;padding:10px 12px;min-height:44px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+.rdv-form input:focus,.rdv-form select:focus,.rdv-form textarea:focus{outline:2px solid var(--rust);outline-offset:1px}
+.rdv-form .rdv-consent{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.92rem}
+.rdv-form .rdv-consent input{width:18px;height:18px;min-height:0;flex:none;margin-top:3px;accent-color:var(--rust)}
+.rdv-form .btn{justify-self:start}.rdv-form .help{margin:0;font-size:.88rem;color:var(--ink-soft)}
+.rdv-status{margin:0;min-height:1.4em;font-weight:600}
+@media (max-width:640px){.rdv-row{grid-template-columns:1fr}.rdv-form{padding:18px}}

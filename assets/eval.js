@@ -81,7 +81,7 @@ function result(){
  o+='<div class="ev-main"><span>'+h(T.main)+'</span><a class="btn btn-solid" href="'+U[main]+'">'+h(tx[main])+(AR?' ←':' →')+'</a></div>';
  o+='<h3>'+h(T.more)+'</h3><ul class="ev-more">'+more.map(function(k){return '<li><a href="'+U[k]+'">'+h(tx[k])+'</a></li>'}).join('')+'</ul>';
  o+='<h3>'+h(T.points)+'</h3><ul class="ev-pts">'+pts.map(function(x){return '<li>'+h(x)+'</li>'}).join('')+'</ul>';
- o+='<div class="ev-cta"><a class="btn btn-solid" href="tel:+15142956635">'+T.call+'</a> <a class="btn" href="https://wa.me/15142956635" rel="noopener">'+h(T.wa)+'</a></div>';
+ o+='<div class="ev-cta"><a class="btn btn-solid" href="'+(AR?'/ar/book-consultation/':'/rendez-vous/')+'">'+h(T.cta)+'</a> <a class="btn" href="tel:+15142956635">'+T.call+'</a> <a class="btn" href="https://wa.me/15142956635" rel="noopener">'+h(T.wa)+'</a></div>';
  o+='<p class="note">'+h(T.note)+'</p><p><button type="button" class="ev-link" id="ev-restart">'+h(T.restart)+'</button></p></div>';
  return o;
 }

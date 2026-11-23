@@ -254,7 +254,7 @@ urls = [('/', '1.0', last), ('/maroc/', '0.9', '2026-10-09'), ('/ar/', '0.9', '2
         ('/ar/work-permit/', '0.8', '2026-11-05'), ('/ar/immigrate-to-quebec/', '0.8', '2026-11-05'),
         ('/residence-permanente-canada/', '0.8', '2026-11-05'),
         ('/entree-express-canada/', '0.8', '2026-11-05'),
-        ('/calculateur-entree-express/', '0.8', '2026-11-06'), ('/ar/actualites/', '0.8', last),
+        ('/calculateur-entree-express/', '0.8', '2026-11-06'), ('/ar/actualites/', '0.8', last), ('/rendez-vous/', '0.8', '2026-11-23'), ('/ar/book-consultation/', '0.8', '2026-11-23'), ('/deroulement-dossier-immigration/', '0.7', '2026-11-23'), ('/ar/case-process/', '0.7', '2026-11-23'),
         ('/evaluer-mon-dossier/', '0.8', '2026-11-23'), ('/ar/evaluate-my-case/', '0.8', '2026-11-23'),
         ('/dossiers-en-attente-ircc/', '0.7', '2026-11-18'),
         ('/candidats-provinces-canada/', '0.8', '2026-11-05'),
@@ -302,6 +302,12 @@ if '/evaluer-mon-dossier/' not in ll:
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/ar/actualites/' not in ll:
     ll = ll.replace('\n## Liens', f"- [أخبار الهجرة إلى كندا (بالعربية)]({SITE}/ar/actualites/): مختارات من أحدث الأخبار مشروحة ببساطة\n\n## Liens", 1)
+    open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
+if '/rendez-vous/' not in ll:
+    ll = ll.replace('\n## Liens', f"- [Prendre rendez-vous]({SITE}/rendez-vous/): demande de consultation (appel, WhatsApp, Teams ou bureau)\n\n## Liens", 1)
+    open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
+if '/deroulement-dossier-immigration/' not in ll:
+    ll = ll.replace('\n## Liens', f"- [Déroulement d'un dossier]({SITE}/deroulement-dossier-immigration/): étapes de l'accompagnement et ce qu'un consultant ne peut pas promettre\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 print('ok', len(items), 'actualités')
 
