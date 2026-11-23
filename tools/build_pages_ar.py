@@ -711,6 +711,36 @@ PAGES.append(dict(
 ))
 
 
+PAGES.append(dict(
+    path='ar/evaluate-my-case/', fr='evaluer-mon-dossier/', updated='23 نوفمبر 2026', updated_iso='2026-11-23',
+    neutral=True,
+    title="قيّم ملفك للهجرة إلى كندا: توجيه مجاني | ATL Canada",
+    desc="خمسة أسئلة لمعرفة أي مسار هجرة تبدأ به: الدراسة، العمل، الإقامة الدائمة، كيبيك، العائلة. توجيه عام مجاني ثم استشارة مع مستشار مرخَّص.",
+    crumb="قيّم ملفك",
+    eyebrow="أداة مجانية · دقيقة واحدة",
+    h1="قيّم ملفك في 5 أسئلة",
+    lede="أجب عن خمسة أسئلة بسيطة لتعرف أي مسار هجرة تبدأ به. النتيجة توجيه عام: لا تُرسل إجاباتك ولا تُحفظ.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap">
+<link rel="stylesheet" href="/assets/eval.css">
+<div id="eval-app" data-lang="ar"></div>
+<noscript><p class="note">يحتاج الاستبيان إلى JavaScript. يمكنك أيضًا الاتصال بنا على +1 514 295 6635.</p></noscript>
+<script src="/assets/eval.js" defer></script>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>لماذا الاستشارة بعد ذلك؟</h2><div class="prose">
+<p>لا يغني هذا الاستبيان عن تحليل المستشار. لكل ملف خصوصياته: الوضع الحالي، سجل الطلبات السابقة، الوثائق، الآجال. في الاستشارة نتحقق من الوضع المحدّث للبرامج ونقارن المسارات الواقعية لملفك.</p>
+<p class="note">القرار يعود حصريًا إلى IRCC والسلطات في كيبيك: لا يمكننا ضمان نتيجة ولا وعدك بمدة معينة.</p></div></div></section>''',
+    faq=[
+        ("هل هذا الاستبيان تقييم رسمي؟", "لا. هو توجيه عام يدلّك على الصفحة الأنسب. وحده التحليل الكامل لملفك يسمح باختيار المسار."),
+        ("هل تُحفظ إجاباتي؟", "لا. كل شيء يتم داخل متصفحك ولا يُرسل شيء إلى ATL Canada."),
+        ("هل الخدمة خاصة بالمرشحين من المغرب؟", "لا. نرافق أيضًا أشخاصًا من جنسيات أخرى وأشخاصًا موجودين في كندا، مثلًا لتمديد تصريح العمل."),
+        ("هل يمكنني معرفة فرص قبولي؟", "لا أحد يستطيع ضمان قرار. في الاستشارة نخبرك بصراحة بالمسارات الواقعية لملفك."),
+    ],
+    sources=[],
+    related=[('/ar/express-entry-calculator/', 'حاسبة الدخول السريع'), ('/ar/permanent-residence/', 'الإقامة الدائمة')],
+))
+
+
 for p in PAGES:
     related = ''.join(f'<a class="btn btn-outline" style="color:var(--ink);border-color:var(--ink)" href="{u}">{e(l)}</a>' for u, l in p['related'])
     src = ''.join(f'<li>{a(u, l)}</li>' for u, l in p['sources'])

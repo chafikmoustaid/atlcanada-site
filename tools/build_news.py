@@ -225,6 +225,7 @@ urls = [('/', '1.0', last), ('/maroc/', '0.9', '2026-10-09'), ('/ar/', '0.9', '2
         ('/residence-permanente-canada/', '0.8', '2026-11-05'),
         ('/entree-express-canada/', '0.8', '2026-11-05'),
         ('/calculateur-entree-express/', '0.8', '2026-11-06'),
+        ('/evaluer-mon-dossier/', '0.8', '2026-11-23'), ('/ar/evaluate-my-case/', '0.8', '2026-11-23'),
         ('/dossiers-en-attente-ircc/', '0.7', '2026-11-18'),
         ('/candidats-provinces-canada/', '0.8', '2026-11-05'),
         ('/citoyennete-canadienne/', '0.8', '2026-11-05'),
@@ -258,13 +259,16 @@ if '/immigration-quebec-canada/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Immigrer au Québec]({SITE}/immigration-quebec-canada/): sélection par le Québec, CSQ, PSTQ, état du PEQ\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/residence-permanente-canada/' not in ll:
-    ll = ll.replace('\n## Liens', f"- [Résidence permanente : les voies possibles]({SITE}/residence-permanente-canada/): Entrée express, provinces, Québec, famille, Atlantique\n- [Calculateur de points Entrée express]({SITE}/calculateur-entree-express/): estimation du score selon la grille IRCC du 3 novembre 2026\n- [Entrée express : programmes, points, changements 2026]({SITE}/entree-express-canada/): conditions, SCG, changements du 3 novembre 2026\n- [Candidats des provinces]({SITE}/candidats-provinces-canada/): deux processus, étapes\n- [Citoyenneté canadienne]({SITE}/citoyennete-canadienne/): conditions pour les adultes\n\n## Liens", 1)
+    ll = ll.replace('\n## Liens', f"- [Résidence permanente : les voies possibles]({SITE}/residence-permanente-canada/): Entrée express, provinces, Québec, famille, Atlantique\n- [Calculateur de points Entrée express]({SITE}/calculateur-entree-express/): estimation du score selon la grille IRCC du 3 novembre 2026\n- [Évaluer mon dossier]({SITE}/evaluer-mon-dossier/): questionnaire de 5 questions qui oriente vers la voie d'immigration à regarder en premier\n- [Entrée express : programmes, points, changements 2026]({SITE}/entree-express-canada/): conditions, SCG, changements du 3 novembre 2026\n- [Candidats des provinces]({SITE}/candidats-provinces-canada/): deux processus, étapes\n- [Citoyenneté canadienne]({SITE}/citoyennete-canadienne/): conditions pour les adultes\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/gens-affaires-immigration-canada/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Immigration des gens d'affaires]({SITE}/gens-affaires-immigration-canada/): état des programmes fédéraux et du Québec, autres voies\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/actualites/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Actualités de l'immigration (français)]({SITE}/actualites/): nouvelles expliquées, avec sources\n\n## Liens", 1)
+    open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
+if '/evaluer-mon-dossier/' not in ll:
+    ll = ll.replace('\n## Liens', f"- [Évaluer mon dossier]({SITE}/evaluer-mon-dossier/): questionnaire de 5 questions qui oriente vers la voie d'immigration à regarder en premier\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 print('ok', len(items), 'actualités')
 

@@ -10,3 +10,4 @@ python3 tools/header_social.py
 python3 tools/site_extras.py
 python3 tools/calc_promo.py
 python3 tools/ccic_link.py
+python3 tools/eval_link.py

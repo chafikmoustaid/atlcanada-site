@@ -675,7 +675,37 @@ PAGES.append(dict(
 ))
 
 
-AR_OF = {'calculateur-entree-express/': 'ar/express-entry-calculator/', 'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
+PAGES.append(dict(
+    path='evaluer-mon-dossier/', updated='23 novembre 2026', updated_iso='2026-11-23',
+    neutral=True,
+    title="Évaluer mon dossier d'immigration au Canada : orientation gratuite | ATL Canada",
+    desc="Cinq questions pour savoir quelle voie d'immigration regarder en premier : études, travail, résidence permanente, Québec, famille. Orientation générale gratuite, puis consultation avec un consultant réglementé.",
+    crumb="Évaluer mon dossier",
+    eyebrow="Outil gratuit · 1 minute",
+    h1="Évaluer mon dossier en 5 questions",
+    lede="Répondez à cinq questions simples pour savoir quelle voie d'immigration regarder en premier. Le résultat est une orientation générale : vos réponses ne sont ni envoyées ni enregistrées.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap">
+<link rel="stylesheet" href="/assets/eval.css">
+<div id="eval-app" data-lang="fr"></div>
+<noscript><p class="note">Ce questionnaire demande JavaScript. Vous pouvez aussi nous appeler au +1 514 295 6635.</p></noscript>
+<script src="/assets/eval.js" defer></script>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Pourquoi une consultation ensuite ?</h2><div class="prose">
+<p>Ce questionnaire ne remplace pas l'analyse d'un consultant. Chaque dossier a ses particularités : statut actuel, historique de demandes, documents, délais. En consultation, nous vérifions l'état à jour des programmes et nous comparons les voies réalistes pour votre profil.</p>
+<p class="note">La décision appartient uniquement à IRCC et aux autorités du Québec : nous ne pouvons ni garantir un résultat ni promettre un délai.</p></div></div></section>''',
+    faq=[
+        ("Ce questionnaire est-il une évaluation officielle ?", "Non. C'est une orientation générale qui vous indique la page la plus utile. Seule une analyse complète de votre dossier permet de choisir une voie."),
+        ("Mes réponses sont-elles enregistrées ?", "Non. Tout se fait dans votre navigateur et rien n'est envoyé à ATL Canada."),
+        ("Le service est-il réservé aux candidats du Maroc ?", "Non. Nous accompagnons aussi des personnes d'autres nationalités et des personnes déjà au Canada, par exemple pour prolonger un permis de travail."),
+        ("Puis-je avoir une réponse sur mes chances d'être accepté ?", "Personne ne peut garantir une décision. En consultation, nous vous disons honnêtement quelles voies sont réalistes pour votre profil."),
+    ],
+    sources=[],
+    related=[('/calculateur-entree-express/', 'Calculateur Entrée express'), ('/residence-permanente-canada/', 'Résidence permanente')],
+))
+
+
+AR_OF = {'evaluer-mon-dossier/': 'ar/evaluate-my-case/', 'calculateur-entree-express/': 'ar/express-entry-calculator/', 'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
 
 
 def head_for(p):

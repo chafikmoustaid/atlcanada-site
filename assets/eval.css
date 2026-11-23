@@ -1,0 +1,23 @@
+/* Évaluer mon dossier */
+#eval-app{max-width:760px;margin:0 auto}
+#eval-app fieldset{border:1px solid var(--line);background:#fff;border-radius:14px;padding:20px 22px 22px;margin:0 0 18px;min-width:0}
+#eval-app legend{font-family:'Lora',Georgia,serif;font-size:1.3rem;color:var(--ink);padding:0 8px;font-weight:600}
+.ev-bar{height:6px;border-radius:6px;background:var(--line);overflow:hidden;margin:0 0 10px}
+.ev-bar i{display:block;height:100%;background:var(--rust);transition:width .25s}
+.ev-count{margin:0 0 12px;color:var(--ink-soft);font-size:.9rem}
+.ev-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
+.ev-opt{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:12px;padding:13px 14px;background:var(--paper);cursor:pointer;min-height:48px;font-weight:600;color:var(--ink)}
+.ev-opt input{accent-color:var(--rust);width:18px;height:18px;flex:none}
+.ev-opt:has(input:checked){border-color:var(--rust);background:#fff;box-shadow:0 0 0 2px rgba(225,35,43,.18)}
+.ev-opt:has(input:focus-visible){outline:2px solid var(--rust);outline-offset:2px}
+.ev-nav{display:flex;gap:12px;justify-content:space-between}
+.ev-nav .btn[disabled]{opacity:.45;cursor:not-allowed}
+.ev-res{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+.ev-res h2{margin:0 0 6px}.ev-res h3{margin:22px 0 8px;font-size:1.05rem}
+.ev-main{display:flex;flex-wrap:wrap;align-items:center;gap:14px;background:var(--paper);border-radius:12px;padding:16px 18px;margin-top:16px}
+.ev-main span{font-weight:600;color:var(--ink-soft)}
+.ev-more,.ev-pts{margin:0;padding-inline-start:20px;color:var(--ink-soft)}.ev-more li,.ev-pts li{margin:0 0 7px}
+.ev-more a{color:var(--ink);text-decoration:underline}
+.ev-cta{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 12px}
+.ev-link{background:none;border:0;color:var(--rust-deep);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
+@media (max-width:600px){.ev-opts{grid-template-columns:1fr}#eval-app fieldset{padding:16px}.ev-res{padding:18px}}
