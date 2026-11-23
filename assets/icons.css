@@ -181,7 +181,7 @@ nav.primary a.nav-calc:hover,nav.primary a.nav-calc:focus-visible{background:#FF
 footer .ccic-link:hover{color:#fff;text-decoration-thickness:2px}
 .trust-ccic a.ccic-badge{text-decoration:none;color:#fff;transition:filter .15s}
 .trust-ccic a.ccic-badge:hover{filter:brightness(1.15)}
-.calc-promo .cp-btn2{display:inline-flex;align-items:center;margin:0 0 0 10px;padding:13px 24px;border-radius:999px;border:2px solid rgba(255,255,255,.55);color:#fff;text-decoration:none;font-weight:600;transition:background .15s,border-color .15s}
+.calc-promo .cp-btn2{display:inline-flex;align-items:center;margin:0 10px 0 0;padding:13px 24px;border-radius:999px;border:2px solid rgba(255,255,255,.55);color:#fff;text-decoration:none;font-weight:600;transition:background .15s,border-color .15s}
 .calc-promo .cp-btn2:hover{background:rgba(255,255,255,.12);border-color:#fff}
-[dir=rtl] .calc-promo .cp-btn2{margin:0 10px 0 0}
+[dir=rtl] .calc-promo .cp-btn2{margin:0 0 0 10px}
 @media (max-width:600px){.calc-promo .cp-btn,.calc-promo .cp-btn2{display:flex;text-align:center;justify-content:center;margin:10px 0 0;width:100%;box-sizing:border-box}}
