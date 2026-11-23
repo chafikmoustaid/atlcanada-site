@@ -1083,5 +1083,65 @@
     "caption_fr": "Professions et dispense, d'après IRCC (canada.ca) : vérifiez toujours la liste de la communauté."
    }
   ]
+ },
+ {
+  "id": "alberta-aaip-tirages-novembre-2026",
+  "date": "2026-11-23",
+  "tag_fr": "Provinces",
+  "title_fr": "Alberta : quatre tirages du programme des candidats de la province en novembre 2026",
+  "summary_fr": "Selon la page officielle du gouvernement de l'Alberta (mise à jour le 18 novembre 2026), l'Alberta a tenu quatre tirages en novembre 2026, soit 547 invitations au total. Le 2 novembre, le volet Rural Renewal a invité 173 personnes (score minimal 51) ; le 6 novembre, un autre tirage Rural Renewal en a invité 113 (score 51). Le 9 novembre, le volet Tourism and Hospitality en a invité 20 (score 72). Le 13 novembre, l'Alberta Opportunity Stream en a invité 241 (score 55). Ce sont des tirages passés : ils ne disent rien des prochains. Les scores ne se comparent pas avec ceux d'Entrée express ni d'autres provinces.",
+  "impact_fr": "Ce que cela signifie pour vous : l'Alberta invite des profils précis selon le volet. Une invitation exige d'être inscrit et admissible, et aucun résultat n'est garanti. Avant d'agir, vérifiez les critères de chaque volet sur le site officiel de l'Alberta, ou faites évaluer votre profil avec nous.",
+  "sources": [
+   {
+    "name": "Gouvernement de l'Alberta : AAIP, processing information",
+    "url": "https://www.alberta.ca/aaip-processing-information"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/alberta-aaip-invitations-novembre-2026.png",
+    "width": 1600,
+    "height": 900,
+    "alt_fr": "Graphique à barres des invitations de l'Alberta en novembre 2026 : Alberta Opportunity Stream 241, Rural Renewal 173 et 113, Tourism and Hospitality 20.",
+    "caption_fr": "Invitations par tirage selon la page officielle de l'Alberta. Ce sont des tirages passés."
+   },
+   {
+    "src": "/assets/actu/alberta-aaip-par-volet-novembre-2026.png",
+    "width": 1600,
+    "height": 900,
+    "alt_fr": "Trois cartes : Rural Renewal 286 invitations en deux tirages, Alberta Opportunity Stream 241, Tourism and Hospitality 20.",
+    "caption_fr": "Total par volet du 2 au 13 novembre 2026, soit 547 invitations en quatre tirages, selon le gouvernement de l'Alberta."
+   }
+  ]
+ },
+ {
+  "id": "bc-pnp-tirages-13-novembre-2026",
+  "date": "2026-11-23",
+  "tag_fr": "Provinces",
+  "title_fr": "Colombie-Britannique : nouveaux tirages du 13 novembre 2026 (petite enfance, construction, santé)",
+  "summary_fr": "Selon la page officielle WelcomeBC (mise à jour le 17 novembre 2026), la Colombie-Britannique a tenu quatre tirages par catégorie le 13 novembre pour « Skills Immigration » : Care petite enfance (153 invitations, score minimal 95), Build métiers de la construction (128, score 94), Care santé (103, score 72) et Care vétérinaire (moins de 5, score 100). Par rapport aux tirages du 8 octobre, le nombre d'invitations a augmenté pour la petite enfance (86 puis 153), la construction (115 puis 128) et la santé (82 puis 103). Pour l'immigration d'entrepreneur, le tirage du 17 novembre a invité 12 personnes (volet de base) et moins de 5 (volet régional), avec un score minimal de 117 aux deux volets. Ce sont des tirages passés : ils ne disent rien des prochains. Les scores ne se comparent pas avec ceux d'Entrée express ni d'autres provinces.",
+  "impact_fr": "Ce que cela signifie pour vous : la Colombie-Britannique invite des profils précis selon le volet (petite enfance, construction, santé, entrepreneurs). Une invitation exige d'être inscrit et admissible, et aucun résultat n'est garanti. Avant d'agir, vérifiez les critères de chaque volet sur le site officiel de WelcomeBC, ou faites évaluer votre profil avec nous.",
+  "sources": [
+   {
+    "name": "WelcomeBC : BC PNP, invitations to apply",
+    "url": "https://www.welcomebc.ca/immigrate-to-b-c/about-the-bc-provincial-nominee-program/invitations-to-apply"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/bc-pnp-invitations-13-novembre-2026.png",
+    "width": 1600,
+    "height": 900,
+    "alt_fr": "Graphique à barres des invitations de la Colombie-Britannique le 13 novembre 2026 : petite enfance 153, construction 128, santé 103.",
+    "caption_fr": "Invitations par volet selon la page officielle WelcomeBC. Care : vétérinaire (moins de 5) n'est pas représenté. Ce sont des tirages passés."
+   },
+   {
+    "src": "/assets/actu/bc-pnp-octobre-novembre-2026.png",
+    "width": 1600,
+    "height": 900,
+    "alt_fr": "Graphique à barres groupées comparant les tirages du 8 octobre et du 13 novembre 2026 : petite enfance 86 puis 153, construction 115 puis 128, santé 82 puis 103.",
+    "caption_fr": "Comparaison des invitations entre les tirages du 8 octobre et du 13 novembre, selon WelcomeBC. Les scores ne se comparent pas avec ceux d'autres programmes."
+   }
+  ]
  }
 ]
