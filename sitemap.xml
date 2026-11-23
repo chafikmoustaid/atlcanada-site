@@ -91,6 +91,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.atlcanada.com/ar/actualites/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.atlcanada.com/evaluer-mon-dossier/</loc>
     <lastmod>2026-11-23</lastmod>
     <priority>0.8</priority>

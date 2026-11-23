@@ -44,3 +44,4 @@ nav.primary a.nav-news:hover,nav.primary a.nav-news:focus-visible{background:#c9
 .news-more-wrap{text-align:center;margin:10px 0 34px}
 .news-more-btn{font:inherit;font-weight:700;color:#fff;background:#E1232B;border:0;border-radius:999px;padding:13px 30px;cursor:pointer;box-shadow:0 8px 20px rgba(225,35,43,.28)}
 .news-more-btn:hover{background:#B5342A}
+[dir=rtl] body{font-family:'Cairo',sans-serif}

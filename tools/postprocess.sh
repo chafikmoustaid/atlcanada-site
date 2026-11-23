@@ -11,3 +11,4 @@ python3 tools/site_extras.py
 python3 tools/calc_promo.py
 python3 tools/ccic_link.py
 python3 tools/eval_link.py
+python3 tools/ar_news_link.py

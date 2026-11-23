@@ -14,6 +14,19 @@ items = [it for _, it in sorted(enumerate(_raw), key=lambda t: (t[1]['date'], t[
 MOIS_FR = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.']
 MOIS_AR = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر']
 e = html.escape
+# Traductions arabes (fichier séparé : id -> tag, title, summary, impact, links). Seules les entrées traduites figurent sur /ar/actualites/.
+try:
+    _ar = json.load(open(R + 'data/actualites_ar.json', encoding='utf-8'))
+except FileNotFoundError:
+    _ar = {}
+items_ar = []
+for _it in items:
+    _t = _ar.get(_it['id'])
+    if _t:
+        _m = dict(_it); _m.update(tag_ar=_t['tag'], title_ar=_t['title'], summary_ar=_t['summary'], impact_ar=_t['impact'], links_ar=_t.get('links', []))
+        _m.pop('visuels', None)
+        items_ar.append(_m)
+OFFICIAL = ('canada.ca', 'gc.ca', 'alberta.ca', 'gov.bc.ca', 'welcomebc.ca', 'quebec.ca', 'college-ic.ca', 'atlcanada.com')
 
 def fdate(iso, lang):
     d = date.fromisoformat(iso)
@@ -37,7 +50,7 @@ def img_src(src):
         pass
     return src
 
-THEMES = {'fr': [('all', 'Tout'), ('express', 'Entrée express'), ('rp', 'Résidence permanente'),
+THEMES = {'ar': [('all','الكل'),('express','الدخول السريع'),('rp','الإقامة الدائمة'),('prov','المقاطعات وكيبيك'),('work','العمل والدراسة'),('autre','أخرى')], 'fr': [('all', 'Tout'), ('express', 'Entrée express'), ('rp', 'Résidence permanente'),
                  ('prov', 'Provinces et Québec'), ('work', 'Travail et études'), ('autre', 'Autres')]}
 TAG_THEME = {'Entrée express': 'express', 'Résidence permanente': 'rp', "Niveaux d'immigration": 'rp', 'Parrainage': 'rp',
              'Provinces': 'prov', 'Québec': 'prov', 'Travail': 'work', 'Permis de travail': 'work'}
@@ -90,9 +103,18 @@ T = {
    h1="L'actualité de l'immigration au Canada", lede="Les nouvelles qui comptent pour les candidats, expliquées simplement, avec leurs sources.",
    impact="Ce que cela signifie pour vous", src="Sources", home='Accueil', crumb='Actualités', cta='Prendre rendez-vous',
    note="Ces informations sont générales et ne constituent pas un avis juridique. Elles reposent sur les sources citées et peuvent changer : vérifiez toujours les règles en vigueur sur canada.ca. Pour une évaluation de votre situation, prenez rendez-vous.",
-   nav=[('/', 'Accueil'), ('/maroc/', 'Depuis le Maroc')],alt='',
+   nav=[('/', 'Accueil'), ('/maroc/', 'Depuis le Maroc')],alt='<a href="/ar/actualites/" lang="ar" hreflang="ar">العربية</a>',
    foot='Consultant réglementé en immigration canadienne (CRIC), permis R712906 du CCIC.'),
 }
+
+T['ar'] = dict(path='ar/actualites/', lang='ar-MA', loc='ar_MA', dir='rtl',
+   title="أخبار الهجرة إلى كندا | ATL Canada",
+   desc="مستجدات الهجرة إلى كندا مشروحة ببساطة: الدخول السريع، الإقامة الدائمة، برامج المقاطعات، تصاريح الدراسة والعمل. مع المصادر الرسمية.",
+   h1="أخبار الهجرة إلى كندا", lede="أهم المستجدات للمرشحين، مشروحة ببساطة مع مصادرها الرسمية. تُنشر بالعربية مختارات من أخبارنا الأخيرة.",
+   impact="ماذا يعني ذلك لك: ", src="المصادر", home='الرئيسية', crumb='الأخبار', cta='احجز موعدًا', fresh='تُحدَّث بانتظام',
+   note="هذه معلومات عامة وليست استشارة قانونية. تستند إلى المصادر المذكورة وقد تتغير: تحقق دائمًا من القواعد السارية في canada.ca. ولتقييم ملفك الشخصي، اتصل بنا. النسخة الفرنسية هي المرجع الأكمل.",
+   nav=[('/ar/', 'الرئيسية')], alt='<a href="/actualites/" lang="fr" hreflang="fr-CA">Français</a>',
+   foot='مستشار هجرة كندية مرخَّص (CRIC)، رخصة CCIC رقم R712906.')
 
 # liens vers la page de service concernée (ajoutés sous chaque actualité)
 LIENS = [
@@ -114,18 +136,24 @@ def liens_for(it):
         if any(k in hay for k in keys): return links
     return []
 
-def filters(lang):
+def filters(lang, L=None):
+    L = items if L is None else L
     th = THEMES.get(lang, THEMES['fr'])
-    counts = {k: sum(1 for i in items if k == 'all' or theme_of(i) == k) for k, _ in th}
+    counts = {k: sum(1 for i in L if k == 'all' or theme_of(i) == k) for k, _ in th}
     chips = ''.join(f'<button type="button" class="news-chip" data-theme="{k}" aria-pressed="{"true" if k == "all" else "false"}">{e(lbl)} <span>{counts[k]}</span></button>' for k, lbl in th if counts[k])
-    return f'<div class="news-filters" role="group" aria-label="Filtrer par thème" data-more="Afficher plus d\'actualités" hidden>{chips}</div>'
+    return f'<div class="news-filters" role="group" aria-label="{'تصفية حسب الموضوع' if lang == 'ar' else 'Filtrer par thème'}" data-more="Afficher plus d\'actualités" hidden>{chips}</div>'
 
 def article(it, p, lang):
-    srcs = ' · '.join(f'<a href="{e(s["url"])}" rel="noopener" target="_blank">{e(s["name"])}</a>' for s in it['sources'])
+    _s = it['sources']
+    if lang == 'ar':
+        _s = [x for x in _s if any(d in x['url'] for d in OFFICIAL)]
+    srcs = ' · '.join(f'<a href="{e(s["url"])}" rel="noopener" target="_blank">{e(s["name"])}</a>' for s in _s)
     go = ''
+    if lang == 'ar' and it.get('links_ar'):
+        go = '<p class="news-go">للمزيد : ' + ' · '.join(f'<a href="{u}">{e(l)}</a>' for u, l in it['links_ar']) + '</p>'
     if lang == 'fr' and liens_for(it):
         go = '<p class="news-go">Pour aller plus loin : ' + ' · '.join(f'<a href="{u}">{e(l)}</a>' for u, l in liens_for(it)) + '</p>'
-    figs = ''.join((f'<h3>{e(v["heading_"+lang])}</h3><p>{e(v["text_"+lang])}</p>' if v.get('heading_'+lang) else '') + f'<figure class="news-figure"><img src="{e(img_src(v["src"]))}" decoding="async" alt="{e(v["alt_"+lang])}" width="{v["width"]}" height="{v["height"]}" loading="lazy">'
+    figs = '' if lang == 'ar' else ''.join((f'<h3>{e(v["heading_"+lang])}</h3><p>{e(v["text_"+lang])}</p>' if v.get('heading_'+lang) else '') + f'<figure class="news-figure"><img src="{e(img_src(v["src"]))}" decoding="async" alt="{e(v["alt_"+lang])}" width="{v["width"]}" height="{v["height"]}" loading="lazy">'
                    f'<figcaption>{e(v["caption_"+lang])}</figcaption></figure>' for v in it.get('visuels', []))
     return (f'<article class="news-item" id="{it["id"]}" data-theme="{theme_of(it)}"><p class="news-meta"><span class="news-tag">{e(it["tag_"+lang])}</span>'
             f'<time datetime="{it["date"]}">{fdate(it["date"], lang)}</time></p>'
@@ -135,6 +163,7 @@ def article(it, p, lang):
             f'<p class="news-sources">{p["src"]} : {srcs}</p></article>')
 
 for lang, p in T.items():
+    L = items_ar if lang == 'ar' else items
     url = f'{SITE}/{p["path"]}'
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "@id": url + '#webpage', "url": url, "name": p['title'], "description": p['desc'], "inLanguage": p['lang'],
@@ -146,7 +175,7 @@ for lang, p in T.items():
             {"@type": "ListItem", "position": n + 1, "item": {"@type": "NewsArticle", "headline": it['title_'+lang], "datePublished": it['date'],
               "inLanguage": p['lang'], "url": f'{url}#{it["id"]}', "description": it['summary_'+lang],
               "author": {"@id": SITE + '/#organization'}, "publisher": {"@id": SITE + '/#organization'},
-              "citation": [s['url'] for s in it['sources']], "image": (SITE + it["visuels"][0]["src"]) if it.get("visuels") else OG}} for n, it in enumerate(items)]}]}
+              "citation": [s['url'] for s in it['sources']], "image": (SITE + it["visuels"][0]["src"]) if it.get("visuels") else OG}} for n, it in enumerate(L)]}]}
     nav = ''.join(f'<a href="{h}">{t}</a>' for h, t in p['nav'])
     fonts = 'https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap'
     page = f'''<!doctype html>
@@ -158,6 +187,7 @@ for lang, p in T.items():
 <meta name="description" content="{e(p['desc'])}">
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="fr-CA" href="{SITE}/actualites/">
+<link rel="alternate" hreflang="ar" href="{SITE}/ar/actualites/">
 <link rel="alternate" hreflang="x-default" href="{SITE}/actualites/">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <meta name="theme-color" content="#16233D">
@@ -191,14 +221,14 @@ for lang, p in T.items():
 <main>
 <section class="pg-hero"><div class="wrap">
   <p class="crumb"><a href="{'/ar/' if lang == 'ar' else '/'}">{p['home']}</a> › {p['crumb']}</p>
-  <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Mis à jour régulièrement</p>
+  <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span>{p.get("fresh", "Mis à jour régulièrement")}</p>
   <h1>{p['h1']}</h1>
   <p class="lede">{p['lede']}</p>
 </div></section>
 <section class="news-page"><div class="wrap">
-{filters(lang)}
+{filters(lang, L)}
 <div id="news-list">
-{chr(10).join(article(i, p, lang) for i in items)}
+{chr(10).join(article(i, p, lang) for i in L)}
 </div>
 <p class="news-more-wrap" hidden><button type="button" class="news-more-btn" id="news-more"></button></p>
 <p class="news-disclaimer">{p['note']}</p>
@@ -224,7 +254,7 @@ urls = [('/', '1.0', last), ('/maroc/', '0.9', '2026-10-09'), ('/ar/', '0.9', '2
         ('/ar/work-permit/', '0.8', '2026-11-05'), ('/ar/immigrate-to-quebec/', '0.8', '2026-11-05'),
         ('/residence-permanente-canada/', '0.8', '2026-11-05'),
         ('/entree-express-canada/', '0.8', '2026-11-05'),
-        ('/calculateur-entree-express/', '0.8', '2026-11-06'),
+        ('/calculateur-entree-express/', '0.8', '2026-11-06'), ('/ar/actualites/', '0.8', last),
         ('/evaluer-mon-dossier/', '0.8', '2026-11-23'), ('/ar/evaluate-my-case/', '0.8', '2026-11-23'),
         ('/dossiers-en-attente-ircc/', '0.7', '2026-11-18'),
         ('/candidats-provinces-canada/', '0.8', '2026-11-05'),
@@ -269,6 +299,9 @@ if '/actualites/' not in ll:
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 if '/evaluer-mon-dossier/' not in ll:
     ll = ll.replace('\n## Liens', f"- [Évaluer mon dossier]({SITE}/evaluer-mon-dossier/): questionnaire de 5 questions qui oriente vers la voie d'immigration à regarder en premier\n\n## Liens", 1)
+    open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
+if '/ar/actualites/' not in ll:
+    ll = ll.replace('\n## Liens', f"- [أخبار الهجرة إلى كندا (بالعربية)]({SITE}/ar/actualites/): مختارات من أحدث الأخبار مشروحة ببساطة\n\n## Liens", 1)
     open(R + 'llms.txt', 'w', encoding='utf-8').write(ll)
 print('ok', len(items), 'actualités')
 
