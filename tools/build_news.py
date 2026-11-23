@@ -21,13 +21,40 @@ def fdate(iso, lang):
         return f"{d.day} {MOIS_AR[d.month-1]} {d.year}"
     return f"{'1er' if d.day == 1 else d.day} {MOIS_FR[d.month-1]} {d.year}"
 
+# ---------- images allégées (WebP) et thèmes de filtre ----------
+def img_src(src):
+    """Retourne la version WebP d'une illustration PNG (créée si besoin), si elle est plus légère."""
+    if not src.lower().endswith('.png') or not src.startswith('/assets/'):
+        return src
+    png, webp = R + src.lstrip('/'), R + src.lstrip('/')[:-4] + '.webp'
+    try:
+        if not os.path.exists(webp) or os.path.getmtime(webp) < os.path.getmtime(png):
+            from PIL import Image
+            Image.open(png).convert('RGBA' if 'A' in Image.open(png).mode else 'RGB').save(webp, 'WEBP', quality=82, method=6)
+        if os.path.getsize(webp) < os.path.getsize(png):
+            return src[:-4] + '.webp'
+    except Exception:
+        pass
+    return src
+
+THEMES = {'fr': [('all', 'Tout'), ('express', 'Entrée express'), ('rp', 'Résidence permanente'),
+                 ('prov', 'Provinces et Québec'), ('work', 'Travail et études'), ('autre', 'Autres')]}
+TAG_THEME = {'Entrée express': 'express', 'Résidence permanente': 'rp', "Niveaux d'immigration": 'rp', 'Parrainage': 'rp',
+             'Provinces': 'prov', 'Québec': 'prov', 'Travail': 'work', 'Permis de travail': 'work'}
+def theme_of(it):
+    t = TAG_THEME.get(it['tag_fr'])
+    if t: return t
+    hay = (it['id'] + ' ' + it['title_fr']).lower()
+    if 'express' in hay: return 'express'
+    return 'autre'
+
 def card(it, lang):
     base = '/ar/actualites/' if lang == 'ar' else '/actualites/'
     more = 'اقرأ المزيد ←' if lang == 'ar' else 'Lire la suite →'
     th = ''
     if it.get('visuels'):
         v0 = it['visuels'][0]
-        th = f'<a href="{base}#{it["id"]}" tabindex="-1" aria-hidden="true"><img class="news-thumb" src="{e(v0["src"])}" alt="" width="{v0["width"]}" height="{v0["height"]}" loading="lazy"></a>'
+        th = f'<a href="{base}#{it["id"]}" tabindex="-1" aria-hidden="true"><img class="news-thumb" src="{e(img_src(v0["src"]))}" alt="" width="{v0["width"]}" height="{v0["height"]}" loading="lazy" decoding="async"></a>'
     return (f'<article class="news-card reveal">{th}<p class="news-meta"><span class="news-tag">{e(it["tag_"+lang])}</span>'
             f'<time datetime="{it["date"]}">{fdate(it["date"], lang)}</time></p>'
             f'<h3>{e(it["title_"+lang])}</h3><p>{e(it["summary_"+lang])}</p>'
@@ -87,14 +114,20 @@ def liens_for(it):
         if any(k in hay for k in keys): return links
     return []
 
+def filters(lang):
+    th = THEMES.get(lang, THEMES['fr'])
+    counts = {k: sum(1 for i in items if k == 'all' or theme_of(i) == k) for k, _ in th}
+    chips = ''.join(f'<button type="button" class="news-chip" data-theme="{k}" aria-pressed="{"true" if k == "all" else "false"}">{e(lbl)} <span>{counts[k]}</span></button>' for k, lbl in th if counts[k])
+    return f'<div class="news-filters" role="group" aria-label="Filtrer par thème" data-more="Afficher plus d\'actualités" hidden>{chips}</div>'
+
 def article(it, p, lang):
     srcs = ' · '.join(f'<a href="{e(s["url"])}" rel="noopener" target="_blank">{e(s["name"])}</a>' for s in it['sources'])
     go = ''
     if lang == 'fr' and liens_for(it):
         go = '<p class="news-go">Pour aller plus loin : ' + ' · '.join(f'<a href="{u}">{e(l)}</a>' for u, l in liens_for(it)) + '</p>'
-    figs = ''.join((f'<h3>{e(v["heading_"+lang])}</h3><p>{e(v["text_"+lang])}</p>' if v.get('heading_'+lang) else '') + f'<figure class="news-figure"><img src="{e(v["src"])}" alt="{e(v["alt_"+lang])}" width="{v["width"]}" height="{v["height"]}" loading="lazy">'
+    figs = ''.join((f'<h3>{e(v["heading_"+lang])}</h3><p>{e(v["text_"+lang])}</p>' if v.get('heading_'+lang) else '') + f'<figure class="news-figure"><img src="{e(img_src(v["src"]))}" decoding="async" alt="{e(v["alt_"+lang])}" width="{v["width"]}" height="{v["height"]}" loading="lazy">'
                    f'<figcaption>{e(v["caption_"+lang])}</figcaption></figure>' for v in it.get('visuels', []))
-    return (f'<article class="news-item" id="{it["id"]}"><p class="news-meta"><span class="news-tag">{e(it["tag_"+lang])}</span>'
+    return (f'<article class="news-item" id="{it["id"]}" data-theme="{theme_of(it)}"><p class="news-meta"><span class="news-tag">{e(it["tag_"+lang])}</span>'
             f'<time datetime="{it["date"]}">{fdate(it["date"], lang)}</time></p>'
             f'<h2>{e(it["title_"+lang])}</h2><p>{e(it["summary_"+lang])}</p>{figs}'
             f'<div class="news-impact"><strong>{p["impact"]}</strong>{e(it["impact_"+lang])}</div>'
@@ -163,11 +196,16 @@ for lang, p in T.items():
   <p class="lede">{p['lede']}</p>
 </div></section>
 <section class="news-page"><div class="wrap">
+{filters(lang)}
+<div id="news-list">
 {chr(10).join(article(i, p, lang) for i in items)}
+</div>
+<p class="news-more-wrap" hidden><button type="button" class="news-more-btn" id="news-more"></button></p>
 <p class="news-disclaimer">{p['note']}</p>
 </div></section>
 </main>
 <footer><div class="wrap"><div class="footer-bottom"><span>© 2026 ATL Canada</span><span>{p['foot']}</span></div></div></footer>
+<script src="/assets/news.js" defer></script>
 </body></html>'''
     os.makedirs(R + p['path'], exist_ok=True)
     open(R + p['path'] + 'index.html', 'w', encoding='utf-8').write(page)

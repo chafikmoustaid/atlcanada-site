@@ -33,3 +33,14 @@ nav.primary a.nav-news:hover,nav.primary a.nav-news:focus-visible{background:#c9
 .news-figure{margin:0 0 16px}
 .news-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:3px;background:#fff}
 .news-figure figcaption{font-size:.85rem;color:var(--ink-soft);margin-top:6px}
+
+/* Filtres et affichage progressif de la page Actualités */
+.news-filters{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px}
+.news-filters[hidden],.news-more-wrap[hidden],.news-item[hidden]{display:none}
+.news-chip{font:inherit;font-size:.95rem;font-weight:600;color:var(--ink,#16233D);background:#fff;border:1.5px solid var(--line,#E2DCCF);border-radius:999px;padding:8px 16px;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.news-chip span{font-weight:400;opacity:.65;margin-inline-start:4px}
+.news-chip:hover{border-color:#E1232B}
+.news-chip[aria-pressed="true"]{background:#16233D;border-color:#16233D;color:#fff}
+.news-more-wrap{text-align:center;margin:10px 0 34px}
+.news-more-btn{font:inherit;font-weight:700;color:#fff;background:#E1232B;border:0;border-radius:999px;padding:13px 30px;cursor:pointer;box-shadow:0 8px 20px rgba(225,35,43,.28)}
+.news-more-btn:hover{background:#B5342A}
