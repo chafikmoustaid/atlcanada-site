@@ -18,6 +18,9 @@ for f in files:
     # 0. statistiques Vercel Web Analytics (sans témoin, anonymes)
     if '/_vercel/insights/script.js' not in t and '</body>' in t:
         t = t.replace('</body>', '<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script>\n<script defer src="/_vercel/insights/script.js"></script>\n</body>', 1)
+    # 0 bis. Vercel Speed Insights (mesure de vitesse, sans témoin, anonyme)
+    if '/_vercel/speed-insights/script.js' not in t and '</body>' in t:
+        t = t.replace('</body>', '<script>window.si=window.si||function(){(window.siq=window.siq||[]).push(arguments)}</script>\n<script defer src="/_vercel/speed-insights/script.js"></script>\n</body>', 1)
     # 1. lien Confidentialité
     if '/confidentialite/' not in t and rel != 'confidentialite/index.html':
         lab = 'سياسة الخصوصية' if ar else 'Confidentialité'
