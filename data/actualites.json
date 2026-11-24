@@ -1143,6 +1143,15 @@
     "name": "Immigration News Canada : new Express Entry draw, 23 novembre 2026",
     "url": "https://immigrationnewscanada.ca/new-express-entry-draw-november-2026/"
    }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/entree-express-pause-reprise-23-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Schéma chronologique : annonce de la réforme du CRS par IRCC le 16 octobre 2026, entrée en vigueur le 3 novembre avec recalcul des scores et pause des invitations, puis reprise des tirages le 23 novembre avec 1 999 invitations aux candidats des provinces et un score CRS minimal de 673 (chiffres de presse).",
+    "caption_fr": "De la pause à la reprise : calendrier des nouvelles règles du CRS et du tirage du 23 novembre 2026. Les chiffres du tirage viennent de la presse, à recouper avec canada.ca ; aucune invitation n'est garantie."
+   }
   ]
  }
 ]
