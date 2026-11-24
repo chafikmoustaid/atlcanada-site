@@ -5,14 +5,16 @@ R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..') + '/'
 SITE = 'https://www.atlcanada.com'
 EN_OF = {'': 'en/', 'ar/': 'en/', 'honoraires/': 'en/fees/', 'ar/fees/': 'en/fees/', 'frais-officiels-immigration-canada/': 'en/official-fees/', 'ar/official-fees/': 'en/official-fees/',
  'budget-immigration-canada/': 'en/budget-calculator/', 'ar/budget-calculator/': 'en/budget-calculator/', 'rendez-vous/': 'en/book-consultation/', 'ar/book-consultation/': 'en/book-consultation/',
- 'deroulement-dossier-immigration/': 'en/case-process/', 'ar/case-process/': 'en/case-process/', 'a-propos/': 'en/about/', 'ar/about/': 'en/about/'}
+ 'deroulement-dossier-immigration/': 'en/case-process/', 'ar/case-process/': 'en/case-process/', 'a-propos/': 'en/about/', 'permis-etudes-canada-maroc/': 'en/study-permit/', 'ar/study-permit-morocco/': 'en/study-permit/', 'permis-de-travail-canada/': 'en/work-permit/', 'ar/work-permit/': 'en/work-permit/', 'entree-express-canada/': 'en/express-entry/', 'ar/express-entry/': 'en/express-entry/', 'ar/about/': 'en/about/'}
 n = 0
 for f in glob.glob(R + '**/index.html', recursive=True):
     rel = os.path.relpath(f, R)[:-len('index.html')]
     if rel.startswith('en/'): continue
     t = s = open(f, encoding='utf-8').read()
     en = EN_OF.get(rel)
-    if en and 'hreflang="en"' not in t and '<link rel="alternate" hreflang="x-default"' in t:
+    if en and en != 'en/' and 'href="/en/" hreflang="en" lang="en"' in t:
+        t = t.replace('href="/en/" hreflang="en" lang="en"', 'href="/%s" hreflang="en" lang="en"' % en)
+    if en and '<link rel="alternate" hreflang="en"' not in t and '<link rel="alternate" hreflang="x-default"' in t:
         t = t.replace('<link rel="alternate" hreflang="x-default"', '<link rel="alternate" hreflang="en" href="%s/%s">\n<link rel="alternate" hreflang="x-default"' % (SITE, en), 1)
     if 'hreflang="en" lang="en"' not in t and '<span class="lang"' in t:
         link = '<a style="color:#fff;margin:0 10px" href="/%s" lang="en" hreflang="en" hreflang="en"><span class="l-full">English</span><span class="l-short">EN</span></a>' % (en or 'en/')

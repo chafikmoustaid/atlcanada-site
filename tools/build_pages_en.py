@@ -22,7 +22,7 @@ topbar = re.sub(r'<div class="nav-actions">.*?</div>\n  </div>',
     '<div class="nav-actions"><span class="lang" style="color:#fff"><a style="color:#fff;margin:0 10px" href="/" lang="fr" hreflang="fr"><span class="l-full">Français</span><span class="l-short">FR</span></a><a style="color:#fff;margin:0 10px" href="/ar/" lang="ar" hreflang="ar"><span class="l-full">العربية</span><span class="l-short">AR</span></a></span><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a></div>\n  </div>', topbar, count=1, flags=re.S)
 footer = ref[ref.index('</main>'):]
 footer = re.sub(r'<footer>.*?</footer>',
-    '<footer><div class="wrap"><p style="margin:0 0 12px;font-size:.9rem"><a href="/en/">Home</a> · <a href="/en/fees/">Fees</a> · <a href="/en/official-fees/">Official fees</a> · <a href="/en/budget-calculator/">Budget calculator</a> · <a href="/en/book-consultation/">Book a consultation</a> · <a href="/en/case-process/">How a case works</a> · <a href="/en/about/">About</a> · <a href="/">Français</a> · <a href="/ar/" lang="ar">العربية</a></p><div class="footer-bottom"><a href="/confidentialite/" style="color:inherit">Privacy (French)</a> <span>© 2026 ATL Canada</span><span>Regulated Canadian immigration consultant (RCIC), licence <a class="ccic-link" href="https://registre.college-ic.ca/Public-Register-FR/Licensee/Profile.aspx?ID=10629" target="_blank" rel="noopener">R712906</a> with the CICC.</span></div></div></footer>',
+    '<footer><div class="wrap"><p style="margin:0 0 12px;font-size:.9rem"><a href="/en/">Home</a> · <a href="/en/fees/">Fees</a> · <a href="/en/official-fees/">Official fees</a> · <a href="/en/study-permit/">Study permit</a> · <a href="/en/work-permit/">Work permit</a> · <a href="/en/express-entry/">Express Entry</a> · <a href="/en/budget-calculator/">Budget calculator</a> · <a href="/en/book-consultation/">Book a consultation</a> · <a href="/en/case-process/">How a case works</a> · <a href="/en/about/">About</a> · <a href="/">Français</a> · <a href="/ar/" lang="ar">العربية</a></p><div class="footer-bottom"><a href="/confidentialite/" style="color:inherit">Privacy (French)</a> <span>© 2026 ATL Canada</span><span>Regulated Canadian immigration consultant (RCIC), licence <a class="ccic-link" href="https://registre.college-ic.ca/Public-Register-FR/Licensee/Profile.aspx?ID=10629" target="_blank" rel="noopener">R712906</a> with the CICC.</span></div></div></footer>',
     footer, count=1, flags=re.S)
 footer = footer.replace('aria-label="Appeler" title="Appeler"', 'aria-label="Call" title="Call"')
 footer = re.sub(r'wa\.me/15142956635\?text=[^"]*', 'wa.me/15142956635?text=' + WA, footer)
@@ -45,6 +45,16 @@ def tbl(rows, head):
 def faq_html(items):
     return ''.join(f'<details class="faq-item"{" open" if i == 0 else ""}><summary>{e(q)}</summary><p>{a}</p></details>' for i, (q, a) in enumerate(items))
 def strip(s): return re.sub(r'<[^>]+>', '', html.unescape(s))
+
+
+def rich(headers, rows):
+    if len(headers) == 3:
+        out = ''
+        for k in (1, 2):
+            rws = ''.join('<div class="cmp-row"><b>%s</b><span>%s</span></div>' % (r[0], r[k]) for r in rows)
+            out += '<div class="cmp-card%s"><h3>%s</h3>%s</div>' % (' b' if k == 2 else '', e(headers[k]), rws)
+        return '<div class="cmp">%s</div>' % out
+    return '<div class="info-grid">' + ''.join('<div class="info"><h3>%s</h3><p>%s</p></div>' % (r[0], r[1]) for r in rows) + '</div>'
 
 HON = [("Initial consultation (30 min), deducted from the price if you hire us", "100"), ("Study permit", "900"), ("Work permit: extension or post-graduation work permit", "650"),
  ("LMIA-exempt work permit", "1,100"), ("Visitor visa", "450"), ("Super visa (per applicant)", "800"), ("Express Entry: profile and permanent residence application", "2,150"),
@@ -73,7 +83,7 @@ P(path='en/', fr='/', ar='ar/', title="Immigration consultant in Montréal and C
 <p style="margin-top:20px"><a class="btn btn-solid" href="/en/fees/">See all fees</a> <a class="btn" href="/en/official-fees/">Official fees</a> <a class="btn" href="/en/budget-calculator/">Estimate my budget</a></p></div></section>
 <section class="sp"><div class="wrap"><h2>What we help with</h2>
 <div class="prose"><ul><li>Study permits: applications, extensions and changes of school.</li><li>Work permits: extensions, post-graduation and employer-supported permits.</li><li>Permanent residence: Express Entry, provincial nominee programs and Quebec.</li><li>Family sponsorship of a spouse, partner, parents or grandparents.</li><li>Visitor visas, super visas and Canadian citizenship.</li></ul>
-<p>Detailed service pages are currently available in <a href="/">French</a> and <a href="/ar/" lang="ar">Arabic</a>. The tools and prices on this page are in English.</p>
+<p>Read more: <a href="/en/study-permit/">study permit</a>, <a href="/en/work-permit/">work permit</a> and <a href="/en/express-entry/">Express Entry</a>. Other service pages are currently available in <a href="/">French</a> and <a href="/ar/" lang="ar">Arabic</a>.</p>
 <p><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/en/case-process/">How a case works</a> <a class="btn" href="/en/about/">About us</a></p></div></div></section>''',
   faq=[("Who is behind ATL Canada?", "ATL Canada is led by a regulated Canadian immigration consultant (RCIC), licence R712906 with the College of Immigration and Citizenship Consultants. The licence can be checked in the College's public register."),
        ("Can I get a consultation in English?", "Yes. Consultations are offered in English, French and Arabic."),
@@ -185,6 +195,138 @@ P(path='en/about/', fr='a-propos/', ar='ar/about/', title="About ATL Canada: a r
   faq=[("Is ATL Canada a regulated firm?", "Yes. It is led by a regulated Canadian immigration consultant (RCIC R712906), whose licence can be checked in the College's public register."),
        ("Where are your offices?", "In Montréal (8405 Viau, Québec H1R 2T6) and Casablanca (325 Emile Zola). Consultations are also held by phone, WhatsApp or Teams."),
        ("Do you serve only candidates from Morocco?", "No. We also support people from other countries and people already in Canada.")])
+
+LAWNOTE = '<p class="note">The decision belongs solely to IRCC: we cannot guarantee a result or promise a timeline.</p>'
+
+P(path='en/study-permit/', fr='permis-etudes-canada-maroc/', ar='ar/study-permit-morocco/', title="Study permit in Canada: application, extension, change of school | ATL Canada",
+  desc="Study permit for Canada, from abroad (including Morocco) or from inside Canada: attestation letter, proof of funds, extension, change of institution. A regulated consultant supports you.",
+  crumb="Study permit", eyebrow="Study · Montréal · Casablanca", h1="Study permit in Canada: application, extension, change",
+  lede="Whether you are applying from abroad or already studying in Canada: the steps, the documents to prepare, what to know to extend your permit or change schools, and the points where a case is won or lost.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>The steps, from admission to departure</h2>
+<ol class="steps">
+<li><span>Choose a program at a designated learning institution: a study permit is only issued to study at one.</span></li>
+<li><span>Get your letter of acceptance and, when required, the provincial or territorial attestation letter (PAL/TAL).</span></li>
+<li><span>Gather proof of funds: first-year tuition, living costs and transportation costs.</span></li>
+<li><span>File the application online with IRCC, then give your biometrics (from Morocco: at a VFS Global centre).</span></li>
+<li><span>Respond to IRCC's requests until a decision is made, then prepare your arrival.</span></li>
+</ol></div></section>
+<section class="sp"><div class="wrap"><h2>Points to prepare carefully</h2>
+{rich(['Item', 'What to know'], [
+ ['Attestation letter (PAL/TAL)', "Required for most new applications, with exceptions set by IRCC. For 2026, one exception covers master's and doctoral students at a designated public institution."],
+ ['Proof of funds', "You must prove your first-year tuition, living costs and transportation costs. For applications filed from September 1, 2026, IRCC requires at least $23,448 CAD in living costs for a single person, excluding tuition and transportation (outside Quebec: Quebec sets its own requirements with the CAQ). IRCC reviews this amount regularly: we confirm it with you at the consultation."],
+ ['Biometrics', "Fingerprints and a photo are given by appointment; from Morocco, at a VFS Global centre. For a temporary resident, they stay valid for 10 years."],
+ ['Letter of acceptance', "It must come from a designated learning institution and match the program named in your application."],
+])}
+<p class="note" style="margin-top:18px">To study in Quebec, a provincial step is added (the CAQ): we go through it with you at the consultation if your plan goes that way.</p>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Already in Canada?</h2>
+{rich(['Situation', 'What IRCC says'], [
+ ["Extending your study permit", "To stay at the same institution, file the application at least 30 days before the permit expires. If you stay in Canada, you can keep studying under the same conditions until a decision is made. The permit cannot be extended beyond your passport's expiry date."],
+ ["Changing institution", "Apply for the extension before finishing your current program. In general, you cannot start at the new school before the extended permit is approved, with some exceptions."],
+ ["Studies longer than planned", "File the application at least 30 days before the permit's original expiry date."],
+ ["Studies finished early", "The permit expires on the earlier of two dates: the date on the permit, or 90 days after the end of your studies (from the school's first notice or the issue of your degree)."],
+ ["The school loses its designated status", "You can keep studying until the permit expires or move to another designated institution. To extend, you must be enrolled at a designated institution."],
+])}
+<p class="note" style="margin-top:18px">Is your study permit expired, or are you unsure? Talk to us before acting: the rules depend on your situation.</p>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>After your studies</h2><div class="prose">
+<p>Depending on the program and the institution, a post-graduation work permit may be possible. That Canadian work experience can then count toward a permanent residence application, for example through Express Entry.</p>
+<p>See also <a href="/en/express-entry/" style="text-decoration:underline">our Express Entry page</a> and <a href="/en/work-permit/" style="text-decoration:underline">work permits</a>.</p></div></div></section>''',
+  faq=[("Do I need a study permit?", "Generally yes (this is the case for Moroccan citizens) when the program lasts more than six months. For a shorter course the rules differ: we check your case with you."),
+       ("Which documents do I need to provide?", "The exact list is set by IRCC according to your situation. It usually includes the passport, the letter of acceptance, proof of funds and, when required, the PAL/TAL. We validate it with you before filing."),
+       ("How long does processing take?", "Timelines change regularly: IRCC publishes them on its website and we promise no timeline. We tell you the current situation at your appointment."),
+       ("When should I apply to extend my study permit?", "At least 30 days before it expires, according to IRCC. If you stay in Canada, you can keep studying under the same conditions until a decision is made."),
+       ("Do I have to use a consultant?", "No, you can file your application yourself. A regulated consultant helps you choose the right strategy, prepare a complete file and avoid omissions."),
+       ("Do you guarantee that I will get the permit?", "No. No serious consultant can guarantee a decision: it belongs solely to the Canadian authorities.")])
+
+P(path='en/work-permit/', fr='permis-de-travail-canada/', ar='ar/work-permit/', title="Work permit in Canada: application, extension, change of employer | ATL Canada",
+  desc="Work permit for Canada, from abroad or from inside Canada: employer-specific or open permit, LMIA, extension, maintained status, post-graduation work permit. A regulated consultant supports you.",
+  crumb="Work permit", eyebrow="Work · Montréal · Casablanca", h1="Work permit in Canada: application, extension, change",
+  lede="Whether you are abroad or already in Canada, of any nationality: working in Canada almost always requires a permit. Here are the two main types of permit, the employer's role, and what to know to extend or change your permit.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Two main types of permit</h2>
+{rich(['', 'Employer-specific permit', 'Open permit'], [
+ ["Principle", "It lets you work only under its conditions: the employer, location and occupation are written on the permit, until its expiry date.", "It lets you work for most compliant employers in Canada, without being tied to a single one."],
+ ["Job offer", "An offer from an employer that is not on the list of non-compliant employers is needed.", "No job offer is needed."],
+ ["Who it is for", "This is the most common type.", "Only in specific situations set out by IRCC."],
+])}
+<p class="note" style="margin-top:18px">Some people do not need a work permit: IRCC offers an online questionnaire to check.</p>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Already in Canada?</h2>
+{rich(['Situation', 'What IRCC says'], [
+ ["Extending your permit", "The application must be filed before the permit expires: an online application must be sent before midnight (universal time) on the expiry date. You cannot extend beyond your passport's expiry date."],
+ ["Maintained status", "If you applied in time, you can stay in Canada while the application is processed. With an employer-specific permit, you can keep working only for the same employer, in the same position and at the same location. With an open permit, you can change employers."],
+ ["While processing", "You cannot renew some provincial documents, such as a driver's licence or health insurance card: renew them before the permit expires. An online application generally gives you a letter (WP-EXT) that shows your employer you can keep working."],
+ ["Changing the permit's conditions", "A change of employer, position or location for an employer-specific permit goes through an application to change conditions. Talk to us before changing anything."],
+ ["Post-graduation work permit", "To be filed within 180 days of confirmation that your studies are complete. You must have completed a program of at least 8 months (900 hours in Quebec) at an eligible institution, have studied full time and, for applications filed since November 1, 2024, meet the language requirements (CLB 7 for university, CLB 5 for college) and, for some programs, the field-of-study requirements."],
+ ["Permit already expired", "If your permit expires during processing or has already expired, check with us whether you can keep working: the rules depend on your situation."],
+])}
+<p class="note" style="margin-top:18px">Fees and rules change: IRCC keeps the list up to date, and we check it with you before filing.</p>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>The employer-specific permit, step by step</h2>
+<ol class="steps">
+<li><span>Get a job offer from an employer that is not on the list of non-compliant employers.</span></li>
+<li><span>Your employer confirms whether the position requires a Labour Market Impact Assessment (LMIA) or is exempt. "Most jobs require an LMIA," says IRCC.</span></li>
+<li><span>If an LMIA is required, the employer applies for it and gives you the LMIA letter and Appendix A before your application.</span></li>
+<li><span>You file your permit application: from outside Canada, from inside, at a port of entry, or for an extension, depending on your situation.</span></li>
+<li><span>Once the permit is issued, you follow its conditions (employer, location, occupation, expiry date).</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>Without a permit, you cannot legally work in Canada, or state in an application that you are authorized to. IRCC also offers specific routes, such as International Experience Canada (Young Professionals), the Global Skills Strategy and agricultural work.</p>
+<p>A work permit can also be a step toward permanent residence: see our <a href="/en/express-entry/" style="text-decoration:underline">Express Entry page</a>.</p></div>
+</div></section>
+<section class="sp"><div class="wrap"><h2>How we support you</h2><div class="prose">
+<p>At the consultation, whether you are abroad or already in Canada, we work out with you which type of permit fits your situation (new application, extension, change of conditions, post-graduation permit), we check the documents your employer must give you and we prepare your application before filing. If you do not yet have an offer, we look at the realistic options together.</p>
+{LAWNOTE}</div></div></section>''',
+  faq=[("Do I need a work permit?", "In most cases, yes. Some people are exempt: IRCC offers an online questionnaire to check, and we do it with you."),
+       ("What is an LMIA?", "The Labour Market Impact Assessment shows that there is a need to hire a foreign worker. Your employer must confirm whether your position requires one or is exempt."),
+       ("Can I change employer with an employer-specific permit?", "This permit is tied to the employer, location and occupation shown. Before any change, talk to us to learn the steps to follow."),
+       ("What happens if I work without a permit?", "You cannot legally work in Canada without the required permit. You also must not state in an application that you are authorized to if you are not."),
+       ("What if my permit expires while my extension is processed?", "If you filed before the expiry, you have maintained status and can stay in Canada. With an employer-specific permit, you can keep working only for the same employer, in the same position and at the same location."),
+       ("When should I apply for the post-graduation work permit?", "Within 180 days of confirmation that your program is complete, according to IRCC. Your study permit must have been valid at some point during those 180 days."),
+       ("Do you guarantee that I will get the work permit?", "No. No serious consultant can guarantee a decision: it belongs solely to the Canadian authorities.")])
+
+P(path='en/express-entry/', fr='entree-express-canada/', ar='ar/express-entry/', title="Express Entry Canada: programs, points and 2026 changes | ATL Canada",
+  desc="Express Entry: the three programs, the requirements, the points ranking (CRS) and the official changes of November 3, 2026. A regulated consultant supports you.",
+  crumb="Express Entry", eyebrow="Express Entry · Montréal · Casablanca", h1="Express Entry: programs, points and 2026 changes",
+  lede="Express Entry manages permanent residence applications for three federal programs. Here are the basic requirements, how the ranking works and what has changed since November 3, 2026.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>How it works</h2>
+<ol class="steps">
+<li><span>You create an online profile and enter the pool of candidates.</span></li>
+<li><span>You receive a score under the Comprehensive Ranking System (CRS), calculated from points.</span></li>
+<li><span>IRCC invites the top-ranked candidates to apply for permanent residence, in draws.</span></li>
+<li><span>If you are invited, you complete the application, upload your documents and pay the fees, then IRCC makes its decision.</span></li>
+</ol>
+</div></section>
+<section class="sp"><div class="wrap"><h2>The three programs</h2>
+{rich(['Program', 'What IRCC says'], [
+ ['Federal Skilled Worker', "At least 1 year (or 1,560 hours) of skilled work (TEER 0, 1, 2 or 3) in the same occupation within the last 10 years; approved language test results (CLB 7 minimum for the first official language); completed Canadian education or a foreign credential with an assessment (ECA); 67 points out of 100 on the selection factors; sufficient funds, unless exempt."],
+ ['Federal Skilled Trades', "At least 2 years of full-time work (or 3,120 hours) in a skilled trade within the last 5 years; a full-time job offer of at least 1 year or a Canadian certificate of qualification in the trade; approved language test."],
+ ["Canadian Experience Class", "At least 1 year (or 1,560 hours) of skilled work (TEER 0, 1, 2 or 3) in Canada within the last 3 years, with a temporary status that allowed you to work; approved language test. No education requirement."],
+])}
+<p class="note" style="margin-top:18px">In all cases, you must be admissible to Canada and plan to live outside Quebec (Quebec has its own selection).</p>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>What has changed since November 3, 2026</h2><div class="prose">
+<p>According to IRCC (announcement of October 16, 2026), the system now gives additional points for eligible Canadian work experience or an eligible job offer in a high-wage occupation (an occupation whose median wage is at least 1.3 times that of all Canadian workers). An LMIA is no longer needed for a job offer to give these points or to meet the job offer requirements of the Federal Skilled Worker and Federal Skilled Trades programs.</p>
+<p>Scores of candidates already in the pool are recalculated automatically. IRCC states that the recalculation can take up to two weeks and that draws are paused during that time. To receive the job offer points, the profile had to be updated before November 3.</p>
+</div>
+<div style="margin-top:22px"></div>
+{rich(['IRCC scale', 'Points'], [
+ ["Eligible job offer", "100 points if the occupation's median wage is at least 2 times the average median wage; 70 points between 1.5 and 2 times; 50 points between 1.3 and 1.5 times; 0 points for an occupation that is not high-wage."],
+ ["Canadian experience in a high-wage occupation", "In addition to the points for length of work, at least 12 months (1,560 hours) of eligible experience gives 70 points (at least 2 times), 40 points (at least 1.5 times) or 20 points (at least 1.3 times)."],
+ ["LMIA", "No longer needed and no longer gives extra points or priority."],
+])}
+<div class="prose" style="margin-top:18px"><p class="note">These rules evolve: the state described is that of November 5, 2026. Check your current situation with us.</p></div>
+</div></section>
+<section class="sp"><div class="wrap"><h2>How we support you</h2><div class="prose">
+<p>At the consultation, we check which programs you qualify for, estimate your ranking, identify the easy points to improve (languages, credential assessment, job offer) and prepare your profile and documents. See also our <a href="/en/work-permit/" style="text-decoration:underline">work permit page</a>.</p>
+{LAWNOTE}</div></div></section>''',
+  faq=[("Which programs does Express Entry manage?", "The Federal Skilled Worker Program, the Federal Skilled Trades Program and the Canadian Experience Class. Part of the Provincial Nominee Program is also linked to it."),
+       ("Do I need to have worked in Canada?", "Not for the Federal Skilled Worker Program, which can count experience gained abroad. It is however required for the Canadian Experience Class."),
+       ("Is an LMIA always needed for a job offer?", "According to IRCC, since November 3, 2026, an LMIA is no longer needed for a job offer to give the new points or meet the job offer requirements of the Federal Skilled Worker and Federal Skilled Trades programs."),
+       ("What does “high-wage occupation” mean?", "According to IRCC, it is an occupation whose median wage is at least 1.3 times that of all Canadian workers. IRCC publishes and updates the list."),
+       ("Do you guarantee an invitation?", "No. IRCC invites the top-ranked candidates in draws: nobody can guarantee an invitation or a result.")])
 
 def head_for(p):
     url = SITE + '/' + p['path']

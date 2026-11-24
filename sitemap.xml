@@ -216,6 +216,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.atlcanada.com/en/study-permit/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.atlcanada.com/en/work-permit/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.atlcanada.com/en/express-entry/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.atlcanada.com/a-propos/</loc>
     <lastmod>2026-11-24</lastmod>
     <priority>0.7</priority>
