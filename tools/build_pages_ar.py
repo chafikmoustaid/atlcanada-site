@@ -805,6 +805,58 @@ PAGES.append(dict(
 ))
 
 
+PAGES.append(dict(
+    path='ar/fees/', fr='honoraires/', updated='24 نوفمبر 2026', updated_iso='2026-11-24',
+    neutral=True,
+    title="أتعاب الاستشارة في الهجرة إلى كندا | ATL Canada",
+    desc="أتعابنا الابتدائية لتصاريح الدراسة والعمل والدخول السريع والكفالة والجنسية وغيرها. السعر النهائي بعد الاستشارة، وعقد مكتوب قبل أي دفع.",
+    crumb="الأتعاب",
+    eyebrow="شفافية · مونتريال · الدار البيضاء",
+    h1="أتعابنا",
+    lede="أسعار ابتدائية واضحة، وسعر نهائي بعد الاستشارة بحسب تعقيد ملفك، وعقد مكتوب قبل أن تدفع أي مبلغ.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>الأتعاب ابتداءً من</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>الخدمة</th><th>ابتداءً من</th></tr></thead><tbody><tr><td>استشارة أولية (30 دقيقة)، تُخصم من السعر إن اعتمدتم خدماتنا</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>تصريح الدراسة</td><td class="num"><bdi dir="ltr">900 $</bdi></td></tr><tr><td>تصريح العمل: التمديد أو تصريح ما بعد التخرج</td><td class="num"><bdi dir="ltr">650 $</bdi></td></tr><tr><td>تصريح عمل معفى من دراسة تأثير سوق العمل (LMIA)</td><td class="num"><bdi dir="ltr">1 100 $</bdi></td></tr><tr><td>تأشيرة الزيارة</td><td class="num"><bdi dir="ltr">450 $</bdi></td></tr><tr><td>السوبر فيزا (لكل مقدِّم طلب)</td><td class="num"><bdi dir="ltr">800 $</bdi></td></tr><tr><td>الدخول السريع: الملف وطلب الإقامة الدائمة</td><td class="num"><bdi dir="ltr">2 500 $</bdi></td></tr><tr><td>برامج المقاطعات خارج الدخول السريع</td><td class="num"><bdi dir="ltr">3 000 $</bdi></td></tr><tr><td>كفالة الزوج أو الزوجة</td><td class="num"><bdi dir="ltr">3 200 $</bdi></td></tr><tr><td>كفالة الوالدين أو الأجداد</td><td class="num"><bdi dir="ltr">2 500 $</bdi></td></tr><tr><td>الجنسية الكندية</td><td class="num"><bdi dir="ltr">900 $</bdi></td></tr><tr><td>تجديد بطاقة الإقامة الدائمة</td><td class="num"><bdi dir="ltr">600 $</bdi></td></tr><tr><td>فرد إضافي من العائلة في طلب الإقامة الدائمة</td><td class="num"><bdi dir="ltr">400 $</bdi></td></tr></tbody></table></div>
+<p class="note">المبالغ بالدولار الكندي، والضرائب المطبّقة تُضاف إليها. تشمل الأتعاب إعداد طلبك ومتابعته، ولا تشمل الرسوم الحكومية ولا رسوم البيانات البيومترية واختبارات اللغة وتقييم الشهادات والفحوص الطبية والترجمة.</p></div></section>
+<section class="sp alt"><div class="wrap"><h2>كيف يُحدَّد السعر النهائي</h2><div class="prose">
+<p>السعر «ابتداءً من» يخص ملفًا بسيطًا. بعد الاستشارة نسلّمك عرض سعر دقيقًا: الملف المعقّد (رفض سابق، وضع خاص، وثائق كثيرة) قد يكلّف أكثر، ونخبرك بذلك قبل أن نبدأ. وتُكتب الخدمات المتفق عليها والأتعاب في عقد خدمات توقّعه قبل أي دفع.</p>
+<p>أما <a href="/ar/official-fees/">الرسوم الحكومية الرسمية</a> فتُدفع مباشرة إلى السلطات ولا تدخل في أتعابنا.</p>
+<p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/case-process/">سير الملف</a></p>
+<p class="note">لا نتيجة مضمونة: القرار يعود حصريًا إلى IRCC وسلطات كيبيك.</p></div></div></section>''',
+    faq=[
+        ("لماذا «ابتداءً من»؟", "لكل ملف خصوصيته. السعر الابتدائي يخص ملفًا بسيطًا، ويُحدَّد السعر النهائي بعد الاستشارة ويُكتب في عقد الخدمات."),
+        ("هل الرسوم الحكومية مشمولة؟", "لا. تُدفع مباشرة إلى IRCC أو سلطات كيبيك. اطّلع على صفحة الرسوم الرسمية."),
+        ("ماذا لو رُفض طلبي؟", "الأتعاب مقابل عملنا لا مقابل النتيجة التي لا يضمنها أحد. وتفاصيل الشروط مكتوبة في عقد الخدمات."),
+        ("هل يمكنني الدفع على دفعات؟", "طريقة الدفع مكتوبة في عقد الخدمات. تحدّث معنا في الاستشارة."),
+    ],
+    sources=[],
+    related=[('/ar/book-consultation/', 'احجز موعدًا'), ('/ar/official-fees/', 'الرسوم الرسمية')],
+))
+
+
+PAGES.append(dict(
+    path='ar/official-fees/', fr='frais-officiels-immigration-canada/', updated='24 نوفمبر 2026', updated_iso='2026-11-24',
+    neutral=True,
+    title="الرسوم الرسمية للهجرة إلى كندا (IRCC) السارية | ATL Canada",
+    desc="قائمة رسوم الحكومة الكندية السارية: تأشيرة الزيارة، تصاريح الدراسة والعمل، الإقامة الدائمة، الكفالة، الجنسية، البيانات البيومترية. محدّثة في 24 نوفمبر 2026.",
+    crumb="الرسوم الرسمية",
+    eyebrow="رسوم الحكومة · محدّثة في 24 نوفمبر 2026",
+    h1="الرسوم الرسمية للهجرة إلى كندا",
+    lede="رسوم الحكومة الكندية (IRCC) لأكثر الطلبات شيوعًا، بالدولار الكندي، كما كانت معروضة في 24 نوفمبر 2026.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h3>الزوار</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>الطلب</th><th>الرسوم</th></tr></thead><tbody><tr><td>تأشيرة الزيارة، للشخص</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>تأشيرة الزيارة، الحد الأقصى للعائلة (5 أشخاص فأكثر)</td><td class="num"><bdi dir="ltr">500 $</bdi></td></tr><tr><td>تمديد الإقامة كزائر</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>تصريح الإقامة المؤقتة</td><td class="num"><bdi dir="ltr">246,25 $</bdi></td></tr><tr><td>إذن السفر الإلكتروني (eTA)</td><td class="num"><bdi dir="ltr">7 $</bdi></td></tr></tbody></table></div><h3>الدراسة والعمل</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>الطلب</th><th>الرسوم</th></tr></thead><tbody><tr><td>تصريح الدراسة (التمديد مشمول)</td><td class="num"><bdi dir="ltr">150 $</bdi></td></tr><tr><td>تصريح العمل (التمديد مشمول)</td><td class="num"><bdi dir="ltr">155 $</bdi></td></tr><tr><td>حامل تصريح عمل مفتوح</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>رسوم امتثال صاحب العمل</td><td class="num"><bdi dir="ltr">230 $</bdi></td></tr><tr><td>برنامج التجربة الدولية كندا</td><td class="num"><bdi dir="ltr">184,75 $</bdi></td></tr><tr><td>البيانات البيومترية، للشخص</td><td class="num"><bdi dir="ltr">85 $</bdi></td></tr><tr><td>البيانات البيومترية، عائلة من شخصين فأكثر (الحد الأقصى)</td><td class="num"><bdi dir="ltr">170 $</bdi></td></tr></tbody></table></div><h3>الإقامة الدائمة</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>الطلب</th><th>الرسوم</th></tr></thead><tbody><tr><td>اقتصادية (الدخول السريع، المقاطعات)، مقدّم الطلب الرئيسي: مع رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">1 590 $</bdi></td></tr><tr><td>الفئة نفسها، من دون رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">990 $</bdi></td></tr><tr><td>رجال الأعمال، مقدّم الطلب الرئيسي: مع رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">2 495 $</bdi></td></tr><tr><td>رجال الأعمال، من دون رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">1 895 $</bdi></td></tr><tr><td>الزوج أو الشريك المرافق (اقتصادية)، مع رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">1 590 $</bdi></td></tr><tr><td>طفل معال (اقتصادية)</td><td class="num"><bdi dir="ltr">270 $</bdi></td></tr><tr><td>رسم حق الإقامة الدائمة وحده</td><td class="num"><bdi dir="ltr">600 $</bdi></td></tr></tbody></table></div><h3>الكفالة العائلية</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>الطلب</th><th>الرسوم</th></tr></thead><tbody><tr><td>الزوج أو الشريك أو الوالد أو الجد أو قريب عمره 22 سنة فأكثر: مع رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">1 260 $</bdi></td></tr><tr><td>الفئات نفسها، من دون رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">660 $</bdi></td></tr><tr><td>طفل معال أو متبنّى أو يتيم</td><td class="num"><bdi dir="ltr">180 $</bdi></td></tr></tbody></table></div><h3>الوثائق والجنسية</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>الطلب</th><th>الرسوم</th></tr></thead><tbody><tr><td>بطاقة الإقامة الدائمة</td><td class="num"><bdi dir="ltr">50 $</bdi></td></tr><tr><td>وثيقة سفر للمقيم الدائم</td><td class="num"><bdi dir="ltr">50 $</bdi></td></tr><tr><td>الجنسية، للبالغ (المعالجة ورسم الجنسية مشمولان)</td><td class="num"><bdi dir="ltr">653 $</bdi></td></tr><tr><td>الجنسية، للقاصر</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>إثبات الجنسية</td><td class="num"><bdi dir="ltr">75 $</bdi></td></tr><tr><td>إذن العودة إلى كندا</td><td class="num"><bdi dir="ltr">492,50 $</bdi></td></tr></tbody></table></div>
+<p class="note">تُدفع هذه الرسوم مباشرة إلى الحكومة وتُضاف إلى أتعابنا. وهي قابلة للتغيير: تبقى القائمة الرسمية على موقع IRCC (canada.ca) هي المرجع. ولا تشمل هذه الصفحة رسوم كيبيك (شهادة القبول، الاختيار) ولا رسوم اختبارات اللغة وVFS والترجمة.</p>
+<p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/fees/">أتعابنا</a></p></div></section>''',
+    faq=[
+        ("هل تُضاف هذه الرسوم إلى أتعابكم؟", "نعم. الرسوم الحكومية تُدفع مباشرة إلى السلطات، أما أتعابنا فمقابل عملنا."),
+        ("متى تتغير هذه الرسوم؟", "تعلن IRCC تغييراتها مسبقًا على موقعها. وآخر زيادة في رسوم الإقامة الدائمة كانت في 30 أبريل 2026."),
+        ("ما هو رسم حق الإقامة الدائمة؟", "هو رسم قدره 600 دولار يُضاف إلى معالجة طلب الإقامة الدائمة لمقدّم الطلب الرئيسي وزوجه. ولا يسري على الأطفال المعالين."),
+    ],
+    sources=[],
+    related=[('/ar/fees/', 'أتعابنا'), ('/ar/book-consultation/', 'احجز موعدًا')],
+))
+
+
 for p in PAGES:
     related = ''.join(f'<a class="btn btn-outline" style="color:var(--ink);border-color:var(--ink)" href="{u}">{e(l)}</a>' for u, l in p['related'])
     src = ''.join(f'<li>{a(u, l)}</li>' for u, l in p['sources'])
