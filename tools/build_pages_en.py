@@ -87,7 +87,7 @@ P(path='en/', fr='/', ar='ar/', title="Immigration consultant in Montréal and C
 <section class="sp"><div class="wrap"><h2>What we help with</h2>
 <div class="prose"><ul><li>Study permits: applications, extensions and changes of school.</li><li>Work permits: extensions, post-graduation and employer-supported permits.</li><li>Permanent residence: Express Entry, provincial nominee programs and Quebec.</li><li>Family sponsorship of a spouse, partner, parents or grandparents.</li><li>Visitor visas, super visas and Canadian citizenship.</li></ul>
 <p>Read more: <a href="/en/study-permit/">study permit</a>, <a href="/en/work-permit/">work permit</a>, <a href="/en/permanent-residence/">permanent residence</a>, <a href="/en/express-entry/">Express Entry</a>, <a href="/en/provincial-nominee/">provincial nominees</a>, <a href="/en/immigrate-to-quebec/">Quebec</a>, <a href="/en/family-sponsorship/">family sponsorship</a>, <a href="/en/visitor-visa/">visitor visa and super visa</a>, <a href="/en/citizenship/">citizenship</a>, <a href="/en/business-immigration/">business immigration</a>, <a href="/en/express-entry-french/">Express Entry for French speakers</a> and <a href="/en/moroccan-documents/">Moroccan documents</a>.</p>
-<p><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/en/case-process/">How a case works</a> <a class="btn" href="/en/about/">About us</a></p></div></div></section>''',
+<p><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/en/case-process/">How a case works</a> <a class="btn" href="/en/about/">About us</a></p></div><p><a class="btn" href="/en/evaluate-my-case/">Assess my case in 5 questions</a></p></div></section>''',
   faq=[("Who is behind ATL Canada?", "ATL Canada is led by a regulated Canadian immigration consultant (RCIC), licence R712906 with the College of Immigration and Citizenship Consultants. The licence can be checked in the College's public register."),
        ("Can I get a consultation in English?", "Yes. Consultations are offered in English, French and Arabic."),
        ("Do you serve only people in Morocco?", "No. We help people from other countries and people already in Canada, for example to extend a work permit. We have offices in Montréal and Casablanca."),
@@ -105,7 +105,7 @@ P(path='en/fees/', fr='honoraires/', ar='ar/fees/', title="Immigration consultin
 <p>The "from" price is for a simple case. After the consultation we give you a precise quote: a complex case (a previous refusal, a special situation, many documents) may cost more, and we tell you before we start. The services and fees are written in a service agreement that you sign before any payment.</p>
 <p>The <a href="/en/official-fees/">official government fees</a> are paid directly to the authorities: they are not included in our fees.</p>
 <p><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/en/budget-calculator/">Estimate my budget</a> <a class="btn" href="/en/case-process/">How a case works</a></p>
-<p class="note">No result is guaranteed: the decision belongs solely to IRCC and the Quebec authorities.</p></div></div></section>''',
+<p class="note">No result is guaranteed: the decision belongs solely to IRCC and the Quebec authorities.</p></div><p style="margin-top:14px"><a class="btn" href="/en/study-permit-cost/">Study permit cost</a> <a class="btn" href="/en/visitor-visa-cost/">Visitor visa cost</a> <a class="btn" href="/en/evaluate-my-case/">Assess my case</a></p></div></section>''',
   faq=[("Why "+"“from”"+" prices?", "Every case is different. The starting price is for a simple case; the final quote is set after the consultation and written in the service agreement."),
        ("Are government fees included?", "No. They are paid directly to IRCC or the Quebec authorities. See the official fees page."),
        ("Is the initial consultation deducted?", "Yes. If you hire us, the $100 initial consultation is deducted from the price of your case."),
@@ -177,7 +177,7 @@ P(path='en/case-process/', fr='deroulement-dossier-immigration/', ar='ar/case-pr
 <section class="sp"><div class="wrap"><h2>What we cannot promise</h2><div class="prose">
 <p>The decision belongs solely to IRCC and the Quebec authorities. We cannot guarantee a result, promise a timeline or obtain priority processing: using a consultant gives no priority. Be wary of anyone who promises otherwise.</p>
 <p>You remain responsible for the accuracy of the information and documents you provide. Our role is to guide you, to check, and to avoid the mistakes that cost time and money.</p>
-<p><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/en/fees/">Our fees</a></p></div></div></section>''',
+<p><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/en/fees/">Our fees</a></p></div><p><a class="btn" href="/en/documents-checklist/">Documents checklist</a> <a class="btn" href="/en/refused-application/">Refused application</a> <a class="btn" href="/en/whats-changing/">What is changing</a></p></div></section>''',
   faq=[("How much does support cost?", "Fees depend on the type of case and are written in the service agreement before any payment. See our <a href=\"/en/fees/\">fees</a> and the <a href=\"/en/official-fees/\">official fees</a>, or ask us for a consultation."),
        ("Can you speed up my case?", "No. Timelines depend on the authorities. A complete and consistent file from the day it is filed is the best preparation."),
        ("What happens if my application is refused?", "We analyze the decision letter with you and look at the possible options. A refusal is not automatically solved by filing again."),
@@ -235,7 +235,7 @@ P(path='en/study-permit/', fr='permis-etudes-canada-maroc/', ar='ar/study-permit
 </div></section>
 <section class="sp alt"><div class="wrap"><h2>After your studies</h2><div class="prose">
 <p>Depending on the program and the institution, a post-graduation work permit may be possible. That Canadian work experience can then count toward a permanent residence application, for example through Express Entry.</p>
-<p>See also <a href="/en/express-entry/" style="text-decoration:underline">our Express Entry page</a> and <a href="/en/work-permit/" style="text-decoration:underline">work permits</a>.</p></div></div></section>''',
+<p>See also <a href="/en/express-entry/" style="text-decoration:underline">our Express Entry page</a> and <a href="/en/work-permit/" style="text-decoration:underline">work permits</a>.</p></div><p><a class="btn" href="/en/study-permit-cost/">How much does it cost?</a> <a class="btn" href="/en/documents-checklist/">Documents checklist</a></p></div></section>''',
   faq=[("Do I need a study permit?", "Generally yes (this is the case for Moroccan citizens) when the program lasts more than six months. For a shorter course the rules differ: we check your case with you."),
        ("Which documents do I need to provide?", "The exact list is set by IRCC according to your situation. It usually includes the passport, the letter of acceptance, proof of funds and, when required, the PAL/TAL. We validate it with you before filing."),
        ("How long does processing take?", "Timelines change regularly: IRCC publishes them on its website and we promise no timeline. We tell you the current situation at your appointment."),
@@ -416,7 +416,7 @@ P(path='en/visitor-visa/', fr='visa-visiteur-super-visa-canada/', ar='ar/visitor
 </div></section>
 <section class="sp"><div class="wrap"><h2>How we support you</h2><div class="prose">
 <p>We check with you which visa fits your situation, we review your child's or grandchild's income and family calculation, the invitation letter, the insurance and the supporting documents, then we prepare a complete file before filing. Any document that is not in French or English must be translated by a qualified translator.</p>
-{LAWNOTE}</div></div></section>''',
+{LAWNOTE}</div><p><a class="btn" href="/en/visitor-visa-cost/">How much does it cost?</a> <a class="btn" href="/en/documents-checklist/">Documents checklist</a></p></div></section>''',
   faq=[("Do I need a visa to come to Canada?", "It depends on your nationality and your means of transport. IRCC offers a tool, \u201cFind out if you need a visa or an eTA\u201d: we check it with you."),
        ("What is the difference between the visitor visa and the super visa?", "The visitor visa suits most stays of 6 months or less. The super visa is reserved for parents and grandparents of a Canadian citizen or permanent resident and allows longer stays."),
        ("Does my child need a minimum income for my super visa?", "Yes. The host must meet the minimum necessary income set by IRCC according to family size, and prove it, for example with notices of assessment."),
@@ -627,6 +627,98 @@ P(path='en/moroccan-documents/', fr='documents-maroc-immigration-canada/', ar='a
        ("Can someone request the fiche anthropom\u00e9trique on the candidate's behalf?", "Yes, IRCC states that a representative can request it, provided they present their own national identity card."),
        ("Does the fiche anthropom\u00e9trique need to be translated?", "No, it is issued in French and Arabic, so IRCC does not require a translation."),
        ("For which applications is a police certificate needed?", "For a permanent residence application, it is required. For other applications, it depends on the case: we check it during the consultation.")])
+
+P(path='en/study-permit-cost/', fr='cout-permis-etudes-canada/', ar='ar/study-permit-cost/', title="How much does a study permit for Canada cost? | ATL Canada",
+  desc="Government fees, biometrics and our starting fees for a Canadian study permit, with what is not included. Up to date as of November 24, 2026.",
+  crumb="Study permit cost", eyebrow="Budget · up to date as of November 24, 2026", h1="How much does a study permit for Canada cost?",
+  lede="The cost of the application has two separate parts: the government fees and our fees. Here is the breakdown, with no surprises.",
+  body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>The cost of the application</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Item</th><th>Amount</th></tr></thead><tbody><tr><td>Government fee: study permit (extension included)</td><td class="num">$150</td></tr><tr><td>Biometrics, per person (if required)</td><td class="num">$85</td></tr><tr><td>Our fees, starting from</td><td class="num">$900</td></tr></tbody></table></div>
+<p class="note">Starting total for one person: about $1,135 (900 + 150 + 85), taxes on our fees extra. Biometrics are not requested from everyone. All amounts in CAD.</p></div></section>
+<section class="sp alt"><div class="wrap"><h2>What is not included</h2><div class="prose"><ul><li>Tuition and housing, paid to the institution and on site.</li><li>Language tests, translations and the medical exam, if requested.</li><li>To study in Quebec, the Quebec procedures and fees linked to the Quebec Acceptance Certificate (CAQ).</li></ul>
+<p>For an estimate adapted to your situation, use the <a href="/en/budget-calculator/">budget calculator</a>. The final price is set after the consultation.</p>
+<p><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/en/budget-calculator/">Calculate my budget</a> <a class="btn" href="/en/study-permit/">Study permit</a></p></div></div></section>''',
+  faq=[("Is the fee different to extend a study permit?", "The $150 fee includes extensions: it also applies to an extension application."),
+       ("Are the fees refunded if the application is refused?", "As a general rule, no. Processing fees are paid when you file. The exact conditions are on IRCC's official page."),
+       ("Are your fees included in the $150?", "No. The $150 is the government fee. Our fees are separate and shown in <a href=\"/en/fees/\">our fee schedule</a>.")])
+
+P(path='en/visitor-visa-cost/', fr='cout-visa-visiteur-canada/', ar='ar/visitor-visa-cost/', title="How much does a visitor visa or super visa for Canada cost? | ATL Canada",
+  desc="Government fees, biometrics and our starting fees for a visitor visa or a super visa. Up to date as of November 24, 2026.",
+  crumb="Visitor visa cost", eyebrow="Budget · up to date as of November 24, 2026", h1="How much does a visitor visa or super visa cost?",
+  lede="The government fees and our fees are two separate amounts. Here is what the application costs, person by person.",
+  body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>The cost of the application</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Item</th><th>Amount</th></tr></thead><tbody><tr><td>Government fee: visitor visa, per person</td><td class="num">$100</td></tr><tr><td>Government fee: super visa</td><td class="num">$100</td></tr><tr><td>Biometrics, per person (if required)</td><td class="num">$85</td></tr><tr><td>Our fees: visitor visa, starting from</td><td class="num">$450</td></tr><tr><td>Our fees: super visa, starting from</td><td class="num">$800</td></tr></tbody></table></div>
+<p class="note">Visitor visa, one person: about $635 (450 + 100 + 85). Super visa, one applicant: about $985 (800 + 100 + 85). Taxes on our fees extra. All amounts in CAD.</p></div></section>
+<section class="sp alt"><div class="wrap"><h2>What is not included</h2><div class="prose"><ul><li>The plane ticket and living costs during the stay.</li><li>For the super visa, the mandatory medical insurance, bought separately.</li><li>Translations and the medical exam, if requested.</li></ul>
+<p>For an estimate adapted to your situation, use the <a href="/en/budget-calculator/">budget calculator</a>.</p>
+<p><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/en/budget-calculator/">Calculate my budget</a> <a class="btn" href="/en/visitor-visa/">Visitor visa and super visa</a></p></div></div></section>''',
+  faq=[("Does a family pay less?", "Yes. The government fee for a visitor visa is capped at $500 for a family, and biometrics are capped at $170 per family."),
+       ("Is super visa insurance included?", "No. It is mandatory for the super visa and bought separately."),
+       ("Are the fees refunded if the application is refused?", "As a general rule, no. Processing fees are paid when you file.")])
+
+P(path='en/documents-checklist/', fr='documents-a-preparer-immigration-canada/', ar='ar/documents-checklist/', title="Documents to prepare for a Canadian immigration application | ATL Canada",
+  desc="A checklist of documents to prepare for a study permit, visitor visa, work permit or spousal sponsorship. Indicative list.",
+  crumb="Documents to prepare", eyebrow="Checklist · indicative", h1="Documents to prepare before your consultation",
+  lede="Tick what you already have. It makes the consultation more useful and speeds up the preparation of your application.",
+  body=f'''{TRUST}
+<section class="sp"><div class="wrap">
+<p class="note">Indicative list: every case is different. The official list that comes with your application prevails, and we tell you at the consultation which documents to add.</p>
+<h3>For every case</h3><ul class="chk"><li><label><input type="checkbox"> <span>Valid passport (copy of every used page)</span></label></li><li><label><input type="checkbox"> <span>Recent photo meeting the requirements</span></label></li><li><label><input type="checkbox"> <span>ID card and birth certificate</span></label></li><li><label><input type="checkbox"> <span>Proof of your current situation (job, studies or other)</span></label></li><li><label><input type="checkbox"> <span>Proof of funds (recent bank statements)</span></label></li></ul><h3>Study permit</h3><ul class="chk"><li><label><input type="checkbox"> <span>Letter of acceptance from a designated learning institution</span></label></li><li><label><input type="checkbox"> <span>Quebec Acceptance Certificate (CAQ), if you will study in Quebec</span></label></li><li><label><input type="checkbox"> <span>Diplomas and transcripts</span></label></li><li><label><input type="checkbox"> <span>Language test results, if requested</span></label></li><li><label><input type="checkbox"> <span>Letter explaining your study plan</span></label></li></ul><h3>Visitor visa</h3><ul class="chk"><li><label><input type="checkbox"> <span>Itinerary and purpose of the trip</span></label></li><li><label><input type="checkbox"> <span>Letter of invitation, if you are invited</span></label></li><li><label><input type="checkbox"> <span>Proof of your ties (job, family, property)</span></label></li><li><label><input type="checkbox"> <span>Travel history (previous visas and stamps)</span></label></li></ul><h3>Work permit (extension)</h3><ul class="chk"><li><label><input type="checkbox"> <span>Current work permit</span></label></li><li><label><input type="checkbox"> <span>Job offer or employment contract</span></label></li><li><label><input type="checkbox"> <span>Recent pay stubs</span></label></li><li><label><input type="checkbox"> <span>Proof of valid status in Canada</span></label></li></ul><h3>Sponsoring a spouse or partner</h3><ul class="chk"><li><label><input type="checkbox"> <span>Marriage certificate or proof of the relationship</span></label></li><li><label><input type="checkbox"> <span>ID documents of both spouses</span></label></li><li><label><input type="checkbox"> <span>Evidence of the relationship (photos, messages, trips)</span></label></li><li><label><input type="checkbox"> <span>Proof of the sponsor's status (permanent resident or citizen)</span></label></li><li><label><input type="checkbox"> <span>Police certificates and medical exam, if requested</span></label></li></ul>
+<p><button type="button" class="btn" onclick="window.print()">Print the list</button> <a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a></p></div></section>''',
+  faq=[("Do I need everything before the consultation?", "No. Bring what you have: we tell you what is missing and in which order to gather it."),
+       ("Do I have to translate my documents?", "Documents that are neither in French nor in English generally need an accompanying translation. We tell you what applies to your case."),
+       ("Where can I find the official list?", "On IRCC's website (canada.ca), in the application guide for the relevant program.")])
+
+P(path='en/refused-application/', fr='demande-refusee-immigration-canada/', ar='ar/refused-application/', title="Canadian immigration application refused: what to do | ATL Canada",
+  desc="Application refused or procedural fairness letter received? The first things to do, the deadlines to watch and how a consultant can help.",
+  crumb="Refused application", eyebrow="Refusal · procedural fairness letter", h1="Your application was refused: what to do",
+  lede="A refusal is not always the end of the road, but the first days matter. Here are the first steps, with no promises.",
+  body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>The first steps</h2>
+<ol class="steps"><li><span><b>Read the whole letter.</b> It gives the reasons for the refusal and sometimes a deadline to respond.</span></li><li><span><b>Note the dates.</b> A procedural fairness letter sets a deadline to answer: do not let it pass.</span></li><li><span><b>Do not refile too fast.</b> An identical new application with the same weaknesses may be refused again.</span></li><li><span><b>Have the file analyzed.</b> We compare the reasons for the refusal with your situation and documents.</span></li><li><span><b>Choose what comes next.</b> Respond to the letter, refile a better-prepared application, or look at other routes.</span></li></ol></div></section>
+<section class="sp alt"><div class="wrap"><h2>What we can do, and what we do not promise</h2><div class="prose">
+<p>At the consultation, we read the letter, identify what may have caused the problem and tell you honestly which options are realistic. In some cases a Federal Court challenge exists, with very short deadlines: a lawyer is then needed, and we tell you so.</p>
+<p>We do not guarantee that a new application will be accepted: the decision belongs solely to IRCC and the Quebec authorities.</p>
+<p><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/en/evaluate-my-case/">Assess my case</a></p></div></div></section>''',
+  faq=[("What is a procedural fairness letter?", "It is a letter informing you of a concern of the officer and giving you the chance to respond before the decision. It contains a deadline."),
+       ("How long do I have to react?", "It depends on the letter and the decision. Deadlines are stated in the letter or the instructions that come with it, and they can be short."),
+       ("Can I file my application again?", "Often yes, but what caused the refusal must be corrected. That is what we analyze with you."),
+       ("Is a court challenge possible?", "In some cases, before the Federal Court, with very short deadlines. That remedy is a matter for a lawyer.")])
+
+P(path='en/whats-changing/', fr='ce-qui-change-immigration-canada/', ar='ar/whats-changing/', title="What is changing in Canadian immigration | ATL Canada",
+  desc="Recent changes to Canadian immigration fees and rules, and where to follow the news. Last checked on November 24, 2026.",
+  crumb="What is changing", eyebrow="Fees and rules · checked November 24, 2026", h1="What is changing in Canadian immigration",
+  lede="A quick look at what has changed recently in fees, and where to follow the rest day by day.",
+  body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>Government fees</h2><div class="prose">
+<p>IRCC fees were last changed on April 30, 2026. At the date of our check (November 24, 2026), no change is announced for 2027 on the official fees page.</p>
+<p>See the up-to-date list on our <a href="/en/official-fees/">Official fees</a> page.</p></div></div></section>
+<section class="sp alt"><div class="wrap"><h2>Following the news</h2><div class="prose">
+<p>Express Entry draws, provincial news and IRCC announcements are summarized in our <a href="/actualites/">news section</a> (in French), updated every day.</p>
+<p>Does a change concern you? <a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/actualites/">See the news (in French)</a></p></div></div></section>''',
+  faq=[("Can fees change without notice?", "IRCC generally announces fee changes in advance on its website. We update our page at every check."),
+       ("Where can I find the latest Express Entry draws?", "In our news section (in French), updated every day.")])
+
+P(path='en/evaluate-my-case/', fr='evaluer-mon-dossier/', ar='ar/evaluate-my-case/', title="Assess my case in 5 questions | ATL Canada",
+  desc="Answer five simple questions to find out which immigration route to look at first. Free, takes one minute, nothing is sent or saved.",
+  crumb="Assess my case", eyebrow="Free tool · 1 minute", h1="Assess my case in 5 questions",
+  lede="Answer five simple questions to find out which immigration route to look at first. The result is general guidance: your answers are neither sent nor saved.",
+  body=f'''{TRUST}
+<section class="sp"><div class="wrap">
+<link rel="stylesheet" href="/assets/eval.css">
+<div id="eval-app" data-lang="en"></div>
+<noscript><p class="note">This questionnaire needs JavaScript. You can also call us at +1 514 295 6635.</p></noscript>
+<script src="/assets/eval.js" defer></script>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Why a consultation afterwards?</h2><div class="prose">
+<p>This questionnaire does not replace a consultant's analysis. Every case has its particulars: current status, application history, documents, deadlines. At the consultation, we check the current state of the programs and compare the realistic routes for your profile.</p>
+<p class="note">The decision belongs solely to IRCC and the Quebec authorities: we cannot guarantee a result or promise a timeline.</p></div></div></section>''',
+  faq=[("Is this questionnaire an official assessment?", "No. It is general guidance pointing you to the most useful page. Only a full analysis of your case allows a route to be chosen."),
+       ("Are my answers saved?", "No. Everything happens in your browser and nothing is sent to ATL Canada."),
+       ("Is the service reserved for candidates from Morocco?", "No. We also support people of other nationalities and people already in Canada, for example to extend a work permit."),
+       ("Can you tell me my chances of being accepted?", "Nobody can guarantee a decision. At the consultation, we tell you honestly which routes are realistic for your profile.")])
 
 def head_for(p):
     url = SITE + '/' + p['path']

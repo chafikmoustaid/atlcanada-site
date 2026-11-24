@@ -1,10 +1,38 @@
 /* Évaluer mon dossier : mini-questionnaire d'orientation (ATL Canada). Aucune donnée envoyée. */
 (function(){
 var root=document.getElementById('eval-app'); if(!root) return;
-var AR=root.getAttribute('data-lang')==='ar';
+var AR=root.getAttribute('data-lang')==='ar', EN=root.getAttribute('data-lang')==='en';
 var P=AR?'/ar/':'/';
 var U={study:AR?'/ar/study-permit-morocco/':'/permis-etudes-canada-maroc/',work:AR?'/ar/work-permit/':'/permis-de-travail-canada/',pr:AR?'/ar/permanent-residence/':'/residence-permanente-canada/',ee:AR?'/ar/express-entry/':'/entree-express-canada/',eef:AR?'/ar/express-entry-french/':'/entree-express-francophone-maroc/',pnp:AR?'/ar/provincial-nominee/':'/candidats-provinces-canada/',qc:AR?'/ar/immigrate-to-quebec/':'/immigration-quebec-canada/',fam:AR?'/ar/family-sponsorship/':'/parrainage-familial-canada/',visit:AR?'/ar/visitor-visa-super-visa/':'/visa-visiteur-super-visa-canada/',biz:AR?'/ar/business-immigration/':'/gens-affaires-immigration-canada/',cit:AR?'/ar/canadian-citizenship/':'/citoyennete-canadienne/',docs:AR?'/ar/moroccan-documents/':'/documents-maroc-immigration-canada/',calc:AR?'/ar/express-entry-calculator/':'/calculateur-entree-express/'};
-var T=AR?{
+var UE={study:'/en/study-permit/',work:'/en/work-permit/',pr:'/en/permanent-residence/',ee:'/en/express-entry/',eef:'/en/express-entry-french/',pnp:'/en/provincial-nominee/',qc:'/en/immigrate-to-quebec/',fam:'/en/family-sponsorship/',visit:'/en/visitor-visa/',biz:'/en/business-immigration/',cit:'/en/citizenship/',docs:'/en/moroccan-documents/',calc:'/calculateur-entree-express/'};
+if(EN)U=UE;
+var TE={
+ q:[
+  ['What is your main goal?','goal',[['study','Study in Canada'],['work','Work in Canada'],['pr','Get permanent residence'],['qc','Settle in Quebec'],['fam','Sponsor a family member'],['visit','Visit or super visa'],['biz','Business project or investment'],['cit','Become a Canadian citizen']]],
+  ['Where do you live now?','res',[['ma','In Morocco'],['ca','In Canada'],['xx','In another country']]],
+  ['Your age group?','age',[['a','18 to 29'],['b','30 to 35'],['c','36 to 44'],['d','45 and over']]],
+  ['Your highest level of education?','edu',[['sec','High school'],['pro','Professional or technical diploma'],['bac','Bachelor\'s degree'],['mst','Master\'s or doctorate']]],
+  ['Your language situation?','lang',[['fr','I am fluent in French'],['en','I am fluent in English'],['both','I am fluent in both'],['none','No good level yet']]]],
+ next:'Next',back:'Back',restart:'Start over',step:function(a,b){return 'Question '+a+' of '+b},
+ title:'Our guidance for you',lead:'This is general guidance based on your answers, not a legal assessment of your case. Your answers are neither sent nor saved.',
+ main:'The most suitable page',more:'Also worth a look',points:'Points to review at the consultation',
+ cta:'Book a consultation with a regulated consultant',call:'Call: +1 514 295 6635',wa:'WhatsApp',
+ note:'No consultant can guarantee a result: the decision belongs solely to the Canadian and Quebec authorities.',
+ tx:{
+  calc:'Estimate my Express Entry score (in French)',ee:'Express Entry',eef:'Express Entry for French speakers',pnp:'Provincial nominees',docs:'Moroccan documents',pr:'Permanent residence',qc:'Immigrating to Quebec',study:'Study permit',work:'Work permit',fam:'Family sponsorship',visit:'Visitor visa and super visa',biz:'Business immigration',cit:'Canadian citizenship'},
+ pt:{
+  nolang:'The first step is often a recognized language test (TEF or TCF for French, IELTS or CELPIP for English).',
+  age45:'Express Entry age points decrease with age: we therefore compare other routes, such as provincial programs.',
+  fr:'Being fluent in French is an asset, notably for Quebec and for routes reserved for French speakers.',
+  qcfr:'Satisfactory knowledge of French is required to settle in Quebec.',
+  edu:'We check the equivalence of your diplomas (foreign credential assessment), as it influences points.',
+  ca:'Since you are in Canada, we first check your status expiry date: keeping a valid status is the priority.',
+  ma:'We prepare early the documents to be obtained in Morocco (police record, certificates, diplomas) to avoid delays.',
+  stu:'We review your financial capacity and the choice of institution before filing.',
+  job:'We look at whether a job offer or your experience opens a realistic route.',
+  gen:'We compare the realistic routes for your profile before any spending.'}
+};
+var T=EN?TE:AR?{
  q:[
   ['ما هدفك الرئيسي؟','goal',[['study','الدراسة في كندا'],['work','العمل في كندا'],['pr','الإقامة الدائمة'],['qc','الاستقرار في كيبيك'],['fam','كفالة فرد من العائلة'],['visit','زيارة أو سوبر فيزا'],['biz','مشروع أو استثمار'],['cit','الجنسية الكندية']]],
   ['أين تقيم حاليًا؟','res',[['ma','المغرب'],['ca','كندا'],['xx','بلد آخر']]],
@@ -81,7 +109,7 @@ function result(){
  o+='<div class="ev-main"><span>'+h(T.main)+'</span><a class="btn btn-solid" href="'+U[main]+'">'+h(tx[main])+(AR?' ←':' →')+'</a></div>';
  o+='<h3>'+h(T.more)+'</h3><ul class="ev-more">'+more.map(function(k){return '<li><a href="'+U[k]+'">'+h(tx[k])+'</a></li>'}).join('')+'</ul>';
  o+='<h3>'+h(T.points)+'</h3><ul class="ev-pts">'+pts.map(function(x){return '<li>'+h(x)+'</li>'}).join('')+'</ul>';
- o+='<div class="ev-cta"><a class="btn btn-solid" href="'+(AR?'/ar/book-consultation/':'/rendez-vous/')+'">'+h(T.cta)+'</a> <a class="btn" href="tel:+15142956635">'+T.call+'</a> <a class="btn" href="https://wa.me/15142956635" rel="noopener">'+h(T.wa)+'</a></div>';
+ o+='<div class="ev-cta"><a class="btn btn-solid" href="'+(EN?'/en/book-consultation/':AR?'/ar/book-consultation/':'/rendez-vous/')+'">'+h(T.cta)+'</a> <a class="btn" href="tel:+15142956635">'+T.call+'</a> <a class="btn" href="https://wa.me/15142956635" rel="noopener">'+h(T.wa)+'</a></div>';
  o+='<p class="note">'+h(T.note)+'</p><p><button type="button" class="ev-link" id="ev-restart">'+h(T.restart)+'</button></p></div>';
  return o;
 }
