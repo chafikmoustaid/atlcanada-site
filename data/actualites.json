@@ -1118,5 +1118,31 @@
     "caption_fr": "Alberta et Colombie-Britannique d'après leurs pages officielles ; les autres provinces d'après des relevés privés, à confirmer."
    }
   ]
+ },
+ {
+  "id": "entree-express-tirage-pnp-reprise-23-novembre-2026",
+  "date": "2026-11-24",
+  "tag_fr": "Entrée express",
+  "title_fr": "Entrée express : les tirages reprennent le 23 novembre avec 1 999 invitations (candidats des provinces)",
+  "summary_fr": "Selon CIC News et Immigration News Canada, un tirage a eu lieu le 23 novembre 2026 pour les candidats d'Entrée express ayant une nomination provinciale : 1 999 invitations, score CRS minimal de 673. CIC News indique qu'il s'agit du premier tirage depuis l'entrée en vigueur des changements du CRS le 3 novembre. Ces chiffres viennent de la presse spécialisée et n'ont pas pu être recoupés avec la page officielle des tirages sur canada.ca au moment de la rédaction ; le numéro du tirage n'est pas indiqué. Côté officiel (IRCC), les nouvelles règles sont en vigueur depuis le 3 novembre : un facteur « intégration au marché du travail » donne jusqu'à 150 points pour une expérience de travail canadienne OU une offre d'emploi admissible (pas les deux), les points d'offre d'emploi ne concernent que les professions à salaire élevé, et une EIMT n'est plus exigée. Les scores des profils déjà dans le bassin ont été recalculés automatiquement.",
+  "impact_fr": "Ce que cela signifie pour vous : un tirage passé ne prédit pas le prochain, et celui-ci visait des candidats déjà nommés par une province. Si vous avez un profil Entrée express, vérifiez votre score dans votre compte IRCC. Aucune invitation ni aucun résultat n'est garanti : une évaluation personnalisée permet de voir quelle voie correspond à votre situation.",
+  "sources": [
+   {
+    "name": "IRCC (canada.ca) : 2026 changes to the Express Entry system",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html"
+   },
+   {
+    "name": "IRCC (canada.ca) : communiqué du 16 octobre 2026",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/canada-refocusing-express-entry-on-top-talent-that-drives-economic-growth.html"
+   },
+   {
+    "name": "CIC News : Canada resumes inviting workers for permanent residence through Express Entry (23 novembre 2026)",
+    "url": "https://www.cicnews.com/2026/11/canada-resumes-inviting-workers-for-permanent-residence-through-express-entry-1182015.html"
+   },
+   {
+    "name": "Immigration News Canada : new Express Entry draw, 23 novembre 2026",
+    "url": "https://immigrationnewscanada.ca/new-express-entry-draw-november-2026/"
+   }
+  ]
  }
 ]
