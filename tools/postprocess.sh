@@ -14,4 +14,5 @@ python3 tools/eval_link.py
 python3 tools/fees_link.py
 python3 tools/fees_box.py
 python3 tools/home_fees.py
+python3 tools/share_link.py
 python3 tools/ar_news_link.py

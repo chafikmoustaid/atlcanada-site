@@ -765,7 +765,7 @@ PAGES.append(dict(
         ("Puis-je être accompagné depuis le Maroc ?", "Oui. Nous avons un bureau à Casablanca et nous travaillons aussi à distance, par téléphone, WhatsApp ou visioconférence."),
     ],
     sources=[],
-    related=[('/rendez-vous/', 'Prendre rendez-vous'), ('/evaluer-mon-dossier/', 'Évaluer mon dossier')],
+    related=[('/rendez-vous/', 'Prendre rendez-vous'), ('/evaluer-mon-dossier/', 'Évaluer mon dossier'), ('/documents-a-preparer-immigration-canada/', 'Documents à préparer'), ('/demande-refusee-immigration-canada/', 'Demande refusée'), ('/ce-qui-change-immigration-canada/', 'Ce qui change')],
 ))
 
 
@@ -785,6 +785,7 @@ PAGES.append(dict(
 <section class="sp alt"><div class="wrap"><h2>Comment le prix final est fixé</h2><div class="prose">
 <p>Le prix « à partir de » correspond à un dossier simple. Après la consultation, nous vous remettons un devis précis : un dossier complexe (refus antérieur, situation particulière, nombreuses pièces) peut coûter plus, et nous vous le disons avant de commencer. Les services prévus et les honoraires sont écrits dans une entente de services, que vous signez avant tout paiement.</p>
 <p>Les <a href="/frais-officiels-immigration-canada/">frais officiels du gouvernement</a> se paient directement aux autorités : ils ne sont pas inclus dans nos honoraires.</p>
+<p>Détail par service : <a href="/cout-permis-etudes-canada/">coût d'un permis d'études</a>, <a href="/cout-visa-visiteur-canada/">coût d'un visa de visiteur</a>. Avant votre consultation : <a href="/documents-a-preparer-immigration-canada/">documents à préparer</a>. Après un refus : <a href="/demande-refusee-immigration-canada/">que faire ?</a></p>
 <p><a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/budget-immigration-canada/">Calculer mon budget</a> <a class="btn" href="/deroulement-dossier-immigration/">Déroulement d'un dossier</a></p>
 <p class="note">Aucun résultat n'est garanti : la décision appartient uniquement à IRCC et aux autorités du Québec.</p></div></div></section>''',
     faq=[
@@ -878,7 +879,111 @@ PAGES.append(dict(
 ))
 
 
-AR_OF = {'a-propos/': 'ar/about/', 'budget-immigration-canada/': 'ar/budget-calculator/', 'honoraires/': 'ar/fees/', 'frais-officiels-immigration-canada/': 'ar/official-fees/', 'deroulement-dossier-immigration/': 'ar/case-process/', 'rendez-vous/': 'ar/book-consultation/', 'evaluer-mon-dossier/': 'ar/evaluate-my-case/', 'calculateur-entree-express/': 'ar/express-entry-calculator/', 'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
+
+PAGES.append(dict(
+    path='cout-permis-etudes-canada/', updated='24 novembre 2026', updated_iso='2026-11-24', neutral=True,
+    title="Combien coûte un permis d'études au Canada ? | ATL Canada",
+    desc="Frais du gouvernement, biométrie et honoraires de départ pour un permis d'études au Canada, avec les frais qui ne sont pas inclus. À jour au 24 novembre 2026.",
+    crumb="Coût d'un permis d'études", eyebrow="Budget · à jour au 24 novembre 2026",
+    h1="Combien coûte un permis d'études au Canada ?",
+    lede="Le coût de la demande se compose de deux parties distinctes : les frais du gouvernement et nos honoraires. Voici le détail, sans surprise.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>Le coût de la demande</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Poste</th><th>Montant</th></tr></thead><tbody><tr><td>Frais du gouvernement : permis d'études (prolongation incluse)</td><td class="num">150 $</td></tr><tr><td>Biométrie, par personne (si requise)</td><td class="num">85 $</td></tr><tr><td>Nos honoraires, à partir de</td><td class="num">900 $</td></tr></tbody></table></div>
+<p class="note">Total de départ pour une personne : environ 1 135 $ (900 + 150 + 85), taxes sur les honoraires en sus. La biométrie n'est pas demandée à tout le monde.</p></div></section>
+<section class="sp alt"><div class="wrap"><h2>Ce qui n'est pas inclus</h2><div class="prose"><ul><li>Les frais de scolarité et le logement, à payer à l'établissement et sur place.</li><li>Les tests de langue, les traductions et l'examen médical, s'ils sont demandés.</li><li>Pour étudier au Québec, les démarches et frais du Québec liés au certificat d'acceptation (CAQ).</li></ul>
+<p>Pour un calcul adapté à votre situation, utilisez le <a href="/budget-immigration-canada/">calculateur de budget</a>. Le prix final est fixé après la consultation.</p>
+<p><a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/budget-immigration-canada/">Calculer mon budget</a> <a class="btn" href="/permis-etudes-canada-maroc/">Permis d'études</a></p></div></div></section>''',
+    faq=[("Les frais de prolongation du permis d'études sont-ils différents ?", "Le montant de 150 $ inclut les prolongations : il s'applique aussi à une demande de prolongation."),
+         ("Les frais sont-ils remboursés en cas de refus ?", "En règle générale, non. Les frais de traitement sont payés au moment du dépôt. Les conditions précises figurent dans la page officielle d'IRCC."),
+         ("Vos honoraires sont-ils inclus dans les 150 $ ?", "Non. Les 150 $ sont les frais du gouvernement. Nos honoraires sont distincts et indiqués dans notre grille.")],
+    sources=[], related=[('/honoraires/', 'Nos honoraires'), ('/frais-officiels-immigration-canada/', 'Frais officiels')],
+))
+
+
+PAGES.append(dict(
+    path='cout-visa-visiteur-canada/', updated='24 novembre 2026', updated_iso='2026-11-24', neutral=True,
+    title="Combien coûte un visa de visiteur ou un super visa pour le Canada ? | ATL Canada",
+    desc="Frais du gouvernement, biométrie et honoraires de départ pour un visa de visiteur ou un super visa. À jour au 24 novembre 2026.",
+    crumb="Coût d'un visa de visiteur", eyebrow="Budget · à jour au 24 novembre 2026",
+    h1="Combien coûte un visa de visiteur ou un super visa ?",
+    lede="Les frais du gouvernement et nos honoraires sont deux montants distincts. Voici ce que coûte la demande, personne par personne.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>Le coût de la demande</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Poste</th><th>Montant</th></tr></thead><tbody><tr><td>Frais du gouvernement : visa de visiteur, par personne</td><td class="num">100 $</td></tr><tr><td>Frais du gouvernement : super visa</td><td class="num">100 $</td></tr><tr><td>Biométrie, par personne (si requise)</td><td class="num">85 $</td></tr><tr><td>Nos honoraires : visa de visiteur, à partir de</td><td class="num">450 $</td></tr><tr><td>Nos honoraires : super visa, à partir de</td><td class="num">800 $</td></tr></tbody></table></div>
+<p class="note">Visa de visiteur, une personne : environ 635 $ (450 + 100 + 85). Super visa, un demandeur : environ 985 $ (800 + 100 + 85). Taxes sur les honoraires en sus.</p></div></section>
+<section class="sp alt"><div class="wrap"><h2>Ce qui n'est pas inclus</h2><div class="prose"><ul><li>Le billet d'avion et les frais de séjour.</li><li>Pour le super visa, l'assurance médicale obligatoire, qui s'achète séparément.</li><li>Les traductions et l'examen médical, s'ils sont demandés.</li></ul>
+<p>Pour un calcul adapté à votre situation, utilisez le <a href="/budget-immigration-canada/">calculateur de budget</a>.</p>
+<p><a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/budget-immigration-canada/">Calculer mon budget</a> <a class="btn" href="/visa-visiteur-super-visa-canada/">Visa de visiteur et super visa</a></p></div></div></section>''',
+    faq=[("Une famille paie-t-elle moins cher ?", "Oui, les frais du gouvernement pour un visa de visiteur sont plafonnés à 500 $ pour une famille. La biométrie est plafonnée à 170 $ par famille."),
+         ("L'assurance du super visa est-elle incluse ?", "Non. Elle est obligatoire pour le super visa et s'achète séparément."),
+         ("Les frais sont-ils remboursés en cas de refus ?", "En règle générale, non. Les frais de traitement sont payés au dépôt.")],
+    sources=[], related=[('/honoraires/', 'Nos honoraires'), ('/frais-officiels-immigration-canada/', 'Frais officiels')],
+))
+
+
+PAGES.append(dict(
+    path='documents-a-preparer-immigration-canada/', updated='24 novembre 2026', updated_iso='2026-11-24', neutral=True,
+    title="Documents à préparer pour une demande d'immigration au Canada | ATL Canada",
+    desc="Liste à cocher des documents à préparer pour un permis d'études, un visa de visiteur, un permis de travail ou le parrainage d'un époux. Liste indicative.",
+    crumb="Documents à préparer", eyebrow="Liste à cocher · indicative",
+    h1="Documents à préparer avant votre consultation",
+    lede="Cochez ce que vous avez déjà. Cela rend la consultation plus utile et accélère la préparation de votre dossier.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap">
+<p class="note">Liste indicative : chaque dossier est différent. La liste officielle fournie avec votre demande fait foi, et nous vous indiquons en consultation les pièces à ajouter.</p>
+<h3>Pour tous les dossiers</h3><ul class="chk"><li><label><input type="checkbox"> <span>Passeport valide (copie de toutes les pages utilisées)</span></label></li><li><label><input type="checkbox"> <span>Photo récente aux normes</span></label></li><li><label><input type="checkbox"> <span>Pièce d'identité et acte de naissance</span></label></li><li><label><input type="checkbox"> <span>Preuve de votre situation actuelle (emploi, études ou autre)</span></label></li><li><label><input type="checkbox"> <span>Preuve de fonds (relevés bancaires récents)</span></label></li></ul><h3>Permis d'études</h3><ul class="chk"><li><label><input type="checkbox"> <span>Lettre d'admission d'un établissement d'enseignement désigné</span></label></li><li><label><input type="checkbox"> <span>Certificat d'acceptation du Québec (CAQ), si vous étudiez au Québec</span></label></li><li><label><input type="checkbox"> <span>Diplômes et relevés de notes</span></label></li><li><label><input type="checkbox"> <span>Résultats de tests de langue, si demandés</span></label></li><li><label><input type="checkbox"> <span>Lettre expliquant votre projet d'études</span></label></li></ul><h3>Visa de visiteur</h3><ul class="chk"><li><label><input type="checkbox"> <span>Itinéraire et but du voyage</span></label></li><li><label><input type="checkbox"> <span>Lettre d'invitation, si vous êtes invité</span></label></li><li><label><input type="checkbox"> <span>Preuve de vos attaches (emploi, famille, biens)</span></label></li><li><label><input type="checkbox"> <span>Historique de voyage (anciens visas et tampons)</span></label></li></ul><h3>Permis de travail (prolongation)</h3><ul class="chk"><li><label><input type="checkbox"> <span>Permis de travail actuel</span></label></li><li><label><input type="checkbox"> <span>Offre d'emploi ou contrat de travail</span></label></li><li><label><input type="checkbox"> <span>Bulletins de paie récents</span></label></li><li><label><input type="checkbox"> <span>Preuve de statut valide au Canada</span></label></li></ul><h3>Parrainage d'un époux ou conjoint</h3><ul class="chk"><li><label><input type="checkbox"> <span>Acte de mariage ou preuve de la relation</span></label></li><li><label><input type="checkbox"> <span>Pièces d'identité des deux conjoints</span></label></li><li><label><input type="checkbox"> <span>Preuves de la relation (photos, échanges, voyages)</span></label></li><li><label><input type="checkbox"> <span>Preuve de statut du répondant (résident permanent ou citoyen)</span></label></li><li><label><input type="checkbox"> <span>Certificats de police et examen médical, si demandés</span></label></li></ul>
+<p><button type="button" class="btn" onclick="window.print()">Imprimer la liste</button> <a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a></p></div></section>''',
+    faq=[("Dois-je tout avoir avant la consultation ?", "Non. Apportez ce que vous avez : nous vous disons ce qui manque et dans quel ordre le rassembler."),
+         ("Faut-il faire traduire mes documents ?", "Les documents qui ne sont ni en français ni en anglais doivent en général être accompagnés d'une traduction. Nous vous précisons cela selon votre dossier."),
+         ("Où trouver la liste officielle ?", "Sur le site d'IRCC (canada.ca), dans la trousse de demande du programme concerné.")],
+    sources=[], related=[('/documents-maroc-immigration-canada/', 'Documents marocains'), ('/deroulement-dossier-immigration/', "Déroulement d'un dossier")],
+))
+
+
+PAGES.append(dict(
+    path='demande-refusee-immigration-canada/', updated='24 novembre 2026', updated_iso='2026-11-24', neutral=True,
+    title="Demande d'immigration refusée au Canada : que faire ? | ATL Canada",
+    desc="Votre demande a été refusée ou vous avez reçu une lettre d'équité procédurale ? Les premières choses à faire, les délais à surveiller et comment un consultant peut vous aider.",
+    crumb="Demande refusée", eyebrow="Refus · lettre d'équité procédurale",
+    h1="Votre demande a été refusée : que faire ?",
+    lede="Un refus n'est pas toujours la fin du chemin, mais les premiers jours comptent. Voici les premières étapes, sans promesse.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>Les premières étapes</h2>
+<ol class="steps"><li><span>Lisez la lettre en entier</span> Elle indique les motifs du refus et, parfois, un délai pour réagir.</li><li><span>Repérez les dates</span> Une lettre d'équité procédurale fixe un délai pour répondre : ne le laissez pas passer.</li><li><span>Ne redéposez pas trop vite</span> Une nouvelle demande identique, avec les mêmes faiblesses, risque d'être refusée à nouveau.</li><li><span>Faites analyser le dossier</span> Nous comparons les motifs du refus avec votre situation et vos pièces.</li><li><span>Choisissez la suite</span> Répondre à la lettre, redéposer une demande mieux préparée, ou examiner d'autres voies.</li></ol></div></section>
+<section class="sp alt"><div class="wrap"><h2>Ce que nous pouvons faire, et ce que nous ne promettons pas</h2><div class="prose">
+<p>En consultation, nous lisons la lettre, nous identifions ce qui a pu poser problème et nous vous disons honnêtement quelles options sont réalistes. Dans certains cas, un recours devant la Cour fédérale existe, avec des délais très courts : un avocat est alors nécessaire, et nous vous le disons.</p>
+<p>Nous ne garantissons pas qu'une nouvelle demande sera acceptée : la décision appartient uniquement à IRCC et aux autorités du Québec.</p>
+<p><a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/evaluer-mon-dossier/">Évaluer mon dossier</a></p></div></div></section>''',
+    faq=[("Qu'est-ce qu'une lettre d'équité procédurale ?", "C'est une lettre qui vous informe d'une préoccupation de l'agent et vous donne la possibilité de répondre avant la décision. Elle contient un délai."),
+         ("Combien de temps ai-je pour réagir ?", "Cela dépend de la lettre et de la décision. Les délais sont indiqués dans la lettre ou les instructions qui l'accompagnent, et peuvent être courts."),
+         ("Puis-je redéposer ma demande ?", "Souvent oui, mais il faut corriger ce qui a causé le refus. C'est ce que nous analysons avec vous."),
+         ("Un recours en justice est-il possible ?", "Dans certains cas, devant la Cour fédérale, avec des délais très courts. Ce recours relève d'un avocat.")],
+    sources=[], related=[('/rendez-vous/', 'Prendre rendez-vous'), ('/deroulement-dossier-immigration/', "Déroulement d'un dossier")],
+))
+
+
+PAGES.append(dict(
+    path='ce-qui-change-immigration-canada/', updated='24 novembre 2026', updated_iso='2026-11-24', neutral=True,
+    title="Ce qui change en immigration canadienne | ATL Canada",
+    desc="Les changements récents de frais et de règles d'immigration au Canada, et où suivre les actualités. Dernière vérification le 24 novembre 2026.",
+    crumb="Ce qui change", eyebrow="Frais et règles · vérifié le 24 novembre 2026",
+    h1="Ce qui change en immigration canadienne",
+    lede="Un point rapide sur ce qui a changé récemment dans les frais, et où suivre le reste au jour le jour.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>Les frais du gouvernement</h2><div class="prose">
+<p>La dernière modification des frais d'IRCC date du 30 avril 2026. À la date de notre vérification (24 novembre 2026), aucun changement n'est annoncé pour 2027 sur la page officielle des frais.</p>
+<p>Consultez la liste à jour dans notre page <a href="/frais-officiels-immigration-canada/">Frais officiels</a>.</p></div></div></section>
+<section class="sp alt"><div class="wrap"><h2>Suivre les actualités</h2><div class="prose">
+<p>Les tirages Entrée express, les nouvelles des provinces et les annonces d'IRCC sont résumés dans nos <a href="/actualites/">actualités</a>, mises à jour chaque jour.</p>
+<p>Un changement vous concerne ? <a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/actualites/">Voir les actualités</a></p></div></div></section>''',
+    faq=[("Les frais peuvent-ils changer sans préavis ?", "IRCC annonce en général ses changements de frais à l'avance sur son site. Nous mettons notre page à jour à chaque vérification."),
+         ("Où trouver les derniers tirages Entrée express ?", "Dans nos actualités, mises à jour chaque jour.")],
+    sources=[], related=[('/frais-officiels-immigration-canada/', 'Frais officiels'), ('/actualites/', 'Actualités')],
+))
+
+
+AR_OF = {'cout-permis-etudes-canada/': 'ar/study-permit-cost/', 'cout-visa-visiteur-canada/': 'ar/visitor-visa-cost/', 'documents-a-preparer-immigration-canada/': 'ar/documents-checklist/', 'demande-refusee-immigration-canada/': 'ar/refused-application/', 'ce-qui-change-immigration-canada/': 'ar/whats-changing/', 'a-propos/': 'ar/about/', 'budget-immigration-canada/': 'ar/budget-calculator/', 'honoraires/': 'ar/fees/', 'frais-officiels-immigration-canada/': 'ar/official-fees/', 'deroulement-dossier-immigration/': 'ar/case-process/', 'rendez-vous/': 'ar/book-consultation/', 'evaluer-mon-dossier/': 'ar/evaluate-my-case/', 'calculateur-entree-express/': 'ar/express-entry-calculator/', 'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
 
 
 def head_for(p):

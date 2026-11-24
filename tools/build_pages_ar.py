@@ -801,7 +801,7 @@ PAGES.append(dict(
         ("هل يمكن مرافقتي من المغرب؟", "نعم. لدينا مكتب في الدار البيضاء ونعمل أيضًا عن بعد بالهاتف أو واتساب أو الفيديو."),
     ],
     sources=[],
-    related=[('/ar/book-consultation/', 'احجز موعدًا'), ('/ar/evaluate-my-case/', 'قيّم ملفك')],
+    related=[('/ar/book-consultation/', 'احجز موعدًا'), ('/ar/evaluate-my-case/', 'قيّم ملفك'), ('/ar/documents-checklist/', 'الوثائق المطلوبة'), ('/ar/refused-application/', 'طلب مرفوض'), ('/ar/whats-changing/', 'ما الذي يتغير')],
 ))
 
 
@@ -821,6 +821,7 @@ PAGES.append(dict(
 <section class="sp alt"><div class="wrap"><h2>كيف يُحدَّد السعر النهائي</h2><div class="prose">
 <p>السعر «ابتداءً من» يخص ملفًا بسيطًا. بعد الاستشارة نسلّمك عرض سعر دقيقًا: الملف المعقّد (رفض سابق، وضع خاص، وثائق كثيرة) قد يكلّف أكثر، ونخبرك بذلك قبل أن نبدأ. وتُكتب الخدمات المتفق عليها والأتعاب في عقد خدمات توقّعه قبل أي دفع.</p>
 <p>أما <a href="/ar/official-fees/">الرسوم الحكومية الرسمية</a> فتُدفع مباشرة إلى السلطات ولا تدخل في أتعابنا.</p>
+<p>التفصيل حسب الخدمة: <a href="/ar/study-permit-cost/">تكلفة تصريح الدراسة</a>، <a href="/ar/visitor-visa-cost/">تكلفة تأشيرة الزيارة</a>. قبل الاستشارة: <a href="/ar/documents-checklist/">الوثائق المطلوبة</a>. بعد الرفض: <a href="/ar/refused-application/">ماذا أفعل؟</a></p>
 <p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/budget-calculator/">احسب ميزانيتي</a> <a class="btn" href="/ar/case-process/">سير الملف</a></p>
 <p class="note">لا نتيجة مضمونة: القرار يعود حصريًا إلى IRCC وسلطات كيبيك.</p></div></div></section>''',
     faq=[
@@ -911,6 +912,110 @@ PAGES.append(dict(
     ],
     sources=[],
     related=[('/ar/book-consultation/', 'احجز موعدًا'), ('/ar/fees/', 'أتعابنا')],
+))
+
+
+
+PAGES.append(dict(
+    path='ar/study-permit-cost/', fr='cout-permis-etudes-canada/', updated='24 نوفمبر 2026', updated_iso='2026-11-24', neutral=True,
+    title="كم تكلفة تصريح الدراسة في كندا؟ | ATL Canada",
+    desc="رسوم الحكومة والبيانات البيومترية وأتعابنا الابتدائية لتصريح الدراسة في كندا، مع ما لا يشمله المبلغ. محدّثة في 24 نوفمبر 2026.",
+    crumb="تكلفة تصريح الدراسة", eyebrow="الميزانية · محدّثة في 24 نوفمبر 2026",
+    h1="كم تكلفة تصريح الدراسة في كندا؟",
+    lede="تتكوّن تكلفة الطلب من جزأين منفصلين: رسوم الحكومة وأتعابنا. إليكم التفصيل بلا مفاجآت.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>تكلفة الطلب</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>البند</th><th>المبلغ</th></tr></thead><tbody><tr><td>رسوم الحكومة: تصريح الدراسة (التمديد مشمول)</td><td class="num"><bdi dir="ltr">150 $</bdi></td></tr><tr><td>البيانات البيومترية للشخص (إن طُلبت)</td><td class="num"><bdi dir="ltr">85 $</bdi></td></tr><tr><td>أتعابنا، ابتداءً من</td><td class="num"><bdi dir="ltr">900 $</bdi></td></tr></tbody></table></div>
+<p class="note">المجموع الابتدائي لشخص واحد: نحو 1 135 دولارًا (900 + 150 + 85) من دون ضريبة الأتعاب. والبيانات البيومترية لا تُطلب من الجميع.</p></div></section>
+<section class="sp alt"><div class="wrap"><h2>ما لا يشمله المبلغ</h2><div class="prose"><ul><li>الرسوم الدراسية والسكن، وتُدفع للمؤسسة وفي عين المكان.</li><li>اختبارات اللغة والترجمة والفحص الطبي إن طُلبت.</li><li>للدراسة في كيبيك: إجراءات ورسوم كيبيك المتعلقة بشهادة القبول (CAQ).</li></ul>
+<p>لحساب يناسب وضعكم استعملوا <a href="/ar/budget-calculator/">حاسبة الميزانية</a>. ويُحدَّد السعر النهائي بعد الاستشارة.</p>
+<p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/budget-calculator/">احسب ميزانيتي</a> <a class="btn" href="/ar/study-permit-morocco/">تصريح الدراسة</a></p></div></div></section>''',
+    faq=[("هل تختلف رسوم تمديد تصريح الدراسة؟", "مبلغ 150 دولارًا يشمل التمديدات، فهو يسري أيضًا على طلب التمديد."),
+         ("هل تُسترد الرسوم عند الرفض؟", "عمومًا لا. تُدفع رسوم المعالجة عند تقديم الطلب. وتجدون الشروط الدقيقة في الصفحة الرسمية لـ IRCC."),
+         ("هل أتعابكم مشمولة في 150 دولارًا؟", "لا. الـ150 دولارًا هي رسوم الحكومة. أما أتعابنا فمنفصلة وموضحة في جدولنا.")],
+    sources=[], related=[('/ar/fees/', 'أتعابنا'), ('/ar/official-fees/', 'الرسوم الرسمية')],
+))
+
+
+PAGES.append(dict(
+    path='ar/visitor-visa-cost/', fr='cout-visa-visiteur-canada/', updated='24 نوفمبر 2026', updated_iso='2026-11-24', neutral=True,
+    title="كم تكلفة تأشيرة الزيارة أو السوبر فيزا لكندا؟ | ATL Canada",
+    desc="رسوم الحكومة والبيانات البيومترية وأتعابنا الابتدائية لتأشيرة الزيارة أو السوبر فيزا. محدّثة في 24 نوفمبر 2026.",
+    crumb="تكلفة تأشيرة الزيارة", eyebrow="الميزانية · محدّثة في 24 نوفمبر 2026",
+    h1="كم تكلفة تأشيرة الزيارة أو السوبر فيزا؟",
+    lede="رسوم الحكومة وأتعابنا مبلغان منفصلان. إليكم تكلفة الطلب لكل شخص.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>تكلفة الطلب</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>البند</th><th>المبلغ</th></tr></thead><tbody><tr><td>رسوم الحكومة: تأشيرة الزيارة للشخص</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>رسوم الحكومة: السوبر فيزا</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>البيانات البيومترية للشخص (إن طُلبت)</td><td class="num"><bdi dir="ltr">85 $</bdi></td></tr><tr><td>أتعابنا: تأشيرة الزيارة، ابتداءً من</td><td class="num"><bdi dir="ltr">450 $</bdi></td></tr><tr><td>أتعابنا: السوبر فيزا، ابتداءً من</td><td class="num"><bdi dir="ltr">800 $</bdi></td></tr></tbody></table></div>
+<p class="note">تأشيرة الزيارة لشخص واحد: نحو 635 دولارًا (450 + 100 + 85). السوبر فيزا لمقدِّم طلب واحد: نحو 985 دولارًا (800 + 100 + 85). من دون ضريبة الأتعاب.</p></div></section>
+<section class="sp alt"><div class="wrap"><h2>ما لا يشمله المبلغ</h2><div class="prose"><ul><li>تذكرة الطائرة ومصاريف الإقامة.</li><li>للسوبر فيزا: التأمين الطبي الإلزامي، ويُشترى على حدة.</li><li>الترجمة والفحص الطبي إن طُلبا.</li></ul>
+<p>لحساب يناسب وضعكم استعملوا <a href="/ar/budget-calculator/">حاسبة الميزانية</a>.</p>
+<p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/budget-calculator/">احسب ميزانيتي</a> <a class="btn" href="/ar/visitor-visa-super-visa/">تأشيرة الزيارة والسوبر فيزا</a></p></div></div></section>''',
+    faq=[("هل تدفع العائلة أقل؟", "نعم، رسوم الحكومة لتأشيرة الزيارة محددة بسقف 500 دولار للعائلة، والبيانات البيومترية بسقف 170 دولارًا للعائلة."),
+         ("هل التأمين الخاص بالسوبر فيزا مشمول؟", "لا. هو إلزامي للسوبر فيزا ويُشترى على حدة."),
+         ("هل تُسترد الرسوم عند الرفض؟", "عمومًا لا. تُدفع رسوم المعالجة عند تقديم الطلب.")],
+    sources=[], related=[('/ar/fees/', 'أتعابنا'), ('/ar/official-fees/', 'الرسوم الرسمية')],
+))
+
+
+PAGES.append(dict(
+    path='ar/documents-checklist/', fr='documents-a-preparer-immigration-canada/', updated='24 نوفمبر 2026', updated_iso='2026-11-24', neutral=True,
+    title="الوثائق المطلوب تحضيرها لطلب الهجرة إلى كندا | ATL Canada",
+    desc="قائمة وثائق للتأشير عليها لتصريح الدراسة وتأشيرة الزيارة وتصريح العمل وكفالة الزوج. قائمة إرشادية.",
+    crumb="الوثائق المطلوبة", eyebrow="قائمة للتأشير · إرشادية",
+    h1="وثائق تحضّرونها قبل الاستشارة",
+    lede="أشّروا على ما لديكم بالفعل. هذا يجعل الاستشارة أنفع ويسرّع إعداد ملفكم.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap">
+<p class="note">قائمة إرشادية: لكل ملف خصوصيته. والقائمة الرسمية المرفقة بطلبكم هي المرجع، ونخبركم في الاستشارة بما يجب إضافته.</p>
+<h3>لكل الملفات</h3><ul class="chk"><li><label><input type="checkbox"> <span>جواز سفر ساري (نسخة من كل الصفحات المستعملة)</span></label></li><li><label><input type="checkbox"> <span>صورة حديثة مطابقة للمواصفات</span></label></li><li><label><input type="checkbox"> <span>بطاقة التعريف وشهادة الميلاد</span></label></li><li><label><input type="checkbox"> <span>إثبات وضعكم الحالي (عمل أو دراسة أو غيره)</span></label></li><li><label><input type="checkbox"> <span>إثبات الموارد المالية (كشوف بنكية حديثة)</span></label></li></ul><h3>تصريح الدراسة</h3><ul class="chk"><li><label><input type="checkbox"> <span>رسالة قبول من مؤسسة تعليمية معتمدة</span></label></li><li><label><input type="checkbox"> <span>شهادة القبول في كيبيك (CAQ) إن كنتم ستدرسون في كيبيك</span></label></li><li><label><input type="checkbox"> <span>الشهادات وكشوف النقط</span></label></li><li><label><input type="checkbox"> <span>نتائج اختبارات اللغة إن طُلبت</span></label></li><li><label><input type="checkbox"> <span>رسالة تشرح مشروعكم الدراسي</span></label></li></ul><h3>تأشيرة الزيارة</h3><ul class="chk"><li><label><input type="checkbox"> <span>برنامج الرحلة وغرضها</span></label></li><li><label><input type="checkbox"> <span>رسالة دعوة إن كنتم مدعوّين</span></label></li><li><label><input type="checkbox"> <span>إثبات ارتباطاتكم (عمل، عائلة، ممتلكات)</span></label></li><li><label><input type="checkbox"> <span>سجل السفر (التأشيرات والأختام السابقة)</span></label></li></ul><h3>تصريح العمل (تمديد)</h3><ul class="chk"><li><label><input type="checkbox"> <span>تصريح العمل الحالي</span></label></li><li><label><input type="checkbox"> <span>عرض عمل أو عقد عمل</span></label></li><li><label><input type="checkbox"> <span>كشوف رواتب حديثة</span></label></li><li><label><input type="checkbox"> <span>إثبات وضع ساري في كندا</span></label></li></ul><h3>كفالة الزوج أو الزوجة</h3><ul class="chk"><li><label><input type="checkbox"> <span>عقد الزواج أو إثبات العلاقة</span></label></li><li><label><input type="checkbox"> <span>وثائق هوية الزوجين</span></label></li><li><label><input type="checkbox"> <span>إثباتات العلاقة (صور، مراسلات، سفر)</span></label></li><li><label><input type="checkbox"> <span>إثبات وضع الكفيل (مقيم دائم أو مواطن)</span></label></li><li><label><input type="checkbox"> <span>شهادات السجل العدلي والفحص الطبي إن طُلبت</span></label></li></ul>
+<p><button type="button" class="btn" onclick="window.print()">اطبع القائمة</button> <a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a></p></div></section>''',
+    faq=[("هل يجب أن تكون كل الوثائق جاهزة قبل الاستشارة؟", "لا. أحضروا ما لديكم ونخبركم بما ينقص وبترتيب جمعه."),
+         ("هل يجب ترجمة وثائقي؟", "الوثائق التي ليست بالفرنسية أو الإنجليزية تحتاج عمومًا إلى ترجمة مرفقة. ونوضّح لكم ذلك بحسب ملفكم."),
+         ("أين أجد القائمة الرسمية؟", "على موقع IRCC (canada.ca)، في حزمة الطلب الخاصة بالبرنامج المعني.")],
+    sources=[], related=[('/ar/moroccan-documents/', 'الوثائق المغربية'), ('/ar/case-process/', 'سير الملف')],
+))
+
+
+PAGES.append(dict(
+    path='ar/refused-application/', fr='demande-refusee-immigration-canada/', updated='24 نوفمبر 2026', updated_iso='2026-11-24', neutral=True,
+    title="رُفض طلب الهجرة إلى كندا: ماذا أفعل؟ | ATL Canada",
+    desc="رُفض طلبكم أو وصلتكم رسالة الإنصاف الإجرائي؟ أولى الخطوات والمهل التي يجب الانتباه لها وكيف يساعدكم مستشار.",
+    crumb="طلب مرفوض", eyebrow="رفض · رسالة الإنصاف الإجرائي",
+    h1="رُفض طلبكم: ماذا تفعلون؟",
+    lede="الرفض ليس دائمًا نهاية الطريق، لكن الأيام الأولى مهمة. إليكم الخطوات الأولى من دون وعود.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>الخطوات الأولى</h2>
+<ol class="steps"><li><span>اقرأوا الرسالة كاملة</span> فيها أسباب الرفض، وأحيانًا مهلة للرد.</li><li><span>انتبهوا للتواريخ</span> رسالة الإنصاف الإجرائي تحدد مهلة للرد: لا تدعوها تنقضي.</li><li><span>لا تعيدوا التقديم بسرعة</span> طلب جديد مماثل بالنقاط الضعيفة نفسها قد يُرفض مجددًا.</li><li><span>اطلبوا تحليل الملف</span> نقارن أسباب الرفض بوضعكم ووثائقكم.</li><li><span>اختاروا الخطوة التالية</span> الرد على الرسالة، أو تقديم طلب جديد أفضل إعدادًا، أو دراسة مسارات أخرى.</li></ol></div></section>
+<section class="sp alt"><div class="wrap"><h2>ما نستطيع فعله وما لا نعد به</h2><div class="prose">
+<p>في الاستشارة نقرأ الرسالة ونحدد ما قد يكون سبّب المشكلة ونقول لكم بصراحة ما الخيارات الواقعية. وفي بعض الحالات يوجد طعن أمام المحكمة الفدرالية بمهل قصيرة جدًا: يلزم عندئذ محامٍ، ونخبركم بذلك.</p>
+<p>لا نضمن قبول طلب جديد: القرار يعود حصريًا إلى IRCC وسلطات كيبيك.</p>
+<p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/evaluate-my-case/">قيّم ملفك</a></p></div></div></section>''',
+    faq=[("ما هي رسالة الإنصاف الإجرائي؟", "رسالة تُعلمكم بمخاوف لدى الموظف وتتيح لكم الرد قبل صدور القرار. وفيها مهلة."),
+         ("كم من الوقت أملك للتصرف؟", "يتوقف ذلك على الرسالة والقرار. المهل مذكورة في الرسالة أو في التعليمات المرفقة وقد تكون قصيرة."),
+         ("هل يمكنني إعادة تقديم الطلب؟", "غالبًا نعم، لكن يجب تصحيح سبب الرفض. وهذا ما نحلله معكم."),
+         ("هل الطعن القضائي ممكن؟", "في بعض الحالات، أمام المحكمة الفدرالية وبمهل قصيرة جدًا. ويتولاه محامٍ.")],
+    sources=[], related=[('/ar/book-consultation/', 'احجز موعدًا'), ('/ar/case-process/', 'سير الملف')],
+))
+
+
+PAGES.append(dict(
+    path='ar/whats-changing/', fr='ce-qui-change-immigration-canada/', updated='24 نوفمبر 2026', updated_iso='2026-11-24', neutral=True,
+    title="ما الذي يتغير في الهجرة الكندية | ATL Canada",
+    desc="أحدث تغييرات الرسوم والقواعد في الهجرة إلى كندا، وأين تتابعون الأخبار. آخر تحقق في 24 نوفمبر 2026.",
+    crumb="ما الذي يتغير", eyebrow="الرسوم والقواعد · تحقق في 24 نوفمبر 2026",
+    h1="ما الذي يتغير في الهجرة الكندية",
+    lede="نظرة سريعة على ما تغيّر مؤخرًا في الرسوم، وأين تتابعون الباقي يومًا بيوم.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>رسوم الحكومة</h2><div class="prose">
+<p>آخر تعديل لرسوم IRCC كان في 30 أبريل 2026. وحتى تاريخ تحققنا (24 نوفمبر 2026) لا يوجد تغيير معلن لعام 2027 في الصفحة الرسمية للرسوم.</p>
+<p>اطّلعوا على القائمة المحدّثة في صفحة <a href="/ar/official-fees/">الرسوم الرسمية</a>.</p></div></div></section>
+<section class="sp alt"><div class="wrap"><h2>تابعوا الأخبار</h2><div class="prose">
+<p>سحوبات الدخول السريع وأخبار المقاطعات وإعلانات IRCC ملخّصة في <a href="/ar/actualites/">أخبارنا</a>، وتُحدَّث يوميًا.</p>
+<p>هل يمسّكم تغيير ما؟ <a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/actualites/">الأخبار</a></p></div></div></section>''',
+    faq=[("هل يمكن أن تتغير الرسوم دون إشعار؟", "تعلن IRCC عادةً تغييرات الرسوم مسبقًا على موقعها، ونحدّث صفحتنا عند كل تحقق."),
+         ("أين أجد آخر سحوبات الدخول السريع؟", "في أخبارنا التي تُحدَّث يوميًا.")],
+    sources=[], related=[('/ar/official-fees/', 'الرسوم الرسمية'), ('/ar/actualites/', 'الأخبار')],
 ))
 
 
