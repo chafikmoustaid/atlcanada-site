@@ -44,3 +44,16 @@ for f in glob.glob(R + '**/*.html', recursive=True):
     if t != s0:
         open(f, 'w', encoding='utf-8').write(t); k += 1
 print('budget_about_link : modifié', k, 'fichiers')
+
+# pages à menu minimal (actualités, confidentialité) : lien Honoraires après « Accueil »
+m = 0
+for f in glob.glob(R + '**/*.html', recursive=True):
+    t = s0 = open(f, encoding='utf-8').read()
+    if 'class="nav-fees"' in t: continue
+    for a, b in (('<nav class="primary" aria-label="Navigation"><a href="/">Accueil</a>', '<a class="nav-fees" href="/honoraires/">Honoraires</a>'),
+                 ('<nav class="primary" aria-label="Navigation"><a href="/ar/">الرئيسية</a>', '<a class="nav-fees" href="/ar/fees/">الأتعاب</a>')):
+        if a in t:
+            t = t.replace(a, a + b, 1); break
+    if t != s0:
+        open(f, 'w', encoding='utf-8').write(t); m += 1
+print('nav minimal : modifié', m, 'fichiers')
