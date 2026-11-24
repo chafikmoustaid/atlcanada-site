@@ -11,7 +11,7 @@ var S=AR?{
  msg:'ما يهمنا أن نعرفه عن وضعك (اختياري)',cons:'قرأت <a href="/confidentialite/" target="_blank">سياسة الخصوصية</a> وأوافق على استخدام معلوماتي للرد على طلبي.',
  send:'أرسل طلب الموعد',sending:'جارٍ الإرسال…',ok:'شكرًا! وصلنا طلبك. سنتصل بك لتأكيد الموعد في أقرب وقت.',
  ko:'تعذّر الإرسال حاليًا. راسلنا على contact@atlcanada.com أو اتصل على +1 514 295 6635.',
- sun:'المكتب مغلق يوم الأحد. اختر يومًا آخر.',note:'هذا الطلب ليس موعدًا مؤكدًا: نتصل بك لتأكيد الوقت.',subj:'طلب موعد جديد (النسخة العربية) من atlcanada.com'
+ sun:'المكتب مغلق يوم الأحد. اختر يومًا آخر.',auto:'شكرًا لطلبكم. وصلنا طلب موعدكم مع ATL Canada، وسنتصل بكم قريبًا لتأكيد الوقت. هذا الطلب ليس موعدًا مؤكدًا بعد. للاستعجال: +1 514 295 6635 (اتصال أو واتساب).',note:'هذا الطلب ليس موعدًا مؤكدًا: نتصل بك لتأكيد الوقت.',subj:'طلب موعد جديد (النسخة العربية) من atlcanada.com'
 }:{
  fn:'Prénom',ln:'Nom',ph:'Téléphone ou WhatsApp (avec l\'indicatif du pays)',em:'Courriel (facultatif)',co:'Pays de résidence',
  co_o:['Maroc','Canada','Autre pays'],top:'Sujet de la consultation',
@@ -21,7 +21,7 @@ var S=AR?{
  msg:'Ce qu\'il est utile que nous sachions (facultatif)',cons:'J\'ai lu la <a href="/confidentialite/" target="_blank">politique de confidentialité</a> et j\'accepte que mes renseignements servent à répondre à ma demande.',
  send:'Envoyer ma demande de rendez-vous',sending:'Envoi en cours…',ok:'Merci ! Votre demande est bien reçue. Nous vous contacterons rapidement pour confirmer l\'heure.',
  ko:'Envoi impossible pour le moment. Écrivez-nous à contact@atlcanada.com ou appelez le +1 514 295 6635.',
- sun:'Le bureau est fermé le dimanche. Choisissez un autre jour.',note:'Cette demande n\'est pas un rendez-vous confirmé : nous vous contactons pour fixer l\'heure.',subj:'Nouvelle demande de rendez-vous depuis atlcanada.com'
+ sun:'Le bureau est fermé le dimanche. Choisissez un autre jour.',auto:'Merci pour votre demande. Nous avons bien reçu votre demande de rendez-vous avec ATL Canada et nous vous contactons bientôt pour confirmer l\'heure. Ce n\'est pas encore un rendez-vous confirmé. Pour une urgence : +1 514 295 6635 (appel ou WhatsApp).',note:'Cette demande n\'est pas un rendez-vous confirmé : nous vous contactons pour fixer l\'heure.',subj:'Nouvelle demande de rendez-vous depuis atlcanada.com'
 };
 var WK=AR?['من 10:00 إلى 12:00','من 12:00 إلى 15:00','من 15:00 إلى 18:00']:['10 h à 12 h','12 h à 15 h','15 h à 18 h'];
 var SA=AR?['من 10:00 إلى 12:30']:['10 h à 12 h 30'];
@@ -29,9 +29,9 @@ function opt(a){return a.map(function(x){return '<option>'+x+'</option>'}).join(
 function iso(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)}
 var t=new Date(); t.setDate(t.getDate()+1); var mx=new Date(); mx.setDate(mx.getDate()+60);
 root.innerHTML='<form id="rdv-form" class="rdv-form" action="https://formsubmit.co/contact@atlcanada.com" method="POST">'
-+'<input type="hidden" name="_subject" value="'+S.subj+'"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">'
++'<input type="hidden" name="_subject" value="'+S.subj+'"><input type="hidden" name="_template" value="table"><input type="hidden" name="_autoresponse" value="'+S.auto+'"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">'
 +'<div class="rdv-row"><div><label for="r-fn">'+S.fn+'</label><input id="r-fn" name="prenom" required autocomplete="given-name"></div><div><label for="r-ln">'+S.ln+'</label><input id="r-ln" name="nom" required autocomplete="family-name"></div></div>'
-+'<div class="rdv-row"><div><label for="r-ph">'+S.ph+'</label><input id="r-ph" name="telephone" type="tel" required autocomplete="tel" dir="ltr"></div><div><label for="r-em">'+S.em+'</label><input id="r-em" name="courriel" type="email" autocomplete="email" dir="ltr"></div></div>'
++'<div class="rdv-row"><div><label for="r-ph">'+S.ph+'</label><input id="r-ph" name="telephone" type="tel" required autocomplete="tel" dir="ltr"></div><div><label for="r-em">'+S.em+'</label><input id="r-em" name="email" type="email" autocomplete="email" dir="ltr"></div></div>'
 +'<div class="rdv-row"><div><label for="r-co">'+S.co+'</label><select id="r-co" name="pays">'+opt(S.co_o)+'</select></div><div><label for="r-tp">'+S.top+'</label><select id="r-tp" name="sujet">'+opt(S.top_o)+'</select></div></div>'
 +'<div class="rdv-row"><div><label for="r-md">'+S.mode+'</label><select id="r-md" name="mode">'+opt(S.mode_o)+'</select></div><div><label for="r-dy">'+S.day+'</label><input id="r-dy" name="jour" type="date" required min="'+iso(t)+'" max="'+iso(mx)+'"></div></div>'
 +'<div><label for="r-sl">'+S.slot+'</label><select id="r-sl" name="plage" required><option value="">'+S.slot_h+'</option></select></div>'

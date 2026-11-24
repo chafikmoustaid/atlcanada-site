@@ -204,3 +204,14 @@ nav.primary a.nav-eval{display:none}
 .fee-s{font-size:.9rem;opacity:.75}
 .fee-note{margin:12px 0 0;font-size:.9rem;opacity:.85}
 @media (max-width:640px){.fee-grid{grid-template-columns:1fr}.fee-v{font-size:1.6rem}}
+/* bloc honoraires sur l'accueil */
+.hf-sec{padding:54px 20px;background:#faf7f2}
+.hf-wrap{max-width:1100px;margin:0 auto}
+.hf-eyebrow{margin:0 0 6px;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#c8102e}
+.hf-sec h2{margin:0 0 10px;color:#142340}
+.hf-lede{margin:0 0 22px;max-width:720px;color:#4a566e}
+.hf-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.hf-links{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
+@media (max-width:760px){.hf-grid{grid-template-columns:1fr}.hf-links .btn{flex:1 1 100%;text-align:center}}
+.footer-grid>div{min-width:0}.footer-grid a{overflow-wrap:anywhere}
+@media (max-width:640px){.footer-grid{grid-template-columns:1fr}footer .tel-line{flex-wrap:wrap}}

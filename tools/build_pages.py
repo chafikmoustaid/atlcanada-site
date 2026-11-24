@@ -785,12 +785,15 @@ PAGES.append(dict(
 <section class="sp alt"><div class="wrap"><h2>Comment le prix final est fixé</h2><div class="prose">
 <p>Le prix « à partir de » correspond à un dossier simple. Après la consultation, nous vous remettons un devis précis : un dossier complexe (refus antérieur, situation particulière, nombreuses pièces) peut coûter plus, et nous vous le disons avant de commencer. Les services prévus et les honoraires sont écrits dans une entente de services, que vous signez avant tout paiement.</p>
 <p>Les <a href="/frais-officiels-immigration-canada/">frais officiels du gouvernement</a> se paient directement aux autorités : ils ne sont pas inclus dans nos honoraires.</p>
-<p><a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/deroulement-dossier-immigration/">Déroulement d'un dossier</a></p>
+<p><a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/budget-immigration-canada/">Calculer mon budget</a> <a class="btn" href="/deroulement-dossier-immigration/">Déroulement d'un dossier</a></p>
 <p class="note">Aucun résultat n'est garanti : la décision appartient uniquement à IRCC et aux autorités du Québec.</p></div></div></section>''',
     faq=[
         ("Pourquoi « à partir de » ?", "Chaque dossier est différent. Le prix de départ vise un dossier simple ; le devis final est fixé après la consultation et écrit dans l'entente de services."),
         ("Les frais du gouvernement sont-ils inclus ?", "Non. Ils se paient directement à IRCC ou aux autorités du Québec. Consultez la page des frais officiels."),
         ("Que se passe-t-il si ma demande est refusée ?", "Les honoraires rémunèrent notre travail, pas le résultat, que personne ne peut garantir. Les conditions précises figurent dans l'entente de services."),
+        ("La consultation initiale est-elle déduite ?", "Oui. Si vous retenez nos services, les 100 $ de la consultation initiale sont déduits du prix de votre dossier."),
+        ("Les taxes sont-elles incluses ?", "Non. Les taxes applicables s'ajoutent à nos honoraires de départ."),
+        ("Puis-je avoir un prix exact avant la consultation ?", "Le prix « à partir de » donne l'ordre de grandeur. Le prix exact dépend de votre situation, et nous vous le remettons par écrit après la consultation. Vous pouvez aussi essayer notre <a href=\"/budget-immigration-canada/\">calculateur de budget</a>."),
         ("Puis-je payer en plusieurs versements ?", "Les modalités de paiement sont écrites dans l'entente de services. Parlez-en avec nous pendant la consultation."),
     ],
     sources=[],
@@ -810,7 +813,7 @@ PAGES.append(dict(
     body=f'''{TRUST}
 <section class="sp"><div class="wrap"><h3>Visiteurs</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Demande</th><th>Frais</th></tr></thead><tbody><tr><td>Visa de visiteur, par personne</td><td class="num">100 $</td></tr><tr><td>Visa de visiteur, maximum par famille (5 personnes ou plus)</td><td class="num">500 $</td></tr><tr><td>Prolonger le séjour comme visiteur</td><td class="num">100 $</td></tr><tr><td>Permis de séjour temporaire</td><td class="num">246,25 $</td></tr><tr><td>Autorisation de voyage électronique (AVE)</td><td class="num">7 $</td></tr></tbody></table></div><h3>Études et travail</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Demande</th><th>Frais</th></tr></thead><tbody><tr><td>Permis d'études (prolongation incluse)</td><td class="num">150 $</td></tr><tr><td>Permis de travail (prolongation incluse)</td><td class="num">155 $</td></tr><tr><td>Titulaire d'un permis de travail ouvert</td><td class="num">100 $</td></tr><tr><td>Frais de conformité de l'employeur</td><td class="num">230 $</td></tr><tr><td>Expérience internationale Canada</td><td class="num">184,75 $</td></tr><tr><td>Biométrie, par personne</td><td class="num">85 $</td></tr><tr><td>Biométrie, famille de 2 personnes ou plus (maximum)</td><td class="num">170 $</td></tr></tbody></table></div><h3>Résidence permanente</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Demande</th><th>Frais</th></tr></thead><tbody><tr><td>Économique (Entrée express, provinces), demandeur principal : avec le droit de résidence permanente</td><td class="num">1 590 $</td></tr><tr><td>Même catégorie, sans le droit de résidence permanente</td><td class="num">990 $</td></tr><tr><td>Gens d'affaires, demandeur principal : avec le droit de résidence permanente</td><td class="num">2 495 $</td></tr><tr><td>Gens d'affaires, sans le droit de résidence permanente</td><td class="num">1 895 $</td></tr><tr><td>Conjoint ou partenaire accompagnant (économique), avec le droit de résidence permanente</td><td class="num">1 590 $</td></tr><tr><td>Enfant à charge (économique)</td><td class="num">270 $</td></tr><tr><td>Droit de résidence permanente seul</td><td class="num">600 $</td></tr></tbody></table></div><h3>Parrainage familial</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Demande</th><th>Frais</th></tr></thead><tbody><tr><td>Époux, partenaire, parent, grand-parent ou proche de 22 ans ou plus : avec le droit de résidence permanente</td><td class="num">1 260 $</td></tr><tr><td>Mêmes catégories, sans le droit de résidence permanente</td><td class="num">660 $</td></tr><tr><td>Enfant à charge, enfant adopté ou orphelin</td><td class="num">180 $</td></tr></tbody></table></div><h3>Documents et citoyenneté</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Demande</th><th>Frais</th></tr></thead><tbody><tr><td>Carte de résident permanent</td><td class="num">50 $</td></tr><tr><td>Titre de voyage de résident permanent</td><td class="num">50 $</td></tr><tr><td>Citoyenneté, adulte (traitement et droit de citoyenneté inclus)</td><td class="num">653 $</td></tr><tr><td>Citoyenneté, mineur</td><td class="num">100 $</td></tr><tr><td>Preuve de citoyenneté</td><td class="num">75 $</td></tr><tr><td>Autorisation de retour au Canada</td><td class="num">492,50 $</td></tr></tbody></table></div>
 <p class="note">Ces frais sont payés directement au gouvernement et s'ajoutent à nos honoraires. Ils peuvent changer : la liste officielle sur le site d'IRCC (canada.ca) fait foi. Les frais du Québec (certificat d'acceptation, sélection) et ceux des tests de langue, de VFS et des traductions ne figurent pas ici.</p>
-<p><a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/honoraires/">Nos honoraires</a></p></div></section>''',
+<p><a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/budget-immigration-canada/">Calculer mon budget</a> <a class="btn" href="/honoraires/">Nos honoraires</a></p></div></section>''',
     faq=[
         ("Ces frais s'ajoutent-ils à vos honoraires ?", "Oui. Les frais du gouvernement se paient directement aux autorités ; nos honoraires rémunèrent notre travail."),
         ("Quand ces frais changent-ils ?", "IRCC publie ses changements à l'avance sur son site. La dernière hausse des frais de résidence permanente date du 30 avril 2026."),
@@ -821,7 +824,61 @@ PAGES.append(dict(
 ))
 
 
-AR_OF = {'honoraires/': 'ar/fees/', 'frais-officiels-immigration-canada/': 'ar/official-fees/', 'deroulement-dossier-immigration/': 'ar/case-process/', 'rendez-vous/': 'ar/book-consultation/', 'evaluer-mon-dossier/': 'ar/evaluate-my-case/', 'calculateur-entree-express/': 'ar/express-entry-calculator/', 'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
+PAGES.append(dict(
+    path='budget-immigration-canada/', updated='24 novembre 2026', updated_iso='2026-11-24',
+    neutral=True,
+    title="Calculateur de budget d'immigration au Canada | ATL Canada",
+    desc="Estimez le budget de votre dossier : honoraires de départ, frais du gouvernement et biométrie, selon le service et la taille de la famille. Estimation indicative gratuite.",
+    crumb="Calculateur de budget",
+    eyebrow="Outil gratuit · estimation en 30 secondes",
+    h1="Calculateur de budget",
+    lede="Choisissez votre service pour estimer ce que coûte votre dossier : nos honoraires, les frais du gouvernement et la biométrie. Rien n'est envoyé ni enregistré.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap">
+<link rel="stylesheet" href="/assets/budget.css">
+<div id="budget-app" data-lang="fr"></div>
+<noscript><p class="note">Ce calculateur demande JavaScript. Consultez plutôt nos <a href="/honoraires/">honoraires</a> et les <a href="/frais-officiels-immigration-canada/">frais officiels</a>.</p></noscript>
+<script src="/assets/budget.js" defer></script>
+</div></section>''',
+    faq=[
+        ("Ce montant est-il définitif ?", "Non. C'est une estimation à partir de nos prix de départ et des frais officiels. Le prix final est fixé après la consultation selon la complexité du dossier."),
+        ("Les taxes sont-elles incluses ?", "Non. Les taxes applicables s'ajoutent à nos honoraires."),
+        ("Pourquoi la biométrie est-elle indiquée « si requise » ?", "Elle n'est pas demandée à tout le monde : une personne qui l'a déjà donnée récemment peut en être dispensée. Nous vérifions cela avec vous."),
+    ],
+    sources=[],
+    related=[('/honoraires/', 'Nos honoraires'), ('/frais-officiels-immigration-canada/', 'Frais officiels')],
+))
+
+
+PAGES.append(dict(
+    path='a-propos/', updated='24 novembre 2026', updated_iso='2026-11-24',
+    neutral=True,
+    title="À propos d'ATL Canada : consultant réglementé en immigration | ATL Canada",
+    desc="ATL Canada est dirigé par un consultant réglementé en immigration canadienne (CCIC R712906), avec des bureaux à Montréal et à Casablanca. Qui nous sommes, ce que nous faisons et ce que nous ne promettons pas.",
+    crumb="À propos",
+    eyebrow="Montréal · Casablanca",
+    h1="À propos d'ATL Canada",
+    lede="Un cabinet d'immigration dirigé par un consultant réglementé, avec des bureaux à Montréal et à Casablanca, au service des candidats du Maroc, d'ailleurs et des personnes déjà au Canada.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>Qui nous sommes</h2><div class="prose">
+<p>ATL Canada accompagne les personnes qui veulent étudier, travailler, s'établir ou faire venir leur famille au Canada, et celles qui sont déjà au Canada et doivent prolonger ou changer leur statut.</p>
+<p>Le cabinet est dirigé par un consultant réglementé en immigration canadienne, membre du Collège des consultants en immigration et en citoyenneté (CCIC), sous le numéro de permis R712906. Vous pouvez vérifier ce permis au <a href="https://registre.college-ic.ca/Public-Register-FR/Licensee/Profile.aspx?ID=10629" target="_blank" rel="noopener">registre public du Collège</a>.</p></div></div></section>
+<section class="sp alt"><div class="wrap"><h2>Ce que nous faisons</h2>
+<div class="prose"><ul><li>Une consultation pour comprendre votre situation et vous dire quelles voies sont réalistes.</li><li>La préparation, la vérification et le dépôt de votre demande, puis le suivi.</li><li>Un prix annoncé à l'avance, écrit dans une entente de services signée avant tout paiement.</li><li>Un accompagnement en français et en arabe.</li></ul></div></div></section>
+<section class="sp"><div class="wrap"><h2>Ce que nous ne faisons pas</h2><div class="prose">
+<p>Nous ne garantissons ni un résultat ni un délai : la décision appartient uniquement à IRCC et aux autorités du Québec. Nous ne promettons pas d'offre d'emploi et nous n'achetons pas de documents. Si une voie n'est pas réaliste pour vous, nous vous le disons honnêtement.</p>
+<p><a class="btn btn-solid" href="/rendez-vous/">Prendre rendez-vous</a> <a class="btn" href="/honoraires/">Nos honoraires</a> <a class="btn" href="/deroulement-dossier-immigration/">Déroulement d'un dossier</a></p></div></div></section>''',
+    faq=[
+        ("ATL Canada est-il un cabinet réglementé ?", "Oui. Il est dirigé par un consultant réglementé en immigration canadienne (CCIC R712906), dont le permis est vérifiable au registre public du Collège."),
+        ("Où sont vos bureaux ?", "À Montréal (8405 Viau, Québec H1R 2T6) et à Casablanca (325 Emile Zola). Les consultations se font aussi par téléphone, WhatsApp ou Teams."),
+        ("Servez-vous seulement les candidats du Maroc ?", "Non. Nous accompagnons aussi des personnes d'autres nationalités et des personnes déjà au Canada."),
+    ],
+    sources=[],
+    related=[('/rendez-vous/', 'Prendre rendez-vous'), ('/honoraires/', 'Nos honoraires')],
+))
+
+
+AR_OF = {'a-propos/': 'ar/about/', 'budget-immigration-canada/': 'ar/budget-calculator/', 'honoraires/': 'ar/fees/', 'frais-officiels-immigration-canada/': 'ar/official-fees/', 'deroulement-dossier-immigration/': 'ar/case-process/', 'rendez-vous/': 'ar/book-consultation/', 'evaluer-mon-dossier/': 'ar/evaluate-my-case/', 'calculateur-entree-express/': 'ar/express-entry-calculator/', 'gens-affaires-immigration-canada/': 'ar/business-immigration/', 'residence-permanente-canada/': 'ar/permanent-residence/', 'entree-express-canada/': 'ar/express-entry/', 'candidats-provinces-canada/': 'ar/provincial-nominee/', 'citoyennete-canadienne/': 'ar/canadian-citizenship/', 'visa-visiteur-super-visa-canada/': 'ar/visitor-visa-super-visa/', 'parrainage-familial-canada/': 'ar/family-sponsorship/', 'permis-de-travail-canada/': 'ar/work-permit/', 'immigration-quebec-canada/': 'ar/immigrate-to-quebec/', 'permis-etudes-canada-maroc/': 'ar/study-permit-morocco/', 'entree-express-francophone-maroc/': 'ar/express-entry-french/', 'documents-maroc-immigration-canada/': 'ar/moroccan-documents/'}
 
 
 def head_for(p):

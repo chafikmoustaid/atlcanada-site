@@ -821,12 +821,15 @@ PAGES.append(dict(
 <section class="sp alt"><div class="wrap"><h2>كيف يُحدَّد السعر النهائي</h2><div class="prose">
 <p>السعر «ابتداءً من» يخص ملفًا بسيطًا. بعد الاستشارة نسلّمك عرض سعر دقيقًا: الملف المعقّد (رفض سابق، وضع خاص، وثائق كثيرة) قد يكلّف أكثر، ونخبرك بذلك قبل أن نبدأ. وتُكتب الخدمات المتفق عليها والأتعاب في عقد خدمات توقّعه قبل أي دفع.</p>
 <p>أما <a href="/ar/official-fees/">الرسوم الحكومية الرسمية</a> فتُدفع مباشرة إلى السلطات ولا تدخل في أتعابنا.</p>
-<p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/case-process/">سير الملف</a></p>
+<p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/budget-calculator/">احسب ميزانيتي</a> <a class="btn" href="/ar/case-process/">سير الملف</a></p>
 <p class="note">لا نتيجة مضمونة: القرار يعود حصريًا إلى IRCC وسلطات كيبيك.</p></div></div></section>''',
     faq=[
         ("لماذا «ابتداءً من»؟", "لكل ملف خصوصيته. السعر الابتدائي يخص ملفًا بسيطًا، ويُحدَّد السعر النهائي بعد الاستشارة ويُكتب في عقد الخدمات."),
         ("هل الرسوم الحكومية مشمولة؟", "لا. تُدفع مباشرة إلى IRCC أو سلطات كيبيك. اطّلع على صفحة الرسوم الرسمية."),
         ("ماذا لو رُفض طلبي؟", "الأتعاب مقابل عملنا لا مقابل النتيجة التي لا يضمنها أحد. وتفاصيل الشروط مكتوبة في عقد الخدمات."),
+        ("هل تُخصم الاستشارة الأولية؟", "نعم. إن اعتمدتم خدماتنا تُخصم 100 دولار من سعر ملفكم."),
+        ("هل الضرائب مشمولة؟", "لا. الضرائب المطبّقة تُضاف إلى أتعابنا الابتدائية."),
+        ("هل يمكنني معرفة السعر الدقيق قبل الاستشارة؟", "السعر «ابتداءً من» يعطي فكرة عن الحجم. أما السعر الدقيق فيتوقف على وضعكم ونسلّمه لكم كتابةً بعد الاستشارة. ويمكنكم أيضًا تجربة <a href=\"/ar/budget-calculator/\">حاسبة الميزانية</a>."),
         ("هل يمكنني الدفع على دفعات؟", "طريقة الدفع مكتوبة في عقد الخدمات. تحدّث معنا في الاستشارة."),
     ],
     sources=[],
@@ -846,7 +849,7 @@ PAGES.append(dict(
     body=f'''{TRUST}
 <section class="sp"><div class="wrap"><h3>الزوار</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>الطلب</th><th>الرسوم</th></tr></thead><tbody><tr><td>تأشيرة الزيارة، للشخص</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>تأشيرة الزيارة، الحد الأقصى للعائلة (5 أشخاص فأكثر)</td><td class="num"><bdi dir="ltr">500 $</bdi></td></tr><tr><td>تمديد الإقامة كزائر</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>تصريح الإقامة المؤقتة</td><td class="num"><bdi dir="ltr">246,25 $</bdi></td></tr><tr><td>إذن السفر الإلكتروني (eTA)</td><td class="num"><bdi dir="ltr">7 $</bdi></td></tr></tbody></table></div><h3>الدراسة والعمل</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>الطلب</th><th>الرسوم</th></tr></thead><tbody><tr><td>تصريح الدراسة (التمديد مشمول)</td><td class="num"><bdi dir="ltr">150 $</bdi></td></tr><tr><td>تصريح العمل (التمديد مشمول)</td><td class="num"><bdi dir="ltr">155 $</bdi></td></tr><tr><td>حامل تصريح عمل مفتوح</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>رسوم امتثال صاحب العمل</td><td class="num"><bdi dir="ltr">230 $</bdi></td></tr><tr><td>برنامج التجربة الدولية كندا</td><td class="num"><bdi dir="ltr">184,75 $</bdi></td></tr><tr><td>البيانات البيومترية، للشخص</td><td class="num"><bdi dir="ltr">85 $</bdi></td></tr><tr><td>البيانات البيومترية، عائلة من شخصين فأكثر (الحد الأقصى)</td><td class="num"><bdi dir="ltr">170 $</bdi></td></tr></tbody></table></div><h3>الإقامة الدائمة</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>الطلب</th><th>الرسوم</th></tr></thead><tbody><tr><td>اقتصادية (الدخول السريع، المقاطعات)، مقدّم الطلب الرئيسي: مع رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">1 590 $</bdi></td></tr><tr><td>الفئة نفسها، من دون رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">990 $</bdi></td></tr><tr><td>رجال الأعمال، مقدّم الطلب الرئيسي: مع رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">2 495 $</bdi></td></tr><tr><td>رجال الأعمال، من دون رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">1 895 $</bdi></td></tr><tr><td>الزوج أو الشريك المرافق (اقتصادية)، مع رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">1 590 $</bdi></td></tr><tr><td>طفل معال (اقتصادية)</td><td class="num"><bdi dir="ltr">270 $</bdi></td></tr><tr><td>رسم حق الإقامة الدائمة وحده</td><td class="num"><bdi dir="ltr">600 $</bdi></td></tr></tbody></table></div><h3>الكفالة العائلية</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>الطلب</th><th>الرسوم</th></tr></thead><tbody><tr><td>الزوج أو الشريك أو الوالد أو الجد أو قريب عمره 22 سنة فأكثر: مع رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">1 260 $</bdi></td></tr><tr><td>الفئات نفسها، من دون رسم حق الإقامة الدائمة</td><td class="num"><bdi dir="ltr">660 $</bdi></td></tr><tr><td>طفل معال أو متبنّى أو يتيم</td><td class="num"><bdi dir="ltr">180 $</bdi></td></tr></tbody></table></div><h3>الوثائق والجنسية</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>الطلب</th><th>الرسوم</th></tr></thead><tbody><tr><td>بطاقة الإقامة الدائمة</td><td class="num"><bdi dir="ltr">50 $</bdi></td></tr><tr><td>وثيقة سفر للمقيم الدائم</td><td class="num"><bdi dir="ltr">50 $</bdi></td></tr><tr><td>الجنسية، للبالغ (المعالجة ورسم الجنسية مشمولان)</td><td class="num"><bdi dir="ltr">653 $</bdi></td></tr><tr><td>الجنسية، للقاصر</td><td class="num"><bdi dir="ltr">100 $</bdi></td></tr><tr><td>إثبات الجنسية</td><td class="num"><bdi dir="ltr">75 $</bdi></td></tr><tr><td>إذن العودة إلى كندا</td><td class="num"><bdi dir="ltr">492,50 $</bdi></td></tr></tbody></table></div>
 <p class="note">تُدفع هذه الرسوم مباشرة إلى الحكومة وتُضاف إلى أتعابنا. وهي قابلة للتغيير: تبقى القائمة الرسمية على موقع IRCC (canada.ca) هي المرجع. ولا تشمل هذه الصفحة رسوم كيبيك (شهادة القبول، الاختيار) ولا رسوم اختبارات اللغة وVFS والترجمة.</p>
-<p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/fees/">أتعابنا</a></p></div></section>''',
+<p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/budget-calculator/">احسب ميزانيتي</a> <a class="btn" href="/ar/fees/">أتعابنا</a></p></div></section>''',
     faq=[
         ("هل تُضاف هذه الرسوم إلى أتعابكم؟", "نعم. الرسوم الحكومية تُدفع مباشرة إلى السلطات، أما أتعابنا فمقابل عملنا."),
         ("متى تتغير هذه الرسوم؟", "تعلن IRCC تغييراتها مسبقًا على موقعها. وآخر زيادة في رسوم الإقامة الدائمة كانت في 30 أبريل 2026."),
@@ -854,6 +857,60 @@ PAGES.append(dict(
     ],
     sources=[],
     related=[('/ar/fees/', 'أتعابنا'), ('/ar/book-consultation/', 'احجز موعدًا')],
+))
+
+
+PAGES.append(dict(
+    path='ar/budget-calculator/', fr='budget-immigration-canada/', updated='24 نوفمبر 2026', updated_iso='2026-11-24',
+    neutral=True,
+    title="حاسبة ميزانية الهجرة إلى كندا | ATL Canada",
+    desc="قدِّر ميزانية ملفك: الأتعاب الابتدائية ورسوم الحكومة والبيانات البيومترية بحسب الخدمة وعدد أفراد العائلة. تقدير مجاني إرشادي.",
+    crumb="حاسبة الميزانية",
+    eyebrow="أداة مجانية · تقدير في 30 ثانية",
+    h1="حاسبة الميزانية",
+    lede="اختر خدمتك لتقدّر تكلفة ملفك: أتعابنا ورسوم الحكومة والبيانات البيومترية. لا يُرسَل شيء ولا يُحفَظ.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap">
+<link rel="stylesheet" href="/assets/budget.css">
+<div id="budget-app" data-lang="ar"></div>
+<noscript><p class="note">تحتاج هذه الحاسبة إلى جافاسكريبت. اطّلع بدلًا من ذلك على <a href="/ar/fees/">الأتعاب</a> و<a href="/ar/official-fees/">الرسوم الرسمية</a>.</p></noscript>
+<script src="/assets/budget.js" defer></script>
+</div></section>''',
+    faq=[
+        ("هل هذا المبلغ نهائي؟", "لا. هو تقدير انطلاقًا من أسعارنا الابتدائية والرسوم الرسمية. ويُحدَّد السعر النهائي بعد الاستشارة بحسب تعقيد الملف."),
+        ("هل الضرائب مشمولة؟", "لا. الضرائب المطبّقة تُضاف إلى أتعابنا."),
+        ("لماذا تظهر البيانات البيومترية «إن طُلبت»؟", "لا تُطلب من الجميع: من قدّمها حديثًا قد يُعفى منها. نتحقق من ذلك معك."),
+    ],
+    sources=[],
+    related=[('/ar/fees/', 'أتعابنا'), ('/ar/official-fees/', 'الرسوم الرسمية')],
+))
+
+
+PAGES.append(dict(
+    path='ar/about/', fr='a-propos/', updated='24 نوفمبر 2026', updated_iso='2026-11-24',
+    neutral=True,
+    title="من نحن: ATL Canada مستشار هجرة مرخَّص | ATL Canada",
+    desc="يديره مستشار هجرة كندي مرخَّص (CCIC R712906) ولدينا مكتبان في مونتريال والدار البيضاء. من نحن، وماذا نفعل، وما لا نعد به.",
+    crumb="من نحن",
+    eyebrow="مونتريال · الدار البيضاء",
+    h1="من نحن",
+    lede="مكتب هجرة يديره مستشار مرخَّص، بمكتبين في مونتريال والدار البيضاء، في خدمة المرشحين من المغرب ومن غيره، والمقيمين أصلًا في كندا.",
+    body=f'''{TRUST}
+<section class="sp"><div class="wrap"><h2>من نحن</h2><div class="prose">
+<p>نرافق من يريد الدراسة أو العمل أو الاستقرار في كندا أو لمّ شمل عائلته، ومن يقيم فيها أصلًا ويحتاج إلى تمديد وضعه أو تغييره.</p>
+<p>يدير المكتب مستشار هجرة كندي مرخَّص، عضو في كلية مستشاري الهجرة والجنسية (CCIC)، برقم الترخيص R712906. يمكنكم التحقق من الترخيص في <a href="https://registre.college-ic.ca/Public-Register-FR/Licensee/Profile.aspx?ID=10629" target="_blank" rel="noopener">السجل العام للكلية</a>.</p></div></div></section>
+<section class="sp alt"><div class="wrap"><h2>ماذا نفعل</h2>
+<div class="prose"><ul><li>استشارة لفهم وضعكم وإخباركم بالمسارات الواقعية.</li><li>إعداد طلبكم ومراجعته وتقديمه ثم متابعته.</li><li>سعر معلن مسبقًا ومكتوب في عقد خدمات توقّعونه قبل أي دفع.</li><li>مرافقة بالفرنسية والعربية.</li></ul></div></div></section>
+<section class="sp"><div class="wrap"><h2>ما لا نفعله</h2><div class="prose">
+<p>لا نضمن نتيجة ولا مدة: القرار يعود حصريًا إلى IRCC وسلطات كيبيك. لا نعد بعقد عمل ولا نشتري وثائق. وإن لم يكن مسار ما واقعيًا لكم فنقول لكم ذلك بصراحة.</p>
+<p><a class="btn btn-solid" href="/ar/book-consultation/">احجز موعدًا</a> <a class="btn" href="/ar/fees/">أتعابنا</a> <a class="btn" href="/ar/case-process/">سير الملف</a></p></div></div></section>''',
+    faq=[
+        ("هل ATL Canada مكتب مرخَّص؟", "نعم. يديره مستشار هجرة كندي مرخَّص (CCIC R712906) ويمكن التحقق من ترخيصه في السجل العام للكلية."),
+        ("أين مكاتبكم؟", "في مونتريال (8405 Viau, Québec H1R 2T6) وفي الدار البيضاء (325 Emile Zola). وتتم الاستشارات أيضًا عبر الهاتف أو واتساب أو Teams."),
+        ("هل تخدمون المرشحين المغاربة فقط؟", "لا. نرافق أيضًا أشخاصًا من جنسيات أخرى ومقيمين أصلًا في كندا."),
+    ],
+    sources=[],
+    related=[('/ar/book-consultation/', 'احجز موعدًا'), ('/ar/fees/', 'أتعابنا')],
 ))
 
 

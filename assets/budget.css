@@ -1,0 +1,11 @@
+/* Calculateur de budget */
+#budget-app{max-width:760px;margin:0 auto}
+.bd-card,.bd-res{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:0 0 18px}
+.bd-l{display:block;font-weight:600;color:var(--ink);margin:14px 0 6px}.bd-l:first-child{margin-top:0}
+#budget-app select,#budget-app input[type=number]{width:100%;min-height:48px;border:1px solid var(--line);border-radius:12px;padding:0 14px;font:inherit;background:var(--paper);color:var(--ink);box-sizing:border-box}
+.bd-res h2{margin:0 0 10px}
+.bd-t{width:100%}.bd-t td{padding:10px 8px}.bd-t td.num{text-align:end;white-space:nowrap;font-weight:600}
+.bd-t .bd-tot td{font-size:1.2rem;font-weight:800;border-top:2px solid var(--ink)}
+.bd-n{font-size:.88rem;color:var(--ink-soft);margin:14px 0}
+.bd-cta{display:flex;flex-wrap:wrap;gap:10px;margin:0}
+@media (max-width:600px){.bd-card,.bd-res{padding:16px}.bd-cta .btn{flex:1 1 100%}}

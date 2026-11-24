@@ -22,3 +22,25 @@ for f in glob.glob(R + '**/*.html', recursive=True):
     if t != s:
         open(f, 'w', encoding='utf-8').write(t); n += 1
 print('fees_link : modifié', n, 'fichiers')
+
+# budget + à propos dans les pieds de page (idempotent)
+PAIRS2 = (
+ ('<a href="/frais-officiels-immigration-canada/">Frais officiels</a></li>', '\n          <li><a href="/budget-immigration-canada/">Calculateur de budget</a></li>\n          <li><a href="/a-propos/">À propos</a></li>'),
+ ('<a href="/frais-officiels-immigration-canada/">Frais officiels</a>', ' · <a href="/budget-immigration-canada/">Calculateur de budget</a> · <a href="/a-propos/">À propos</a>'),
+ ('<a href="/ar/official-fees/">الرسوم الرسمية</a>', ' · <a href="/ar/budget-calculator/">حاسبة الميزانية</a> · <a href="/ar/about/">من نحن</a>'),
+)
+k = 0
+for f in glob.glob(R + '**/*.html', recursive=True):
+    t = s0 = open(f, encoding='utf-8').read()
+    if '/budget-immigration-canada/' in t.split('Frais officiels</a>')[-1][:300] or '/ar/budget-calculator/' in t.split('الرسوم الرسمية</a>')[-1][:300]:
+        continue
+    for a, b in PAIRS2:
+        if a in t and 'class="fee-box"' not in a:
+            idx = t.find(a)
+            # ne pas toucher au texte des encadrés / pages de frais : seulement le pied de page
+            if t.rfind('<footer', 0, idx) == -1: continue
+            t = t[:idx + len(a)] + b + t[idx + len(a):]
+            break
+    if t != s0:
+        open(f, 'w', encoding='utf-8').write(t); k += 1
+print('budget_about_link : modifié', k, 'fichiers')
