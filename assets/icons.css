@@ -222,3 +222,10 @@ nav.primary a.nav-eval{display:none}
 .chk li:has(input:checked) label{background:var(--paper);opacity:.75}.chk li:has(input:checked) span{text-decoration:line-through}
 .fee-share{white-space:nowrap}
 @media print{.chk label{border:0;padding:4px 0}.btn,.fab-contact{display:none}}
+/* sélecteur de langues : 3 langues sans déborder */
+.nav-actions .lang a{margin:0 8px!important}
+@media (max-width:640px){.nav-actions .lang a{margin:0 5px!important;font-size:.82rem}}
+@media (max-width:1700px){.nav-actions .lang a{margin:0 6px!important;font-size:.92rem}}
+.nav-actions .lang .l-short{display:none}
+@media (max-width:640px){.nav-actions .lang .l-full{display:none}.nav-actions .lang .l-short{display:inline}}
+@media (max-width:400px){.nav-actions .lang a{margin:0 3px!important}}

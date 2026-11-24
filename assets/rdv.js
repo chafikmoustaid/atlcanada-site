@@ -1,8 +1,19 @@
 /* Prise de rendez-vous (ATL Canada) : envoi par FormSubmit, comme le formulaire de contact. */
 (function(){
 var root=document.getElementById('rdv-app'); if(!root) return;
-var AR=root.getAttribute('data-lang')==='ar';
-var S=AR?{
+var AR=root.getAttribute('data-lang')==='ar', EN=root.getAttribute('data-lang')==='en';
+var SE={
+ fn:'First name',ln:'Last name',ph:'Phone or WhatsApp (with country code)',em:'Email (optional)',co:'Country of residence',
+ co_o:['Morocco','Canada','Another country'],top:'Consultation topic',
+ top_o:['General review of my situation','Studying in Canada','Working in Canada','Permanent residence (Express Entry, provinces)','Immigrating to Quebec','Family sponsorship','Visit or super visa','Citizenship','Other'],
+ mode:'Consultation format',mode_o:['Phone call','WhatsApp','Video call (Teams)','Montréal office','Casablanca office'],
+ day:'Preferred day',slot:'Preferred time slot (Montréal time)',slot_h:'Choose the day first',
+ msg:'Anything useful for us to know (optional)',cons:'I have read the <a href="/confidentialite/" target="_blank">privacy policy</a> (in French) and agree that my information is used to answer my request.',
+ send:'Send my appointment request',sending:'Sending…',ok:'Thank you! We have your request and will contact you shortly to confirm the time.',
+ ko:'Unable to send right now. Email us at contact@atlcanada.com or call +1 514 295 6635.',
+ sun:'The office is closed on Sunday. Please choose another day.',auto:'Thank you for your request. We have received your appointment request with ATL Canada and will contact you soon to confirm the time. This is not yet a confirmed appointment. For urgent matters: +1 514 295 6635 (call or WhatsApp).',note:'This request is not a confirmed appointment: we will contact you to set the time.',subj:'New appointment request (English) from atlcanada.com'
+};
+var S=EN?SE:AR?{
  fn:'الاسم الشخصي',ln:'الاسم العائلي',ph:'رقم الهاتف أو واتساب (مع رمز البلد)',em:'البريد الإلكتروني (اختياري)',co:'بلد الإقامة',
  co_o:['المغرب','كندا','بلد آخر'],top:'موضوع الاستشارة',
  top_o:['تقييم عام لملفي','الدراسة في كندا','العمل في كندا','الإقامة الدائمة (الدخول السريع، المقاطعات)','الهجرة إلى كيبيك','كفالة فرد من العائلة','زيارة أو سوبر فيزا','الجنسية','موضوع آخر'],
@@ -23,8 +34,8 @@ var S=AR?{
  ko:'Envoi impossible pour le moment. Écrivez-nous à contact@atlcanada.com ou appelez le +1 514 295 6635.',
  sun:'Le bureau est fermé le dimanche. Choisissez un autre jour.',auto:'Merci pour votre demande. Nous avons bien reçu votre demande de rendez-vous avec ATL Canada et nous vous contactons bientôt pour confirmer l\'heure. Ce n\'est pas encore un rendez-vous confirmé. Pour une urgence : +1 514 295 6635 (appel ou WhatsApp).',note:'Cette demande n\'est pas un rendez-vous confirmé : nous vous contactons pour fixer l\'heure.',subj:'Nouvelle demande de rendez-vous depuis atlcanada.com'
 };
-var WK=AR?['من 10:00 إلى 12:00','من 12:00 إلى 15:00','من 15:00 إلى 18:00']:['10 h à 12 h','12 h à 15 h','15 h à 18 h'];
-var SA=AR?['من 10:00 إلى 12:30']:['10 h à 12 h 30'];
+var WK=EN?['10:00 a.m. to 12:00 p.m.','12:00 p.m. to 3:00 p.m.','3:00 p.m. to 6:00 p.m.']:AR?['من 10:00 إلى 12:00','من 12:00 إلى 15:00','من 15:00 إلى 18:00']:['10 h à 12 h','12 h à 15 h','15 h à 18 h'];
+var SA=EN?['10:00 a.m. to 12:30 p.m.']:AR?['من 10:00 إلى 12:30']:['10 h à 12 h 30'];
 function opt(a){return a.map(function(x){return '<option>'+x+'</option>'}).join('')}
 function iso(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)}
 var t=new Date(); t.setDate(t.getDate()+1); var mx=new Date(); mx.setDate(mx.getDate()+60);
