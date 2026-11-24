@@ -22,7 +22,7 @@ topbar = re.sub(r'<div class="nav-actions">.*?</div>\n  </div>',
     '<div class="nav-actions"><span class="lang" style="color:#fff"><a style="color:#fff;margin:0 10px" href="/" lang="fr" hreflang="fr"><span class="l-full">Français</span><span class="l-short">FR</span></a><a style="color:#fff;margin:0 10px" href="/ar/" lang="ar" hreflang="ar"><span class="l-full">العربية</span><span class="l-short">AR</span></a></span><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a></div>\n  </div>', topbar, count=1, flags=re.S)
 footer = ref[ref.index('</main>'):]
 footer = re.sub(r'<footer>.*?</footer>',
-    '<footer><div class="wrap"><p style="margin:0 0 12px;font-size:.9rem"><a href="/en/">Home</a> · <a href="/en/fees/">Fees</a> · <a href="/en/official-fees/">Official fees</a> · <a href="/en/study-permit/">Study permit</a> · <a href="/en/work-permit/">Work permit</a> · <a href="/en/express-entry/">Express Entry</a> · <a href="/en/budget-calculator/">Budget calculator</a> · <a href="/en/book-consultation/">Book a consultation</a> · <a href="/en/case-process/">How a case works</a> · <a href="/en/about/">About</a> · <a href="/">Français</a> · <a href="/ar/" lang="ar">العربية</a></p><div class="footer-bottom"><a href="/confidentialite/" style="color:inherit">Privacy (French)</a> <span>© 2026 ATL Canada</span><span>Regulated Canadian immigration consultant (RCIC), licence <a class="ccic-link" href="https://registre.college-ic.ca/Public-Register-FR/Licensee/Profile.aspx?ID=10629" target="_blank" rel="noopener">R712906</a> with the CICC.</span></div></div></footer>',
+    '<footer><div class="wrap"><p style="margin:0 0 12px;font-size:.9rem"><a href="/en/">Home</a> · <a href="/en/fees/">Fees</a> · <a href="/en/official-fees/">Official fees</a> · <a href="/en/study-permit/">Study permit</a> · <a href="/en/work-permit/">Work permit</a> · <a href="/en/express-entry/">Express Entry</a> · <a href="/en/permanent-residence/">Permanent residence</a> · <a href="/en/provincial-nominee/">Provincial nominees</a> · <a href="/en/immigrate-to-quebec/">Quebec</a> · <a href="/en/family-sponsorship/">Family sponsorship</a> · <a href="/en/visitor-visa/">Visitor visa</a> · <a href="/en/citizenship/">Citizenship</a> · <a href="/en/business-immigration/">Business</a> · <a href="/en/express-entry-french/">Express Entry (French)</a> · <a href="/en/moroccan-documents/">Moroccan documents</a> · <a href="/en/budget-calculator/">Budget calculator</a> · <a href="/en/book-consultation/">Book a consultation</a> · <a href="/en/case-process/">How a case works</a> · <a href="/en/about/">About</a> · <a href="/">Français</a> · <a href="/ar/" lang="ar">العربية</a></p><div class="footer-bottom"><a href="/confidentialite/" style="color:inherit">Privacy (French)</a> <span>© 2026 ATL Canada</span><span>Regulated Canadian immigration consultant (RCIC), licence <a class="ccic-link" href="https://registre.college-ic.ca/Public-Register-FR/Licensee/Profile.aspx?ID=10629" target="_blank" rel="noopener">R712906</a> with the CICC.</span></div></div></footer>',
     footer, count=1, flags=re.S)
 footer = footer.replace('aria-label="Appeler" title="Appeler"', 'aria-label="Call" title="Call"')
 footer = re.sub(r'wa\.me/15142956635\?text=[^"]*', 'wa.me/15142956635?text=' + WA, footer)
@@ -54,7 +54,10 @@ def rich(headers, rows):
             rws = ''.join('<div class="cmp-row"><b>%s</b><span>%s</span></div>' % (r[0], r[k]) for r in rows)
             out += '<div class="cmp-card%s"><h3>%s</h3>%s</div>' % (' b' if k == 2 else '', e(headers[k]), rws)
         return '<div class="cmp">%s</div>' % out
-    return '<div class="info-grid">' + ''.join('<div class="info"><h3>%s</h3><p>%s</p></div>' % (r[0], r[1]) for r in rows) + '</div>'
+    def card(r):
+        if len(r) > 2: return '<a class="info info-link" href="%s"><h3>%s</h3><p>%s</p><span class="go">Learn more \u2192</span></a>' % (r[2], r[0], r[1])
+        return '<div class="info"><h3>%s</h3><p>%s</p></div>' % (r[0], r[1])
+    return '<div class="info-grid">' + ''.join(card(r) for r in rows) + '</div>'
 
 HON = [("Initial consultation (30 min), deducted from the price if you hire us", "100"), ("Study permit", "900"), ("Work permit: extension or post-graduation work permit", "650"),
  ("LMIA-exempt work permit", "1,100"), ("Visitor visa", "450"), ("Super visa (per applicant)", "800"), ("Express Entry: profile and permanent residence application", "2,150"),
@@ -83,7 +86,7 @@ P(path='en/', fr='/', ar='ar/', title="Immigration consultant in Montréal and C
 <p style="margin-top:20px"><a class="btn btn-solid" href="/en/fees/">See all fees</a> <a class="btn" href="/en/official-fees/">Official fees</a> <a class="btn" href="/en/budget-calculator/">Estimate my budget</a></p></div></section>
 <section class="sp"><div class="wrap"><h2>What we help with</h2>
 <div class="prose"><ul><li>Study permits: applications, extensions and changes of school.</li><li>Work permits: extensions, post-graduation and employer-supported permits.</li><li>Permanent residence: Express Entry, provincial nominee programs and Quebec.</li><li>Family sponsorship of a spouse, partner, parents or grandparents.</li><li>Visitor visas, super visas and Canadian citizenship.</li></ul>
-<p>Read more: <a href="/en/study-permit/">study permit</a>, <a href="/en/work-permit/">work permit</a> and <a href="/en/express-entry/">Express Entry</a>. Other service pages are currently available in <a href="/">French</a> and <a href="/ar/" lang="ar">Arabic</a>.</p>
+<p>Read more: <a href="/en/study-permit/">study permit</a>, <a href="/en/work-permit/">work permit</a>, <a href="/en/permanent-residence/">permanent residence</a>, <a href="/en/express-entry/">Express Entry</a>, <a href="/en/provincial-nominee/">provincial nominees</a>, <a href="/en/immigrate-to-quebec/">Quebec</a>, <a href="/en/family-sponsorship/">family sponsorship</a>, <a href="/en/visitor-visa/">visitor visa and super visa</a>, <a href="/en/citizenship/">citizenship</a>, <a href="/en/business-immigration/">business immigration</a>, <a href="/en/express-entry-french/">Express Entry for French speakers</a> and <a href="/en/moroccan-documents/">Moroccan documents</a>.</p>
 <p><a class="btn btn-solid" href="/en/book-consultation/">Book a consultation</a> <a class="btn" href="/en/case-process/">How a case works</a> <a class="btn" href="/en/about/">About us</a></p></div></div></section>''',
   faq=[("Who is behind ATL Canada?", "ATL Canada is led by a regulated Canadian immigration consultant (RCIC), licence R712906 with the College of Immigration and Citizenship Consultants. The licence can be checked in the College's public register."),
        ("Can I get a consultation in English?", "Yes. Consultations are offered in English, French and Arabic."),
@@ -327,6 +330,303 @@ P(path='en/express-entry/', fr='entree-express-canada/', ar='ar/express-entry/',
        ("Is an LMIA always needed for a job offer?", "According to IRCC, since November 3, 2026, an LMIA is no longer needed for a job offer to give the new points or meet the job offer requirements of the Federal Skilled Worker and Federal Skilled Trades programs."),
        ("What does “high-wage occupation” mean?", "According to IRCC, it is an occupation whose median wage is at least 1.3 times that of all Canadian workers. IRCC publishes and updates the list."),
        ("Do you guarantee an invitation?", "No. IRCC invites the top-ranked candidates in draws: nobody can guarantee an invitation or a result.")])
+
+P(path='en/family-sponsorship/', fr='parrainage-familial-canada/', ar='ar/family-sponsorship/', title="Family sponsorship in Canada: spouse, children, parents | ATL Canada",
+  desc="Reunite your family in Canada: who can be sponsored, proof of the relationship, declaring family members. A regulated consultant prepares your file.",
+  crumb="Family sponsorship", eyebrow="Family · Montréal · Casablanca", h1="Family sponsorship: reuniting your family in Canada",
+  lede="Spouse, dependent children, parents or grandparents: sponsorship lets your family come to live in Canada. Here is who can be sponsored and the points where a case is won or lost.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Who can be sponsored?</h2>
+{rich(['Relationship to you', 'What IRCC says'], [
+ ['Spouse', "Legally married, at least 18 years old, in a genuine relationship (not entered into only to gain permanent resident status)."],
+ ['Common-law partner', "At least 18 years old, in a genuine relationship, and having lived with you for at least 12 consecutive months in a conjugal relationship."],
+ ['Conjugal partner', "At least 18 years old, in an exclusive relationship of at least 1 year, living outside Canada and unable to live with you or marry you for specific reasons."],
+ ['Dependent child', "Your child, or your spouse's or partner's child, under 22 and without a spouse, or 22 or older but financially dependent because of a physical or mental condition (or dependent since before age 22)."],
+ ['Parents and grandparents', "Your parents and grandparents, by blood or adoption, with their dependent children. Your spouse's parents cannot be sponsored by you."],
+])}
+<p class="note" style="margin-top:18px">In all cases, the sponsored person must not be inadmissible to Canada.</p>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Points to prepare carefully</h2>
+<ol class="steps">
+<li><span>Check that the sponsor and the sponsored person meet IRCC's conditions, notably the sponsor's status in Canada.</span></li>
+<li><span>Show a genuine relationship: IRCC examines whether the bond is real and not just a way to obtain permanent residence.</span></li>
+<li><span>Declare all family members, including children who are not coming or whose other parent has sole custody. An omission can compromise the case.</span></li>
+<li><span>Gather the requested forms and documents, then respond to requests during processing (medical exam, police certificate, biometrics).</span></li>
+<li><span>Follow the case until the decision, without changing the declared information without talking to us.</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>An IRCC policy that allowed sponsoring some undeclared family members does not apply to applications filed after September 10, 2026: a complete declaration of the family is therefore essential. For Moroccan documents (birth certificate, police certificate), see also our page on <a href="/en/moroccan-documents/" style="text-decoration:underline">Moroccan documents</a>.</p></div>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>How we support you</h2><div class="prose">
+<p>At the consultation, we check with you which sponsorship category fits your family, whether the conditions are met and which proof of the relationship is strongest. We then prepare a complete, consistent file before filing. The program for parents and grandparents has its own access rules, which IRCC changes over time: we check with you where it stands at the time of your application.</p>
+{LAWNOTE}</div></div></section>''',
+  faq=[("Who can sponsor a family member?", "The sponsor must meet the conditions set by IRCC, notably regarding their status in Canada. We check them with you at the consultation."),
+       ("What is the difference between a spouse and a common-law partner?", "A spouse is legally married to you. A common-law partner is not, but has lived with you for at least 12 consecutive months in a conjugal relationship."),
+       ("Up to what age is a child dependent?", "A child under 22 without a spouse is considered dependent. Beyond that, the child must be financially dependent on their parents because of a physical or mental condition, or since before age 22."),
+       ("Must I declare a child who is not coming to Canada?", "Yes. IRCC requires all children to be declared, even those who are not coming or whose other parent has sole custody."),
+       ("Can you guarantee that the sponsorship will be approved?", "No. No serious consultant can guarantee a decision: it belongs solely to the Canadian authorities.")])
+
+P(path='en/visitor-visa/', fr='visa-visiteur-super-visa-canada/', ar='ar/visitor-visa-super-visa/', title="Visitor visa, super visa and extending your stay in Canada | ATL Canada",
+  desc="Visitor visa or super visa for your parents and grandparents: requirements, host's minimum income, insurance, medical exam. A regulated consultant supports you.",
+  crumb="Visitor visa and super visa", eyebrow="Visitors · Montréal · Casablanca", h1="Visitor visa, super visa and extending your stay",
+  lede="Visiting a relative, travelling or coming to see your children and grandchildren: the visitor visa covers most stays, and the super visa is designed for parents and grandparents. Here are the official requirements and the documents to prepare.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Visitor visa or super visa: which to choose?</h2>
+{rich(['', 'Visitor visa', 'Super visa'], [
+ ['Who it is for', "Anyone coming to visit Canada (family, tourism, business)", "Parents and grandparents of a Canadian citizen, a permanent resident or a person registered under the Indian Act"],
+ ['Stay', "Suitable for stays of 6 months or less, according to IRCC", "For longer stays: the officer may authorize a stay of 5 years, according to IRCC"],
+ ['Invitation', "An invitation letter can be useful, even requested in some cases", "Invitation letter signed by your child or grandchild, mandatory"],
+ ['Medical insurance', "Not required by IRCC's list of requirements", "Private insurance valid for at least 1 year, mandatory"],
+])}
+</div></section>
+<section class="sp"><div class="wrap"><h2>Already in Canada?</h2>
+{rich(['Situation', 'What IRCC says'], [
+ ['Extending your stay', "Visitors, but also workers and students authorized to work or study without a permit, can apply for an extension. File the application at least 30 days before your status expires."],
+ ['Which date counts?', "Check the stamp in your passport (not the date on the visitor visa); with no stamp, the limit is 6 months after your date of entry. For a study or work permit, it is the permit's date; for an extension already granted, the visitor record."],
+ ['Switching to visitor status', "A holder of a study or work permit can also apply to become a visitor. Your original entry document (visa, eTA) does not matter."],
+])}
+<p class="note" style="margin-top:18px">Is your status already expired or close to it? Talk to us quickly: the rules depend on your situation.</p>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Visitor visa: what IRCC checks</h2>
+<ol class="steps">
+<li><span>You have a valid travel document, such as a passport (IRCC recommends it be valid for at least 6 months from the planned travel date).</span></li>
+<li><span>You are in good health. A medical exam may be required.</span></li>
+<li><span>You have no criminal conviction or immigration-related conviction.</span></li>
+<li><span>You have ties to your home country (job, home, financial assets, family) that give you a reason to return.</span></li>
+<li><span>You show that you will leave Canada at the end of your stay.</span></li>
+<li><span>You have enough money for your stay: the amount depends on the length and type of accommodation (hotel or with relatives).</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>For a tourist stay, IRCC notably recommends including: an invitation letter and proof of your relationship with the person inviting you, your travel history, an itinerary, bank statements covering at least 6 months and a letter from your employer dated no more than 3 months ago.</p></div>
+{rich(['Item', 'What IRCC says'], [
+ ['Processing fee', "$100 CAD per person, or $500 CAD for a family of 5 or more."],
+ ['Biometrics', "$85 CAD per person, or up to $170 CAD for an eligible family. Wait for the instruction letter, then book your appointment quickly."],
+ ['Filing', "Online, through the IRCC portal. Paper applications are allowed only in specific cases."],
+ ['Validity', "A visa can be issued for a maximum of 10 years, or until the passport or biometrics expire if that happens first. The officer may set another date."],
+])}
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>Super visa: the requirements</h2>
+{rich(['Requirement', 'What IRCC says'], [
+ ["Your child or grandchild (the host)", "A Canadian citizen, permanent resident or person registered under the Indian Act, at least 18 years old and living in Canada. The relationship (biological or adopted child or grandchild) must be proven, for example with their birth certificate."],
+ ['Invitation letter', "Signed by the host, it must show that they meet the minimum necessary income and list everyone counted in their family, with name and date of birth. Their spouse or common-law partner may co-sign if they are a citizen, permanent resident or registered under the Indian Act."],
+ ["Host's minimum income", "It is set from Statistics Canada's low-income cut-offs. The host proves it with their Canada Revenue Agency notices of assessment for one of the two tax years before the application, or with other documents set by IRCC. The amount depends on family size: see the up-to-date table on IRCC's page, as it is updated."],
+ ['Medical insurance', "Private insurance valid for at least 1 year from the date of entry and for each entry into Canada, from a Canadian insurer or a foreign insurer authorized by OSFI and on its list. It covers health care, hospitalization and repatriation, with emergency coverage of at least $100,000. It must be paid, in full or in instalments with a deposit: a mere quote is not accepted."],
+ ['Medical exam', "An immigration medical exam, taken with a designated physician, is required."],
+ ['You (the applicant)', "You must be outside Canada when you apply and be admissible. IRCC also assesses whether you are a genuine visitor who will leave Canada at the end of the visit (ties, purpose of the stay, family, finances)."],
+])}
+<div class="prose" style="margin-top:18px"><p>Since January 28, 2025, insurance issued by an insurer established abroad is accepted if it is authorized by OSFI. If a sponsorship application is in progress, you can apply for a super visa while waiting for the decision. After approval, the visa is printed by a visa office outside Canada: wait for its instructions.</p></div>
+</div></section>
+<section class="sp"><div class="wrap"><h2>How we support you</h2><div class="prose">
+<p>We check with you which visa fits your situation, we review your child's or grandchild's income and family calculation, the invitation letter, the insurance and the supporting documents, then we prepare a complete file before filing. Any document that is not in French or English must be translated by a qualified translator.</p>
+{LAWNOTE}</div></div></section>''',
+  faq=[("Do I need a visa to come to Canada?", "It depends on your nationality and your means of transport. IRCC offers a tool, \u201cFind out if you need a visa or an eTA\u201d: we check it with you."),
+       ("What is the difference between the visitor visa and the super visa?", "The visitor visa suits most stays of 6 months or less. The super visa is reserved for parents and grandparents of a Canadian citizen or permanent resident and allows longer stays."),
+       ("Does my child need a minimum income for my super visa?", "Yes. The host must meet the minimum necessary income set by IRCC according to family size, and prove it, for example with notices of assessment."),
+       ("Is medical insurance mandatory?", "For the super visa, yes: at least 1 year of coverage from entry, with emergency coverage of at least $100,000. For the visitor visa, IRCC's list of requirements does not make it a requirement."),
+       ("Does an invitation letter guarantee the visa?", "No. It is mandatory for the super visa and can be useful for a visitor visa, but the decision rests on the whole file."),
+       ("Do you guarantee that I will get the visa?", "No. No serious consultant can guarantee a decision: it belongs solely to the Canadian authorities.")])
+
+P(path='en/citizenship/', fr='citoyennete-canadienne/', ar='ar/canadian-citizenship/', title="Canadian citizenship: requirements for permanent residents | ATL Canada",
+  desc="Becoming a Canadian citizen: 1,095 days of presence, taxes, language. The official requirements for adult permanent residents.",
+  crumb="Canadian citizenship", eyebrow="Citizenship · Montréal · Casablanca", h1="Canadian citizenship: requirements for adults",
+  lede="After permanent residence, citizenship is the next step for many families. Here are the official requirements to check before applying.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>Requirements for an adult (18 and over)</h2>
+{rich(['Requirement', 'What IRCC says'], [
+ ['Permanent resident status', "You must be a permanent resident with no unfulfilled condition, and your status must not be under immigration or fraud review or subject to a removal order."],
+ ['Physical presence', "1,095 days in Canada as a permanent resident in the 5 years before applying. Time spent as a temporary resident or protected person before permanent residence counts as half a day, up to a maximum of 365 days. Time spent in prison, on probation or on parole in Canada generally does not count."],
+ ['Taxes', "Having filed income tax returns for 3 tax years falling wholly or partly within the 5 years before applying."],
+ ['Language', "People aged 18 to 54 must prove ability in French or English at CLB level 4 or higher. People aged 55 and over and 17 and under are exempt, as are deaf people who cannot provide proof. A waiver on humanitarian grounds is possible."],
+])}
+<p class="note" style="margin-top:18px">Other grounds can prevent an application, for example pending criminal charges, certain convictions, or a previous refusal or revocation of citizenship.</p>
+</div></section>
+<section class="sp"><div class="wrap"><h2>How we support you</h2><div class="prose">
+<p>Before filing, we check with you the calculation of your days of presence, your tax returns and your language proof, and we prepare a complete application. The citizenship rules changed in 2025: we check with you what applies to your case, notably if you are the parent or child of a citizen.</p>
+<p>If you are not yet a permanent resident, see our page on <a href="/en/permanent-residence/" style="text-decoration:underline">permanent residence</a>.</p>
+{LAWNOTE}</div></div></section>''',
+  faq=[("How many days must I have spent in Canada?", "1,095 days as a permanent resident in the 5 years before applying, with possible partial credit for time spent as a temporary resident or protected person before permanent residence."),
+       ("Do I need to have paid taxes?", "Yes. You must have filed income tax returns for 3 tax years falling wholly or partly within the 5 years before applying."),
+       ("What language level is required?", "People aged 18 to 54 must prove CLB level 4 or higher in French or English. People aged 55 and over are exempt."),
+       ("Do you guarantee that I will get citizenship?", "No. No serious consultant can guarantee a decision: it belongs solely to IRCC.")])
+
+P(path='en/permanent-residence/', fr='residence-permanente-canada/', ar='ar/permanent-residence/', title="Permanent residence in Canada: the possible routes | ATL Canada",
+  desc="Which routes lead to permanent residence: Express Entry, provincial nominees, Quebec, family sponsorship, Atlantic. A regulated consultant helps you choose.",
+  crumb="Permanent residence", eyebrow="Permanent residence · Montréal · Casablanca", h1="Permanent residence in Canada: which route to choose?",
+  lede="There is not one single door to permanent residence, but several routes, each with its own rules. Here are the main ones and how to choose the most realistic for your profile.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>The main routes</h2>
+{rich(['Route', 'In brief'], [
+ ['Express Entry', "An online system that manages applications for three federal programs: Federal Skilled Worker, Federal Skilled Trades and the Canadian Experience Class. Candidates are ranked by points and the top-ranked are invited to apply.", '/en/express-entry/'],
+ ['Provincial nominees', "Each province or territory nominates people it needs, under its own streams. Quebec and Nunavut do not have this program.", '/en/provincial-nominee/'],
+ ['Quebec', "Quebec itself selects part of its economic immigrants (CSQ), then IRCC processes permanent residence.", '/en/immigrate-to-quebec/'],
+ ['Family sponsorship', "A Canadian citizen or permanent resident can sponsor certain family members: spouse, dependent children, parents and grandparents.", '/en/family-sponsorship/'],
+ ['Atlantic Immigration Program', "For skilled workers and recent graduates of an Atlantic institution, with a job offer from a designated employer in New Brunswick, Nova Scotia, Prince Edward Island or Newfoundland and Labrador."],
+])}
+</div></section>
+<section class="sp"><div class="wrap"><h2>How to choose?</h2>
+<ol class="steps">
+<li><span>Take stock of your profile: age, education, work experience, French and English level, family in Canada.</span></li>
+<li><span>Check whether you qualify for a federal Express Entry program, and where you might rank.</span></li>
+<li><span>Look at the provincial and Quebec streams that match your occupation or your plan.</span></li>
+<li><span>Prepare documents in advance (credential assessment, language tests, proof of experience): the time frame after an invitation is short.</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>For the detail of each route, see our pages on <a href="/en/express-entry/" style="text-decoration:underline">Express Entry</a>, <a href="/en/provincial-nominee/" style="text-decoration:underline">provincial nominees</a>, <a href="/en/immigrate-to-quebec/" style="text-decoration:underline">immigrating to Quebec</a> and <a href="/en/family-sponsorship/" style="text-decoration:underline">family sponsorship</a>. Once you are a permanent resident, see also <a href="/en/citizenship/" style="text-decoration:underline">Canadian citizenship</a>.</p></div>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>How we support you</h2><div class="prose">
+<p>At the consultation, we compare the possible routes with you, identify the one that best fits your profile, then prepare a complete, consistent file before filing. Using an immigration professional gives no processing priority.</p>
+<p class="note">The decision belongs solely to IRCC, the provinces or Quebec depending on the route: we cannot guarantee a result or promise a timeline.</p></div></div></section>''',
+  faq=[("What is the best route to permanent residence?", "It depends on your profile: age, education, experience, languages, family in Canada, life plan. That is exactly what we analyze with you at the consultation."),
+       ("Can I apply under several routes at once?", "In some cases yes, for example being in the Express Entry pool and obtaining a provincial nomination. We look with you at what is possible for your situation."),
+       ("Do I need to be in Canada already?", "Not always. Some routes are for candidates living abroad, others require Canadian work experience, such as the Canadian Experience Class."),
+       ("Does a consultant guarantee permanent residence?", "No. No serious consultant can guarantee a decision: it belongs solely to the Canadian and Quebec authorities.")])
+
+P(path='en/provincial-nominee/', fr='candidats-provinces-canada/', ar='ar/provincial-nominee/', title="Provincial Nominee Program in Canada: how it works | ATL Canada",
+  desc="The Provincial Nominee Program: two processes (Express Entry or not), each province's role, steps. A regulated consultant explains.",
+  crumb="Provincial nominee", eyebrow="Provinces · Montréal · Casablanca", h1="Provincial Nominee Program",
+  lede="Each province or territory can nominate people who have the skills it needs and want to settle there. Here is how this route to permanent residence works.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>What to know</h2>
+{rich(['Point', 'What IRCC says'], [
+ ['Who decides?', "Each province or territory sets its own criteria and streams, and the number of people it can nominate each year."],
+ ['Where?', "You must plan to settle in the province or territory that nominates you. Quebec and Nunavut have no program: see our page on <a href=\"/en/immigrate-to-quebec/\" style=\"text-decoration:underline\">immigrating to Quebec</a>."],
+ ['Two processes', "The Express Entry-linked process: you meet the criteria of a provincial stream and of a federal Express Entry program. The non-Express Entry process: you meet a provincial stream but not a federal Express Entry program."],
+ ['After the nomination', "In the Express Entry-linked process, once nominated you create an Express Entry profile and receive 600 additional points, which helps you get invited to apply for permanent residence."],
+])}
+</div></section>
+<section class="sp"><div class="wrap"><h2>The steps</h2>
+<ol class="steps">
+<li><span>Choose a province or territory and review its streams.</span></li>
+<li><span>Identify your route: depending on whether you also qualify for a federal Express Entry program or not.</span></li>
+<li><span>File your application following the province's procedure, which tells you whether it goes through Express Entry or not.</span></li>
+<li><span>Once nominated, file your permanent residence application with IRCC, which checks admissibility (medical, security, criminality) among other things.</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>Timelines vary with the type of application, the completeness of the file and how fast you respond. See also the <a href="/en/permanent-residence/" style="text-decoration:underline">permanent residence</a> page to compare routes.</p></div>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>How we support you</h2><div class="prose">
+<p>At the consultation, we look with you at which provinces match your occupation and plan, which route is the most realistic, and which documents to prepare in advance. Using an immigration professional gives no processing priority.</p>
+<p class="note">The decision belongs solely to IRCC and the province concerned: we cannot guarantee a result or promise a timeline.</p></div></div></section>''',
+  faq=[("Can I choose any province?", "Each province has its own streams and criteria. You must plan to settle in the province that nominates you. Quebec and Nunavut have no program."),
+       ("What are the 600 additional points?", "In the Express Entry-linked process, a person nominated by a province receives 600 additional points once their profile is created. This helps them get invited to apply."),
+       ("Does a nomination guarantee permanent residence?", "No. The nomination is a step. IRCC then decides on permanent residence."),
+       ("What about the Atlantic Immigration Program?", "It is a separate program for skilled workers and recent graduates in the four Atlantic provinces, with a job offer from a designated employer.")])
+
+P(path='en/immigrate-to-quebec/', fr='immigration-quebec-canada/', ar='ar/immigrate-to-quebec/', title="Immigrating to Quebec: Quebec selection, PSTQ, CSQ | ATL Canada",
+  desc="Immigrating to Quebec: selection by Quebec (CSQ), the Skilled Worker Selection Program (PSTQ), the state of the PEQ. A regulated consultant explains the steps.",
+  crumb="Immigrate to Quebec", eyebrow="Quebec · Montréal · Casablanca", h1="Immigrating to Quebec",
+  lede="Quebec itself chooses part of its economic immigrants. Here is how this two-stage path works and where the main programs stand.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>A two-stage path</h2>
+<ol class="steps">
+<li><span>Selection by Quebec: the Quebec Ministry of Immigration reviews your file and, if favourable, issues a Quebec Selection Certificate (CSQ).</span></li>
+<li><span>The permanent residence application: once you have the CSQ, you then file your application with IRCC, which checks admissibility (medical, security, criminality) among other things.</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>To study in Quebec, a provincial step is also added before the study permit: the CAQ. See our page on the <a href="/en/study-permit/" style="text-decoration:underline">study permit</a>.</p></div>
+</div></section>
+<section class="sp"><div class="wrap"><h2>Where do the programs stand?</h2>
+{rich(['Program', 'What the Quebec government says'], [
+ ['Skilled Worker Selection Program (PSTQ)', "You first declare your interest. If you are invited, you must accept the invitation within 30 days, otherwise your declaration becomes void. You then file your permanent selection application with the required documents, within 60 days of acceptance for most streams (a different deadline applies to one specific stream). Quebec then examines the file and issues the CSQ if favourable."],
+ ["Quebec Experience Program (PEQ)", "For temporary foreign workers and international graduates of a Quebec institution. Applications were accepted from July 2, 2026 and the intake period has been closed since October 31, 2026. No decision has been announced on a future intake period."],
+])}
+<p class="note" style="margin-top:18px">These programs change often: the state shown is that of November 5, 2026. Before any decision, check their current status with us.</p>
+</div></section>
+<section class="sp alt"><div class="wrap"><h2>How we support you</h2><div class="prose">
+<p>At the consultation, we look with you at whether your profile fits a Quebec selection path or a federal route such as Express Entry, which documents to prepare and in what order to act. The time frame after an invitation is short: preparing your file in advance often makes the difference. Using an immigration professional gives no processing priority.</p>
+<p>If you speak French well, see also our page on <a href="/en/express-entry-french/" style="text-decoration:underline">Express Entry for French speakers</a>.</p>
+<p class="note">The decision belongs solely to the Quebec authorities and IRCC: we cannot guarantee a result or promise a timeline.</p></div></div></section>''',
+  faq=[("What is the difference between the CSQ and permanent residence?", "The CSQ is the selection made by Quebec. Permanent residence is then granted by IRCC, based on the application you file after obtaining the CSQ."),
+       ("Is the PEQ still open?", "As of November 5, 2026, the Quebec government states that the intake period has been closed since October 31, 2026 and that no decision has been made on a next period."),
+       ("How does a PSTQ invitation work?", "You first declare your interest. If you are invited, you must accept within 30 days, then file your permanent selection application within the deadlines stated in the invitation."),
+       ("Do I need to speak French to immigrate to Quebec?", "French weighs heavily in Quebec selection. We look with you at what applies to your profile at the consultation."),
+       ("Do you guarantee the CSQ or permanent residence?", "No. No serious consultant can guarantee a decision: it belongs solely to the Quebec and Canadian authorities.")])
+
+P(path='en/business-immigration/', fr='gens-affaires-immigration-canada/', ar='ar/business-immigration/', title="Business immigration to Canada and Quebec: where the programs stand | ATL Canada",
+  desc="Start-up visa, self-employed persons, Quebec business programs: the official state of the programs and other possible routes. A regulated consultant helps you choose.",
+  crumb="Business immigration", eyebrow="Business · Montréal · Casablanca", h1="Business immigration: where do the programs stand?",
+  lede="Immigration programs for entrepreneurs and investors change a lot. Here is the state indicated by the Canadian and Quebec governments, and the other routes to consider.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>At the federal level</h2>
+{rich(['Program', 'What IRCC says'], [
+ ["Start-up Visa", "IRCC stopped accepting new applications on December 31, 2025, except for people who had received a valid commitment from a designated organization in 2025. The program page also shows a deadline of June 30, 2026 for those people: check the current status before acting. The business must be located outside Quebec."],
+ ['Self-employed persons', "The pause on receiving applications is extended \u201cuntil further notice\u201d."],
+ ['What next?', "IRCC plans to replace these programs with a new targeted pilot program for immigrant entrepreneurs. Details are due to be published in 2026."],
+])}
+</div></section>
+<section class="sp"><div class="wrap"><h2>In Quebec</h2><div class="prose">
+<p>Quebec itself chooses the business people who settle there: you must first obtain a Quebec Selection Certificate (CSQ), then IRCC processes permanent residence. Since January 1, 2024, the reform of the investor, entrepreneur and self-employed programs notably requires satisfactory knowledge of French to settle in Quebec. See also our page on <a href="/en/immigrate-to-quebec/" style="text-decoration:underline">immigrating to Quebec</a>.</p>
+</div></div></section>
+<section class="sp alt"><div class="wrap"><h2>Other routes to consider</h2>
+{rich(['Route', 'In brief'], [
+ ['Work permit', "Depending on your situation, a work permit may let you work in Canada.", '/en/work-permit/'],
+ ["Express Entry", "If your skilled worker profile allows it, this is often a more realistic route.", '/en/express-entry/'],
+ ['Provincial nominees', "Each province sets its own streams and criteria.", '/en/provincial-nominee/'],
+])}
+</div></section>
+<section class="sp"><div class="wrap"><h2>How we support you</h2><div class="prose">
+<p>At the consultation, we review your plan, check the current state of the programs before you spend anything, and compare the realistic routes for your profile. Using an immigration professional gives no processing priority.</p>
+<p class="note">The decision belongs solely to IRCC and the Quebec authorities: we cannot guarantee a result or promise a timeline.</p></div></div></section>''',
+  faq=[("Is the Start-up Visa still open?", "According to IRCC, new applications have no longer been accepted since December 31, 2025, except for people who had received a valid commitment in 2025. Check the current status with us."),
+       ("Is the self-employed program open?", "According to IRCC, receipt of applications is paused until further notice."),
+       ("What will replace these programs?", "IRCC plans a new targeted pilot program for immigrant entrepreneurs, with details due to be published in 2026."),
+       ("Do I need to speak French to immigrate to Quebec as a business person?", "Yes: since the reform of January 1, 2024, satisfactory knowledge of French is required to settle in Quebec as an investor, entrepreneur or self-employed person."),
+       ("Do you guarantee a result?", "No. No serious consultant can guarantee a decision: it belongs solely to the Canadian and Quebec authorities.")])
+
+P(path='en/express-entry-french/', fr='entree-express-francophone-maroc/', ar='ar/express-entry-french/', title="Express Entry for French speakers: French is an asset | ATL Canada",
+  desc="French can earn up to 50 points in Express Entry. Required level, tests, draws: a regulated consultant explains. Book a consultation.",
+  crumb="Express Entry for French speakers", eyebrow="Permanent residence · Montréal · Casablanca", h1="Express Entry: French is an asset for candidates",
+  lede="A good level of French can earn up to 50 additional points in Express Entry and gives access to draws reserved for French speakers. Here is how it works and what to prepare.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>How French counts in your score</h2>
+<div class="prose"><p>If you reach at least CLB 7 in all four French skills (listening, reading, speaking, writing), you receive additional points, even if French is your second language.</p></div>
+{tbl([('CLB 7 or more in all 4 skills / CLB 4 or less, or no English test', '+ 25 points'), ('CLB 7 or more in all 4 skills / CLB 5 or more in all 4 skills', '+ 50 points')], ('Your French / your English', 'Additional points'))}
+<p class="note">These points are added to your score, but never guarantee an invitation.</p>
+</div></section>
+<section class="sp"><div class="wrap"><h2>The three Express Entry programs</h2><div class="cards">
+<div class="card"><h3>Federal Skilled Worker</h3><p>For candidates with skilled work experience abroad or in Canada.</p></div>
+<div class="card"><h3>Federal Skilled Trades</h3><p>For people qualified in a recognized skilled trade.</p></div>
+<div class="card"><h3>Canadian Experience Class</h3><p>For those who have already worked in Canada, for example after studies.</p></div>
+</div>
+<div class="prose" style="margin-top:22px"><p>IRCC also invites candidates by category, including one dedicated to French proficiency. The cut-offs change with each draw: follow them in our <a href="/actualites/" style="text-decoration:underline">news</a> (in French), for example the <a href="/actualites/#express-entree-tirage-francais-16-octobre-2026" style="text-decoration:underline">French-language draw of October 16, 2026</a>.</p></div></div></section>
+<section class="sp alt"><div class="wrap"><h2>What to prepare</h2>
+<ol class="steps">
+<li><span>Take a French test approved by IRCC (TEF Canada or TCF Canada) and, if possible, an English test: both languages influence your points.</span></li>
+<li><span>Have your foreign credentials assessed by a designated organization, if you want them to count in the score.</span></li>
+<li><span>Create your online profile with your personal reference code. Documents are uploaded only after an invitation.</span></li>
+<li><span>After the invitation, you have 60 days to submit your permanent residence application.</span></li>
+<li><span>Prepare your Moroccan documents, including the police certificate: see our page on <a href="/en/moroccan-documents/" style="text-decoration:underline">Moroccan documents</a>.</span></li>
+</ol>
+<div class="prose" style="margin-top:22px"><p>A nomination by a provincial nominee program also adds points. And if your score is too low, a Francophone Mobility work permit can help some candidates gain experience in Canada, subject to IRCC's conditions.</p></div>
+</div></section>''',
+  faq=[("What French level is needed?", "CLB 7 in all four skills gives access to the additional points and to the French-language category. A test approved by IRCC (TEF Canada or TCF Canada) is required."),
+       ("What score is needed to be invited?", "There is no fixed cut-off: each draw has its own minimum score. The latest results are published by IRCC and summarized in our news."),
+       ("Do I have to use a consultant?", "No, you can create your profile and file yourself. A regulated consultant helps you check your eligibility, optimize your score honestly and prepare a complete file within the 60-day deadline."),
+       ("Is French enough to be invited?", "No. You must also meet the requirements of one of the three programs and be among the top scores in the pool. An invitation is never guaranteed."),
+       ("Do you guarantee an invitation or permanent residence?", "No. Decisions belong solely to IRCC. Our role is to choose the right strategy and prepare a rigorous file.")])
+
+P(path='en/moroccan-documents/', fr='documents-maroc-immigration-canada/', ar='ar/moroccan-documents/', title="Moroccan documents for immigrating to Canada | ATL Canada",
+  desc="Moroccan police certificate (fiche anthropom\u00e9trique), VFS biometrics, documents not to be confused: what IRCC accepts. A regulated consultant guides you.",
+  crumb="Moroccan documents", eyebrow="File · Montréal · Casablanca", h1="Moroccan documents for your Canadian immigration application",
+  lede="The Moroccan police certificate is one of the documents that most often make candidates hesitate. Here is what IRCC asks of Moroccan citizens, according to its official pages.",
+  body=f'''{TRUST}
+<section class="sp alt"><div class="wrap"><h2>The Moroccan police certificate</h2>
+<div class="prose"><p>A permanent residence application requires a police certificate. For Moroccan citizens, the document is called the <strong>fiche anthropom\u00e9trique</strong>. The fingerprints taken for this certificate are separate from the biometrics you give with your application.</p></div>
+{rich(['Your situation', 'What IRCC says'], [
+ ['Moroccan citizen living in Morocco', "Go to the police station of your place of residence with your national identity card. You may appoint a representative, who must present their own national card."],
+ ['Moroccan citizen living abroad', "Contact the nearest Moroccan embassy or consulate, or go through the local police station by proxy (not through the central service in Rabat). The proxy requires a notarized power of attorney, copies of the birth certificate and passport, and a fee."],
+ ['Language of the document', "The certificate is issued in French and Arabic: no translation is needed."],
+ ['Not to be confused', "The \u201cBulletin No. 3\u201d issued by the court of first instance to Moroccans is not accepted for immigration: it covers only offences committed in the city of residence."],
+ ['Period of validity', "The official pages do not specify it: call us, we check it with you before you file your application, so you do not lose time."],
+])}
+</div></section>
+<section class="sp"><div class="wrap"><h2>Biometrics and the VFS Global centre</h2><div class="prose">
+<p>IRCC has authorized VFS Global to receive visa, study permit and work permit applications in Morocco and to record your fingerprints and photo. Recording is by appointment only, booked online.</p>
+<p>A temporary resident gives biometrics only once every 10 years. A permanent residence applicant must provide them with each application. Check your case on the IRCC website.</p>
+</div></div></section>
+<section class="sp alt"><div class="wrap"><h2>The other usual documents</h2><div class="prose">
+<p>The exact list depends on your application and is set by IRCC for your situation. It generally includes the passport, birth certificate, diplomas and transcripts, language test results and proof of funds or work experience.</p>
+<p>Any document that is not in French or English must be accompanied by a translation. We check each document with you before filing, so that none delays your case.</p></div></div></section>''',
+  faq=[("What is the police certificate called for Moroccans?", "For Moroccan citizens, IRCC refers to the \u201cfiche anthropom\u00e9trique\u201d. It is issued by the police."),
+       ("Is the Bulletin No. 3 accepted?", "No, not when obtained from the court of first instance by a Moroccan citizen: IRCC has ruled it out because it covers only the city of residence."),
+       ("Can someone request the fiche anthropom\u00e9trique on the candidate's behalf?", "Yes, IRCC states that a representative can request it, provided they present their own national identity card."),
+       ("Does the fiche anthropom\u00e9trique need to be translated?", "No, it is issued in French and Arabic, so IRCC does not require a translation."),
+       ("For which applications is a police certificate needed?", "For a permanent residence application, it is required. For other applications, it depends on the case: we check it during the consultation.")])
 
 def head_for(p):
     url = SITE + '/' + p['path']
