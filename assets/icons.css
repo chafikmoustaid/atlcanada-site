@@ -188,3 +188,8 @@ footer .ccic-link:hover{color:#fff;text-decoration-thickness:2px}
 /* le menu du haut est trop chargé : le lien Évaluer n'apparaît que dans le menu mobile */
 nav.primary a.nav-eval{display:none}
 .mobile-nav .nav-eval{display:inline-block;margin:4px 0 4px 10px}
+.mobile-nav .nav-fees{display:inline-block;margin:4px 0 4px 10px}
+/* lien Honoraires visible dans le menu : on resserre l'en-tête pour qu'il tienne */
+@media (min-width:901px){nav.primary{gap:6px}nav.primary a{font-size:.88rem}nav.primary a.nav-calc,nav.primary a.nav-news{padding:6px 9px}nav.primary .nav-social{margin-inline-start:2px;gap:6px}}
+@media (min-width:901px) and (max-width:1300px){nav.primary{gap:4px}nav.primary a{font-size:.84rem}}
+@media (max-width:1520px){.nav-actions .btn{display:none}}
