@@ -1153,5 +1153,36 @@
     "caption_fr": "De la pause à la reprise : calendrier des nouvelles règles du CRS et du tirage du 23 novembre 2026. Les chiffres du tirage viennent de la presse, à recouper avec canada.ca ; aucune invitation n'est garantie."
    }
   ]
+ },
+ {
+  "id": "parlement-motion-conservatrice-plan-niveaux-2027-24-novembre-2026",
+  "date": "2026-11-25",
+  "tag_fr": "Politique fédérale",
+  "title_fr": "Parlement : une motion conservatrice demande de rejeter le plan d'immigration 2027",
+  "summary_fr": "Selon The Hub et le Toronto Sun, le Parti conservateur a déposé une motion demandant à la Chambre des communes de rejeter le plan du gouvernement d'augmenter l'immigration permanente en 2027. Le débat a eu lieu le 24 novembre ; la motion n'est pas contraignante et le résultat du vote n'était pas connu à la rédaction. Il s'agit d'une motion de l'opposition, pas d'une décision : la cible officielle publiée reste de 380 000 résidents permanents en 2027. Le chiffre de 662 000 est une estimation de RBC Economics qui inclut des mesures ponctuelles, pas une prévision de nouvelles arrivées.",
+  "impact_fr": "Ce que cela signifie pour vous : rien ne change aujourd'hui pour une demande déposée depuis le Maroc. Cela montre que les niveaux d'immigration restent un sujet politique, et les règles peuvent évoluer. Aucun résultat n'est garanti ; une évaluation personnalisée permet de voir quelle voie correspond à votre situation.",
+  "sources": [
+   {
+    "name": "The Hub : Parliament Today, débat sur les niveaux d'immigration (24 nov. 2026)",
+    "url": "https://thehub.ca/2026/11/24/parliament-today-conservatives-force-a-debate-on-immigration-levels/"
+   },
+   {
+    "name": "Toronto Sun via Yahoo News Canada (22 nov. 2026)",
+    "url": "https://ca.news.yahoo.com/conservatives-put-forward-motion-reject-203559400.html"
+   },
+   {
+    "name": "IRCC (canada.ca) : communiqué du 5 novembre 2026 sur le plan des niveaux",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/building-a-stronger-canada-through-a-well-managed-predictable-immigration-system.html"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/parlement-motion-conservatrice-plan-niveaux-2027-24-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Tableau comparatif : cible officielle de 380 000 résidents permanents en 2027, mesure ponctuelle jusqu'à 200 000 personnes déjà au Canada, estimation de presse RBC Economics jusqu'à 662 000",
+    "caption_fr": "Cibles officielles d'IRCC et estimation de RBC Economics rapportée par The Hub ; l'estimation n'est pas une prévision d'arrivées."
+   }
+  ]
  }
 ]
