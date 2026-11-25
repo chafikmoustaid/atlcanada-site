@@ -16,4 +16,5 @@ python3 tools/fees_box.py
 python3 tools/home_fees.py
 python3 tools/share_link.py
 python3 tools/en_link.py
+python3 tools/lang_flags.py
 python3 tools/ar_news_link.py

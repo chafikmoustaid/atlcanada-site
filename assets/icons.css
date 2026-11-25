@@ -229,3 +229,8 @@ nav.primary a.nav-eval{display:none}
 .nav-actions .lang .l-short{display:none}
 @media (max-width:640px){.nav-actions .lang .l-full{display:none}.nav-actions .lang .l-short{display:inline}}
 @media (max-width:400px){.nav-actions .lang a{margin:0 3px!important}}
+/* language switcher: flag + code */
+.lang a{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.lang .fl{width:20px;height:14px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.4);flex:none}
+.lang .l-code{font-weight:700;letter-spacing:.02em}
+@media (max-width:400px){.lang .fl{width:16px;height:11px}.lang a{gap:4px}}
