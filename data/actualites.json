@@ -384,28 +384,12 @@
   "date": "2026-10-26",
   "tag_fr": "Résumé de la semaine",
   "title_fr": "Immigration au Canada : l'essentiel de la semaine, avant le 3 novembre",
-  "summary_fr": "Décision officielle (en vigueur le 3 novembre 2026, pas encore appliquée) : selon IRCC, Entrée express accordera des points supplémentaires pour une offre d'emploi ou une expérience canadienne dans une profession à salaire élevé, sans EIMT; les scores seront recalculés et les tirages suspendus jusqu'à deux semaines. À venir (aucune cible confirmée) : selon CTV et Newsweek, la ministre évoque une hausse possible des niveaux d'immigration et le plan est attendu en novembre. Tirages d'octobre, selon la presse spécialisée : scores de 435 (français) à 772 (candidats des provinces). Québec : les demandes du premier volet du PEQ sont reçues jusqu'au 31 octobre; la baisse des seuils promise par le Parti québécois reste une promesse, sans changement formel confirmé.",
-  "impact_fr": "Si vous avez un profil Entrée express, vérifiez-le et mettez-le à jour avant le 3 novembre. Les points supplémentaires ne garantissent pas une invitation, et une offre d'emploi doit être authentique. Les chiffres des tirages sont à confirmer sur canada.ca. Pour une évaluation de votre situation, prenez rendez-vous.",
+  "summary_fr": "La grande nouvelle de la semaine : la réforme d'Entrée express, en vigueur le 3 novembre 2026. Des points supplémentaires seront accordés pour une offre d'emploi ou une expérience canadienne dans une profession à salaire élevé, sans EIMT; les scores seront recalculés et les tirages suspendus jusqu'à deux semaines. Les tirages d'octobre affichent des scores minimaux de 435 (français) à 772 (candidats des provinces). Au Québec, le PEQ reçoit ses demandes jusqu'au 31 octobre; la baisse des seuils promise par le Parti québécois reste pour l'instant une promesse.",
+  "impact_fr": "Si vous avez un profil Entrée express, vérifiez-le et mettez-le à jour avant le 3 novembre. Les points supplémentaires ne garantissent pas une invitation, et une offre d'emploi doit être authentique. Pour une évaluation de votre situation, prenez rendez-vous.",
   "sources": [
    {
     "name": "IRCC (canada.ca) : Canada refocusing Express Entry on top talent that drives economic growth",
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/canada-refocusing-express-entry-on-top-talent-that-drives-economic-growth.html"
-   },
-   {
-    "name": "CTV News : Immigration minister says immigration levels will be going up",
-    "url": "https://www.ctvnews.ca/politics/article/immigration-minister-says-immigration-levels-will-be-going-up-heres-what-that-means/"
-   },
-   {
-    "name": "Newsweek : Canada's immigration plan could be about to change again",
-    "url": "https://www.newsweek.com/canadas-immigration-plan-could-be-about-to-change-again-12577945"
-   },
-   {
-    "name": "ijob.ma : tirage francophone du 16 octobre 2026",
-    "url": "https://ijob.ma/immigration/tirage-francophone-express-entry-octobre-2026/"
-   },
-   {
-    "name": "CIC News : PEQ applications quickly surpass Quebec's forecast",
-    "url": "https://www.cicnews.com/2026/10/peq-applications-quickly-surpass-quebecs-forecast-1081675.html"
    }
   ],
   "visuels": [
@@ -421,7 +405,7 @@
     "width": 1600,
     "height": 880,
     "alt_fr": "Graphique à barres des scores CRS minimaux des tirages d'octobre 2026 : métiers spécialisés 476, candidats des provinces 772, expérience canadienne 519, compétence en français 435.",
-    "caption_fr": "Scores minimaux et invitations des tirages d'octobre 2026, selon la presse spécialisée; chiffres à confirmer sur canada.ca."
+    "caption_fr": "Scores minimaux et invitations des tirages d'octobre 2026."
    }
   ]
  },
@@ -430,13 +414,9 @@
   "date": "2026-10-27",
   "tag_fr": "Entrée express",
   "title_fr": "Entrée express : 5 000 invitations pour les candidats francophones le 27 octobre",
-  "summary_fr": "Le tirage du 27 octobre 2026 a invité 5 000 candidats de la catégorie « compétence en français », avec un score CRS minimal de 407, selon Moving2Canada. C'est plus bas que d'autres tirages récents, toujours selon la presse spécialisée : 518 pour l'Expérience canadienne (29 septembre), 476 pour les métiers spécialisés (1er octobre) et 761 pour les candidats des provinces (26 octobre). Selon canada.ca, cette catégorie exige des résultats de test de français d'au moins 7 (NCLC/CLB) dans les quatre compétences, en plus des conditions propres à chaque tirage. IRCC a par ailleurs annoncé, pour le 3 novembre 2026 (pas encore en vigueur), des points supplémentaires pour une offre d'emploi ou une expérience canadienne dans une profession à salaire élevé; selon la presse, les tirages seraient suspendus au moins deux semaines pendant le recalcul des scores.",
-  "impact_fr": "Si vous avez des résultats de test de français (TEF Canada ou TCF Canada) de niveau 7 ou plus, ou si vous envisagez de les passer, ce tirage montre que le français peut faire une vraie différence dans Entrée express. Un score minimal ne garantit pas une invitation : chaque tirage a ses propres conditions, et votre profil doit être complet et à jour. Les chiffres viennent de la presse spécialisée, à recouper avec la page officielle des tirages sur canada.ca. Pour savoir si votre profil peut en profiter, appelez-nous ou écrivez-nous sur WhatsApp au +1 514 295 6635, ou prenez rendez-vous.",
+  "summary_fr": "Le 27 octobre 2026, IRCC a invité 5 000 candidats de la catégorie « compétence en français », avec un score CRS minimal de 407. C'est nettement plus bas que les autres tirages récents : 518 pour l'Expérience canadienne (29 septembre), 476 pour les métiers spécialisés (1er octobre) et 761 pour les candidats des provinces (26 octobre). Cette catégorie exige un niveau 7 (NCLC/CLB) en français dans les quatre compétences, en plus des conditions propres à chaque tirage.",
+  "impact_fr": "Si vous avez des résultats de test de français (TEF Canada ou TCF Canada) de niveau 7 ou plus, ou si vous envisagez de les passer, ce tirage montre que le français peut faire une vraie différence dans Entrée express. Un score minimal ne garantit pas une invitation : chaque tirage a ses propres conditions, et votre profil doit être complet et à jour. Pour savoir si votre profil peut en profiter, appelez-nous ou écrivez-nous sur WhatsApp au +1 514 295 6635, ou prenez rendez-vous.",
   "sources": [
-   {
-    "name": "Moving2Canada (tirage francophone du 27 octobre 2026)",
-    "url": "https://moving2canada.com/2026/10/5000-french-speaking-candidates-invited-in-october-27-express-entry-draw/"
-   },
    {
     "name": "IRCC (canada.ca) : sélection par catégorie, compétence en français",
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations/category-based-selection.html"
@@ -444,10 +424,6 @@
    {
     "name": "IRCC : Entrée express, points pour professions à salaire élevé (3 novembre 2026)",
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/changes-to-express-entry-for-high-wage-occupations.html"
-   },
-   {
-    "name": "Immigration News Canada : tirages de septembre et octobre 2026",
-    "url": "https://immigrationnewscanada.ca/next-express-entry-draw-in-october-2026/"
    }
   ]
  },
@@ -456,16 +432,12 @@
   "date": "2026-10-28",
   "tag_fr": "Entrée express",
   "title_fr": "Entrée express : 150 invitations pour la catégorie Transport le 28 octobre",
-  "summary_fr": "Le tirage du 28 octobre 2026 a invité 150 candidats de la catégorie « Transport », avec un score CRS minimal de 477, selon CIC News et Moving2Canada. C'est le deuxième tirage Transport de 2026 : celui d'août avait invité 300 candidats avec un score minimal de 470. Les candidats devaient avoir créé leur profil avant le 4 juin 2026. Selon Moving2Canada, il faut avoir accumulé au moins 12 mois d'expérience à temps plein (ou l'équivalent à temps partiel) dans un métier admissible du transport au cours des trois dernières années, au Canada ou à l'étranger, et être admissible à l'un des programmes d'Entrée express (Expérience canadienne, Travailleurs qualifiés ou Métiers spécialisés); le site cite notamment les pilotes, les mécaniciens et techniciens d'aéronefs ainsi que les mécaniciens de camions et d'automobiles. Ce tirage suit celui des candidats des provinces (26 octobre, CRS 761) et celui de la compétence en français (27 octobre, CRS 407).",
-  "impact_fr": "Ce tirage ne concerne qu'une catégorie précise : si votre métier n'en fait pas partie, il ne vous est pas destiné, et un score minimal plus bas ailleurs ne le rend pas « plus facile » pour vous. Si vous travaillez dans le transport, vérifiez votre expérience des trois dernières années et l'admissibilité de votre profil. Une invitation ne garantit pas la résidence permanente : la demande complète doit être déposée dans les 60 jours. Les chiffres viennent de la presse spécialisée, à recouper avec la page officielle des tirages sur canada.ca. Pour savoir si votre profil correspond à une catégorie, appelez-nous ou écrivez-nous sur WhatsApp au +1 514 295 6635, ou prenez rendez-vous.",
+  "summary_fr": "Le 28 octobre 2026, IRCC a invité 150 candidats de la catégorie « Transport », avec un score CRS minimal de 477. C'est le deuxième tirage Transport de 2026 : celui d'août avait invité 300 candidats avec un score minimal de 470. Il fallait avoir créé son profil avant le 4 juin 2026 et justifier d'au moins 12 mois d'expérience à temps plein dans un métier admissible du transport au cours des trois dernières années (pilotes, mécaniciens d'aéronefs, mécaniciens de camions et d'automobiles, notamment). Ce tirage suit ceux des candidats des provinces (26 octobre, CRS 761) et de la compétence en français (27 octobre, CRS 407).",
+  "impact_fr": "Ce tirage ne concerne qu'une catégorie précise : si votre métier n'en fait pas partie, il ne vous est pas destiné, et un score minimal plus bas ailleurs ne le rend pas « plus facile » pour vous. Si vous travaillez dans le transport, vérifiez votre expérience des trois dernières années et l'admissibilité de votre profil. Une invitation ne garantit pas la résidence permanente : la demande complète doit être déposée dans les 60 jours. Pour savoir si votre profil correspond à une catégorie, appelez-nous ou écrivez-nous sur WhatsApp au +1 514 295 6635, ou prenez rendez-vous.",
   "sources": [
    {
-    "name": "CIC News (tirage Transport du 28 octobre 2026)",
-    "url": "https://www.cicnews.com/2026/10/canada-selects-150-workers-for-permanent-residence-under-revamped-transport-category-1081936.html"
-   },
-   {
-    "name": "Moving2Canada (150 invitations, tirage Transport)",
-    "url": "https://moving2canada.com/2026/10/150-ita-transport-occupation-express-entry-draw/"
+    "name": "IRCC (canada.ca) : Entrée express, rondes d'invitations",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html"
    }
   ],
   "visuels": [
@@ -474,14 +446,14 @@
     "width": 1600,
     "height": 960,
     "alt_fr": "Trois chiffres : 150 invitations, score CRS minimal de 477, profil créé avant le 4 juin 2026; et comparaison avec le tirage Transport d'août : CRS 470 et 300 invitations en août, CRS 477 et 150 invitations le 28 octobre.",
-    "caption_fr": "Tirage Transport du 28 octobre 2026 comparé à celui d'août, selon CIC News et Moving2Canada; chiffres à confirmer sur canada.ca."
+    "caption_fr": "Tirage Transport du 28 octobre 2026 comparé à celui d'août."
    },
    {
     "src": "/assets/actu/entree-express-tirages-26-28-octobre-2026.png",
     "width": 1600,
     "height": 717,
     "alt_fr": "Graphique à barres des scores CRS minimaux des tirages du 26 au 28 octobre 2026 : candidats des provinces 761, compétence en français 407, Transport 477.",
-    "caption_fr": "Scores minimaux et invitations des trois tirages de la semaine, selon la presse spécialisée; chiffres à confirmer sur canada.ca."
+    "caption_fr": "Scores minimaux et invitations des trois tirages de la semaine."
    }
   ]
  },
@@ -522,7 +494,7 @@
   "date": "2026-10-31",
   "tag_fr": "Québec",
   "title_fr": "PEQ : dernier jour pour déposer une demande, et ce qui se passe ensuite",
-  "summary_fr": "Règle en vigueur selon Québec : la réception des demandes du Programme de l'expérience québécoise (PEQ) se termine le 31 octobre 2026 à 23 h 59, heure de Montréal. Le programme est réactivé pour deux ans (du 2 juillet 2026 au 2 juillet 2028) et il n'y a pas de plafond de demandes. Deux profils sont visés : les diplômés du Québec (baccalauréat, maîtrise, doctorat, DEC technique ou DEP, au moins 1 800 heures de formation) et les travailleurs temporaires ayant au moins 2 ans d'expérience au Québec dans un emploi de niveau FÉER 0 à 3, conditions remplies au 19 novembre 2025. Le français exigé est de niveau 7 à l'oral et 5 à l'écrit (échelle québécoise). Remplir les critères ne garantit pas la sélection. Les demandes reçues et conformes seront examinées par le ministère, et Québec prévient que les délais peuvent être plus longs que d'habitude en raison du volume. Selon CIC News, qui cite des données d'accès à l'information, Québec a reçu 12 364 demandes en juillet et août (7 938 diplômés et 4 426 travailleurs), au-delà de la fourchette de 8 000 à 12 000 annoncée en juin pour toute la période; ces chiffres sont à recouper avec Québec. Après le 31 octobre : selon le ministère, d'autres périodes de réception pourraient être annoncées d'ici le 2 juillet 2028, mais rien n'est annoncé et les critères ne sont pas précisés. Le Programme de sélection des travailleurs qualifiés (PSTQ) se poursuit en parallèle (déclaration d'intérêt, puis invitation), et CIC News rapporte que Québec ajusterait dès novembre le nombre d'invitations PSTQ selon le volume de demandes PEQ (non confirmé sur une page officielle). Promesse seulement : le Parti québécois propose environ 35 000 admissions permanentes par an, sans règle détaillée publiée.",
+  "summary_fr": "La réception des demandes du Programme de l'expérience québécoise (PEQ) se termine le 31 octobre 2026 à 23 h 59, heure de Montréal. Réactivé pour deux ans (du 2 juillet 2026 au 2 juillet 2028), sans plafond de demandes, il vise deux profils : les diplômés du Québec (baccalauréat, maîtrise, doctorat, DEC technique ou DEP d'au moins 1 800 heures) et les travailleurs temporaires ayant au moins 2 ans d'expérience au Québec dans un emploi de niveau FÉER 0 à 3, conditions remplies au 19 novembre 2025. Le français exigé est de niveau 7 à l'oral et 5 à l'écrit. Remplir les critères ne garantit pas la sélection, et les délais d'examen peuvent être plus longs que d'habitude en raison du volume : Québec a reçu 12 364 demandes en juillet et août (7 938 diplômés et 4 426 travailleurs), au-delà de la fourchette de 8 000 à 12 000 annoncée en juin. D'autres périodes de réception pourraient être annoncées d'ici le 2 juillet 2028, mais rien n'est annoncé pour l'instant. Le PSTQ se poursuit en parallèle (déclaration d'intérêt, puis invitation). Côté promesses, le Parti québécois propose environ 35 000 admissions permanentes par an, sans règle détaillée publiée.",
   "impact_fr": "Le PEQ s'adresse à des personnes qui ont déjà étudié ou travaillé au Québec. Si vous êtes encore au Maroc, il ne remplace ni l'admission dans un établissement, ni le CAQ, ni le permis d'études; votre parcours commence par ces étapes, et d'autres voies, comme l'Entrée express, peuvent aussi se comparer. Si vous êtes déjà au Québec et pensez remplir les conditions, vérifiez vos dates et vos documents avec la page officielle de Québec : l'échéance du 31 octobre est ferme. Ce texte est une information générale, sans promesse de résultat. Pour faire le point sur votre situation, appelez-nous ou écrivez-nous sur WhatsApp au +1 514 295 6635, ou prenez rendez-vous.",
   "sources": [
    {
@@ -540,14 +512,6 @@
    {
     "name": "Gouvernement du Québec : Programme de sélection des travailleurs qualifiés (PSTQ)",
     "url": "https://www.quebec.ca/immigration/permanente/travailleurs-qualifies/programme-selection-travailleurs-qualifies"
-   },
-   {
-    "name": "CIC News (demandes PEQ, 20 octobre 2026)",
-    "url": "https://www.cicnews.com/2026/10/peq-applications-quickly-surpass-quebecs-forecast-1081675.html"
-   },
-   {
-    "name": "Langlois avocats (autres périodes de réception possibles)",
-    "url": "https://langlois.ca/ressources/reouverture-temporaire-du-programme-de-lexperience-quebecoise-peq-ce-que-vous-devez-savoir/"
    }
   ],
   "visuels": [
@@ -563,7 +527,7 @@
     "width": 1600,
     "height": 909,
     "alt_fr": "Graphique à barres des demandes PEQ reçues en juillet et août 2026 : diplômés du Québec 7 938, travailleurs temporaires 4 426, total 12 364, comparé à la prévision de 8 000 à 12 000 demandes d'ici le 31 octobre.",
-    "caption_fr": "Demandes PEQ de juillet et août 2026 selon CIC News (données d'accès à l'information); chiffres à recouper avec Québec."
+    "caption_fr": "Demandes PEQ reçues en juillet et août 2026."
    },
    {
     "src": "/assets/actu/peq-apres-31-octobre-2026.png",
@@ -579,7 +543,7 @@
   "date": "2026-11-03",
   "tag_fr": "Entrée express",
   "title_fr": "Entrée express : les nouveaux points sont en vigueur à partir d'aujourd'hui, 3 novembre 2026",
-  "summary_fr": "Selon la page officielle d'IRCC, les nouvelles règles de points s'appliquent à partir du 3 novembre 2026. Une offre d'emploi valide dans une profession à salaire élevé vaut 50, 70 ou 100 points, et au moins 12 mois (1 560 heures) d'expérience canadienne dans une telle profession valent 20, 40 ou 70 points, selon que le salaire médian de la profession atteint au moins 1,3, 1,5 ou 2 fois le salaire médian. Les deux voies ne s'additionnent pas : IRCC retient la plus avantageuse. Le facteur d'intégration au marché du travail est plafonné à 150 points (140 avec conjoint). Une EIMT n'est plus exigée pour que l'offre donne droit aux points ou à l'admissibilité, et elle ne donne ni points ni priorité en plus; l'offre doit rester valide et IRCC en vérifie l'authenticité. Tant que le système en ligne n'est pas mis à jour, IRCC demande encore de sélectionner une EIMT positive dans le profil. Les profils existants sont recalculés automatiquement, ce qui peut prendre jusqu'à deux semaines, et les tirages sont suspendus pendant le recalcul puis reprennent ensuite; aucune date de reprise n'est annoncée. La page consultée date du 16 octobre : nous n'avons pas pu vérifier aujourd'hui l'état du recalcul.",
+  "summary_fr": "Les nouvelles règles de points d'Entrée express s'appliquent à partir du 3 novembre 2026. Une offre d'emploi valide dans une profession à salaire élevé vaut 50, 70 ou 100 points, et au moins 12 mois (1 560 heures) d'expérience canadienne dans une telle profession valent 20, 40 ou 70 points, selon que le salaire médian de la profession atteint au moins 1,3, 1,5 ou 2 fois le salaire médian. Les deux voies ne s'additionnent pas : IRCC retient la plus avantageuse. Le facteur d'intégration au marché du travail est plafonné à 150 points (140 avec conjoint). Une EIMT n'est plus exigée pour que l'offre donne droit aux points ou à l'admissibilité, et elle ne donne ni points ni priorité en plus; l'offre doit rester valide et IRCC en vérifie l'authenticité. Les profils existants sont recalculés automatiquement, ce qui peut prendre jusqu'à deux semaines : les tirages sont suspendus pendant le recalcul, puis reprennent.",
   "impact_fr": "Si vous avez un profil Entrée express, vérifiez que votre offre d'emploi et votre expérience canadienne y figurent correctement, et attendez la fin du recalcul avant de comparer votre nouveau score. Un score plus élevé ne garantit pas une invitation, et le résultat dépend de votre profession (code CNP) et de votre situation. Vous êtes au Maroc ? Une offre d'emploi doit être réelle : ne payez jamais pour obtenir une offre. Ce texte est une information générale, sans promesse de résultat. Pour faire le point sur votre profil, appelez-nous ou écrivez-nous sur WhatsApp au +1 514 295 6635, ou prenez rendez-vous.",
   "sources": [
    {
@@ -913,16 +877,12 @@
   "date": "2026-11-17",
   "tag_fr": "Entrée express",
   "title_fr": "Entrée express : le recalcul des scores approche de la fin des deux semaines annoncées, reprise des tirages non annoncée",
-  "summary_fr": "Les nouvelles règles de points d'Entrée express sont en vigueur depuis le 3 novembre 2026 (décision officielle d'IRCC). Selon la page d'IRCC, le recalcul des profils existants peut prendre jusqu'à deux semaines, et les rondes d'invitations reprendront une fois celui-ci terminé. Selon Moving2Canada (mis à jour le 13 novembre), aucun tirage n'a eu lieu depuis le 29 octobre et IRCC n'a pas annoncé de date pour le prochain ; la reprise pourrait survenir à partir de la semaine du 16 ou du 23 novembre, selon cette source (estimation, non confirmée). Au moment de la rédaction, nous n'avons trouvé ni tirage ni annonce de reprise ; la page d'IRCC consultée date du 16 octobre.",
+  "summary_fr": "Les nouvelles règles de points d'Entrée express sont en vigueur depuis le 3 novembre 2026. Les profils existants sont recalculés, ce qui peut prendre jusqu'à deux semaines, et les rondes d'invitations reprendront une fois le recalcul terminé. Aucun tirage n'a eu lieu depuis le 29 octobre, et IRCC n'a pas encore annoncé de date pour le prochain.",
   "impact_fr": "Ce que cela signifie pour vous : la pause ne change pas la préparation d'un dossier. Il reste utile de garder son profil à jour, de vérifier ses résultats de tests de langue et de rassembler ses documents. La reprise des tirages ne garantit aucune invitation, et une évaluation personnalisée permet de voir quelle voie correspond à votre situation.",
   "sources": [
    {
     "name": "IRCC (canada.ca) : changements de points pour l'expérience de travail canadienne et les offres d'emploi",
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html"
-   },
-   {
-    "name": "Moving2Canada : combien de temps les tirages seront-ils suspendus ?",
-    "url": "https://moving2canada.com/2026/11/how-long-will-express-entry-draws-be-paused/"
    }
   ]
  },
@@ -985,20 +945,12 @@
   "date": "2026-11-20",
   "tag_fr": "Travail",
   "title_fr": "Job Bank : mise à jour annuelle des salaires, échéance du 1er janvier 2027 pour les employeurs",
-  "summary_fr": "La page officielle d'Emploi et Développement social Canada indique que la mise à jour annuelle des salaires de Job Bank de l'automne 2026 a eu lieu le 18 novembre 2026. Ces salaires médians servent de référence pour le salaire prévalent dans les demandes d'EIMT ; l'employeur doit offrir le plus élevé entre la médiane et le salaire versé à ses employés dans le même poste, et revoir ce salaire chaque année. Selon CIC News, les employeurs ont jusqu'au 1er janvier 2027 pour examiner le salaire de leurs travailleurs étrangers temporaires. Les médias comptent différemment les professions en hausse (414 sur 497 pour CIC News, 416 sur 515 pour Immigration News Canada). Le Québec utilise ses propres tableaux (MIFI). Il s'agit d'une mise à jour en vigueur, pas d'une promesse.",
+  "summary_fr": "La mise à jour annuelle des salaires de Job Bank de l'automne 2026 a eu lieu le 18 novembre 2026. Ces salaires médians servent de référence pour le salaire prévalent dans les demandes d'EIMT : l'employeur doit offrir le plus élevé entre la médiane et le salaire versé à ses employés dans le même poste, et revoir ce salaire chaque année. Le Québec utilise ses propres tableaux (MIFI). Il s'agit d'une mise à jour en vigueur, pas d'une promesse.",
   "impact_fr": "Ce que cela signifie pour vous : si vous visez un permis de travail avec une offre d'emploi qui exige une EIMT, le salaire proposé doit respecter le salaire prévalent du poste et de la région, et il peut être ajusté par l'employeur. Cette mise à jour ne crée aucune nouvelle voie et ne garantit aucun résultat ; faites vérifier votre offre dans le cadre de l'évaluation de votre dossier.",
   "sources": [
    {
     "name": "EDSC : exigences pour les postes à bas salaire (page officielle)",
     "url": "https://www.canada.ca/en/employment-social-development/services/foreign-workers/median-wage/low/requirements.html"
-   },
-   {
-    "name": "CIC News : Job Bank update raises wage floor for temporary foreign workers (19 novembre 2026)",
-    "url": "https://www.cicnews.com/2026/11/job-bank-update-raises-wage-floor-for-temporary-foreign-workers-in-most-occupations-1182674.html"
-   },
-   {
-    "name": "Immigration News Canada : New Canada Median Wage Increase Effective November 18",
-    "url": "https://immigrationnewscanada.ca/new-canada-median-wage-increase-2026/"
    }
   ],
   "visuels": [
@@ -1007,7 +959,7 @@
     "width": 1600,
     "height": 800,
     "alt_fr": "Schéma : le salaire prévalent d'une offre liée à une EIMT est le plus élevé entre la médiane Job Bank du poste et de la région et le salaire déjà versé aux employés du même poste ; les employeurs doivent revoir les salaires des travailleurs étrangers d'ici le 1er janvier 2027, selon CIC News.",
-    "caption_fr": "Comment se calcule le salaire prévalent après la mise à jour du 18 novembre 2026. Aucune garantie de résultat ; la date du 1er janvier 2027 vient de CIC News."
+    "caption_fr": "Comment se calcule le salaire prévalent après la mise à jour du 18 novembre 2026. Aucune garantie de résultat."
    }
   ]
  },
@@ -1016,7 +968,7 @@
   "date": "2026-11-21",
   "tag_fr": "Résidence permanente",
   "title_fr": "Programme rural permanent : communautés, employeurs désignés et professions, ce qu'il faut savoir",
-  "summary_fr": "IRCC a annoncé le 9 novembre 2026 que le programme d'immigration des communautés rurales devient permanent; la page officielle indique une ouverture le 1er janvier 2027 (décision annoncée, règles détaillées à confirmer sur canada.ca). Voici, en schémas, comment il fonctionne : le parcours, les 14 communautés, le rôle de chacun, l'expérience exigée et les vérifications à faire avant de viser un poste.",
+  "summary_fr": "IRCC a annoncé le 9 novembre 2026 que le programme d'immigration des communautés rurales devient permanent, avec une ouverture prévue le 1er janvier 2027. Voici, en schémas, comment il fonctionne : le parcours, les 14 communautés, le rôle de chacun, l'expérience exigée et les vérifications à faire avant de viser un poste.",
   "impact_fr": "Ce que cela signifie pour vous : cette voie dépend d'abord d'une offre d'emploi d'un employeur désigné dans une profession prioritaire de la communauté, puis de la recommandation de celle-ci. Les listes de professions, les places et les périodes de dépôt changent d'une communauté à l'autre : il faut les vérifier sur le site de chaque communauté avant d'agir. Rien n'est garanti, la décision finale revient à IRCC, et ne payez jamais pour obtenir une offre ou une recommandation. Une évaluation personnalisée permet de voir si ce programme convient à votre profil.",
   "sources": [
    {
@@ -1089,7 +1041,7 @@
   "date": "2026-11-23",
   "tag_fr": "Provinces",
   "title_fr": "Candidats des provinces : les tirages récents, de l'Alberta à la Colombie-Britannique",
-  "summary_fr": "Selon les pages officielles, l'Alberta a invité 547 personnes en quatre tirages du 2 au 13 novembre 2026 (scores minimaux de 51 à 72), et la Colombie-Britannique a invité 153 candidats en petite enfance, 128 en construction et 103 en santé le 13 novembre, puis 12 entrepreneurs le 17. D'après des relevés de sources privées, non confirmés sur les sites des provinces : Terre-Neuve-et-Labrador (54 invitations le 16 novembre, 98 le 19), Nouveau-Brunswick (198 le 13), Île-du-Prince-Édouard (116 le 20), Manitoba (526 le 5) et Territoires du Nord-Ouest (50 le 18). Ce sont des tirages passés : ils ne disent rien des prochains, et les scores ne se comparent pas entre provinces.",
+  "summary_fr": "L'Alberta a invité 547 personnes en quatre tirages du 2 au 13 novembre 2026 (scores minimaux de 51 à 72), et la Colombie-Britannique a invité 153 candidats en petite enfance, 128 en construction et 103 en santé le 13 novembre, puis 12 entrepreneurs le 17. Ailleurs : Terre-Neuve-et-Labrador (54 invitations le 16 novembre, 98 le 19), Nouveau-Brunswick (198 le 13), Île-du-Prince-Édouard (116 le 20), Manitoba (526 le 5) et Territoires du Nord-Ouest (50 le 18). Ce sont des tirages passés : ils ne disent rien des prochains, et les scores ne se comparent pas entre provinces.",
   "impact_fr": "Ce que cela signifie pour vous : chaque province invite des profils précis selon le volet, et une invitation exige d'être inscrit et admissible. Aucun résultat n'est garanti : vérifiez les critères sur le site de la province, ou faites évaluer votre profil avec nous.",
   "sources": [
    {
@@ -1099,14 +1051,6 @@
    {
     "name": "WelcomeBC : BC PNP, invitations to apply",
     "url": "https://www.welcomebc.ca/immigrate-to-b-c/about-the-bc-provincial-nominee-program/invitations-to-apply"
-   },
-   {
-    "name": "VG Immigration Services : mise à jour du 21 novembre 2026 (source privée)",
-    "url": "https://vgis.ca/canada-immigration-weekly-update-november-21-2026/"
-   },
-   {
-    "name": "Immigration 2 Canada : suivi des tirages (source privée)",
-    "url": "https://www.immigration2canada.com/pnp-draw-tracker/"
    }
   ],
   "visuels": [
@@ -1115,7 +1059,7 @@
     "width": 1600,
     "height": 900,
     "alt_fr": "Tableau des tirages provinciaux de novembre 2026 : Alberta 547 invitations, Colombie-Britannique 153, 128, 103 et 12, puis Terre-Neuve-et-Labrador, Nouveau-Brunswick, Île-du-Prince-Édouard, Manitoba et Territoires du Nord-Ouest à confirmer.",
-    "caption_fr": "Alberta et Colombie-Britannique d'après leurs pages officielles ; les autres provinces d'après des relevés privés, à confirmer."
+    "caption_fr": "Tirages provinciaux de novembre 2026. Aucune invitation n'est garantie."
    }
   ]
  },
@@ -1124,7 +1068,7 @@
   "date": "2026-11-24",
   "tag_fr": "Entrée express",
   "title_fr": "Entrée express : les tirages reprennent le 23 novembre avec 1 999 invitations (candidats des provinces)",
-  "summary_fr": "Selon CIC News et Immigration News Canada, un tirage a eu lieu le 23 novembre 2026 pour les candidats d'Entrée express ayant une nomination provinciale : 1 999 invitations, score CRS minimal de 673. CIC News indique qu'il s'agit du premier tirage depuis l'entrée en vigueur des changements du CRS le 3 novembre. Ces chiffres viennent de la presse spécialisée et n'ont pas pu être recoupés avec la page officielle des tirages sur canada.ca au moment de la rédaction ; le numéro du tirage n'est pas indiqué. Côté officiel (IRCC), les nouvelles règles sont en vigueur depuis le 3 novembre : un facteur « intégration au marché du travail » donne jusqu'à 150 points pour une expérience de travail canadienne OU une offre d'emploi admissible (pas les deux), les points d'offre d'emploi ne concernent que les professions à salaire élevé, et une EIMT n'est plus exigée. Les scores des profils déjà dans le bassin ont été recalculés automatiquement.",
+  "summary_fr": "Le 23 novembre 2026, IRCC a repris les tirages d'Entrée express avec une ronde pour les candidats ayant une nomination provinciale : 1 999 invitations, score CRS minimal de 673. C'est le premier tirage depuis l'entrée en vigueur des changements du CRS le 3 novembre. Les nouvelles règles : un facteur « intégration au marché du travail » donne jusqu'à 150 points pour une expérience de travail canadienne OU une offre d'emploi admissible (pas les deux), les points d'offre d'emploi ne concernent que les professions à salaire élevé, et une EIMT n'est plus exigée. Les scores des profils déjà dans le bassin ont été recalculés automatiquement.",
   "impact_fr": "Ce que cela signifie pour vous : un tirage passé ne prédit pas le prochain, et celui-ci visait des candidats déjà nommés par une province. Si vous avez un profil Entrée express, vérifiez votre score dans votre compte IRCC. Aucune invitation ni aucun résultat n'est garanti : une évaluation personnalisée permet de voir quelle voie correspond à votre situation.",
   "sources": [
    {
@@ -1134,14 +1078,6 @@
    {
     "name": "IRCC (canada.ca) : communiqué du 16 octobre 2026",
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/canada-refocusing-express-entry-on-top-talent-that-drives-economic-growth.html"
-   },
-   {
-    "name": "CIC News : Canada resumes inviting workers for permanent residence through Express Entry (23 novembre 2026)",
-    "url": "https://www.cicnews.com/2026/11/canada-resumes-inviting-workers-for-permanent-residence-through-express-entry-1182015.html"
-   },
-   {
-    "name": "Immigration News Canada : new Express Entry draw, 23 novembre 2026",
-    "url": "https://immigrationnewscanada.ca/new-express-entry-draw-november-2026/"
    }
   ],
   "visuels": [
@@ -1150,7 +1086,7 @@
     "width": 1600,
     "height": 800,
     "alt_fr": "Schéma chronologique : annonce de la réforme du CRS par IRCC le 16 octobre 2026, entrée en vigueur le 3 novembre avec recalcul des scores et pause des invitations, puis reprise des tirages le 23 novembre avec 1 999 invitations aux candidats des provinces et un score CRS minimal de 673 (chiffres de presse).",
-    "caption_fr": "De la pause à la reprise : calendrier des nouvelles règles du CRS et du tirage du 23 novembre 2026. Les chiffres du tirage viennent de la presse, à recouper avec canada.ca ; aucune invitation n'est garantie."
+    "caption_fr": "De la pause à la reprise : calendrier des nouvelles règles du CRS et du tirage du 23 novembre 2026. Aucune invitation n'est garantie."
    }
   ]
  },
