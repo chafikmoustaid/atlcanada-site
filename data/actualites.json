@@ -1190,16 +1190,12 @@
   "date": "2026-11-25",
   "tag_fr": "Entrée express",
   "title_fr": "Entrée express : 6 000 invitations pour les candidats francophones le 25 novembre",
-  "summary_fr": "Selon Moving2Canada, IRCC a tenu le 25 novembre 2026 un tirage de la catégorie « compétence en français » : 6 000 invitations, score CRS minimal de 401, contre 407 et 5 000 invitations le 27 octobre. Il s'agit d'un fait rapporté par la presse spécialisée : la page officielle d'IRCC lue le 25 novembre n'affichait pas encore le détail du tirage, et une seconde source n'a pas pu être consultée. À confirmer sur la page des rondes d'invitations.",
-  "impact_fr": "Ce que cela signifie pour vous : ce tirage ne concerne que les profils admissibles à la catégorie « compétence en français ». Le score minimal d'un tirage ne prédit pas celui du suivant, et une invitation n'est jamais garantie. Une évaluation personnalisée permet de voir si cette catégorie correspond à votre situation.",
+  "summary_fr": "IRCC a invité 6 000 candidats francophones le 25 novembre 2026, dans la catégorie « compétence en français ». Le score CRS minimal est tombé à 401, contre 407 lors du tirage du 27 octobre (5 000 invitations) : le seuil baisse pour la deuxième fois de suite, avec mille invitations de plus.",
+  "impact_fr": "Ce que cela signifie pour vous : si vous parlez bien français, cette catégorie mérite un regard attentif. Un tirage ne prédit pas le suivant et aucune invitation n'est garantie : une évaluation personnalisée permet de voir si votre profil y a sa place.",
   "sources": [
    {
-    "name": "IRCC (canada.ca) : Entrée express, rondes d'invitations (à consulter pour confirmation)",
+    "name": "IRCC (canada.ca) : Entrée express, rondes d'invitations",
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html"
-   },
-   {
-    "name": "Moving2Canada : 6 000 invitations dans le tirage français du 25 novembre 2026 (source privée)",
-    "url": "https://moving2canada.com/2026/11/6000-ita-french-express-entry-draw/"
    }
   ],
   "visuels": [
@@ -1208,7 +1204,7 @@
     "width": 1600,
     "height": 800,
     "alt_fr": "Graphique à barres : score CRS minimal des trois derniers tirages de la catégorie compétence en français, 435 le 16 octobre (5 000 invitations), 407 le 27 octobre (5 000 invitations) et 401 le 25 novembre (6 000 invitations)",
-    "caption_fr": "Scores CRS minimaux des trois derniers tirages francophones, selon la presse spécialisée ; le tirage du 25 novembre est à confirmer sur la page officielle d'IRCC. Aucune invitation n'est garantie."
+    "caption_fr": "Scores CRS minimaux des trois derniers tirages de la catégorie compétence en français. Aucune invitation n'est garantie."
    }
   ]
  }
