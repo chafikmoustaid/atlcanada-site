@@ -1102,5 +1102,32 @@
     "caption_fr": "Du plan au vote. La motion rejetée ne modifie aucune règle ; les niveaux sont des cibles, pas une garantie pour un dossier."
    }
   ]
+ },
+ {
+  "id": "express-entree-tirage-stim-26-novembre-2026",
+  "date": "2026-11-26",
+  "tag_fr": "Entrée express",
+  "title_fr": "Entrée express : 600 invitations pour les professions STIM le 26 novembre",
+  "summary_fr": "IRCC a invité 600 candidats de la catégorie « sciences, technologies, génie et mathématiques » (STIM) le 26 novembre 2026, avec un score CRS minimal de 547. C'est le premier tirage de cette catégorie depuis avril 2024. Elle vise onze professions, dont des ingénieurs, des techniciens en génie, les spécialistes en cybersécurité et les agents d'assurance.",
+  "impact_fr": "Ce que cela signifie pour vous : il faut au moins 12 mois d'expérience dans l'une de ces professions au cours des trois dernières années, acquise au Canada ou à l'étranger, et être admissible à Entrée express. Aucune invitation n'est garantie.",
+  "sources": [
+   {
+    "name": "IRCC (canada.ca) : Entrée express, rondes d'invitations",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html"
+   },
+   {
+    "name": "IRCC (canada.ca) : sélection par catégorie",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/express-entree-tirage-stim-26-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Tirage STIM du 26 novembre 2026 : 600 invitations, score CRS minimal de 547, expérience requise de 12 mois sur les 3 dernières années, et tableau des onze professions admissibles avec leur code CNP",
+    "caption_fr": "Chiffres du tirage et professions admissibles à la catégorie STIM. Aucune invitation n'est garantie."
+   }
+  ]
  }
 ]
