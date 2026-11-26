@@ -59,7 +59,7 @@ def rich(headers, rows):
         return '<div class="info"><h3>%s</h3><p>%s</p></div>' % (r[0], r[1])
     return '<div class="info-grid">' + ''.join(card(r) for r in rows) + '</div>'
 
-HON = [("Initial consultation (30 min), deducted from the price if you hire us", "100"), ("Study permit", "900"), ("Work permit: extension or post-graduation work permit", "650"),
+HON = [("Initial consultation (30 min), deducted from the price if you hire us", "50"), ("Study permit", "900"), ("Work permit: extension or post-graduation work permit", "650"),
  ("LMIA-exempt work permit", "1,100"), ("Visitor visa", "450"), ("Super visa (per applicant)", "800"), ("Express Entry: profile and permanent residence application", "2,150"),
  ("Provincial nominee, outside Express Entry", "3,000"), ("Sponsorship of a spouse or partner", "2,200"), ("Sponsorship of parents or grandparents", "2,500"),
  ("Canadian citizenship", "500"), ("Permanent resident card renewal", "600"), ("Extra family member in a permanent residence application", "400")]
@@ -108,7 +108,7 @@ P(path='en/fees/', fr='honoraires/', ar='ar/fees/', title="Immigration consultin
 <p class="note">No result is guaranteed: the decision belongs solely to IRCC and the Quebec authorities.</p></div><p style="margin-top:14px"><a class="btn" href="/en/study-permit-cost/">Study permit cost</a> <a class="btn" href="/en/visitor-visa-cost/">Visitor visa cost</a> <a class="btn" href="/en/evaluate-my-case/">Assess my case</a></p></div></section>''',
   faq=[("Why "+"“from”"+" prices?", "Every case is different. The starting price is for a simple case; the final quote is set after the consultation and written in the service agreement."),
        ("Are government fees included?", "No. They are paid directly to IRCC or the Quebec authorities. See the official fees page."),
-       ("Is the initial consultation deducted?", "Yes. If you hire us, the $100 initial consultation is deducted from the price of your case."),
+       ("Is the initial consultation deducted?", "Yes. If you hire us, the $50 initial consultation is deducted from the price of your case."),
        ("Are taxes included?", "No. Applicable taxes are added to our starting fees."),
        ("Can I get an exact price before the consultation?", "The starting price gives the order of magnitude. The exact price depends on your situation and we give it to you in writing after the consultation. You can also try our <a href=\"/en/budget-calculator/\">budget calculator</a>."),
        ("What happens if my application is refused?", "Our fees pay for our work, not for the result, which nobody can guarantee. The exact terms are in the service agreement.")])

@@ -5,7 +5,7 @@ var AR=root.getAttribute('data-lang')==='ar', EN=root.getAttribute('data-lang')=
 var RDV=EN?'/en/book-consultation/':AR?'/ar/book-consultation/':'/rendez-vous/', HON=EN?'/en/fees/':AR?'/ar/fees/':'/honoraires/', OFF=EN?'/en/official-fees/':AR?'/ar/official-fees/':'/frais-officiels-immigration-canada/';
 /* type : single = 1 demandeur ; pr = résidence permanente (conjoint et enfants) */
 var S=[
- {id:'cons',h:100,g:0,t:'single',fr:'Consultation initiale (30 min)',en:'Initial consultation (30 min)',ar:'استشارة أولية (30 دقيقة)'},
+ {id:'cons',h:50,g:0,t:'single',fr:'Consultation initiale (30 min)',en:'Initial consultation (30 min)',ar:'استشارة أولية (30 دقيقة)'},
  {id:'study',h:900,g:150,b:1,t:'single',fr:"Permis d'études",en:'Study permit',ar:'تصريح الدراسة'},
  {id:'work',h:650,g:155,b:1,t:'single',fr:'Permis de travail : prolongation ou postdiplôme',en:'Work permit: extension or post-graduation',ar:'تصريح العمل: التمديد أو ما بعد التخرج'},
  {id:'workx',h:1100,g:155,b:1,t:'single',fr:"Permis de travail exempté d'EIMT",en:'LMIA-exempt work permit',ar:'تصريح عمل معفى من LMIA'},
