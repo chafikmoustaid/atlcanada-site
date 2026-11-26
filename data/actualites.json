@@ -1075,5 +1075,32 @@
     "caption_fr": "Scores CRS minimaux des trois derniers tirages de la catégorie compétence en français. Aucune invitation n'est garantie."
    }
   ]
+ },
+ {
+  "id": "parlement-motion-rejetee-plan-niveaux-2027-25-novembre-2026",
+  "date": "2026-11-26",
+  "tag_fr": "Politique fédérale",
+  "title_fr": "Parlement : la motion contre le plan d'immigration 2027 est rejetée",
+  "summary_fr": "Le 25 novembre 2026, la Chambre des communes a rejeté, par 175 voix contre 154, la motion conservatrice qui demandait de rejeter le plan d'immigration 2027-2029. Les conservateurs et le Bloc québécois l'ont appuyée ; les libéraux, le NPD et la députée verte Elizabeth May s'y sont opposés. Le plan reste donc inchangé : cible de 380 000 résidents permanents par an et mesure temporaire pour aider jusqu'à 200 000 personnes déjà au Canada. La ministre de l'Immigration a indiqué que les chiffres annoncés sont un maximum et non des cibles à atteindre.",
+  "impact_fr": "Ce que cela signifie pour vous : ce vote ne change aucune règle pour une demande préparée depuis le Maroc. La mesure temporaire vise des personnes déjà au Canada. Une cible n'est pas une garantie : chaque demande est évaluée individuellement.",
+  "sources": [
+   {
+    "name": "Chambre des communes : vote n° 205 du 25 novembre 2026",
+    "url": "https://www.ourcommons.ca/members/en/votes/45/1/205"
+   },
+   {
+    "name": "IRCC (canada.ca) : plan des niveaux, 5 novembre 2026",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/building-a-stronger-canada-through-a-well-managed-predictable-immigration-system.html"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/parlement-motion-rejetee-plan-niveaux-2027-25-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Chronologie : 5 novembre 2026, publication du plan 2027-2029 ; 24 novembre, débat sur la motion conservatrice ; 25 novembre, motion rejetée par 175 voix contre 154, le plan reste inchangé.",
+    "caption_fr": "Du plan au vote. La motion rejetée ne modifie aucune règle ; les niveaux sont des cibles, pas une garantie pour un dossier."
+   }
+  ]
  }
 ]
