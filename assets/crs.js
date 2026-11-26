@@ -18,7 +18,9 @@
     secSp: 'الزوج/الزوجة', spEdu: 'تعليم الزوج/الزوجة', spLang: 'لغة الزوج/الزوجة (CLB)', spCan: 'خبرة الزوج/الزوجة في كندا (سنوات)',
     total: 'درجتك التقديرية', of: 'من 1270', core: 'العوامل الأساسية', spouseL: 'الزوج/الزوجة', trans: 'قابلية نقل المهارات', add: 'نقاط إضافية',
     note: 'هذا تقدير إرشادي وفق جدول IRCC المعمول به منذ 3 نوفمبر 2026، ولا يضمن أي دعوة. تتغير الجولات والقواعد؛ تحقق من وضعك مع مستشار.',
-    cta: 'تحقق من درجتي مع مستشار', ctaHref: '/#contact',
+    cta: 'أرسل درجتي عبر واتساب', ctaHref: 'https://wa.me/15142956635',
+    waMsg: function (t, l, n) { return 'مرحباً ATL Canada، حسبت درجتي في الدخول السريع: ' + t + ' نقطة (اللغة الرئيسية: ' + l + '، أدنى مستوى ' + n + '). أرغب في التحقق من ملفي.'; }, wal: ['الفرنسية', 'الإنجليزية'],
+    waHint: 'لا يُرسل أي شيء قبل أن تضغط: يفتح واتساب مع رسالة جاهزة تتضمن درجتك.',
     tiers: ['بلا', 'أجر ≥ 1.3× المتوسط', 'أجر ≥ 1.5× المتوسط', 'أجر ≥ 2× المتوسط'],
     cert0: 'بلا', y: function (n) { return n === 5 ? '5 فأكثر' : String(n); },
     eduOpts: ['أقل من الثانوية', 'شهادة ثانوية', 'برنامج لسنة واحدة', 'برنامج لسنتين', 'بكالوريوس أو برنامج 3 سنوات فأكثر', 'شهادتان أو أكثر (إحداها 3 سنوات فأكثر)', 'ماجستير أو شهادة مهنية', 'دكتوراه'],
@@ -38,7 +40,9 @@
     secSp: 'Conjoint(e) ou partenaire', spEdu: 'Études du conjoint', spLang: 'Langue du conjoint (CLB)', spCan: 'Expérience canadienne du conjoint (années)',
     total: 'Votre score estimé', of: 'sur 1 270', core: 'Facteurs de base', spouseL: 'Conjoint(e)', trans: 'Transférabilité des compétences', add: 'Points additionnels',
     note: "Estimation indicative selon la grille d'IRCC en vigueur depuis le 3 novembre 2026. Elle ne garantit aucune invitation. Les rondes et les règles évoluent : faites valider votre situation par un consultant.",
-    cta: 'Faire valider mon score', ctaHref: '/#contact',
+    cta: 'Envoyer mon score sur WhatsApp', ctaHref: 'https://wa.me/15142956635',
+    waMsg: function (t, l, n) { return "Bonjour ATL Canada, j'ai calculé mon score Entrée express : " + t + ' points (langue principale : ' + l + ', niveau minimal ' + n + "). J'aimerais faire valider mon profil."; }, wal: ['le français', "l'anglais"],
+    waHint: "Rien n'est envoyé tant que vous ne cliquez pas : WhatsApp s'ouvre avec votre score déjà écrit.",
     tiers: ['Aucune', 'Salaire ≥ 1,3 × la médiane', 'Salaire ≥ 1,5 × la médiane', 'Salaire ≥ 2 × la médiane'],
     cert0: 'Non', y: function (n) { return n === 5 ? '5 ou plus' : String(n); },
     eduOpts: ['Moins que le secondaire', 'Diplôme du secondaire', "Programme d'un an", 'Programme de deux ans', "Baccalauréat ou programme de 3 ans ou plus", 'Deux diplômes ou plus (dont un de 3 ans ou plus)', 'Maîtrise ou diplôme professionnel', 'Doctorat'],
@@ -134,7 +138,8 @@
       '<li><span>' + T.add + '</span><b><em id="o-ad">0</em><small> / 600</small></b></li>' +
     '</ul>' +
     '<p class="crs-note">' + T.note + '</p>' +
-    '<a class="crs-cta" href="' + T.ctaHref + '">' + T.cta + '</a>';
+    '<a class="crs-cta" id="o-cta" href="' + T.ctaHref + '" target="_blank" rel="noopener">' + T.cta + '</a>' +
+    '<p class="crs-note" style="margin-top:10px;font-size:.82rem">' + T.waHint + '</p>';
 
   var mini = el('div', { 'class': 'crs-mini', 'aria-hidden': 'true' }, T.total + ' <b id="o-mini">0</b>');
   root.appendChild(form); root.appendChild(side); root.appendChild(mini);
@@ -212,6 +217,8 @@
     $('o-ad').textContent = add;
     $('m-core').textContent = ' / ' + (sp ? 530 : 570);
     $('o-bar').style.width = (total / 1270 * 100).toFixed(1) + '%';
+    var isFr = $('l1').value === 'fr';
+    $('o-cta').href = T.ctaHref + '?text=' + encodeURIComponent(T.waMsg(total, T.wal[isFr ? 0 : 1], minOf('c1')));
   }
 
   root.addEventListener('input', calc);
