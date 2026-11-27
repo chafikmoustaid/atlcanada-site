@@ -1129,5 +1129,32 @@
     "caption_fr": "Chiffres du tirage et professions admissibles à la catégorie STIM. Aucune invitation n'est garantie."
    }
   ]
+ },
+ {
+  "id": "etudes-preuve-fonds-27-novembre-2026",
+  "date": "2026-11-27",
+  "tag_fr": "Études",
+  "title_fr": "Permis d'études : les montants à prouver pour la rentrée 2027",
+  "summary_fr": "Pour une personne seule, il faut prouver au moins 23 448 $ de frais de subsistance pour un an hors Québec (demandes depuis le 1er septembre 2026) et 24 617 $ au Québec (demandes depuis le 1er janvier 2026, montant ajusté chaque année). Les frais de scolarité et le transport s'ajoutent.",
+  "impact_fr": "Depuis le Maroc : préparez les relevés des six derniers mois, l'origine des fonds, les documents de votre garant et la preuve que l'argent peut être transféré malgré le contrôle des changes. Aucun permis n'est garanti.",
+  "sources": [
+   {
+    "name": "IRCC (canada.ca) : preuve de capacité financière",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html"
+   },
+   {
+    "name": "Gouvernement du Québec (quebec.ca) : coût des études",
+    "url": "https://www.quebec.ca/en/education/study-quebec/required-conditions/costs-studies"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/etudes-preuve-fonds-27-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Comparaison des frais de subsistance à prouver pour un an : hors Québec 23 448 $, 29 192 $ et 35 888 $ pour 1, 2 et 3 personnes ; au Québec 24 617 $, 34 814 $ et 42 638 $",
+    "caption_fr": "Montants en dollars canadiens, hors frais de scolarité et transport. Aucun permis n'est garanti."
+   }
+  ]
  }
 ]
