@@ -1129,5 +1129,36 @@
     "caption_fr": "Chiffres du tirage et professions admissibles à la catégorie STIM. Aucune invitation n'est garantie."
    }
   ]
+ },
+ {
+  "id": "residents-temporaires-prevision-5-5-pour-cent-fin-2027-26-novembre-2026",
+  "date": "2026-11-27",
+  "tag_fr": "Résidents temporaires",
+  "title_fr": "Résidents temporaires : une part de 5,5 % ou moins prévue fin 2027, au-delà de la cible de 5 %",
+  "summary_fr": "Prévision, et non nouvelle règle : le 26 novembre 2026, devant le comité de l'immigration de la Chambre des communes, la ministre de l'Immigration a indiqué que les résidents temporaires devraient représenter 5,5 % ou moins de la population à la fin de 2027. La cible de 5 % ou moins reste maintenue. Les résidents non permanents représentaient 6,7 % de la population au 1er juillet 2026, après un sommet de 7,4 % au 1er octobre 2024. De janvier à septembre 2026, environ 83 000 étudiants internationaux et 145 000 travailleurs étrangers sont arrivés, bien en deçà des cibles.",
+  "impact_fr": "Ce que cela signifie pour vous : aucune règle d'admission ne change avec cette déclaration. Le gouvernement dit continuer à viser une baisse de la population temporaire. Des arrivées inférieures aux cibles ne signifient pas qu'un dossier sera plus facilement accepté : chaque demande est évaluée individuellement.",
+  "sources": [
+   {
+    "name": "IRCC (canada.ca) : niveaux d'immigration 2027-2029",
+    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/immigration-system/levels.html"
+   },
+   {
+    "name": "La Presse Canadienne (Noovo Info) : résidents temporaires, objectif 2027",
+    "url": "https://www.noovo.info/nouvelles/politique/article/le-nombre-de-residents-temporaires-devrait-depasser-lobjectif-fixe-pour-2027/"
+   },
+   {
+    "name": "La Presse Canadienne (Medicine Hat News) : témoignage de la ministre",
+    "url": "https://medicinehatnews.com/news/national-news/2026/11/26/temporary-resident-population-could-exceed-5-target-at-end-of-2027-diab/"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/residents-temporaires-prevision-5-5-pour-cent-fin-2027-26-novembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Graphique à barres de la part des résidents temporaires dans la population : 7,4 % au 1er octobre 2024, 6,7 % au 1er juillet 2026, 5,5 % ou moins prévu fin 2027, cible de 5 % ou moins.",
+    "caption_fr": "La barre de fin 2027 est une prévision, qui peut changer. Elle ne modifie aucune règle d'admission."
+   }
+  ]
  }
 ]
