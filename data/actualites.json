@@ -1160,5 +1160,32 @@
     "caption_fr": "La barre de fin 2027 est une prévision, qui peut changer. Elle ne modifie aucune règle d'admission."
    }
   ]
+ },
+ {
+  "id": "frais-ircc-hausse-1er-decembre-2026",
+  "date": "2026-11-28",
+  "tag_fr": "Frais",
+  "title_fr": "Frais d'immigration : certaines hausses le 1er décembre 2026",
+  "summary_fr": "À compter du 1er décembre 2026, IRCC augmente les frais liés à l'interdiction de territoire, au rétablissement du statut et à Expérience internationale Canada. Le rétablissement du statut de visiteur passe de 246,25 $ à 250,50 $, et l'autorisation de retour au Canada de 492,50 $ à 501 $. Aucune hausse à cette date pour le visa de visiteur (100 $), le permis d'études (150 $), le permis de travail (155 $) ni la biométrie (85 $ par personne).",
+  "impact_fr": "Ce que cela signifie pour vous : vérifiez le montant exact avant de payer. Si votre statut au Canada arrive à échéance ou a expiré, agissez sans attendre : le rétablissement est soumis à des conditions et n'est jamais automatique.",
+  "sources": [
+   {
+    "name": "IRCC : changements apportés aux frais (en anglais)",
+    "url": "https://ircc.canada.ca/english/information/fees/fee-changes.asp"
+   },
+   {
+    "name": "IRCC : liste des frais (en anglais)",
+    "url": "https://ircc.canada.ca/english/information/fees/fees.asp"
+   }
+  ],
+  "visuels": [
+   {
+    "src": "/assets/actu/frais-ircc-hausse-1er-decembre-2026.png",
+    "width": 1600,
+    "height": 800,
+    "alt_fr": "Tableau des frais d'IRCC au 1er décembre 2026 : huit frais en hausse avec ancien et nouveau montant, et cinq frais sans hausse à cette date.",
+    "caption_fr": "Montants en dollars canadiens."
+   }
+  ]
  }
 ]
